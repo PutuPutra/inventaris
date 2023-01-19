@@ -1,0 +1,35 @@
+body {
+    background: url(./image.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 100px;
+}
+
+span {
+    margin-top: 2em;
+    font-family: 'Orbitron', sans-serif;
+    height: 1.5em;
+    width: 1.8em;
+    margin-right: 0.7em;
+    padding: 1rem;
+    font-size: 4em;
+    background-color: #36211A;
+    color: #FEFEAD;
+    border-radius: 0.8em;
+    box-shadow: 5px 10px 20px white inset;
+    text-align: center;
+}
