@@ -159,7 +159,7 @@
                         <script>
                         document.write(new Date().getFullYear())
                         </script>
-                    </a> , SMAN 9 Bandarlampung
+                    </a>, SMAN 9 Bandarlampung
                 </div>
                 <div class="col-md-6 text-center text-md-end">
 
