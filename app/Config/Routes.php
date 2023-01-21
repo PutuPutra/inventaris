@@ -61,6 +61,7 @@ $routes->post('/store', 'laptopController::store', ['filter' => 'login']);
 $routes->post('/buku/store', 'bukuController::store', ['filter' => 'login']);
 $routes->post('/papanTulis/store', 'papanTulisController::store', ['filter' => 'login']);
 
+$routes->get('/computer', 'Admin::computer', ['filter' => 'login']);
 
 // laptop
 $routes->get('/komputer', 'laptopController::komputer', ['filter' => 'login']);

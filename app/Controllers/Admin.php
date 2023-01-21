@@ -10,6 +10,10 @@ class Admin extends BaseController
     {
         return view('/admin/sarana/komputer/DataKomputer');
     }
+    public function computer()
+    {
+        return view('/admin/sarana/komputer/komputerFile');
+    }
     public function tambahkomputer()
     {
         return view('/admin/sarana/komputer/tambahDataKomputer');

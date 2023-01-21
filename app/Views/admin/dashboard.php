@@ -10,8 +10,7 @@
             <div class="card mg-b-20">
                 <ul class="nav nav-fill d-block d-md-flex audience-overview-tab" role="tablist">
                     <li class="nav-item">
-                        <a class="active show" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1"
-                            aria-selected="false">
+                        <a class="active show" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="false">
                             <h2 class="tx-15 ">Gedung</h2>
                             <h1 class="tx-20">10</h1>
                             <div class="d-flex align-items-center justify-content-center ">
@@ -41,8 +40,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-3"
-                            aria-selected="false">
+                        <a id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-3" aria-selected="false">
                             <h2 class="tx-15 ">Session Duration</h2>
                             <h1 class="tx-20">5m:53s</h1>
                             <div class="d-flex align-items-center justify-content-center ">
@@ -71,8 +69,7 @@
                 <div class="card-footer">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <button id="audienceOverviewDatePicker"
-                                class="btn btn-light waves-effect dropdown-toggle mr-2 d-none d-md-block pd-y-8-force"></button>
+                            <button id="audienceOverviewDatePicker" class="btn btn-light waves-effect dropdown-toggle mr-2 d-none d-md-block pd-y-8-force"></button>
                         </div>
                         <div class="d-flex align-items-center">
                             <a href="analytic-audience.html" target="_blank" class="btn btn-light waves-effect">Audience
@@ -175,36 +172,30 @@
             <div class="card">
                 <ul class="nav nav-fill d-block d-md-flex audience-overview-tab" role="tablist">
                     <li class="nav-item">
-                        <a class="active show" data-toggle="pill" href="#acquire-pills-1" role="tab"
-                            aria-controls="pills-1" aria-selected="false">
+                        <a class="active show" data-toggle="pill" href="#acquire-pills-1" role="tab" aria-controls="pills-1" aria-selected="false">
                             <h2 class="tx-15  mb-0">Traffic Channel</h2>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a data-toggle="pill" href="#acquire-pills-2" role="tab" aria-controls="pills-2"
-                            aria-selected="true">
+                        <a data-toggle="pill" href="#acquire-pills-2" role="tab" aria-controls="pills-2" aria-selected="true">
                             <h2 class="tx-15  mb-0">Source / Medium</h2>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a data-toggle="pill" href="#acquire-pills-3" role="tab" aria-controls="pills-3"
-                            aria-selected="false">
+                        <a data-toggle="pill" href="#acquire-pills-3" role="tab" aria-controls="pills-3" aria-selected="false">
                             <h2 class="tx-15  mb-0">Referrals</h2>
                         </a>
                     </li>
                 </ul>
                 <div class="card-body">
                     <div class="tab-content">
-                        <div class="tab-pane fade active show" id="acquire-pills-1" role="tabpanel"
-                            aria-labelledby="acquire-pills-1">
+                        <div class="tab-pane fade active show" id="acquire-pills-1" role="tabpanel" aria-labelledby="acquire-pills-1">
                             <canvas id="acquireTrafficChannel" height="170"></canvas>
                         </div>
-                        <div class="tab-pane fade" id="acquire-pills-2" role="tabpanel"
-                            aria-labelledby="acquire-pills-2">
+                        <div class="tab-pane fade" id="acquire-pills-2" role="tabpanel" aria-labelledby="acquire-pills-2">
                             <canvas id="acquireTrafficSource" height="170"></canvas>
                         </div>
-                        <div class="tab-pane fade" id="acquire-pills-3" role="tabpanel"
-                            aria-labelledby="acquire-pills-3">
+                        <div class="tab-pane fade" id="acquire-pills-3" role="tabpanel" aria-labelledby="acquire-pills-3">
                             <canvas id="acquireTrafficReferral" height="170"></canvas>
                         </div>
                     </div>
@@ -212,13 +203,10 @@
                 <div class="card-footer">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <button id="acquireOverviewDatePicker"
-                                class="btn btn-light waves-effect dropdown-toggle mr-2 d-none d-md-block pd-y-8-force"></button>
+                            <button id="acquireOverviewDatePicker" class="btn btn-light waves-effect dropdown-toggle mr-2 d-none d-md-block pd-y-8-force"></button>
                         </div>
                         <div class="d-flex align-items-center">
-                            <a href="analytic-acquisition.html" target="_blank"
-                                class="btn btn-light waves-effect">Acquisition Report<span data-feather="chevron-right"
-                                    class="wd-16 ht-16 ml-1"></span></a>
+                            <a href="analytic-acquisition.html" target="_blank" class="btn btn-light waves-effect">Acquisition Report<span data-feather="chevron-right" class="wd-16 ht-16 ml-1"></span></a>
                         </div>
                     </div>
                 </div>
@@ -327,6 +315,7 @@
         </div>
         <!--/ Users Visit Pages End -->
     </div>
+
 </div>
 <!--/ Page Inner End -->
 <!--================================-->
