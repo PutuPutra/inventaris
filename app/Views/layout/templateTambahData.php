@@ -798,12 +798,32 @@
                                                     class="img-fluid wd-40 ht-40 rounded-circle" alt="">
                                             </div>
                                             <div class="profile-text">
-                                                <h6>Ruhul Hasan</h6>
-                                                <span class="tx-rubik">Balance: $1,425</span>
+                                                <h6><?= user()->username; ?></h6>
+                                                <?php if (in_groups('super_admin')) : ?>
+                                                <span class="tx-rubik">Super Admin</span>
+                                                <?php endif; ?>
+                                                <?php if (in_groups('admin')) : ?>
+                                                <span class="tx-rubik">Admin</span>
+                                                <?php endif; ?>
                                             </div>
                                         </div>
-                                        <a href="" class="dropdown-item d-flex align-items-center"><span
-                                                data-feather="user" class="wd-16 ht-16 mr-2"></span>Profile</a>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
+                                            <i class="fa-solid fa-user"></i>
+                                            Profile
+                                        </a>
+                                        <?php if (in_groups('super_admin')) : ?>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
+                                            <i class="fa-solid fa-user-gear"></i>
+                                            Kelola Akun
+                                        </a>
+                                        <?php endif; ?>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <!-- <span data-feather="message-square" class="wd-16 ht-16 mr-2"></span> -->
+                                            <i class="fa-solid fa-message"></i>
+                                            Messages
+                                        </a>
                                         <a href="" class="dropdown-item d-flex align-items-center"><span
                                                 data-feather="message-square"
                                                 class="wd-16 ht-16 mr-2"></span>Messages</a>
