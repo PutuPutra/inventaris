@@ -23,6 +23,16 @@ class laptopController extends BaseController
         ];
         return view('admin/sarana/laptop/tambahLaptop', $data);
     }
+    public function editLaptop()
+    {
+        $komputer = new KomputerModel();
+        $files_komputer = $komputer->findAll();
+        $data = [
+            'heading' => 'Edit Data Komputer',
+            'files_komputer' => $files_komputer,
+        ];
+        return view('admin/sarana/laptop/editKomputer', $data);
+    }
     public function store()
     {
         $validate = $this->validate([
