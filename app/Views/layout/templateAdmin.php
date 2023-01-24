@@ -841,15 +841,25 @@
                                                     class="img-fluid wd-40 ht-40 rounded-circle" alt="">
                                             </div>
                                             <div class="profile-text">
-                                                <h6>Ruhul Hasan</h6>
-                                                <span class="tx-rubik">Balance: $1,425</span>
+                                                <h6><?= user()->username; ?></h6>
+                                                <span class="tx-rubik"></span>
                                             </div>
                                         </div>
-                                        <a href="" class="dropdown-item d-flex align-items-center"><span
-                                                data-feather="user" class="wd-16 ht-16 mr-2"></span>Profile</a>
-                                        <a href="" class="dropdown-item d-flex align-items-center"><span
-                                                data-feather="message-square"
-                                                class="wd-16 ht-16 mr-2"></span>Messages</a>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
+                                            <i class="fa-solid fa-user"></i>
+                                            Profile
+                                        </a>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
+                                            <i class="fa-solid fa-user-gear"></i>
+                                            Kelola Akun
+                                        </a>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <!-- <span data-feather="message-square" class="wd-16 ht-16 mr-2"></span> -->
+                                            <i class="fa-solid fa-message"></i>
+                                            Messages
+                                        </a>
                                         <div class="dropdown-divider"></div>
                                         <a href="" class="dropdown-item d-flex align-items-center"><span
                                                 data-feather="settings" class="wd-16 ht-16 mr-2"></span>Settings</a>
@@ -1221,6 +1231,7 @@
     <script src="assets/extensions/simple-datatables/umd/simple-datatables.js"></script>
     <script src="assets/js_mazer/pages/simple-datatables.js"></script>
     <!-- BEGIN: Init JS-->
+    <script src="https://kit.fontawesome.com/49b420f669.js" crossorigin="anonymous"></script>
     <script>
     // Basic DataTable	
 
