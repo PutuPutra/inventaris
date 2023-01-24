@@ -1,3 +1,7 @@
+<?php
+
+use Myth\Auth\Entities\Group;
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -842,7 +846,12 @@
                                             </div>
                                             <div class="profile-text">
                                                 <h6><?= user()->username; ?></h6>
-                                                <span class="tx-rubik"></span>
+                                                <?php if (in_groups('super_admin')) : ?>
+                                                <span class="tx-rubik">Super Admin</span>
+                                                <?php endif; ?>
+                                                <?php if (in_groups('admin')) : ?>
+                                                <span class="tx-rubik">Admin</span>
+                                                <?php endif; ?>
                                             </div>
                                         </div>
                                         <a href="" class="dropdown-item d-flex align-items-center">
