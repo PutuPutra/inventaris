@@ -59,11 +59,10 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label class="text-dark" for="login"><?= lang('Auth.emailOrUsername') ?></label>
+                                        <label class="text-dark" for="login">Username</label>
                                         <input
                                             class="form-control <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>"
-                                            id="login" name="login" type="text"
-                                            placeholder="<?= lang('Auth.emailOrUsername') ?>">
+                                            id="login" name="login" type="text" placeholder="Username">
                                         <div class="invalid-feedback">
                                             <?= session('errors.login') ?>
                                         </div>

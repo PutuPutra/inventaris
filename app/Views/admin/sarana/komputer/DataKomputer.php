@@ -25,21 +25,8 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($files_komputer as $f) : ?>
-                                    <tr>
-                                        <td><?= $f->brand_komputer; ?></td>
-                                        <td><img class="pictures" src="/assets/foto/<?= $f->gambar_komputer; ?>" alt="" width="100px"></img></td>
-                                        <td><?= $f->kondisi_komputer; ?></td>
-                                        <td style="width: 100px;"><?= $f->spesifikasi_komputer; ?></td>
-                                        <td><?= $f->jenis_produk_komputer; ?></td>
-                                        <td>
-                                            <div class="buttons">
-                                                <a href="<?= base_url('KomputerEdit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
-                                                <a href="<?= base_url('deleted') . '/' . $f->id ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                <?php endforeach ?>
+                                zz
+                                </tr>
                             </tbody>
                         </table>
                     </div>
