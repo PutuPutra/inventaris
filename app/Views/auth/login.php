@@ -42,15 +42,16 @@
             style="background:url(source/assets/images/big/auth-bg.jpg) no-repeat center center;">
             <div class="auth-box row">
                 <div class="col-lg-7 col-md-5 modal-bg-img"
-                    style="background-image: url(source/assets/images/big/3.jpg);">
+                    style="background-image: url(source/assets/images/big/2.jpg);">
                 </div>
                 <div class="col-lg-5 col-md-7 bg-white">
                     <div class="p-3">
                         <div class="text-center">
-                            <img src="source/assets/images/big/icon.png" alt="wrapkit">
+                            <img src="source/assets/images/big/smalan.png" alt="wrapkit" style="width:53px">
+
                         </div>
-                        <h2 class="mt-3 text-center"><?= lang('Auth.loginTitle') ?></h2>
-                        <p class="text-center">Enter your email address and password to access admin panel.</p>
+                        <h2 class="mt-3 text-center">Admin Login</h2>
+                        <p class="text-center">Selamat datang di sistem pendataan inventaris SMAN 9 Bandarlampung</p>
 
                         <?= view('Myth\Auth\Views\_message_block') ?>
 
