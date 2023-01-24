@@ -12,42 +12,16 @@ class laptopController extends BaseController
         $files_komputer = $komputer->findAll();
         $data = [
             'files_komputer' => $files_komputer,
-            'heading' => 'Komputer',
-            'sidebar1' => null,
-            'sidebar2' => 'active',
-            'sidebar3' => null,
-            'submenu1' => 'active',
-            'submenu2' => null,
-            'submenu3' => null,
-            'submenu4' => null,
-            'submenu5' => null,
-            'submenu6' => null,
-            'submenu7' => null,
-            'submenu8' => null,
-            'submenu9' => null,
-            'submenu10' => null,
+            'heading' => 'Komputer'
         ];
-        return view('admin/sarana/komputer/DataKomputer', $data);
+        return view('admin/sarana/laptop/fileKomputer', $data);
     }
     public function tambahLaptop()
     {
         $data = [
-            'heading' => 'Tambah Data Komputer',
-            'sidebar1' => null,
-            'sidebar2' => 'active',
-            'sidebar3' => null,
-            'submenu1' => 'active',
-            'submenu2' => null,
-            'submenu3' => null,
-            'submenu4' => null,
-            'submenu5' => null,
-            'submenu6' => null,
-            'submenu7' => null,
-            'submenu8' => null,
-            'submenu9' => null,
-            'submenu10' => null,
+            'heading' => 'Tambah Data Komputer'
         ];
-        return view('admin/sarana/komputer/tambahDataKomputer', $data);
+        return view('admin/sarana/laptop/tambahLaptop', $data);
     }
     public function store()
     {
@@ -89,7 +63,7 @@ class laptopController extends BaseController
 
         if (!$validate) {
             // dd($this->request->getFile('gambar_komputer'));
-            return redirect()->to('tambahDataKomputer')->withInput();
+            return redirect()->to('tambahLaptop')->withInput();
         }
         $files = $this->request->getFile('gambar_komputer');
         $names = $files->getName();
@@ -129,20 +103,7 @@ class laptopController extends BaseController
         $files_komputer = $komputer->find($id);
         $data = [
             'heading' => 'Edit Data Komputer',
-            'sidebar1' => null,
-            'sidebar2' => 'active',
-            'sidebar3' => null,
-            'submenu1' => 'active',
-            'submenu2' => null,
-            'submenu3' => null,
-            'submenu4' => null,
-            'submenu5' => null,
-            'submenu6' => null,
-            'submenu7' => null,
-            'submenu8' => null,
-            'submenu9' => null,
-            'submenu10' => null,
-            'files_komputer' => $files_komputer,
+            'files_komputer' => $files_komputer
         ];
 
         return view('admin/sarana/laptop/KomputerEdit', $data);
