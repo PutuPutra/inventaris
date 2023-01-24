@@ -849,7 +849,7 @@
             <!--/ Page Header End -->
 
 
-            <?= $this->renderSection('tambahLaptop'); ?>
+            <?= $this->renderSection('tambahData'); ?>
 
         </div>
         <!--/ Page Content End -->

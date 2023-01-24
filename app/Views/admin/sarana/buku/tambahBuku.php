@@ -1,5 +1,5 @@
-<?= $this->extend('/layout/templateAdmin'); ?>
-<?= $this->section('admin'); ?>
+<?= $this->extend('/layout/templateTambahData'); ?>
+<?= $this->section('tambahData'); ?>
 <div class="page-inner-content" style="margin-top: 30px;">
     <div class="row no-gutters">
         <!--================================-->

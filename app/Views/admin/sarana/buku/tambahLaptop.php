@@ -1,5 +1,5 @@
 <?= $this->extend('/layout/templateTambahData'); ?>
-<?= $this->section('tambahData'); ?>
+<?= $this->section('tambahLaptop'); ?>
 <!--================================-->
 <!-- Page Inner Content Start -->
 <!--================================-->
