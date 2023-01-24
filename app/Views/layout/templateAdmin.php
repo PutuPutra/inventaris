@@ -95,6 +95,16 @@
                             </a>
                             <ul class="sub-menu">
                                 <li><a href="<?= base_url('komputer') ?>">Komputer</a></li>
+                                <li><a href="<?= base_url('buku') ?>">Buku</a></li>
+                                <li><a href="<?= base_url('papanTulis') ?>">Papan Tulis</a></li>
+                                <li><a href="<?= base_url('meja') ?>">Meja</a></li>
+                                <li><a href="<?= base_url('kursi') ?>">Kursi</a></li>
+                                <li><a href="<?= base_url('foto') ?>">Foto</a></li>
+                                <li><a href="<?= base_url('spidol') ?>">Spidol</a></li>
+                                <li><a href="<?= base_url('penghapus') ?>">Penghapus</a></li>
+                                <li><a href="<?= base_url('pena') ?>">Pena</a></li>
+                                <li><a href="<?= base_url('penggaris') ?>">Penggaris</a></li>
+
                             </ul>
                         </li>
                         <li>

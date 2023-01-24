@@ -57,7 +57,7 @@ $routes->get('/notifications', 'Admin::notifications', ['filter' => 'login']);
 
 
 // laptopController
-$routes->post('/store', 'laptopController::store', ['filter' => 'login']);
+$routes->post('/komputer/store', 'laptopController::store', ['filter' => 'login']);
 $routes->post('/buku/store', 'bukuController::store', ['filter' => 'login']);
 $routes->post('/papanTulis/store', 'papanTulisController::store', ['filter' => 'login']);
 
@@ -66,7 +66,7 @@ $routes->get('/computer', 'Admin::computer', ['filter' => 'login']);
 // laptop
 $routes->get('/komputer', 'laptopController::komputer', ['filter' => 'login']);
 $routes->get('/editnya', 'laptopController::editnya', ['filter' => 'login']);
-$routes->get('/tambahLaptop', 'laptopController::tambahLaptop', ['filter' => 'login']);
+$routes->get('/tambahDataKomputer', 'laptopController::tambahLaptop', ['filter' => 'login']);
 $routes->get('/deleted/(:num)', 'laptopController::deleted/$1', ['filter' => 'login']);
 $routes->post('/updateKomputer', 'laptopController::updateKomputer', ['filter' => 'login']);
 $routes->get('/editKomputer/(:num)', 'laptopController::editKomputer/$1', ['filter' => 'login']);

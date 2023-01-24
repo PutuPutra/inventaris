@@ -27,7 +27,7 @@ class laptopController extends BaseController
             'submenu9' => null,
             'submenu10' => null,
         ];
-        return view('admin/sarana/laptop/fileKomputer', $data);
+        return view('admin/sarana/komputer/DataKomputer', $data);
     }
     public function tambahLaptop()
     {
@@ -47,7 +47,7 @@ class laptopController extends BaseController
             'submenu9' => null,
             'submenu10' => null,
         ];
-        return view('admin/sarana/laptop/tambahLaptop', $data);
+        return view('admin/sarana/komputer/tambahDataKomputer', $data);
     }
     public function store()
     {
@@ -89,7 +89,7 @@ class laptopController extends BaseController
 
         if (!$validate) {
             // dd($this->request->getFile('gambar_komputer'));
-            return redirect()->to('tambahLaptop')->withInput();
+            return redirect()->to('tambahDataKomputer')->withInput();
         }
         $files = $this->request->getFile('gambar_komputer');
         $names = $files->getName();
