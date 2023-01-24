@@ -3,11 +3,11 @@
 
 <div class="page-inner" style="margin-top:20px;">
     <div class="row row-xs">
-        <h1 class="mt-5 mb-5">Data Buku</h1>
+        <h1 class="mt-5 mb-5">Data Kursi</h1>
         <div class="col-md-12 mg-t-20 mg-xl-t-0">
             <div class="card">
                 <div class="card-header">
-                    <a href="<?= base_url('tambahBuku') ?>">
+                    <a href="<?= base_url('tambahKursi') ?>">
                         <button type="button" class="btn btn-success mb-3 mt-3">Tambah Data</button>
                     </a>
                 </div>
@@ -16,24 +16,22 @@
                         <table class="table table-bordered table-hover mb-0" id="table1">
                             <thead>
                                 <tr>
-                                    <th>Penerbit</th>
+                                    <th>Ukuran</th>
                                     <th>Gambar</th>
                                     <th>Kondisi</th>
-                                    <th>Deskripsi</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($files_buku as $f) : ?>
+                                <?php foreach ($files_kursi as $f) : ?>
                                     <tr style="text-align: center;">
-                                        <td><?= $f->penerbit_buku; ?></td>
-                                        <td><img class="pictures" src="/assets/foto/<?= $f->gambar_buku; ?>" alt="" width="100px"></img></td>
-                                        <td><?= $f->kondisi_buku; ?></td>
-                                        <td style="width: 100px;"><?= $f->deskripsi_buku; ?></td>
+                                        <td><?= $f->ukuran_kursi; ?></td>
+                                        <td><img class="pictures" src="/assets/foto/<?= $f->gambar_kursi; ?>" alt="" width="100px"></img></td>
+                                        <td><?= $f->kondisi_kursi; ?></td>
                                         <td>
                                             <div class="buttons">
-                                                <a href="<?= base_url('BukuEdit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
-                                                <a href="<?= base_url('buku/deleted') . '/' . $f->id ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                                <a href="<?= base_url('KursiEdit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
+                                                <a href="<?= base_url('kursi/deleted') . '/' . $f->id ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
                                             </div>
                                         </td>
                                     </tr>

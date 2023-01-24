@@ -1,31 +1,35 @@
 <?= $this->extend('/layout/templateTambahData'); ?>
 <?= $this->section('tambahData'); ?>
+<!--================================-->
+<!-- Page Inner Content Start -->
+<!--================================-->
+
 <div class="page-inner-content" style="margin-top: 30px;">
     <div class="row no-gutters">
         <!--================================-->
         <!-- Page Content Area Start -->
         <!--================================-->
-        <div class="col-lg-7  page-content-area" style="justify-content:center;">
+        <div class="col-lg-9  page-content-area" style="justify-content:center;">
             <div class="inner-content">
-                <h1>Tambah Data Buku</h1>
+                <h1>Tambah Data Pena</h1>
 
                 <div class="custom-fieldset-style mg-b-30">
                     <div class="clearfix">
                         <!-- <label class="custom-label">Example</label> -->
                         <div class="clearfix">
-                            <form action="<?= base_url('buku/store') ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
+                            <form action="<?= base_url('pena/store') ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php $validation = \Config\Services::validation(); ?>
                                 <div class="wd-300">
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
-                                            <label>Penerbit <span class="tx-danger">*</span></label>
-                                            <input type="text" name="penerbit_buku" class="form-control wd-300" placeholder="Enter Penerbit" required>
+                                            <label>Merk <span class="tx-danger">*</span></label>
+                                            <input type="text" name="merk_pena" class="form-control wd-300" placeholder="Enter Merk" required>
                                         </div>
                                         <!-- form-group -->
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                             <label>Gambar <span class="tx-danger">*</span></label>
-                                            <input type="file" name="gambar_buku" class="form-control wd-300" placeholder="Enter Gambar" required>
+                                            <input type="file" name="gambar_pena" class="form-control wd-300" placeholder="Enter gambar" required>
                                         </div>
                                         <!-- form-group -->
                                     </div>
@@ -34,7 +38,7 @@
                                             <div class="d-md-flex" style="margin-right: 50px;">
                                                 <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
                                                     <label>Kondisi <span class="tx-danger">*</span></label>
-                                                    <select class="form-control select2 wd-300" id="kondisi_buku" name="kondisi_buku" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required>
+                                                    <select class="form-control select2 wd-300" id="kondisi_pena" name="kondisi_pena" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required>
                                                         <option label="Pilih Kondisi"></option>
                                                         <option value="Baik">Baik</option>
                                                         <option value="Kerusakan Ringan">Kerusakan Ringan
@@ -51,13 +55,6 @@
                                         </div>
                                     </div>
                                     <div class="d-md-flex">
-                                        <div class="form-group mg-b-60">
-                                            <label>Deskripsi <span class="tx-danger">*</span></label>
-                                            <textarea name="deskripsi_buku" id="deskripsi_buku" cols="40" rows="4" required></textarea>
-                                            <!-- <input type="textarea" name="spesifikasi"
-                                                            class="form-control wd-300" placeholder="Enter Brand"
-                                                            required> -->
-                                        </div>
                                         <!-- form-group -->
                                     </div>
 
@@ -68,7 +65,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <a href="<?= base_url('buku') ?>">
+                            <a href="<?= base_url('pena') ?>">
                                 <button class="btn btn-secondary waves-effect" style="margin-left: 120px; margin-top: -60px;">Batal</button>
                             </a>
                         </div>
@@ -82,4 +79,7 @@
         <!--================================-->
     </div>
 </div>
+<!--/ Page Inner Content End -->
+<!--================================-->
+
 <?= $this->endSection(); ?>
