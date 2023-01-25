@@ -31,10 +31,17 @@
                                     <td><img class="pictures" src="/assets/foto/<?= $f->gambar_komputer; ?>" alt=""
                                             width="100px"></img></td>
                                     <td><?= $f->kondisi_komputer; ?></td>
-                                    <td style="width: 100px;"><?= $f->spesifikasi_komputer; ?></td>
+                                    <td class=" row-cols-6" style="width: 100px;">
+                                        <!-- <div class="rows-2">
+                                            <div class="cols">
+
+                                            </div>
+                                        </div> -->
+                                        <?= $f->spesifikasi_komputer ?>
+                                    </td>
                                     <td><?= $f->jenis_produk_komputer; ?></td>
                                     <td>
-                                        <div class="buttons">
+                                        <div class=" buttons">
                                             <a href="<?= base_url('editLaptop') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i
                                                     class="fa-solid fa-pen-to-square"></i></i></a>
