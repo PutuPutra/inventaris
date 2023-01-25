@@ -17,8 +17,8 @@
                     <div class="clearfix">
                         <!-- <label class="custom-label">Example</label> -->
                         <div class="clearfix">
-                            <form action="<?= base_url('updateKomputer'). '/' . $files_komputer->id ?>" method="POST" enctype="multipart/form-data"
-                                data-parsley-validate>
+                            <form action="<?= base_url('updateKomputer') . '/' . $files_komputer->id ?>" method="POST"
+                                enctype="multipart/form-data" data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php
 
@@ -90,7 +90,8 @@
                                         <div class="form-group mg-b-60">
                                             <label>Spesifikasi <span class="tx-danger">*</span></label>
                                             <textarea name="spesifikasi_komputer" id="spesifikasi_komputer" cols="40"
-                                                rows="4" required></textarea>
+                                                rows="4"
+                                                required><?= $files_komputer->spesifikasi_komputer; ?></textarea>
                                             <!-- <input type="textarea" name="spesifikasi"
                                                             class="form-control wd-300" placeholder="Enter Brand"
                                                             required> -->
