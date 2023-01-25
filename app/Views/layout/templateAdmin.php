@@ -857,35 +857,51 @@ use Myth\Auth\Entities\Group;
                                         <a href="" class="dropdown-item d-flex align-items-center">
                                             <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
                                             <i class="fa-solid fa-user"></i>
-                                            Profile
+                                            Profil
                                         </a>
+                                        <?php if (in_groups('super_admin')) : ?>
                                         <a href="" class="dropdown-item d-flex align-items-center">
                                             <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
                                             <i class="fa-solid fa-user-gear"></i>
                                             Kelola Akun
                                         </a>
+                                        <?php endif; ?>
                                         <a href="" class="dropdown-item d-flex align-items-center">
                                             <!-- <span data-feather="message-square" class="wd-16 ht-16 mr-2"></span> -->
                                             <i class="fa-solid fa-message"></i>
-                                            Messages
+                                            Pesan
                                         </a>
                                         <div class="dropdown-divider"></div>
-                                        <a href="" class="dropdown-item d-flex align-items-center"><span
-                                                data-feather="settings" class="wd-16 ht-16 mr-2"></span>Settings</a>
-                                        <a href="" class="dropdown-item d-flex align-items-center"><span
-                                                data-feather="activity" class="wd-16 ht-16 mr-2"></span>Activity</a>
-                                        <a href="" class="dropdown-item d-flex align-items-center"><span
-                                                data-feather="download" class="wd-16 ht-16 mr-2"></span>Download</a>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <span data-feather="settings" class="wd-16 ht-16 mr-2"></span>
+                                            Pengaturan
+                                        </a>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <span data-feather="activity" class="wd-16 ht-16 mr-2"></span>
+                                            Aktivitas
+                                        </a>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <span data-feather="download" class="wd-16 ht-16 mr-2"></span>
+                                            Unduhan
+                                        </a>
                                         <div class="dropdown-divider"></div>
-                                        <a href="" class="dropdown-item d-flex align-items-center"><span
-                                                data-feather="layout" class="wd-16 ht-16 mr-2"></span>Forum</a>
-                                        <a href="" class="dropdown-item d-flex align-items-center"><span
-                                                data-feather="headphones" class="wd-16 ht-16 mr-2"></span>Support</a>
-                                        <a href="" class="dropdown-item d-flex align-items-center"><span
-                                                data-feather="life-buoy" class="wd-16 ht-16 mr-2"></span>Help</a>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <span data-feather="layout" class="wd-16 ht-16 mr-2"></span>
+                                            Forum
+                                        </a>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <span data-feather="headphones" class="wd-16 ht-16 mr-2"></span>
+                                            Dukungan
+                                        </a>
+                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                            <span data-feather="life-buoy" class="wd-16 ht-16 mr-2"></span>
+                                            Bantuan
+                                        </a>
                                         <a href="<?= base_url('logout') ?>"
                                             class="dropdown-item d-flex align-items-center"><span data-feather="log-out"
-                                                class="wd-16 ht-16 mr-2"></span>Sign Out</a>
+                                                class="wd-16 ht-16 mr-2"></span>
+                                            Keluar
+                                        </a>
                                     </div>
                                 </div>
                             </li>

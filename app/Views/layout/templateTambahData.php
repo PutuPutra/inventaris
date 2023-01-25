@@ -230,7 +230,7 @@
                             <li class="list-inline-item">
                                 <a class="hidden-md hidden-lg waves-effect tooltip-primary" href="javascript:void(0)"
                                     id="sidebar-toggle-button" data-toggle="tooltip" title="" data-trigger="hover"
-                                    data-original-title="Toggle Sidebar">
+                                    data-original-title="Menu">
                                     <svg class="adata-svg-icon" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256"
                                         height="256" viewBox="0 0 256 256" xml:space="preserve">
