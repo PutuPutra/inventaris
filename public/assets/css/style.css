@@ -1155,7 +1155,7 @@ _:future,
 }
 
 .header-right .list-inline-item:hover .adata-svg-icon g [fill] {
-  fill: #000 !important;
+  fill: #ff9d0b !important;
   /* fill: #5c76fb !important; */
   /* fill: #475F7B !important; */
 }
@@ -1211,12 +1211,12 @@ _:future,
 .header-right .languages-dropdown li a {
   padding: 5px 10px;
   display: block;
-  color: #000;
+  color: #ff9d0b;
   font-weight: 400;
 }
 
 .header-right .languages-dropdown li a:hover {
-  color: #000;
+  color: #ff9d0b;
 }
 
 .header-right .languages-dropdown li img {
