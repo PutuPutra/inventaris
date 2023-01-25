@@ -76,7 +76,8 @@
                                                         data-placeholder="Choose one"
                                                         data-parsley-class-handler="#slWrapper"
                                                         data-parsley-errors-container="#slErrorContainer" required>
-                                                        <option value="<?= $files_komputer->jenis_produk_komputer; ?>">
+                                                        <option
+                                                            selected="<?= $files_komputer->jenis_produk_komputer ?>">
                                                         </option>
                                                         <option value="Laptop">Laptop</option>
                                                         <option value="Komputer">Komputer</option>
