@@ -6,6 +6,10 @@ use App\Models\KomputerModel;
 
 class laptopController extends BaseController
 {
+    public function __construct()
+    {
+        helper('text');
+    }
     public function komputer()
     {
         $komputer = new KomputerModel();
@@ -112,7 +116,7 @@ class laptopController extends BaseController
     }
 
     public function editLaptop($id = false)
-    {   
+    {
         $komputer = new KomputerModel();
         $files_komputer = $komputer->find($id);
         $data = [
