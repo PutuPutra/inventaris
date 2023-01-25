@@ -13,6 +13,7 @@ use Myth\Auth\Entities\Group;
     <meta name="description" content="">
     <meta name="keyword" content="">
     <meta name="author" content="" />
+
     <!-- BEGIN: Page Title-->
     <title>E-SARPRAS SMALAN</title>
     <!-- END:  Page Title-->
@@ -24,11 +25,15 @@ use Myth\Auth\Entities\Group;
     <!-- END: Vendor CSS-->
     <!-- BEGIN: Custom CSS-->
     <link type="text/css" rel="stylesheet" href="../../assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" /> -->
+
     <!-- END: Custom CSS-->
     <!-- BEGIN: Favicon-->
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/smalan.png">
     <!-- END: Favicon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn"t work if you view the page via file: -->
     <!--[if lt IE 9]>
@@ -41,9 +46,12 @@ use Myth\Auth\Entities\Group;
     <link rel="stylesheet" href="assets/extensions/simple-datatables/style.css">
     <link rel="stylesheet" href="assets/css/pages/simple-datatables.css">
 
-    <script src="https://kit.fontawesome.com/72ae031378.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/72ae031378.js" crossorigin="anonymous"></script> -->
+    <!-- <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro-v6/44659d9/css/all.min.css" rel="stylesheet"
+        type="text/css" /> -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"> -->
 </head>
 
 <body class="theme-orange" data-spy="scroll" data-target="#navSection">
@@ -856,6 +864,11 @@ use Myth\Auth\Entities\Group;
                                                 <?php endif; ?>
                                             </div>
                                         </div>
+                                        <a href="/" class="dropdown-item d-flex align-items-center">
+                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
+                                            <i class="fa-solid fa-house"></i>
+                                            Beranda
+                                        </a>
                                         <a href="" class="dropdown-item d-flex align-items-center">
                                             <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
                                             <i class="fa-solid fa-user"></i>
@@ -875,15 +888,18 @@ use Myth\Auth\Entities\Group;
                                         </a>
                                         <div class="dropdown-divider"></div>
                                         <a href="" class="dropdown-item d-flex align-items-center">
-                                            <span data-feather="settings" class="wd-16 ht-16 mr-2"></span>
+                                            <!-- <span data-feather="settings" class="wd-16 ht-16 mr-2"></span> -->
+                                            <i class="fa-solid fa-gear"></i>
                                             Pengaturan
                                         </a>
                                         <a href="" class="dropdown-item d-flex align-items-center">
-                                            <span data-feather="activity" class="wd-16 ht-16 mr-2"></span>
+                                            <!-- <span data-feather="activity" class="wd-16 ht-16 mr-2"></span> -->
+                                            <i class="fa-solid fa-chart-line"></i>
                                             Aktivitas
                                         </a>
                                         <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="download" class="wd-16 ht-16 mr-2"></span>
+                                            <!-- <i class="fa-regular fa-folder-arrow-down"></i> -->
                                             Unduhan
                                         </a>
                                         <div class="dropdown-divider"></div>
@@ -991,7 +1007,7 @@ use Myth\Auth\Entities\Group;
     <script src="assets/extensions/simple-datatables/umd/simple-datatables.js"></script>
     <script src="assets/js_mazer/pages/simple-datatables.js"></script>
     <!-- BEGIN: Init JS-->
-    <script src="https://kit.fontawesome.com/49b420f669.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/49b420f669.js" crossorigin="anonymous"></script> -->
     <script>
     // Basic DataTable	
 
