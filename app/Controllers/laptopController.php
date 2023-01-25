@@ -106,17 +106,12 @@ class laptopController extends BaseController
         $files = $this->request->getFile('gambar_komputer');
         $names = $files->getName();
         $files->move('assets/foto', $names);
-        $data = [
-            'gambar_komputer' => $names,
-        ];
         $komputer->update($this->request->getPost('id'), $this->request->getPost());
-        // $komputer->update($files_komputer['gambar_komputer'], $names);
-        // $komputer->update($this->request->getPost('gambar_komputer'), $names);
-
+        $komputer->where('id', $id)->set('gambar_komputer', $names)->update();
         return redirect()->to(base_url('/komputer'));
     }
-    public function editLaptop($id = false)
 
+    public function editLaptop($id = false)
     {   
         $komputer = new KomputerModel();
         $files_komputer = $komputer->find($id);
