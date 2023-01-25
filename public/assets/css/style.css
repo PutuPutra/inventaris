@@ -245,7 +245,7 @@ a:hover {
 
 .bg-soft-warning-hover:hover {
   background-color: #f3aa12 !important;
-  color: #000000 !important;
+  color: #475f7b !important;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -1596,7 +1596,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
 }
 
 .page-sidebar-menu ul li a {
-  color: #ff9d0b;
+  color: #475f7b;
   display: block;
   font-size: 14px;
   margin: 0 20px;
@@ -1633,7 +1633,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
 
 .page-sidebar-menu>ul>li>a span.badge-warning,
 .page-sidebar-menu>ul>li.open span.badge-warning {
-  color: #000;
+  color: #475f7b;
 }
 
 .page-sidebar-menu>ul>li>a:hover i.accordion-icon {
@@ -1773,11 +1773,11 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
 }
 
 .accordion-menu .sub-menu li a.active {
-  color: #000;
+  color: #475f7b;
 }
 
 .accordion-menu .sub-menu li a.active:hover {
-  color: #000 !important;
+  color: #475f7b !important;
 }
 
 .page-sidebar .slimScrollBar {
@@ -3291,7 +3291,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
 
 .badge-light {
   background-color: #eff2f5;
-  color: #000 !important;
+  color: #475f7b !important;
 }
 
 .breadcrumb-custom-style .breadcrumb-item+.breadcrumb-item::before {
@@ -3914,7 +3914,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
 }
 
 .custom-scrollbar .ps>.ps__rail-y>.ps__thumb-y {
-  background: #000;
+  background: #475f7b;
 }
 
 .scrollbar-sm>.ps__rail-y {
@@ -4604,7 +4604,7 @@ table.dataTable.display tbody td {
 #wrapper {
   position: relative;
   background: #000524;
-  border: 1px solid #000;
+  border: 1px solid #475f7b;
   box-shadow: 0 22px 35px -16px rgba(0, 0, 0, 0.71);
   max-width: 850px;
   margin: 0 auto;
@@ -5456,7 +5456,7 @@ figure {
 }
 
 .dragula-container .ex-moved code {
-  color: #000;
+  color: #475f7b;
 }
 
 .dragula-container.ex-over {
