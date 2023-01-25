@@ -796,14 +796,14 @@
                             <li class="list-inline-item dropdown ml-2">
                                 <a href="" role="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
-                                    <img src="../../assets/images/users-face/user.jpg"
+                                    <img src="../../assets/images/users-face/0.png"
                                         class="img-fluid wd-30 ht-30 rounded-circle" alt="">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-profile">
                                     <div class="user-profile-area">
                                         <div class="user-profile-heading">
                                             <div class="profile-thumbnail">
-                                                <img src="../../assets/images/users-face/user.jpg"
+                                                <img src="../../assets/images/users-face/0.png"
                                                     class="img-fluid wd-40 ht-40 rounded-circle" alt="">
                                             </div>
                                             <div class="profile-text">
