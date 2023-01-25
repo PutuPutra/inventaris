@@ -1155,7 +1155,7 @@ _:future,
 }
 
 .header-right .list-inline-item:hover .adata-svg-icon g [fill] {
-  fill: #ff9d0b !important;
+  fill: #000 !important;
   /* fill: #5c76fb !important; */
   /* fill: #475F7B !important; */
 }
