@@ -65,7 +65,7 @@ $routes->get('/editnya', 'laptopController::editnya', ['filter' => 'login']);
 $routes->get('/tambahLaptop', 'laptopController::tambahLaptop', ['filter' => 'login']);
 $routes->get('/editLaptop/(:num)', 'laptopController::editLaptop/$1', ['filter' => 'login']);
 $routes->get('/deleted/(:num)', 'laptopController::deleted/$1', ['filter' => 'login']);
-$routes->post('/updateKomputer', 'laptopController::updateKomputer', ['filter' => 'login']);
+$routes->post('/updateKomputer/(:num)', 'laptopController::updateKomputer/$1', ['filter' => 'login']);
 $routes->get('/editKomputer/(:num)', 'laptopController::editKomputer/$1', ['filter' => 'login']);
 $routes->get('/KomputerEdit/(:num)', 'laptopController::KomputerEdit/$1', ['filter' => 'login']);
 

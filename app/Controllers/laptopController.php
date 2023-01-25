@@ -23,16 +23,16 @@ class laptopController extends BaseController
         ];
         return view('admin/sarana/laptop/tambahLaptop', $data);
     }
-    public function editLaptop()
-    {
-        $komputer = new KomputerModel();
-        $files_komputer = $komputer->findAll();
-        $data = [
-            'heading' => 'Edit Data Komputer',
-            'files_komputer' => $files_komputer,
-        ];
-        return view('admin/sarana/laptop/editKomputer', $data);
-    }
+    // public function editLaptop()
+    // {
+    //     $komputer = new KomputerModel();
+    //     $files_komputer = $komputer->findAll();
+    //     $data = [
+    //         'heading' => 'Edit Data Komputer',
+    //         'files_komputer' => $files_komputer,
+    //     ];
+    //     return view('admin/sarana/laptop/editKomputer', $data);
+    // }
     public function store()
     {
         $validate = $this->validate([
@@ -99,16 +99,25 @@ class laptopController extends BaseController
         return redirect()->to(base_url('/komputer'));
     }
 
-    public function updateKomputer()
+    public function updateKomputer($id)
     {
         $komputer = new KomputerModel();
+        $files_komputer = $komputer->where('id', $id);
+        $files = $this->request->getFile('gambar_komputer');
+        $names = $files->getName();
+        $files->move('assets/foto', $names);
+        $data = [
+            'gambar_komputer' => $names,
+        ];
         $komputer->update($this->request->getPost('id'), $this->request->getPost());
+        // $komputer->update($files_komputer['gambar_komputer'], $names);
+        // $komputer->update($this->request->getPost('gambar_komputer'), $names);
 
         return redirect()->to(base_url('/komputer'));
     }
-    public function KomputerEdit($id = false)
+    public function editLaptop($id = false)
 
-    {
+    {   
         $komputer = new KomputerModel();
         $files_komputer = $komputer->find($id);
         $data = [
@@ -116,6 +125,6 @@ class laptopController extends BaseController
             'files_komputer' => $files_komputer
         ];
 
-        return view('admin/sarana/laptop/KomputerEdit', $data);
+        return view('admin/sarana/laptop/editKomputer', $data);
     }
 }

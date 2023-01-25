@@ -11,13 +11,13 @@
         <!--================================-->
         <div class="col-lg-9  page-content-area" style="justify-content:center;">
             <div class="inner-content">
-                <h1>Tambah Data Komputer</h1>
+                <h1>Edit Data Komputer</h1>
 
                 <div class="custom-fieldset-style mg-b-30">
                     <div class="clearfix">
                         <!-- <label class="custom-label">Example</label> -->
                         <div class="clearfix">
-                            <form action="<?= base_url('komputer/store') ?>" method="POST" enctype="multipart/form-data"
+                            <form action="<?= base_url('updateKomputer'). '/' . $files_komputer->id ?>" method="POST" enctype="multipart/form-data"
                                 data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php
