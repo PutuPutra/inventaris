@@ -54,16 +54,14 @@
                                                         name="kondisi_komputer" data-placeholder="Choose one"
                                                         data-parsley-class-handler="#slWrapper"
                                                         data-parsley-errors-container="#slErrorContainer" required>
-                                                        <option value="<?= $files_komputer->kondisi_komputer; ?>">
+                                                        <option value="Baik" <?= "Baik" == $files_komputer->kondisi_komputer ? 'selected' : null ?>>Baik</option>
+                                                        <option value="Kerusakan Ringan" <?= "Kerusakan Ringan" == $files_komputer->kondisi_komputer ? 'selected' : null ?>>Kerusakan Ringan
                                                         </option>
-                                                        <option value="Baik">Baik</option>
-                                                        <option value="Kerusakan Ringan">Kerusakan Ringan
+                                                        <option value="Kerusakan Sedang" <?= "Kerusakan Sedang" == $files_komputer->kondisi_komputer ? 'selected' : null ?>>Kerusakan Sedang
                                                         </option>
-                                                        <option value="Kerusakan Sedang">Kerusakan Sedang
+                                                        <option value="Kerusakan Berat" <?= "Kerusakan Berat" == $files_komputer->kondisi_komputer ? 'selected' : null ?>>Kerusakan Berat
                                                         </option>
-                                                        <option value="Kerusakan Berat">Kerusakan Berat
-                                                        </option>
-                                                        <option value="Sedang di">Sedang diperbaiki</option>
+                                                        <option value="Sedang diperbaiki" <?= "Sedang diperbaiki" == $files_komputer->kondisi_komputer ? 'selected' : null ?>>Sedang diperbaiki</option>
                                                     </select>
                                                     <div id="slErrorContainer"></div>
                                                 </div>
@@ -76,11 +74,8 @@
                                                         data-placeholder="Choose one"
                                                         data-parsley-class-handler="#slWrapper"
                                                         data-parsley-errors-container="#slErrorContainer" required>
-                                                        <option
-                                                            selected="<?= $files_komputer->jenis_produk_komputer ?>">
-                                                        </option>
-                                                        <option value="Laptop">Laptop</option>
-                                                        <option value="Komputer">Komputer</option>
+                                                        <option value="Laptop" <?= "Laptop" == $files_komputer->jenis_produk_komputer ? 'selected' : null ?>>Laptop</option>
+                                                        <option value="Komputer" <?= "Komputer" == $files_komputer->jenis_produk_komputer ? 'selected' : null ?>>Komputer</option>
                                                     </select>
                                                     <div id="slErrorContainer"></div>
                                                 </div>
