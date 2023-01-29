@@ -27,16 +27,20 @@
                             <tbody style="justify-content: center;">
                                 <?php foreach ($files_komputer as $f) : ?>
                                 <tr>
-                                    <td style="vertical-align:middle;"><?= $f->brand_komputer; ?></td>
+                                    <td style="vertical-align:middle; justify-content:middle;">
+                                        <?= $f->brand_komputer; ?>
+                                    </td>
                                     <td style="vertical-align:middle;"><img class="pictures"
                                             src="/assets/foto/<?= $f->gambar_komputer; ?>" alt="" width="100px"></img>
                                     </td>
                                     <td style="vertical-align:middle;"><?= $f->kondisi_komputer; ?></td>
                                     <td style="vertical-align:middle;">
-                                        <textarea class="container-fluid" name="" id="" cols="700" rows="10"
-                                            style="border: none; ">
+                                        <div class="textarea">
+                                            <textarea disabled class="container-fluid" name="" id="" cols="50" rows="5"
+                                                style="border: none; background-color:white; ">
                                             <?php echo word_limiter($f->spesifikasi_komputer, 2);  ?>
                                         </textarea>
+                                        </div>
                                     </td>
                                     <td style="vertical-align:middle;"><?= $f->jenis_produk_komputer; ?></td>
                                     <td style="vertical-align:middle;">
