@@ -34,8 +34,7 @@
                                     <td style="vertical-align:middle;"><?= $f->kondisi_komputer; ?></td>
                                     <td style="vertical-align:middle;">
                                         <textarea class="container-fluid" name="" id="" cols="700" rows="10"
-                                            style="border: none;">
-
+                                            style="border: none; ">
                                             <?php echo word_limiter($f->spesifikasi_komputer, 2);  ?>
                                         </textarea>
                                     </td>
