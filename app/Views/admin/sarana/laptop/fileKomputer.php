@@ -24,18 +24,23 @@
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody style="justify-content: center;">
                                 <?php foreach ($files_komputer as $f) : ?>
-                                <tr style="text-align: center;">
-                                    <td><?= $f->brand_komputer; ?></td>
-                                    <td><img class="pictures" src="/assets/foto/<?= $f->gambar_komputer; ?>" alt=""
-                                            width="100px"></img></td>
-                                    <td><?= $f->kondisi_komputer; ?></td>
-                                    <td>
-                                        <?php echo word_limiter($f->spesifikasi_komputer, 2);  ?>
+                                <tr>
+                                    <td style="vertical-align:middle;"><?= $f->brand_komputer; ?></td>
+                                    <td style="vertical-align:middle;"><img class="pictures"
+                                            src="/assets/foto/<?= $f->gambar_komputer; ?>" alt="" width="100px"></img>
                                     </td>
-                                    <td><?= $f->jenis_produk_komputer; ?></td>
-                                    <td>
+                                    <td style="vertical-align:middle;"><?= $f->kondisi_komputer; ?></td>
+                                    <td style="vertical-align:middle;">
+                                        <textarea class="container-fluid" name="" id="" cols="700" rows="10"
+                                            style="border: none;">
+
+                                            <?php echo word_limiter($f->spesifikasi_komputer, 2);  ?>
+                                        </textarea>
+                                    </td>
+                                    <td style="vertical-align:middle;"><?= $f->jenis_produk_komputer; ?></td>
+                                    <td style="vertical-align:middle;">
                                         <div class=" buttons">
                                             <a href="<?= base_url('editLaptop') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i
