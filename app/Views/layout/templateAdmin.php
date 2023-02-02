@@ -856,7 +856,11 @@ use Myth\Auth\Entities\Group;
                                                 <?php endif; ?>
                                             </div>
                                         </div>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                        <a href="/" class="dropdown-item d-flex align-items-center">
+                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
+                                            <i class="fa-solid fa-home"></i>
+                                            Beranda
+                                        </a><a href="" class="dropdown-item d-flex align-items-center">
                                             <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
                                             <i class="fa-solid fa-user"></i>
                                             Profil
