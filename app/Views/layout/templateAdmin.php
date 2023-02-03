@@ -232,7 +232,7 @@ use Myth\Auth\Entities\Group;
                     <form action="#" method="GET">
                         <div class="input-group">
                             <input class="form-control search-input typeahead" name="search"
-                                placeholder="Type something..." type="text" />
+                                placeholder="Ketik sesuatu..." type="text" />
                             <span class="input-group-btn"><span id="close-search"><i data-feather="x"
                                         class="wd-16"></i></span></span>
                         </div>
