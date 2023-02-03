@@ -840,10 +840,10 @@
                                             Pesan
                                         </a> -->
                                         <div class="dropdown-divider"></div>
-                                        <!-- <a href="" class="dropdown-item d-flex align-items-center">
+                                        <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="settings" class="wd-16 ht-16 mr-2"></span>
                                             Pengaturan
-                                        </a> -->
+                                        </a>
                                         <!-- <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="activity" class="wd-16 ht-16 mr-2"></span>
                                             Aktivitas

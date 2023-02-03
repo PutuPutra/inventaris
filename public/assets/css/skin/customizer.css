@@ -46,6 +46,7 @@
 @import url("settings/boxed-layout.css");
 @import url("settings/shadow.css");
 @import url("settings/theme-dark-light.css");
+
 /**********************************************************************
 ***********************************************************************
 ### Customizer Panel CSS
@@ -61,7 +62,8 @@
   right: -280px;
   z-index: 1001;
   transition: 0.3s ease-in;
-  border-left: 1px solid #eee; }
+  border-left: 1px solid #eee;
+}
 
 .settingPanelToggle {
   background: #ffffff;
@@ -74,27 +76,32 @@
   border-radius: 3px 0 0 3px;
   box-shadow: -10px 0px 30px 0px rgba(140, 150, 160, 0.3);
   border: 1px solid #eee;
-  border-right: none; }
+  border-right: none;
+}
 
 .settingPanelToggle i {
-  margin-top: 2px; }
+  margin-top: 2px;
+}
 
 .showSettingPanel {
-  right: 0; }
+  right: 0;
+}
 
 ul.theme-color li,
 ul.sidebar-color li,
 ul.header-top-color li,
 ul.header-bottom-color li,
 ul.footer-color li {
-  display: inline-block; }
+  display: inline-block;
+}
 
 ul.theme-color li:hover,
 ul.sidebar-color li:hover,
 ul.header-top-color li:hover,
 ul.header-bottom-color li:hover,
 ul.footer-color li:hover {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 ul.theme-color li div,
 ul.sidebar-color li div,
@@ -108,42 +115,48 @@ ul.footer-color li div {
   width: 25px;
   overflow: hidden;
   position: relative;
-  margin: 0 3px; }
+  margin: 0 3px;
+}
 
 ul.theme-color li div.purple,
 ul.sidebar-color li div.purple,
 ul.header-top-color li div.purple,
 ul.header-bottom-color li div.purple,
 ul.footer-color li div.purple {
-  background: #6777ef; }
+  background: #6777ef;
+}
 
 ul.theme-color li div.orange,
 ul.sidebar-color li div.orange,
 ul.header-top-color li div.orange,
 ul.header-bottom-color li div.orange,
 ul.footer-color li div.orange {
-  background: #ffa117; }
+  background: #f19000;
+}
 
 ul.theme-color li div.cyan,
 ul.sidebar-color li div.cyan,
 ul.header-top-color li div.cyan,
 ul.header-bottom-color li div.cyan,
 ul.footer-color li div.cyan {
-  background: #3dc7be; }
+  background: #3dc7be;
+}
 
 ul.theme-color li div.green,
 ul.sidebar-color li div.green,
 ul.header-top-color li div.green,
 ul.header-bottom-color li div.green,
 ul.footer-color li div.green {
-  background: #7ab339; }
+  background: #7ab339;
+}
 
 ul.theme-color li div.red,
 ul.sidebar-color li div.red,
 ul.header-top-color li div.red,
 ul.header-bottom-color li div.red,
 ul.footer-color li div.red {
-  background: #ea5455; }
+  background: #ea5455;
+}
 
 ul.theme-color li.active,
 ul.sidebar-color li.active,
@@ -151,21 +164,24 @@ ul.header-top-color li.active,
 ul.header-bottom-color li.active,
 ul.footer-color li.active {
   cursor: not-allowed;
-  opacity: 0.5; }
+  opacity: 0.5;
+}
 
 ul.theme-color li div.default,
 ul.sidebar-color li div.default,
 ul.header-top-color li div.default,
 ul.header-bottom-color li div.default,
 ul.footer-color li div.default {
-  background: #ece8e8; }
+  background: #ece8e8;
+}
 
 ul.theme-color li div.blue,
 ul.sidebar-color li div.blue,
 ul.header-top-color li div.blue,
 ul.header-bottom-color li div.blue,
 ul.footer-color li div.blue {
-  background: #0168fa; }
+  background: #0168fa;
+}
 
 ul.theme-color li.active div::after,
 ul.sidebar-color li.active div::after,
@@ -181,26 +197,30 @@ ul.footer-color li.active div::after {
   font-size: 14px;
   position: absolute;
   -webkit-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s;
+}
 
 .selectgroup-input-radio {
   opacity: 0;
   position: absolute;
   z-index: -1;
   top: 0;
-  left: 0; }
+  left: 0;
+}
 
-.font-family .selectgroup-input-radio:focus + .selectgroup-button,
-.font-family .selectgroup-input-radio:checked + .selectgroup-button,
-.theme-switch .selectgroup-input-radio:focus + .selectgroup-button,
-.theme-switch .selectgroup-input-radio:checked + .selectgroup-button {
+.font-family .selectgroup-input-radio:focus+.selectgroup-button,
+.font-family .selectgroup-input-radio:checked+.selectgroup-button,
+.theme-switch .selectgroup-input-radio:focus+.selectgroup-button,
+.theme-switch .selectgroup-input-radio:checked+.selectgroup-button {
   background-color: #6777ef;
   color: #fff;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .selectgroup-item:not(:last-child) .selectgroup-button {
   border-top-right-radius: 0;
-  border-bottom-right-radius: 0; }
+  border-bottom-right-radius: 0;
+}
 
 .selectgroup-button {
   background-color: #fdfdff;
@@ -218,10 +238,12 @@ ul.footer-color li.active div::after {
   -ms-user-select: none;
   user-select: none;
   font-size: 14px;
-  min-width: 8.5rem; }
+  min-width: 8.5rem;
+}
 
 .showSettingPanel .settingSidebar-body .pd-15.bg-gray-100.bd-b,
 .settingSidebar .settingSidebar-body .pd-15.bg-gray-100.bd-b {
-  padding: 11.5px; }
+  padding: 11.5px;
+}
 
 /*# sourceMappingURL=customizer.css.map */

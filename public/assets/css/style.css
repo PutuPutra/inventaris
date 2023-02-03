@@ -65,7 +65,7 @@ a {
 }
 
 a:hover {
-  color: #ff9d0b;
+  color: #f19000;
   text-decoration: none;
 }
 
@@ -527,7 +527,7 @@ background-color: $color-white;
 }
 
 .btn-primary:hover {
-  background: #ff9d0b;
+  background: #f19000;
 
 }
 
@@ -545,8 +545,8 @@ background-color: $color-white;
 }
 
 .btn-outline-primary:hover {
-  background-color: #ff9d0b;
-  border-color: #ff9d0b;
+  background-color: #f19000;
+  border-color: #f19000;
 }
 
 .btn-success {
@@ -586,9 +586,9 @@ background-color: $color-white;
 
 .btn-default:hover {
   background: #ffffff;
-  color: #ff9d0b;
+  color: #f19000;
   border-radius: 2px;
-  border: 1px solid #ff9d0b;
+  border: 1px solid #f19000;
 }
 
 /* Custom Tooltip */
@@ -1094,7 +1094,7 @@ _:future,
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover {
   /* color: #1f2229; */
-  color: #ff9d0b;
+  color: #f19000;
 
   background-color: transparent;
 }
@@ -1155,7 +1155,7 @@ _:future,
 }
 
 .header-right .list-inline-item:hover .adata-svg-icon g [fill] {
-  fill: #ff9d0b !important;
+  fill: #f19000 !important;
   /* fill: #5c76fb !important; */
   /* fill: #475F7B !important; */
 }
@@ -1211,12 +1211,12 @@ _:future,
 .header-right .languages-dropdown li a {
   padding: 5px 10px;
   display: block;
-  color: #ff9d0b;
+  color: #f19000;
   font-weight: 400;
 }
 
 .header-right .languages-dropdown li a:hover {
-  color: #ff9d0b;
+  color: #f19000;
 }
 
 .header-right .languages-dropdown li img {
@@ -4118,17 +4118,17 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
 *********************************************************************/
 .custom-select.is-warning,
 .form-control.is-warning {
-  border-color: #ffa117;
+  border-color: #f19000;
 }
 
 .custom-select.is-warning,
 .form-control.is-warning {
-  border-color: #ffa117;
+  border-color: #f19000;
 }
 
 .custom-select.is-warning:focus,
 .form-control.is-warning:focus {
-  border-color: #ffa117;
+  border-color: #f19000;
   box-shadow: 0 0 0 0.2rem rgba(255, 161, 23, 0.25);
 }
 
@@ -5303,7 +5303,7 @@ span.flatpickr-weekday {
 }
 
 .toast-warning {
-  background-color: #ffa117;
+  background-color: #f19000;
 }
 
 .toast-error {
@@ -5677,7 +5677,7 @@ figure {
 }
 
 .c-5-color {
-  background: #ffa117;
+  background: #f19000;
 }
 
 /*sotablejs css*/
