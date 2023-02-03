@@ -807,62 +807,66 @@
                                                     class="img-fluid wd-40 ht-40 rounded-circle" alt="">
                                             </div>
                                             <div class="profile-text">
-                                                <h6><?= user()->username; ?></h6>
+                                                <!-- <h6><?= user()->username; ?></h6> -->
                                                 <?php if (in_groups('super_admin')) : ?>
+                                                <h6>Administrator</h6>
                                                 <span class="tx-rubik">Super Admin</span>
                                                 <?php endif; ?>
                                                 <?php if (in_groups('admin')) : ?>
+                                                <h6>Staf Sarana dan Prasarana</h6>
                                                 <span class="tx-rubik">Admin</span>
                                                 <?php endif; ?>
                                             </div>
                                         </div>
                                         <a href="/" class="dropdown-item d-flex align-items-center">
-                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
-                                            <i class="fa-solid fa-home"></i>
+                                            <span data-feather="home" class="wd-16 ht-16 mr-2"></span>
+                                            <!-- <i class="fa-solid fa-home"></i> -->
                                             Beranda
                                         </a><a href="" class="dropdown-item d-flex align-items-center">
-                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
-                                            <i class="fa-solid fa-user"></i>
+                                            <span data-feather="user" class="wd-16 ht-16 mr-2"></span>
+                                            <!-- <i class="fa-solid fa-user"></i> -->
                                             Profil
                                         </a>
                                         <?php if (in_groups('super_admin')) : ?>
                                         <a href="" class="dropdown-item d-flex align-items-center">
-                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
-                                            <i class="fa-solid fa-user-gear"></i>
+                                            <span data-feather="user" class="wd-16 ht-16 mr-2"></span>
+                                            <!-- <i class="fa-solid fa-user-gear"></i> -->
                                             Kelola Akun
                                         </a>
                                         <?php endif; ?>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
-                                            <!-- <span data-feather="message-square" class="wd-16 ht-16 mr-2"></span> -->
-                                            <i class="fa-solid fa-message"></i>
+                                        <!-- <a href="" class="dropdown-item d-flex align-items-center">
+                                            <span data-feather="message-square" class="wd-16 ht-16 mr-2"></span>
+
                                             Pesan
-                                        </a>
+                                        </a> -->
                                         <div class="dropdown-divider"></div>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                        <!-- <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="settings" class="wd-16 ht-16 mr-2"></span>
                                             Pengaturan
-                                        </a>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                        </a> -->
+                                        <!-- <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="activity" class="wd-16 ht-16 mr-2"></span>
                                             Aktivitas
-                                        </a>
+                                        </a> -->
                                         <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="download" class="wd-16 ht-16 mr-2"></span>
                                             Unduhan
                                         </a>
                                         <div class="dropdown-divider"></div>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                        <!-- <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="layout" class="wd-16 ht-16 mr-2"></span>
                                             Forum
+                                        </a> -->
+                                        <a href="tentang" class="dropdown-item d-flex align-items-center">
+                                            <!-- <span data-feather="headphones" class="wd-16 ht-16 mr-2"></span> -->
+                                            <span data-feather="info" class="wd-16 ht-16 mr-2"></span>
+                                            <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                            Tentang
                                         </a>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
-                                            <span data-feather="headphones" class="wd-16 ht-16 mr-2"></span>
-                                            Dukungan
-                                        </a>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                        <!-- <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="life-buoy" class="wd-16 ht-16 mr-2"></span>
                                             Bantuan
-                                        </a>
+                                        </a> -->
                                         <a href="<?= base_url('logout') ?>"
                                             class="dropdown-item d-flex align-items-center"><span data-feather="log-out"
                                                 class="wd-16 ht-16 mr-2"></span>
