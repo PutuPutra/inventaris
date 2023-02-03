@@ -31,7 +31,7 @@
                 <div class="team-item">
                     <img class="img-fluid rounded" src="/assets/CSS_umum/img/team-6.jpg" alt="">
                     <div class="team-text">
-                        <h4 class="mb-0">M. Donda Fauzaan</h4>
+                        <h5 class="mb-0">M. Donda Fauzaan</h5>
                         <div class="team-social d-flex">
                             <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -44,7 +44,7 @@
                 <div class="team-item">
                     <img class="img-fluid rounded" src="/assets/CSS_umum/img/team-4.jpg" alt="">
                     <div class="team-text">
-                        <h4 class="mb-0">Putu Putra Eka Persada</h4>
+                        <h5 class="mb-0">Putu Putra Eka Persada</h5>
                         <div class="team-social d-flex">
                             <a class="btn btn-square rounded-circle mx-1"
                                 href="https://m.facebook.com/putuputra.ekapersada/"><i
@@ -61,7 +61,7 @@
                 <div class="team-item">
                     <img class="img-fluid rounded" src="/assets/CSS_umum/img/team-5.jpg" alt="">
                     <div class="team-text">
-                        <h4 class="mb-0">Kurniawan Dwi Yuliyanto</h4>
+                        <h5 class="mb-0">Kurniawan Dwi Yuliyanto</h5>
                         <div class="team-social d-flex">
                             <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
