@@ -25,12 +25,12 @@
                             </thead>
                             <tbody>
                                 <?php foreach ($files_buku as $f) : ?>
-                                <tr style="">
+                                <tr>
                                     <td style="vertical-align:middle;"><?= $f->penerbit_buku; ?></td>
                                     <td style="vertical-align:middle;"><img class="pictures"
                                             src="/assets/foto/<?= $f->gambar_buku; ?>" alt="" width="100px"></img></td>
                                     <td style="vertical-align:middle;"><?= $f->kondisi_buku; ?></td>
-                                    <td style="">
+                                    <td>
                                         <div class="textarea">
                                             <textarea disabled class="container-fluid" name="" id="description"
                                                 cols="50" rows="5">
