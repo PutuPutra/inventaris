@@ -1994,6 +1994,23 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
   border-bottom: 1px solid #eee;
 }
 
+/* textarea */
+#description {
+  /* height: 100px;
+  width: 100px; */
+  appearance: text-area;
+  flex-direction: column;
+  resize: vertical;
+  border: none;
+  background-color: white;
+  text-align: left;
+}
+
+#description:hover {
+  background-color: #e3e4e7;
+}
+
+/* textarea */
 
 /**********************************************************************
 ***********************************************************************

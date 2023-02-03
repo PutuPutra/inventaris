@@ -25,18 +25,29 @@
                             </thead>
                             <tbody>
                                 <?php foreach ($files_buku as $f) : ?>
-                                    <tr style="text-align: center;">
-                                        <td><?= $f->penerbit_buku; ?></td>
-                                        <td><img class="pictures" src="/assets/foto/<?= $f->gambar_buku; ?>" alt="" width="100px"></img></td>
-                                        <td><?= $f->kondisi_buku; ?></td>
-                                        <td style="width: 100px;"><?= $f->deskripsi_buku; ?></td>
-                                        <td>
-                                            <div class="buttons">
-                                                <a href="<?= base_url('BukuEdit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
-                                                <a href="<?= base_url('buku/deleted') . '/' . $f->id ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                <tr style="">
+                                    <td style="vertical-align:middle;"><?= $f->penerbit_buku; ?></td>
+                                    <td style="vertical-align:middle;"><img class="pictures"
+                                            src="/assets/foto/<?= $f->gambar_buku; ?>" alt="" width="100px"></img></td>
+                                    <td style="vertical-align:middle;"><?= $f->kondisi_buku; ?></td>
+                                    <td style="">
+                                        <div class="textarea">
+                                            <textarea disabled class="container-fluid" name="" id="description"
+                                                cols="50" rows="5">
+                                            <?= $f->deskripsi_buku; ?>
+                                        </textarea>
+                                        </div>
+                                    </td>
+                                    <td style="vertical-align:middle;">
+                                        <div class="buttons">
+                                            <a href="<?= base_url('BukuEdit') . '/' . $f->id ?>"
+                                                class="btn btn-warning"><i
+                                                    class="fa-solid fa-pen-to-square"></i></i></a>
+                                            <a href="<?= base_url('buku/deleted') . '/' . $f->id ?>"
+                                                class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
                                 <?php
                                 endforeach ?>
                             </tbody>
