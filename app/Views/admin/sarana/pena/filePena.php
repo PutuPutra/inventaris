@@ -24,12 +24,12 @@
                             </thead>
                             <tbody>
                                 <?php foreach ($files_pena as $f) : ?>
-                                <tr style="text-align: center;">
-                                    <td><?= $f->merk_pena; ?></td>
-                                    <td><img class="pictures" src="/assets/foto/<?= $f->gambar_pena; ?>" alt=""
-                                            width="100px"></img></td>
-                                    <td><?= $f->kondisi_pena; ?></td>
-                                    <td>
+                                <tr>
+                                    <td id="isiTable"><?= $f->merk_pena; ?></td>
+                                    <td id="isiTable"><img class="pictures" src="/assets/foto/<?= $f->gambar_pena; ?>"
+                                            alt="" width="100px"></img></td>
+                                    <td id="isiTable"><?= $f->kondisi_pena; ?></td>
+                                    <td id="isiTable">
                                         <div class="buttons">
                                             <a href="<?= base_url('PenaEdit') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i

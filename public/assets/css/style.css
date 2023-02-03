@@ -2012,6 +2012,15 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
 
 /* textarea */
 
+
+/* table */
+#isiTable {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* table */
+
 /**********************************************************************
 ***********************************************************************
 ### Analytic Dashboard CSS

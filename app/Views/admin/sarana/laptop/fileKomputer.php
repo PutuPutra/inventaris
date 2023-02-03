@@ -24,17 +24,17 @@
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
-                            <tbody style="justify-content: center;">
+                            <tbody style="justify-content: center;" id="bodyTable">
                                 <?php foreach ($files_komputer as $f) : ?>
                                 <tr>
-                                    <td style="vertical-align:middle; justify-content:middle;">
+                                    <td id="isiTable">
                                         <?= $f->brand_komputer; ?>
                                     </td>
-                                    <td style="vertical-align:middle;"><img class="pictures"
+                                    <td id="isiTable"><img class="pictures"
                                             src="/assets/foto/<?= $f->gambar_komputer; ?>" alt="" width="100px"></img>
                                     </td>
-                                    <td style="vertical-align:middle;"><?= $f->kondisi_komputer; ?></td>
-                                    <td style="vertical-align:middle;">
+                                    <td id="isiTable"><?= $f->kondisi_komputer; ?></td>
+                                    <td id="isiTable">
                                         <div class="textarea">
                                             <textarea disabled class="container-fluid" name="" id="description"
                                                 cols="50" rows="5">
@@ -42,8 +42,8 @@
                                         </textarea>
                                         </div>
                                     </td>
-                                    <td style="vertical-align:middle;"><?= $f->jenis_produk_komputer; ?></td>
-                                    <td style="vertical-align:middle;">
+                                    <td id="isiTable"><?= $f->jenis_produk_komputer; ?></td>
+                                    <td id="isiTable">
                                         <div class=" buttons">
                                             <a href="<?= base_url('editLaptop') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i

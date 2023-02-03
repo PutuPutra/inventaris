@@ -25,13 +25,14 @@
                             </thead>
                             <tbody>
                                 <?php foreach ($files_penggaris as $f) : ?>
-                                <tr style="text-align: center;">
-                                    <td><?= $f->merk_penggaris; ?></td>
-                                    <td><img class="pictures" src="/assets/foto/<?= $f->gambar_penggaris; ?>" alt=""
-                                            width="100px"></img></td>
-                                    <td><?= $f->kondisi_penggaris; ?></td>
-                                    <td style="width: 100px;"><?= $f->panjang_penggaris; ?></td>
-                                    <td>
+                                <tr>
+                                    <td id="isiTable"><?= $f->merk_penggaris; ?></td>
+                                    <td id="isiTable"><img class="pictures"
+                                            src="/assets/foto/<?= $f->gambar_penggaris; ?>" alt="" width="100px"></img>
+                                    </td>
+                                    <td id="isiTable"><?= $f->kondisi_penggaris; ?></td>
+                                    <td id="isiTable" style="width: 100px;"><?= $f->panjang_penggaris; ?></td>
+                                    <td id="isiTable">
                                         <div class="buttons">
                                             <a href="<?= base_url('PenggarisEdit') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i

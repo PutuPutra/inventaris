@@ -26,10 +26,10 @@
                             <tbody>
                                 <?php foreach ($files_buku as $f) : ?>
                                 <tr>
-                                    <td style="vertical-align:middle;"><?= $f->penerbit_buku; ?></td>
-                                    <td style="vertical-align:middle;"><img class="pictures"
-                                            src="/assets/foto/<?= $f->gambar_buku; ?>" alt="" width="100px"></img></td>
-                                    <td style="vertical-align:middle;"><?= $f->kondisi_buku; ?></td>
+                                    <td id="isiTable"><?= $f->penerbit_buku; ?></td>
+                                    <td id="isiTable"><img class="pictures" src="/assets/foto/<?= $f->gambar_buku; ?>"
+                                            alt="" width="100px"></img></td>
+                                    <td id="isiTable"><?= $f->kondisi_buku; ?></td>
                                     <td>
                                         <div class="textarea">
                                             <textarea disabled class="container-fluid" name="" id="description"
@@ -38,7 +38,7 @@
                                         </textarea>
                                         </div>
                                     </td>
-                                    <td style="vertical-align:middle;">
+                                    <td id="isiTable">
                                         <div class="buttons">
                                             <a href="<?= base_url('BukuEdit') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i

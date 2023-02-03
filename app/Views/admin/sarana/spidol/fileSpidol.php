@@ -25,13 +25,13 @@
                             </thead>
                             <tbody>
                                 <?php foreach ($files_spidol as $f) : ?>
-                                <tr style="text-align: center;">
-                                    <td><?= $f->merk_spidol; ?></td>
-                                    <td><img class="pictures" src="/assets/foto/<?= $f->gambar_spidol; ?>" alt=""
-                                            width="100px"></img></td>
-                                    <td><?= $f->kondisi_spidol; ?></td>
-                                    <td style="width: 100px;"><?= $f->warna_spidol; ?></td>
-                                    <td>
+                                <tr>
+                                    <td id="isiTable"><?= $f->merk_spidol; ?></td>
+                                    <td id="isiTable"><img class="pictures" src="/assets/foto/<?= $f->gambar_spidol; ?>"
+                                            alt="" width="100px"></img></td>
+                                    <td id="isiTable"><?= $f->kondisi_spidol; ?></td>
+                                    <td id="isiTable" style="width: 100px;"><?= $f->warna_spidol; ?></td>
+                                    <td id="isiTable">
                                         <div class="buttons">
                                             <a href="<?= base_url('SpidolEdit') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i
