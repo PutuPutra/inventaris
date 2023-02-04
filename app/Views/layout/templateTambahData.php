@@ -268,7 +268,7 @@
                             <li class="list-inline-item">
                                 <a class="hidden-xs hidden-sm waves-effect tooltip-primary" href="javascript:void(0)"
                                     id="collapsed-sidebar-toggle-button" data-toggle="tooltip" data-trigger="hover"
-                                    title="" data-original-title="Toggle Sidebar">
+                                    title="" data-original-title="">
                                     <svg class="adata-svg-icon" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256"
                                         height="256" viewBox="0 0 256 256" xml:space="preserve">
@@ -303,7 +303,7 @@
                             </li>
                             <li class="list-inline-item">
                                 <a class="waves-effect tooltip-primary" href="javascript:void(0)" id="search-button"
-                                    data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Search">
+                                    data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Pencarian">
                                     <svg class="adata-svg-icon">
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                             <rect x="0" y="0" width="24" height="24" />
