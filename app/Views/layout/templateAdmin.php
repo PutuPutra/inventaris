@@ -210,7 +210,7 @@ use Myth\Auth\Entities\Group;
                                 <span>Prasarana</span><i class="accordion-icon fa fa-angle-left"></i>
                             </a>
                             <ul class="sub-menu">
-                                <li><a href="">Gedung</a></li>
+                                <li><a href="/kelas">kelas</a></li>
                             </ul>
                         </li>
                     </ul>
