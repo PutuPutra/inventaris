@@ -9,11 +9,11 @@ $background-color-orange: #5f4930;
 /*Light Theme CSS*/
 body.theme-orange {
 	.logo a.logo-img {
-		background-image: url(../../../images/logos/logo-orange.png);
+		background-image: url(../../../images/logos/sarpras.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-	
+
 	.logo a.logo-img img {
 		display: none;
 	}
@@ -140,7 +140,7 @@ body.theme-orange {
 
 	.bg-primary,
 	.header-color .accordion-title.bg-primary {
-		background-color: $theme-color-orange!important;
+		background-color: $theme-color-orange !important;
 	}
 
 	.bg-soft-color .accordion-title.ui-accordion-header-active,
@@ -205,7 +205,7 @@ body.theme-orange {
 	}
 
 	.tui-full-calendar-month-creation-guide {
-		border-color: $theme-color-orange!important;
+		border-color: $theme-color-orange !important;
 	}
 
 	.audience-overview-tab a.active {
@@ -228,8 +228,8 @@ body.theme-orange {
 
 	.bg-soft-primary,
 	.custom-btn-group .nav-item a.active {
-		background-color: rgba(255, 161, 23, 0.1)!important;
-		color: $theme-color-orange!important;
+		background-color: rgba(255, 161, 23, 0.1) !important;
+		color: $theme-color-orange !important;
 	}
 
 	.btn-primary:hover,
@@ -282,7 +282,7 @@ body.theme-orange {
 	.order-details-tab .nav-item a:hover {
 		color: $theme-color-orange;
 		border-bottom: 1px solid $theme-color-orange;
-	}	
+	}
 }
 
 body.theme-orange.page-sidebar-collapsed {
@@ -291,14 +291,14 @@ body.theme-orange.page-sidebar-collapsed {
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-	
+
 	.page-sidebar-menu>ul>li:hover>a {
 		color: $theme-color-orange;
 	}
-	
+
 	.page-sidebar-menu>ul>li:hover>a .adata-svg-icon g [fill] {
 		fill: $theme-color-orange;
-	}	
+	}
 }
 
 body.theme-orange.dark-sidebar.page-sidebar-collapsed .page-sidebar-menu>ul>li:hover>a {
@@ -306,12 +306,13 @@ body.theme-orange.dark-sidebar.page-sidebar-collapsed .page-sidebar-menu>ul>li:h
 }
 
 body.dark-sidebar.theme-orange .page-sidebar .page-sidebar-inner {
+
 	.page-sidebar-menu ul li.active>a,
 	.page-sidebar-menu ul li a:hover,
 	.open:not(.active)>a {
 		background: $theme-color-orange;
-	}	
-} 
+	}
+}
 
 
 /*Dark Theme CSS*/
@@ -319,13 +320,13 @@ body.dark-theme.theme-orange {
 	a:hover {
 		color: $theme-color-orange;
 	}
-	
+
 	.page-sidebar-menu ul li a:hover,
 	.open:not(.active)>a,
-	.page-sidebar-menu ul li.active>a{
+	.page-sidebar-menu ul li.active>a {
 		background-color: $background-color-orange;
 	}
-	
+
 	input:focus,
 	.custom-file:focus,
 	.custom-select:focus,
@@ -335,26 +336,28 @@ body.dark-theme.theme-orange {
 	.contact-add-sidebar .form-group.birthday-select select:focus {
 		border: 1px solid $theme-color-orange;
 	}
-	
+
 }
 
 body.dark-theme.theme-orange.page-sidebar-collapsed {
+
 	.page-sidebar-menu ul li a:hover,
 	.open:not(.active)>a,
 	.page-sidebar-menu ul li.active>a {
 		background-color: $background-color-orange;
 	}
-	
-} 
+
+}
 
 /*Semi Dark Theme CSS*/
 body.semi-dark-theme.theme-orange {
+
 	.page-sidebar-menu ul li a:hover,
 	.open:not(.active)>a,
 	.page-sidebar-menu ul li.active>a {
 		background-color: $background-color-orange;
 	}
-	
+
 	input:focus,
 	.custom-file:focus,
 	.custom-select:focus,
@@ -364,9 +367,10 @@ body.semi-dark-theme.theme-orange {
 	.contact-add-sidebar .form-group.birthday-select select:focus {
 		border: 1px solid $theme-color-orange;
 	}
-} 
+}
 
 body.semi-dark-theme.theme-orange.page-sidebar-collapsed {
+
 	.page-sidebar-menu ul li a:hover,
 	.open:not(.active)>a,
 	.page-sidebar-menu ul li.active>a {
