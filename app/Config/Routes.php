@@ -142,6 +142,10 @@ $routes->get('/penggaris', 'penggarisController::penggaris', ['filter' => 'login
 $routes->get('/tambahPenggaris', 'penggarisController::tambahPenggaris', ['filter' => 'login']);
 $routes->get('/penggaris/deleted/(:num)', 'penggarisController::deleted/$1', ['filter' => 'login']);
 
+//prasarana
+$routes->get('/kelas','Kelas::index', ['filter' => 'login']);
+$routes->get('/tambahKelas','Kelas::tambahKelas', ['filter' => 'login']);
+$routes->post('/kelas/store','Kelas::store', ['filter' => 'login']);
 
 /*
  * --------------------------------------------------------------------
