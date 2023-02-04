@@ -10,5 +10,5 @@ class PenaModel extends Model
     protected $table            = 'pena ';
     protected $primaryKey       = 'id';
     protected $returnType       = 'object';
-    protected $allowedFields = ['merk_pena', 'gambar_pena', 'kondisi_pena'];
+    protected $allowedFields = ['serial_number','id_kelas','merk_pena', 'gambar_pena', 'kondisi_pena'];
 }

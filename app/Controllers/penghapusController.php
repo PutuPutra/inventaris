@@ -2,7 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\ModelKelas;
 use App\Models\PenghapusModel;
+use App\Controllers\BaseController;
 
 class penghapusController extends BaseController
 {
@@ -46,6 +48,7 @@ class penghapusController extends BaseController
             'submenu8' => 'active',
             'submenu9' => null,
             'submenu10' => null,
+            'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/penghapus/tambahPenghapus', $data);
     }
@@ -84,11 +87,12 @@ class penghapusController extends BaseController
         // dd($files);
         $files->move('assets/penghapus', $names);
         $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
             'gambar_penghapus' => $names,
             'merk_penghapus' => $this->request->getPost('merk_penghapus'),
             'kondisi_penghapus' => $this->request->getPost('kondisi_penghapus')
         ];
-        //dd($data);
         $penghapus = new PenghapusModel();
         $penghapus->insert($data);
 
