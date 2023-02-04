@@ -41,8 +41,8 @@
         <div class="page-sidebar">
             <div class="logo">
                 <a class="logo-img" href="/">
-                    <img class="desktop-logo" src="../../assets/images/logo.png" alt="">
-                    <img class="small-logo" src="../../assets/images/small-logo.png" alt="">
+                    <!-- <img class="desktop-logo" src="../../assets/images/logo.png" alt=""> -->
+                    <!-- <img class="small-logo" src="../../assets/images/small-logo.png" alt=""> -->
                 </a>
                 <a id="sidebar-toggle-button-close"><i class="wd-20 ht-20" data-feather="x"></i> </a>
             </div>
