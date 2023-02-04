@@ -26,7 +26,7 @@
                                         <div class="form-group mg-b-0">
                                             <label>Brand <span class="tx-danger">*</span></label>
                                             <input type="text" name="brand_komputer" class="form-control wd-300"
-                                                placeholder="Enter Brand" required>
+                                                placeholder="Isi sesuai merek pada barang" required>
                                         </div>
                                         <!-- form-group -->
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">

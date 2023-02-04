@@ -13,19 +13,22 @@
                     <div class="clearfix">
                         <!-- <label class="custom-label">Example</label> -->
                         <div class="clearfix">
-                            <form action="<?= base_url('meja/store') ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
+                            <form action="<?= base_url('meja/store') ?>" method="POST" enctype="multipart/form-data"
+                                data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php $validation = \Config\Services::validation(); ?>
                                 <div class="wd-300">
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
                                             <label>Ukuran <span class="tx-danger">*</span></label>
-                                            <input type="text" name="ukuran_meja" class="form-control wd-300" placeholder="Enter Ukuran" required>
+                                            <input type="text" name="ukuran_meja" class="form-control wd-300"
+                                                placeholder="Ukuran Meja" required>
                                         </div>
                                         <!-- form-group -->
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                             <label>Gambar <span class="tx-danger">*</span></label>
-                                            <input type="file" name="gambar_meja" class="form-control wd-300" placeholder="Enter Gambar" required>
+                                            <input type="file" name="gambar_meja" class="form-control wd-300"
+                                                placeholder="Enter Gambar" required>
                                         </div>
                                         <!-- form-group -->
                                     </div>
@@ -34,7 +37,10 @@
                                             <div class="d-md-flex" style="margin-right: 50px;">
                                                 <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
                                                     <label>Kondisi <span class="tx-danger">*</span></label>
-                                                    <select class="form-control select2 wd-300" id="kondisi_meja" name="kondisi_meja" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required>
+                                                    <select class="form-control select2 wd-300" id="kondisi_meja"
+                                                        name="kondisi_meja" data-placeholder="Choose one"
+                                                        data-parsley-class-handler="#slWrapper"
+                                                        data-parsley-errors-container="#slErrorContainer" required>
                                                         <option label="Pilih Kondisi"></option>
                                                         <option value="Baik">Baik</option>
                                                         <option value="Kerusakan Ringan">Kerusakan Ringan
@@ -58,7 +64,8 @@
                                 </div>
                             </form>
                             <a href="<?= base_url('meja') ?>">
-                                <button class="btn btn-secondary waves-effect" style="margin-left: 120px; margin-top: -60px;">Batal</button>
+                                <button class="btn btn-secondary waves-effect"
+                                    style="margin-left: 120px; margin-top: -60px;">Batal</button>
                             </a>
                         </div>
                     </div>

@@ -20,12 +20,12 @@
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
                                             <label>Ukuran <span class="tx-danger">*</span></label>
-                                            <input type="text" name="ukuran_papan_tulis" class="form-control wd-300" placeholder="Enter Ukuran" required>
+                                            <input type="text" name="ukuran_papan_tulis" class="form-control wd-300" placeholder="contoh : 120x240cm" required>
                                         </div>
                                         <!-- form-group -->
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                             <label>Gambar <span class="tx-danger">*</span></label>
-                                            <input type="file" name="gambar_papan_tulis" class="form-control wd-300" placeholder="Enter Gambar" required>
+                                            <input type="file" name="gambar_papan_tulis" class="form-control wd-300" placeholder="Gambar" required>
                                         </div>
                                         <!-- form-group -->
                                     </div>
