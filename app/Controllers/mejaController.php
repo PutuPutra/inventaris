@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\MejaModel;
+use App\Models\ModelKelas;
+use App\Controllers\BaseController;
 
 class mejaController extends BaseController
 {
@@ -46,6 +48,7 @@ class mejaController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/meja/tambahMeja', $data);
     }
@@ -84,9 +87,11 @@ class mejaController extends BaseController
         // dd($files);
         $files->move('assets/foto', $names);
         $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
             'gambar_meja' => $names,
             'ukuran_meja' => $this->request->getPost('ukuran_meja'),
-            'kondisi_meja' => $this->request->getPost('kondisi_meja')
+            'kondisi_meja' => $this->request->getPost('kondisi_meja'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
         ];
         //dd($data);
         $meja = new MejaModel();

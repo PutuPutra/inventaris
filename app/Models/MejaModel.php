@@ -10,5 +10,5 @@ class MejaModel extends Model
     protected $table            = 'meja';
     protected $primaryKey       = 'id';
     protected $returnType       = 'object';
-    protected $allowedFields = ['ukuran_meja', 'gambar_meja', 'kondisi_meja'];
+    protected $allowedFields = ['serial_number','ukuran_meja', 'gambar_meja', 'kondisi_meja','id_kelas'];
 }

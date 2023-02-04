@@ -2,7 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\ModelKelas;
 use App\Models\PapanTulisModel;
+use App\Controllers\BaseController;
 
 class papanTulisController extends BaseController
 {
@@ -46,6 +48,7 @@ class papanTulisController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/papanTulis/tambahPapanTulis', $data);
     }
@@ -84,9 +87,11 @@ class papanTulisController extends BaseController
         // dd($files);
         $files->move('assets/foto', $names);
         $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
             'gambar_papan_tulis' => $names,
             'ukuran_papan_tulis' => $this->request->getPost('ukuran_papan_tulis'),
-            'kondisi_papan_tulis' => $this->request->getPost('kondisi_papan_tulis')
+            'kondisi_papan_tulis' => $this->request->getPost('kondisi_papan_tulis'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
         ];
         //dd($data);
         $papanTulis = new PapanTulisModel();
