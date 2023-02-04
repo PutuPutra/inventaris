@@ -27,7 +27,6 @@
                                 <?php $i = 1;
 
                                 foreach ($kelas as $k) : ?>
-                                
                                     <tr style="text-align: center;">
                                         <td><?= $i; ?></td>
                                         <td><?= $k['nama_kelas']; ?></td>
@@ -35,7 +34,8 @@
                                         <td><?= $k['ketua_kelas']; ?></td>
                                         <td>
                                             <div class="buttons">
-                                               
+                                                <a href="<?= base_url('editKelas/' . $k['id_kelas']) ?>" class="btn btn-primary btn-sm">Edit</a>
+                                                <a href="<?= base_url('deleteKelas/' . $k['id_kelas']) ?>" class="btn btn-danger btn-sm">Delete</a>
                                             </div>
                                         </td>
                                     </tr>
