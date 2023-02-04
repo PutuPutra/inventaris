@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\BukuModel;
+use App\Controllers\BaseController;
+use App\Models\ModelKelas;
 
 class bukuController extends BaseController
 {
@@ -46,6 +48,7 @@ class bukuController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/buku/tambahBuku', $data);
     }
