@@ -2,7 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\ModelKelas;
 use App\Models\SpidolModel;
+use App\Controllers\BaseController;
 
 class spidolController extends BaseController
 {
@@ -46,6 +48,7 @@ class spidolController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/spidol/tambahSpidol', $data);
     }
@@ -90,6 +93,8 @@ class spidolController extends BaseController
         // dd($files);
         $files->move('assets/spidol', $names);
         $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
             'gambar_spidol' => $names,
             'merk_spidol' => $this->request->getPost('merk_spidol'),
             'kondisi_spidol' => $this->request->getPost('kondisi_spidol'),

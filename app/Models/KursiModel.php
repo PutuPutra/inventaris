@@ -10,5 +10,5 @@ class KursiModel extends Model
     protected $table            = 'kursi';
     protected $primaryKey       = 'id';
     protected $returnType       = 'object';
-    protected $allowedFields = ['ukuran_kursi', 'gambar_kursi', 'kondisi_kursi'];
+    protected $allowedFields = ['serial_number','id_kelas','ukuran_kursi', 'gambar_kursi', 'kondisi_kursi'];
 }
