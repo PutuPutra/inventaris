@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>404</title>
+    <title>404 | ERROR</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -43,7 +43,7 @@
                 <div class="col-lg-6">
                     <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
                     <h1 class="display-1">404</h1>
-                    <h1 class="mb-4">Halamat Tidak Ditemukan</h1>
+                    <h1 class="mb-4">Halaman Tidak Ditemukan</h1>
                     <!-- <p class="mb-4">Maaf, halaman yang Anda cari tidak ada! Mungkin buka beranda
                         atau coba gunakan pencarian?</p> -->
                     <a class="btn btn-primary py-3 px-5" href="/">Kembali ke Beranda</a>
