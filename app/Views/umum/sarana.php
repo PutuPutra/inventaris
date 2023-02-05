@@ -31,7 +31,7 @@
                                 <i class="fa fa-laptop fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Komputer</h5>
-                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto" href="/dataKomputer">Selengkapnya</a>
                         </div>
                     </div>
