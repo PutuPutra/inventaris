@@ -11,7 +11,13 @@
     <!-- jam -->
     <link rel="stylesheet" href="assets/jamnya/css/style.css">
     <!-- jam -->
+    <!-- mazer -->
+    <link rel="stylesheet" href="assets/css/main/app.css">
+    <link rel="stylesheet" href="assets/css/main/app-dark.css">
 
+    <link rel="stylesheet" href="assets/extensions/simple-datatables/style.css">
+    <link rel="stylesheet" href="assets/css/pages/simple-datatables.css">
+    <!-- mazer -->
 
     <!-- Libraries Stylesheet -->
     <link href="/assets/abc/lib/animate/animate.min.css" rel="stylesheet">
@@ -20,7 +26,6 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="/assets/abc/css/bootstrapABC.min.css" rel="stylesheet">
-
     <!-- Template Stylesheet -->
     <link href="/assets/abc/css/styleABC.css" rel="stylesheet">
 
@@ -84,17 +89,18 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="<?= base_url('/') ?>" class="nav-item nav-link <?= $navbar1 ?>">Beranda</a>
                     <a href="<?= base_url('kontak') ?>" class="nav-item nav-link <?= $navbar2 ?>">Kontak</a>
-                    <a href="<?= base_url('dashboard') ?>" class="nav-item nav-link">Admin</a>
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Inventaris</a>
                         <div class="dropdown-menu border-light m-0">
-                            <a href="project.html" class="dropdown-item">Projects</a>
-                            <a href="feature.html" class="dropdown-item">Features</a>
-                            <a href="team.html" class="dropdown-item">Team Member</a>
+                            <a href="/sarana" class="dropdown-item">Sarana</a>
+                            <a href="/prasarana" class="dropdown-item">Prasarana</a>
+                            <!-- <a href="team.html" class="dropdown-item">Team Member</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a> -->
                         </div>
-                    </div> -->
+                    </div>
+                    <a href="<?= base_url('dashboard') ?>" class="nav-item nav-link">Admin</a>
+
                 </div>
             </div>
         </nav>
@@ -189,7 +195,12 @@
 
     <!-- Template Javascript -->
     <script src="/assets/CSS_umum/js/main.js"></script>
+    <!-- END: Vendor JS-->
+    <!-- <script src="assets/js_mazer/bootstrap.js"></script> -->
+    <!-- <script src="assets/js_mazer/app.js"></script> -->
 
+    <script src="assets/extensions/simple-datatables/umd/simple-datatables.js"></script>
+    <script src="assets/js_mazer/pages/simple-datatables.js"></script>
 
 
     <!-- Template Javascript -->

@@ -41,6 +41,16 @@ $routes->get('/kontak', 'Umum::kontak');
 $routes->get('/tentang', 'Umum::tentang');
 $routes->get('/sarana', 'Umum::sarana');
 $routes->get('/prasarana', 'Umum::prasarana');
+$routes->get('/dataKomputer', 'Umum::dataKomputer');
+$routes->get('/dataBuku', 'Umum::dataBuku');
+$routes->get('/dataPapanTulis', 'Umum::dataPapanTulis');
+$routes->get('/dataMeja', 'Umum::dataMeja');
+$routes->get('/dataKursi', 'Umum::dataKursi');
+$routes->get('/dataFoto', 'Umum::dataFoto');
+$routes->get('/dataSpidol', 'Umum::dataSpidol');
+$routes->get('/dataPenghapus', 'Umum::dataPenghapus');
+$routes->get('/dataPena', 'Umum::dataPena');
+$routes->get('/dataPenggaris', 'Umum::dataPenggaris');
 
 //admin
 $routes->get('/service', 'Admin::service');

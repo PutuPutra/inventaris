@@ -30,9 +30,9 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-laptop fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Komputer / Laptop</h5>
+                            <h5 class="mb-3">Komputer</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/sarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/dataKomputer">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -42,7 +42,7 @@
                             </div>
                             <h5 class="mb-3">Buku</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/prasarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/dataBuku">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.6s">
@@ -52,7 +52,7 @@
                             </div>
                             <h5 class="mb-3">Papan Tulis</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/prasarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/dataPapanTulis">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -65,7 +65,7 @@
                             </div>
                             <h5 class="mb-3">Meja</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/prasarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/dataMeja">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -75,7 +75,7 @@
                             </div>
                             <h5 class="mb-3">Kursi</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/prasarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/dataKursi">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.6s">
@@ -85,7 +85,7 @@
                             </div>
                             <h5 class="mb-3">Foto</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/prasarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/dataFoto">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -95,7 +95,7 @@
                             </div>
                             <h5 class="mb-3">Spidol</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/prasarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/dataSpidol">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -105,7 +105,7 @@
                             </div>
                             <h5 class="mb-3">Penghapus</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/prasarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/dataPenghapus">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.5s">
@@ -115,7 +115,7 @@
                             </div>
                             <h5 class="mb-3">Pena</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/prasarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/dataPena">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -125,7 +125,7 @@
                             </div>
                             <h5 class="mb-3">Penggaris</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/prasarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/dataPenggaris">Selengkapnya</a>
                         </div>
                     </div>
                     <!-- <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
