@@ -10,5 +10,5 @@ class PenghapusModel extends Model
     protected $table            = 'penghapus ';
     protected $primaryKey       = 'id';
     protected $returnType       = 'object';
-    protected $allowedFields = ['merk_penghapus', 'gambar_penghapus', 'kondisi_penghapus'];
+    protected $allowedFields = ['serial_number','id_kelas','merk_penghapus', 'gambar_penghapus', 'kondisi_penghapus'];
 }

@@ -93,10 +93,12 @@ class bukuController extends BaseController
         // dd($files);
         $files->move('assets/foto', $names);
         $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
             'gambar_buku' => $names,
             'penerbit_buku' => $this->request->getPost('penerbit_buku'),
             'kondisi_buku' => $this->request->getPost('kondisi_buku'),
-            'deskripsi_buku' => $this->request->getPost('deskripsi_buku')
+            'deskripsi_buku' => $this->request->getPost('deskripsi_buku'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
         ];
         //dd($data);
         $buku = new BukuModel();

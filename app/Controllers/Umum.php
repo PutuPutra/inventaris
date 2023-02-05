@@ -28,4 +28,21 @@ class Umum extends BaseController
         ];
         return view('umum/tentang', $data);
     }
+    
+    public function sarana()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/sarana', $data);
+    }
+
+    public function prasarana(){
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/prasarana', $data); 
+    }
 }

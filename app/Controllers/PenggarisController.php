@@ -2,7 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\ModelKelas;
 use App\Models\PenggarisModel;
+use App\Controllers\BaseController;
 
 class penggarisController extends BaseController
 {
@@ -46,6 +48,7 @@ class penggarisController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => 'active',
+            'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/penggaris/tambahPenggaris', $data);
     }
@@ -90,13 +93,14 @@ class penggarisController extends BaseController
         // dd($files);
         $files->move('assets/penggaris', $names);
         $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
             'gambar_penggaris' => $names,
             'merk_penggaris' => $this->request->getPost('merk_penggaris'),
             'kondisi_penggaris' => $this->request->getPost('kondisi_penggaris'),
             'panjang_penggaris' => $this->request->getPost('panjang_penggaris')
 
         ];
-        //dd($data);
         $penggaris = new PenggarisModel();
         $penggaris->insert($data);
 

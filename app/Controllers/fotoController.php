@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\FotoModel;
+use App\Models\ModelKelas;
+use App\Controllers\BaseController;
 
 class fotoController extends BaseController
 {
@@ -46,6 +48,7 @@ class fotoController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/foto/tambahFoto', $data);
     }
@@ -84,11 +87,12 @@ class fotoController extends BaseController
         // dd($files);
         $files->move('assets/foto', $names);
         $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
             'gambar_foto' => $names,
             'ukuran_foto' => $this->request->getPost('ukuran_foto'),
-            'kondisi_foto' => $this->request->getPost('kondisi_foto')
+            'kondisi_foto' => $this->request->getPost('kondisi_foto'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
         ];
-        //dd($data);
         $foto = new FotoModel();
         $foto->insert($data);
 

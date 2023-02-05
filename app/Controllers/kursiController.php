@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\KursiModel;
+use App\Models\ModelKelas;
+use App\Controllers\BaseController;
 
 class kursiController extends BaseController
 {
@@ -46,6 +48,7 @@ class kursiController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/kursi/tambahKursi', $data);
     }
@@ -84,11 +87,12 @@ class kursiController extends BaseController
         // dd($files);
         $files->move('assets/foto', $names);
         $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
             'gambar_kursi' => $names,
             'ukuran_kursi' => $this->request->getPost('ukuran_kursi'),
-            'kondisi_kursi' => $this->request->getPost('kondisi_kursi')
+            'kondisi_kursi' => $this->request->getPost('kondisi_kursi'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
         ];
-        //dd($data);
         $kursi = new KursiModel();
         $kursi->insert($data);
 

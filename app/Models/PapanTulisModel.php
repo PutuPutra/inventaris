@@ -10,5 +10,5 @@ class PapanTulisModel extends Model
     protected $table            = 'papan_tulis';
     protected $primaryKey       = 'id';
     protected $returnType       = 'object';
-    protected $allowedFields = ['ukuran_papan_tulis', 'gambar_papan_tulis', 'kondisi_papan_tulis'];
+    protected $allowedFields = ['serial_number', 'id_kelas', 'ukuran_papan_tulis', 'gambar_papan_tulis', 'kondisi_papan_tulis'];
 }

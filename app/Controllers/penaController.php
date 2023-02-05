@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\PenaModel;
+use App\Models\ModelKelas;
+use App\Controllers\BaseController;
 
 class penaController extends BaseController
 {
@@ -46,6 +48,7 @@ class penaController extends BaseController
             'submenu8' => null,
             'submenu9' => 'active',
             'submenu10' => null,
+            'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/pena/tambahPena', $data);
     }
@@ -84,11 +87,12 @@ class penaController extends BaseController
         // dd($files);
         $files->move('assets/pena', $names);
         $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
             'gambar_pena' => $names,
             'merk_pena' => $this->request->getPost('merk_pena'),
             'kondisi_pena' => $this->request->getPost('kondisi_pena')
         ];
-        //dd($data);
         $pena = new PenaModel();
         $pena->insert($data);
 
