@@ -12,7 +12,7 @@
                     <li class="nav-item">
                         <a class="active show" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="false">
                             <h2 class="tx-15 ">Gedung</h2>
-                            <h1 class="tx-20">10</h1>
+                            <h1 class="tx-20"><?= $jumlah_kelas ?></h1>
                             <div class="d-flex align-items-center justify-content-center ">
                                 <span data-feather="arrow-up" class="tx-success wd-16 ht-10"></span>
                                 <span class="tx-12 tx-normal ">5%</span>
@@ -22,7 +22,7 @@
                     <li class="nav-item">
                         <a data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="true">
                             <h2 class="tx-15 ">Meja</h2>
-                            <h1 class="tx-20">2000</h1>
+                            <h1 class="tx-20"><?= $jumlah_meja ?></h1>
                             <div class="d-flex align-items-center justify-content-center ">
                                 <span data-feather="arrow-down" class="tx-danger wd-16 ht-10"></span>
                                 <span class="tx-12 tx-normal ">2%</span>
@@ -32,7 +32,7 @@
                     <li class="nav-item">
                         <a data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">
                             <h2 class="tx-15 ">Kursi</h2>
-                            <h1 class="tx-20">2200</h1>
+                            <h1 class="tx-20"><?= $jumlah_kursi ?></h1>
                             <div class="d-flex align-items-center justify-content-center ">
                                 <span data-feather="arrow-up" class="tx-success wd-16 ht-10"></span>
                                 <span class="tx-12 tx-normal ">6%</span>
@@ -41,8 +41,8 @@
                     </li>
                     <li class="nav-item">
                         <a id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-3" aria-selected="false">
-                            <h2 class="tx-15 ">Session Duration</h2>
-                            <h1 class="tx-20">5m:53s</h1>
+                            <h2 class="tx-15 ">Buku</h2>
+                            <h1 class="tx-20"><?= $jumlah_buku ?></h1>
                             <div class="d-flex align-items-center justify-content-center ">
                                 <span data-feather="arrow-down" class="tx-danger wd-16 ht-10"></span>
                                 <span class="tx-12 tx-normal ">05.14%</span>

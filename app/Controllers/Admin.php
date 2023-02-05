@@ -2,6 +2,10 @@
 
 namespace App\Controllers;
 
+use App\Models\BukuModel;
+use App\Models\KursiModel;
+use App\Models\MejaModel;
+use App\Models\ModelKelas;
 use App\Models\UsersModel;
 
 class Admin extends BaseController
@@ -63,8 +67,14 @@ class Admin extends BaseController
     }
     public function dashboard()
     {
-
-        return view('admin/dashboard');
+        $data = [
+            'jumlah_kelas' => (new ModelKelas())->countAllResults(),
+            'jumlah_meja' => (new MejaModel())->countAllResults(),
+            'jumlah_kursi' => (new KursiModel())->countAllResults(),
+            'jumlah_buku' => (new BukuModel())->countAllResults(),
+        ];
+    
+        return view('admin/dashboard', $data);
     }
 
 
