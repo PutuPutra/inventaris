@@ -39,8 +39,9 @@ $routes->set404Override();
 $routes->get('/', 'Umum::index');
 $routes->get('/kontak', 'Umum::kontak');
 $routes->get('/tentang', 'Umum::tentang');
-$routes->get('/adata/sarana', 'Umum::sarana');
-$routes->get('/adata/prasarana', 'Umum::prasarana');
+$routes->get('/sarana', 'Umum::sarana');
+$routes->get('/prasarana', 'Umum::prasarana');
+
 //admin
 $routes->get('/service', 'Admin::service');
 $routes->get('/login', 'Admin::login');
@@ -144,9 +145,9 @@ $routes->get('/tambahPenggaris', 'penggarisController::tambahPenggaris', ['filte
 $routes->get('/penggaris/deleted/(:num)', 'penggarisController::deleted/$1', ['filter' => 'login']);
 
 //prasarana
-$routes->get('/kelas','Kelas::index', ['filter' => 'login']);
-$routes->get('/tambahKelas','Kelas::tambahKelas', ['filter' => 'login']);
-$routes->post('/kelas/store','Kelas::store', ['filter' => 'login']);
+$routes->get('/kelas', 'Kelas::index', ['filter' => 'login']);
+$routes->get('/tambahKelas', 'Kelas::tambahKelas', ['filter' => 'login']);
+$routes->post('/kelas/store', 'Kelas::store', ['filter' => 'login']);
 
 /*
  * --------------------------------------------------------------------

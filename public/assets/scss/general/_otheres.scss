@@ -7,7 +7,8 @@
 #collapsed-sidebar-toggle-button,
 #search-button,
 #sidebar-toggle-button {
-	color: $brand-color;
+	color: #f19000;
+	// color: $brand-color;
 	padding: 10px;
 	display: flex;
 }
@@ -187,10 +188,12 @@ input::placeholder {
 	5% {
 		opacity: .6;
 	}
+
 	27% {
 		-webkit-transform: scale(1.8);
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -200,10 +203,12 @@ input::placeholder {
 	5% {
 		opacity: .6;
 	}
+
 	27% {
 		-moz-transform: scale(1.8);
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -213,10 +218,12 @@ input::placeholder {
 	5% {
 		opacity: .6;
 	}
+
 	27% {
 		-o-transform: scale(1.8);
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -226,6 +233,7 @@ input::placeholder {
 	5% {
 		opacity: .6;
 	}
+
 	27% {
 		-webkit-transform: scale(1.8);
 		-moz-transform: scale(1.8);
@@ -233,6 +241,7 @@ input::placeholder {
 		transform: scale(1.8);
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 0;
 	}
