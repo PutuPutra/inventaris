@@ -19,7 +19,7 @@
     <div class="container">
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Inventaris</p>
-            <h1 class="display-5 mb-5">Sarana</h1>
+            <h6 class="display-5 mb-5">Sarana</h6>
         </div>
         <!-- Service Start -->
         <div class="container-xxl py-1">
