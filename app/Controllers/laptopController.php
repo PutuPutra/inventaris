@@ -2,7 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\ModelKelas;
 use App\Models\KomputerModel;
+use App\Controllers\BaseController;
 
 class laptopController extends BaseController
 {
@@ -23,7 +25,8 @@ class laptopController extends BaseController
     public function tambahLaptop()
     {
         $data = [
-            'heading' => 'Tambah Data Komputer'
+            'heading' => 'Tambah Data Komputer',
+            'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/laptop/tambahLaptop', $data);
     }
@@ -84,13 +87,14 @@ class laptopController extends BaseController
         // dd($files);
         $files->move('assets/foto', $names);
         $data = [
+            'serial_number_komputer' => $this->request->getPost('serial_number_komputer'),
             'gambar_komputer' => $names,
             'jenis_produk_komputer' => $this->request->getPost('jenis_produk_komputer'),
             'kondisi_komputer' => $this->request->getPost('kondisi_komputer'),
             'brand_komputer' => $this->request->getPost('brand_komputer'),
             'spesifikasi_komputer' => $this->request->getPost('spesifikasi_komputer'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
         ];
-        //dd($data);
         $laptop = new KomputerModel();
         $laptop->insert($data);
 

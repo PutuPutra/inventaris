@@ -39,7 +39,8 @@ $routes->set404Override();
 $routes->get('/', 'Umum::index');
 $routes->get('/kontak', 'Umum::kontak');
 $routes->get('/tentang', 'Umum::tentang');
-
+$routes->get('/adata/sarana', 'Umum::sarana');
+$routes->get('/adata/prasarana', 'Umum::prasarana');
 //admin
 $routes->get('/service', 'Admin::service');
 $routes->get('/login', 'Admin::login');

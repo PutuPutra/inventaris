@@ -210,7 +210,7 @@
                             </div>
                             <h5 class="mb-3">Sarana</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/adata/sarana">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -220,7 +220,7 @@
                             </div>
                             <h5 class="mb-3">Prasarana</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/adata/prasarana">Selengkapnya</a>
                         </div>
                     </div>
                     <!-- <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
