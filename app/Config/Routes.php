@@ -147,6 +147,13 @@ $routes->get('/penggaris/deleted/(:num)', 'penggarisController::deleted/$1', ['f
 $routes->get('/kelas','Kelas::index', ['filter' => 'login']);
 $routes->get('/tambahKelas','Kelas::tambahKelas', ['filter' => 'login']);
 $routes->post('/kelas/store','Kelas::store', ['filter' => 'login']);
+//piala
+$routes->get('/piala', 'PialaController::index');
+$routes->get('/piala/tambahPiala', 'PialaController::tambahPiala');
+$routes->get('/piala/delete/(:num)', 'PialaController::destroy/$1');
+$routes->post('/piala/store', 'PialaController::store');
+
+
 
 /*
  * --------------------------------------------------------------------

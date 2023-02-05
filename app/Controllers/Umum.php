@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\PialaModel;
+use App\Controllers\BaseController;
+
 class Umum extends BaseController
 {
     public function index()
@@ -9,6 +12,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => 'active',
             'navbar2' => null,
+            'piala' => (new PialaModel())->countAllResults(),
         ];
         return view('umum/index', $data);
     }
