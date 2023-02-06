@@ -35,12 +35,10 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -57,8 +55,7 @@
 
 <body onload="setInterval('displayTime()',1000);">
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -81,8 +78,7 @@
             <a href="/" class="navbar-brand ms-4 ms-lg-0">
                 <h1 class="display-5 text-primary m-0">E-SARPRAS</h1>
             </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -120,18 +116,15 @@
                     <div class="d-flex pt-2">
                         <!-- <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a> -->
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://id-id.facebook.com/sman9bdl/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://www.youtube.com/@sman9bdl"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://id-id.facebook.com/sman9bdl/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.youtube.com/@sman9bdl"><i class="fab fa-youtube"></i></a>
                         <!-- <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                                 class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 px-lg-5">
-                    <a href="https://smalan.sch.id/"><img class="logo" src="./assets/img/smalan.png" alt=""
-                            style="width:180px;margin-left:40px"></a>
+                    <a href="https://smalan.sch.id/"><img class="logo" src="./assets/img/smalan.png" alt="" style="width:180px;margin-left:40px"></a>
                 </div>
                 <div class="col-lg-5 col-md-6 px-lg-5">
                     <div id="clock" class="me-5" style="margin-right:1000px;">
@@ -163,7 +156,7 @@
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     &copy; <a class="border-bottom" href="https://smalan.sch.id/">Copyright
                         <script>
-                        document.write(new Date().getFullYear())
+                            document.write(new Date().getFullYear())
                         </script>
                     </a>, SMAN 9 Bandarlampung
                 </div>
@@ -206,6 +199,7 @@
     <!-- Template Javascript -->
     <script src="/assets/abc/js/mainABC.js"></script>
     <script src="/assets/jamnya/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/49b420f669.js" crossorigin="anonymous"></script>
 
 </body>
 

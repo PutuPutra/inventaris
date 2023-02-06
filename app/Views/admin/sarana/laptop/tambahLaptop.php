@@ -38,10 +38,11 @@
                                     </div>
                                     <div class="wd-250">
                                         <div class="d-md-flex mg-b-30">
-                                        <div class="form-group mg-b-0 mr-3">
-                                            <label>No. SN <span class="tx-danger">*</span></label>
-                                            <input type="text" name="serial_number" class="form-control wd-300" placeholder="Enter Serial Number" required>
-                                        </div>
+                                            <div class="form-group mg-b-0 mr-3">
+                                                <label>No. SN <span class="tx-danger">*</span></label>
+                                                <input type="text" name="serial_number" class="form-control wd-300"
+                                                    placeholder="Enter Serial Number" required>
+                                            </div>
                                             <div class="d-md-flex" style="margin-right: 50px;">
                                                 <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
                                                     <label>Kondisi <span class="tx-danger">*</span></label>
@@ -62,34 +63,44 @@
                                                     <div id="slErrorContainer"></div>
                                                 </div>
                                             </div>
-                                            <div class="mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
-                                                <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
-                                                    <label>Jenis Barang <span class="tx-danger">*</span></label>
-                                                    <select class="form-control select3 wd-300"
-                                                        id="jenis_produk_komputer" name="jenis_produk_komputer"
-                                                        data-placeholder="Choose one"
-                                                        data-parsley-class-handler="#slWrapper"
-                                                        data-parsley-errors-container="#slErrorContainer" required>
-                                                        <option label="Pilih Jenis"></option>
-                                                        <option value="Laptop">Laptop</option>
-                                                        <option value="Komputer">Komputer</option>
-                                                    </select>
-                                                    <div id="slErrorContainer"></div>
-                                                </div>
-                                            </div>
-                                            <div class="d-md-flex mg-b-30">
-                                            <div class="d-md-flex" style="margin-right: 50px;">
+
+
+                                        </div>
+                                    </div>
+                                    <div class="d-md-flex">
+                                        <div class="d-md-flex mg-b-30">
+                                            <div class="d-md-flex">
                                                 <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
                                                     <label>Kelas <span class="tx-danger">*</span></label>
-                                                    <select class="form-control select2 wd-300" id="id_kelas" name="id_kelas" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required>
+                                                    <select class="form-control select2 wd-300" id="id_kelas"
+                                                        name="id_kelas" data-placeholder="Choose one"
+                                                        data-parsley-class-handler="#slWrapper"
+                                                        data-parsley-errors-container="#slErrorContainer" required>
                                                         <?php foreach ($kelas as $k) : ?>
-                                                            <option value="<?= $k['id_kelas']; ?>"><?= $k['nama_kelas'] . ' - ' . $k['wali_kelas'] ?></option>
+                                                        <option value="<?= $k['id_kelas']; ?>">
+                                                            <?= $k['nama_kelas'] . ' - ' . $k['wali_kelas'] ?>
+                                                        </option>
                                                         <?php endforeach ?>
                                                     </select>
                                                     <div id="slErrorContainer"></div>
                                                 </div>
+                                                <div class="mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0"
+                                                    style="margin-left: 65px;">
+                                                    <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
+                                                        <label>Jenis Barang <span class="tx-danger">*</span></label>
+                                                        <select class="form-control select3 wd-300"
+                                                            id="jenis_produk_komputer" name="jenis_produk_komputer"
+                                                            data-placeholder="Choose one"
+                                                            data-parsley-class-handler="#slWrapper"
+                                                            data-parsley-errors-container="#slErrorContainer" required>
+                                                            <option label="Pilih Jenis"></option>
+                                                            <option value="Laptop">Laptop</option>
+                                                            <option value="Komputer">Komputer</option>
+                                                        </select>
+                                                        <div id="slErrorContainer"></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
                                         </div>
                                     </div>
                                     <div class="d-md-flex">
@@ -101,6 +112,7 @@
                                                             class="form-control wd-300" placeholder="Enter Brand"
                                                             required> -->
                                         </div>
+
                                         <!-- form-group -->
                                     </div>
 
