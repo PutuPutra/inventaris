@@ -9,28 +9,28 @@
     <meta content="" name="description">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <!-- jam -->
-    <link rel="stylesheet" href="assets/jamnya/css/style.css">
+    <link rel="stylesheet" href="<?= base_url('assets/jamnya/css/style.css') ?>">
     <!-- jam -->
     <!-- mazer -->
-    <link rel="stylesheet" href="assets/css/main/app.css">
-    <link rel="stylesheet" href="assets/css/main/app-dark.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/main/app.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/main/app-dark.css') ?>">
 
-    <link rel="stylesheet" href="assets/extensions/simple-datatables/style.css">
-    <link rel="stylesheet" href="assets/css/pages/simple-datatables.css">
+    <link rel="stylesheet" href="<?= base_url('assets/extensions/simple-datatables/style.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/pages/simple-datatables.css') ?>">
     <!-- mazer -->
 
     <!-- Libraries Stylesheet -->
-    <link href="/assets/abc/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="/assets/abc/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="/assets/abc/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/abc/lib/animate/animate.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('/assets/abc/lib/owlcarousel/assets/owl.carousel.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('/assets/abc/lib/lightbox/css/lightbox.min.css') ?>" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="/assets/abc/css/bootstrapABC.min.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/abc/css/bootstrapABC.min.css') ?>" rel="stylesheet">
     <!-- Template Stylesheet -->
-    <link href="/assets/abc/css/styleABC.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/abc/css/styleABC.css') ?>" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/smalan.png">
+    <link rel="icon" type="image/png" href="<?= base_url('assets/img/smalan.png') ?>">
 
 
 
@@ -46,19 +46,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="/assets/CSS_umum/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="/assets/CSS_umum/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/CSS_umum/lib/animate/animate.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('/assets/CSS_umum/lib/owlcarousel/assets/owl.carousel.min.css') ?>" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="/assets/CSS_umum/css/bootstrapUmum.min.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/CSS_umum/css/bootstrapUmum.min.css') ?>" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="/assets/CSS_umum/css/styleUmum.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/CSS_umum/css/styleUmum.css') ?>" rel="stylesheet">
 
     <!-- FontAwesome -->
-    <link href="/assets/FontAwesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/assets/FontAwesome/css/brands.css" rel="stylesheet">
-    <link href="/assets/FontAwesome/css/solid.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/FontAwesome/css/fontawesome.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('/assets/FontAwesome/css/brands.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('/assets/FontAwesome/css/solid.css') ?>" rel="stylesheet">
     <!-- FontAwesome -->
 
 </head>
@@ -202,18 +202,18 @@
     <script src="/assets/CSS_umum/lib/counterup/counterup.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="/assets/CSS_umum/js/main.js"></script>
+    <script src="<?= base_url('/assets/CSS_umum/js/main.js') ?>"></script>
     <!-- END: Vendor JS-->
     <!-- <script src="assets/js_mazer/bootstrap.js"></script> -->
     <!-- <script src="assets/js_mazer/app.js"></script> -->
 
-    <script src="assets/extensions/simple-datatables/umd/simple-datatables.js"></script>
-    <script src="assets/js_mazer/pages/simple-datatables.js"></script>
+    <script src="<?= base_url('/assets/extensions/simple-datatables/umd/simple-datatables.js') ?>"></script>
+    <script src="<?= base_url('/assets/js_mazer/pages/simple-datatables.js') ?>"></script>
 
 
     <!-- Template Javascript -->
-    <script src="/assets/abc/js/mainABC.js"></script>
-    <script src="/assets/jamnya/js/script.js"></script>
+    <script src="<?= base_url('/assets/abc/js/mainABC.js') ?>"></script>
+    <script src="<?= base_url('/assets/jamnya/js/script.js') ?>"></script>
     <!-- <script src="https://kit.fontawesome.com/49b420f669.js" crossorigin="anonymous"></script> -->
 
 
