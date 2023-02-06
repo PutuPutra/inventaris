@@ -675,7 +675,7 @@
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <!-- <i class="fa fa-building fa-2x"></i> -->
-                                <i class="fa-solid fa-shield fa-2x"></i>
+                                <i class="fa-solid fa-shield-quartered fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Pos Satuan Pengamanan</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
@@ -758,7 +758,7 @@
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
+                                <i class="fa-solid fa-person-chalkboard fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Guru</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
@@ -768,7 +768,7 @@
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
+                                <i class="fa fa-people fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Bimbingan Konseling</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
@@ -778,7 +778,7 @@
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
+                                <i class="fa-solid fa-kit-medical fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Unit Kesehatan Sekolah</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
@@ -788,7 +788,7 @@
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
+                                <i class="fa-solid fa-chart-simple fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Tata Usaha</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
@@ -818,7 +818,7 @@
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa-solid fa-atom fa-2x"></i>
+                                <i class="fa-solid fa-atom-simple fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Laboratorium Kimia</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
@@ -848,7 +848,7 @@
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa-solid fa-bowl-food fa-2x"></i>
+                                <i class="fa-solid fa-pot-food fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Dapur</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
