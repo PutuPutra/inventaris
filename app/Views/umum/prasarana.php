@@ -14,27 +14,19 @@
 <!-- Page Header End -->
 
 
-<!-- Service Start -->
+
+<!-- Prasarana Start -->
 <div class="container-xxl service py-5">
     <div class="container">
+
+        <!-- Kelas X Start -->
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Kelas</p>
             <h6 class="display-5 mb-5">X</h6>
         </div>
-        <!-- Kelas Start -->
         <div class="container-xxl py-1">
             <div class="container px-lg-1">
                 <div class="row g-4">
-                    <!-- <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-laptop fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Komputer</h5>
-                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/dataKomputer">Selengkapnya</a>
-                        </div>
-                    </div> -->
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
@@ -149,13 +141,13 @@
                 </div>
             </div>
         </div>
-        <!-- Kelas End -->
+        <!-- Kelas X End -->
 
+        <!-- Kelas XI MIPA Start -->
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3 mt-5">Kelas</p>
             <h6 class="display-5 mb-5">XI MIPA</h6>
         </div>
-        <!-- Kelas Start -->
         <div class="container-xxl py-1">
             <div class="container px-lg-1">
                 <div class="row g-4">
@@ -239,46 +231,16 @@
                             <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XI MIPA 9</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XI MIPA 10</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XI MIPA 11</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
-        <!-- Kelas End -->
+        <!-- Kelas XI MIPA End -->
+
+        <!-- Kelas XI IPS Start -->
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3 mt-5">Kelas</p>
             <h6 class="display-5 mb-5">XI IPS</h6>
         </div>
-        <!-- Kelas Start -->
         <div class="container-xxl py-1">
             <div class="container px-lg-1">
                 <div class="row g-4">
@@ -322,86 +284,17 @@
                             <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XI IPS 5</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XI IPS 6</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XI IPS 7</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XI IPS 8</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XI IPS 9</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XI IPS 10</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XI IPS 11</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
-        <!-- Kelas End -->
+        <!-- Kelas XI IPS End -->
+
+
+        <!-- Kelas XII MIPA Start -->
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3 mt-5">Kelas</p>
             <h6 class="display-5 mb-5">XII MIPA</h6>
         </div>
-        <!-- Kelas Start -->
         <div class="container-xxl py-1">
             <div class="container px-lg-1">
                 <div class="row g-4">
@@ -465,7 +358,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-school fa-2x"></i>
@@ -475,56 +368,17 @@
                             <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XII MIPA 8</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XII MIPA 9</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XII MIPA 10</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XII MIPA 11</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
-        <!-- Kelas End -->
+        <!-- Kelas XII MIPA End -->
+
+
+        <!-- Kelas XII IPS Start -->
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3 mt-5">Kelas</p>
             <h6 class="display-5 mb-5">XII IPS</h6>
         </div>
-        <!-- Kelas Start -->
         <div class="container-xxl py-1">
             <div class="container px-lg-1">
                 <div class="row g-4">
@@ -568,86 +422,17 @@
                             <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XII IPS 5</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XII IPS 6</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XII IPS 7</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XII IPS 8</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XII IPS 9</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XII IPS 10</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-school fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">XII IPS 11</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
-        <!-- Kelas End -->
+        <!-- Kelas XII IPS End -->
+
+
+        <!-- Bangunan Start -->
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3 mt-5">Prasarana</p>
             <h6 class="display-5 mb-5">Bangunan</h6>
         </div>
-        <!-- Service Start -->
         <div class="container-xxl py-1">
             <div class="container px-lg-1">
                 <div class="row g-4">
@@ -686,12 +471,15 @@
                 </div>
             </div>
         </div>
-        <!-- Service End -->
+        <!-- Bangunan End -->
+
+
+
+        <!-- Ruangan Start -->
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3 mt-5">Prasarana</p>
             <h6 class="display-5 mb-5">Ruangan</h6>
         </div>
-        <!-- Kelas Start -->
         <div class="container-xxl py-1">
             <div class="container px-lg-1">
                 <div class="row g-4">
@@ -859,10 +647,10 @@
                 </div>
             </div>
         </div>
-        <!-- Kelas End -->
+        <!-- Ruangan End -->
 
     </div>
 </div>
-<!-- Service End -->
+<!-- Prasarana End -->
 
 <?= $this->endSection(); ?>
