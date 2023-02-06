@@ -490,7 +490,7 @@
                             </div>
                             <h5 class="mb-3">Kepala Sekolah</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('kepsek') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/kepsek') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -500,7 +500,7 @@
                             </div>
                             <h5 class="mb-3">Wakil Kepala Bidang Kurikulum</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('wakulum') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/waka/kurikulum') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -510,7 +510,7 @@
                             </div>
                             <h5 class="mb-3">Wakil Kepala Bidang Kesiswaan</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('wakasis') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/waka/kesiswaan') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
@@ -520,7 +520,7 @@
                             </div>
                             <h5 class="mb-3">Wakil Kepala Bidang Sarana dan Prasarana</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('wakasarpras') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/waka/sarpras') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -530,7 +530,7 @@
                             </div>
                             <h5 class="mb-3">Wakil Kepala Bidang Hubungan Masyarakat</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('wakahumas') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/waka/humas') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -540,7 +540,7 @@
                             </div>
                             <h5 class="mb-3">Akademik</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('adakemik') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/akademik') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
@@ -550,7 +550,7 @@
                             </div>
                             <h5 class="mb-3">Guru</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('guru') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/guru') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -560,7 +560,7 @@
                             </div>
                             <h5 class="mb-3">Bimbingan Konseling</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('bk') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/bk') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -570,7 +570,7 @@
                             </div>
                             <h5 class="mb-3">Unit Kesehatan Sekolah</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('uks') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/uks') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -580,7 +580,7 @@
                             </div>
                             <h5 class="mb-3">Tata Usaha</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('tu') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/tu') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -590,7 +590,7 @@
                             </div>
                             <h5 class="mb-3">KOKER</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('koker') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/koker') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
@@ -640,7 +640,7 @@
                             </div>
                             <h5 class="mb-3">Dapur</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('dapur') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/ruangan/dapur') ?>">Selengkapnya</a>
                         </div>
                     </div>
 
