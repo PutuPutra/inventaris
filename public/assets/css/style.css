@@ -2035,10 +2035,6 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
   text-align: left;
 }
 
-#description:hover {
-  filter: invert(60%) sepia(42%) saturate(3696%) hue-rotate(6deg) brightness(100%) contrast(104%);
-}
-
 /* textarea */
 
 /* table */
