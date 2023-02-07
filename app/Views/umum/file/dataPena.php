@@ -46,7 +46,7 @@
                             <tr>
                                 <td><?= $pena->serial_number; ?></td>
                                 <td><?= $pena->merk_pena; ?></td>
-                                <td><?= $pena->gambar_pena; ?></td>
+                                <td><img src="/assets/foto/<?= $pena->gambar_pena ?>" height="100" width="150"></td>
                                 <td><?= $pena->kondisi_pena; ?></td>
 
                             </tr>

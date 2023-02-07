@@ -42,7 +42,7 @@
                         <?php foreach ($chairs as $kursi) : ?>
                             <tr>
                                 <td><?= $kursi->ukuran_kursi; ?></td>
-                                <td><?= $kursi->gambar_kursi; ?></td>
+                                <td><img src="/assets/foto/<?= $kursi->gambar_kursi ?>" height="100" width="150"></td>
                                 <td><?= $kursi->kondisi_kursi; ?></td>
                             </tr>
                         <?php endforeach; ?>

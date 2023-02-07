@@ -44,7 +44,7 @@
                             <tr>
                                 <td><?= $penghapus->serial_number; ?></td>
                                 <td><?= $penghapus->merk_penghapus; ?></td>
-                                <td><?= $penghapus->gambar_penghapus; ?></td>
+                                <td><img src="/assets/foto/<?= $penghapus->gambar_penghapus ?>" height="100" width="150"></td>
                                 <td><?= $penghapus->kondisi_penghapus; ?></td>
                             </tr>
                         <?php endforeach; ?>

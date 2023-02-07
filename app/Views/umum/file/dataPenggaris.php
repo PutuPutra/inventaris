@@ -45,7 +45,7 @@
                             <tr>
                                 <td><?= $penggaris->serial_number; ?></td>
                                 <td><?= $penggaris->merk_penggaris; ?></td>
-                                <td><?= $penggaris->gambar_penggaris; ?></td>
+                                <td><img src="/assets/foto/<?= $penggaris->gambar_penggaris ?>" height="100" width="150"></td>
                                 <td><?= $penggaris->kondisi_penggaris; ?></td>
                                 <td><?= $penggaris->panjang_penggaris; ?></td>
                             </tr>
