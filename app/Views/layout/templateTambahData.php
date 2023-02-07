@@ -799,7 +799,6 @@
     <script src="../../assets/plugins/dataTable/datatables.min.js"></script>
     <script src="../../assets/plugins/dataTable/responsive/dataTables.responsive.js"></script>
     <script src="../../assets/plugins/dataTable/extensions/dataTables.jqueryui.min.js"></script>
-    <script src="https://kit.fontawesome.com/49b420f669.js" crossorigin="anonymous"></script>
 
     <!-- END: Vendor JS-->
     <!-- BEGIN: Init JS-->
