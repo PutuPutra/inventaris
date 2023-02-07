@@ -41,20 +41,15 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Asus</td>
-                            <td>Gambar</td>
-                            <td>
-
-                                <textarea disabled class="container" name="" id="description" cols="10" rows="5"
-                                    style="border:none; vertical-align:middle;">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt exercitationem, dolores fugiat magnam explicabo distinctio iusto quas dignissimos ipsum sapiente.
-                                </textarea>
-
-                            </td>
-                            <td>Offenburg</td>
-                            <td>aef</td>
-                        </tr>
+                        <?php foreach ($computers as $komputer) : ?>
+                            <tr>
+                                <td><?= $komputer->brand_komputer; ?></td>
+                                <td><img src="" alt="" srcset=""></td>
+                                <td><?= $komputer->kondisi_komputer ?></td>
+                                <td><textarea readonly cols="50" rows="10" disabled><?= $komputer->spesifikasi_komputer ?></textarea></td>
+                                <td><?= $komputer->jenis_produk_komputer ?></td>
+                            </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

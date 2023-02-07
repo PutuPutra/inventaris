@@ -2,6 +2,19 @@
 
 namespace App\Controllers;
 
+use App\Models\BukuModel;
+use App\Models\FotoModel;
+use App\Models\MejaModel;
+use App\Models\PenaModel;
+use App\Models\KursiModel;
+use App\Models\PialaModel;
+use App\Models\SpidolModel;
+use App\Models\KomputerModel;
+use App\Models\PenggarisModel;
+use App\Models\PenghapusModel;
+use App\Models\PapanTulisModel;
+use App\Controllers\BaseController;
+
 class Umum extends BaseController
 {
     public function index()
@@ -9,6 +22,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => 'active',
             'navbar2' => null,
+            'piala' => (new PialaModel())->countAllResults(),
         ];
         return view('umum/index', $data);
     }
@@ -51,6 +65,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'computers' => (new KomputerModel())->findAll(),
         ];
         return view('umum/file/dataKomputer', $data);
     }
@@ -61,6 +76,7 @@ class Umum extends BaseController
 
             'navbar1' => null,
             'navbar2' => null,
+            'books' => (new BukuModel())->findAll(),
         ];
         return view('umum/file/dataBuku', $data);
     }
@@ -69,6 +85,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'boards' => (new PapanTulisModel())->findAll(),
         ];
         return view('umum/file/dataPapanTulis', $data);
     }
@@ -77,6 +94,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'tables' => (new MejaModel())->findAll(),
         ];
         return view('umum/file/dataMeja', $data);
     }
@@ -85,6 +103,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'chairs' => (new KursiModel())->findAll(),
         ];
         return view('umum/file/dataKursi', $data);
     }
@@ -93,6 +112,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'photos' => (new FotoModel())->findAll(),
         ];
         return view('umum/file/dataFoto', $data);
     }
@@ -101,6 +121,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'spidols' => (new SpidolModel())->findAll(),
         ];
         return view('umum/file/dataSpidol', $data);
     }
@@ -109,6 +130,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'erasers' => (new PenghapusModel())->findAll(),
         ];
         return view('umum/file/dataPenghapus', $data);
     }
@@ -117,6 +139,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'pens' => (new PenaModel())->findAll(),
         ];
         return view('umum/file/dataPena', $data);
     }
@@ -125,6 +148,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'rulers' => (new PenggarisModel())->findAll(),
         ];
         return view('umum/file/dataPenggaris', $data);
     }

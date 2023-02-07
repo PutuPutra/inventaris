@@ -41,9 +41,11 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Graiden</td>
-                            <td>vehicula.aliquet@semconsequat.co.uk</td>
-                            <td>076 4820 8838</td>
+                            <?php foreach ($photos as $photo) : ?>
+                                <td><?= $photo->ukuran_foto; ?></td>
+                                <td><img src="" alt="" width="100px"></td>
+                                <td><?= $photo->kondisi_foto; ?></td>
+                            <?php endforeach; ?>
                         </tr>
                     </tbody>
                 </table>

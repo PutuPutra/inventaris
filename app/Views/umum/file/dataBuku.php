@@ -41,20 +41,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td style="vertical-align: middle; text-align: center;">tes</td>
-                            <td style="vertical-align: middle; text-align: center;">jpg
-                            </td>
-                            <td>
-                                <div class="textarea">
-                                    <textarea disabled class="container" name="" id="description" cols="10" rows="5"
-                                        style="border:none; vertical-align:middle;">
-                                            sdgsdss
-                                        </textarea>
-                                </div>
-                            </td>
-                        </tr>
-
+                        <?php foreach ($books as $book) : ?>
+                            <tr>
+                                <td><?= $book->penerbit_buku; ?></td>
+                                <td><img src="" alt="" srcset=""></td>
+                                <td><?= $book->deskripsi_buku ?></td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
