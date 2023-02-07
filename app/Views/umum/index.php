@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <img class="w-100" src="/assets/CSS_umum/img/carousel-2.jpg" alt="Image">
                 <div class="carousel-caption">
                     <div class="container">
@@ -34,21 +34,21 @@
                                     IMTAQ dan IPTEK
                                     berwawasan Global
                                 </h1>
-                                <!-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a> -->
+                                <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
     </div>
 </div>
 <!-- Carousel End -->
@@ -158,37 +158,46 @@
 
 
 <!-- Facts Start -->
-<div class="container-fluid facts my-5 py-5">
+<!-- <div class="container-fluid facts my-5 py-5">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-sm-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.1s">
                 <i class="fa fa-building fa-3x text-white mb-3"></i>
+                <h1 class="display-4 text-white"></h1>
                 <h1 class="display-4 text-white" data-toggle="counter-up">20</h1>
-                <span class="fs-5 text-white">Gedung</span>
+                <span class="fs-5 text-white"></span>
                 <hr class="bg-white w-25 mx-auto mb-0">
             </div>
             <div class="col-sm-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.3s">
                 <i class="fa fa-map fa-3x text-white mb-3"></i>
+                <h1 class="display-4 text-white"></h1>
                 <h1 class="display-4 text-white" data-toggle="counter-up">4000</h1>
 
+                <span class="fs-5 text-white"></span>
                 <span class="fs-5 text-white">Luas Lahan M<sup>2</span>
                 <hr class="bg-white w-25 mx-auto mb-0">
             </div>
-            <!-- <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+            <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
                 <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
                 <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
                 <span class="fs-5 text-white">Dedicated Staff</span>
                 <hr class="bg-white w-25 mx-auto mb-0">
-            </div> -->
+            </div>
             <div class="col-sm-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.7s">
                 <i class="fa fa-award fa-3x text-white mb-3"></i>
+<<<<<<< HEAD
                 <h1 class="display-4 text-white" data-toggle="counter-up"><?= $piala; ?></h1>
                 <span class="fs-5 text-white">Piala</span>
+=======
+                <h1 class="display-4 text-white"></h1>
+                <h1 class="display-4 text-white" data-toggle="counter-up">500</h1>
+                <span class="fs-5 text-white"></span>
+>>>>>>> d91efb92354f53e78b1cac5f55e8951d81a26154
                 <hr class="bg-white w-25 mx-auto mb-0">
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Facts End -->
 
 
@@ -210,7 +219,7 @@
                             </div>
                             <h5 class="mb-3">Sarana</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/adata/sarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/sarana">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -220,7 +229,7 @@
                             </div>
                             <h5 class="mb-3">Prasarana</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="/adata/prasarana">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="/prasarana">Selengkapnya</a>
                         </div>
                     </div>
                     <!-- <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">

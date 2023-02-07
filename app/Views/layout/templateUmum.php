@@ -9,23 +9,30 @@
     <meta content="" name="description">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <!-- jam -->
-    <link rel="stylesheet" href="assets/jamnya/css/style.css">
+    <link rel="stylesheet" href="<?= base_url('assets/jamnya/css/style.css') ?>">
     <!-- jam -->
+    <!-- mazer -->
+    <link rel="stylesheet" href="<?= base_url('assets/css/main/app.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/main/app-dark.css') ?>">
 
+    <link rel="stylesheet" href="<?= base_url('assets/extensions/simple-datatables/style.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/pages/simple-datatables.css') ?>">
+    <!-- mazer -->
 
     <!-- Libraries Stylesheet -->
-    <link href="/assets/abc/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="/assets/abc/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="/assets/abc/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/abc/lib/animate/animate.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('/assets/abc/lib/owlcarousel/assets/owl.carousel.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('/assets/abc/lib/lightbox/css/lightbox.min.css') ?>" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="/assets/abc/css/bootstrapABC.min.css" rel="stylesheet">
-
+    <link href="<?= base_url('/assets/abc/css/bootstrapABC.min.css') ?>" rel="stylesheet">
     <!-- Template Stylesheet -->
-    <link href="/assets/abc/css/styleABC.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/abc/css/styleABC.css') ?>" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/smalan.png">
+    <link rel="icon" type="image/png" href="<?= base_url('assets/img/smalan.png') ?>">
+
+
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,14 +46,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="/assets/CSS_umum/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="/assets/CSS_umum/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/CSS_umum/lib/animate/animate.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('/assets/CSS_umum/lib/owlcarousel/assets/owl.carousel.min.css') ?>" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="/assets/CSS_umum/css/bootstrapUmum.min.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/CSS_umum/css/bootstrapUmum.min.css') ?>" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="/assets/CSS_umum/css/styleUmum.css" rel="stylesheet">
+    <link href="<?= base_url('/assets/CSS_umum/css/styleUmum.css') ?>" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="<?= base_url('/assets/FontAwesome/css/fontawesome.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('/assets/FontAwesome/css/brands.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('/assets/FontAwesome/css/solid.css') ?>" rel="stylesheet">
+    <!-- FontAwesome -->
 
 </head>
 
@@ -73,7 +86,7 @@
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <a href="/" class="navbar-brand ms-4 ms-lg-0">
                 <h1 class="display-5 text-primary m-0">E-SARPRAS</h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
@@ -84,17 +97,18 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="<?= base_url('/') ?>" class="nav-item nav-link <?= $navbar1 ?>">Beranda</a>
                     <a href="<?= base_url('kontak') ?>" class="nav-item nav-link <?= $navbar2 ?>">Kontak</a>
-                    <a href="<?= base_url('dashboard') ?>" class="nav-item nav-link">Admin</a>
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Inventaris</a>
                         <div class="dropdown-menu border-light m-0">
-                            <a href="project.html" class="dropdown-item">Projects</a>
-                            <a href="feature.html" class="dropdown-item">Features</a>
-                            <a href="team.html" class="dropdown-item">Team Member</a>
+                            <a href="/sarana" class="dropdown-item">Sarana</a>
+                            <a href="/prasarana" class="dropdown-item">Prasarana</a>
+                            <!-- <a href="team.html" class="dropdown-item">Team Member</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a> -->
                         </div>
-                    </div> -->
+                    </div>
+                    <a href="<?= base_url('dashboard') ?>" class="nav-item nav-link">Admin</a>
+
                 </div>
             </div>
         </nav>
@@ -174,8 +188,8 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a> -->
 
 
     <!-- JavaScript Libraries -->
@@ -188,13 +202,20 @@
     <script src="/assets/CSS_umum/lib/counterup/counterup.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="/assets/CSS_umum/js/main.js"></script>
+    <script src="<?= base_url('/assets/CSS_umum/js/main.js') ?>"></script>
+    <!-- END: Vendor JS-->
+    <!-- <script src="assets/js_mazer/bootstrap.js"></script> -->
+    <!-- <script src="assets/js_mazer/app.js"></script> -->
 
+    <script src="<?= base_url('/assets/extensions/simple-datatables/umd/simple-datatables.js') ?>"></script>
+    <script src="<?= base_url('/assets/js_mazer/pages/simple-datatables.js') ?>"></script>
 
 
     <!-- Template Javascript -->
-    <script src="/assets/abc/js/mainABC.js"></script>
-    <script src="/assets/jamnya/js/script.js"></script>
+    <script src="<?= base_url('/assets/abc/js/mainABC.js') ?>"></script>
+    <script src="<?= base_url('/assets/jamnya/js/script.js') ?>"></script>
+    <!-- <script src="https://kit.fontawesome.com/49b420f669.js" crossorigin="anonymous"></script> -->
+
 
 </body>
 

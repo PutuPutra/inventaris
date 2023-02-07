@@ -17,19 +17,22 @@
                     <div class="clearfix">
                         <!-- <label class="custom-label">Example</label> -->
                         <div class="clearfix">
-                            <form action="<?= base_url('spidol/store') ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
+                            <form action="<?= base_url('spidol/store') ?>" method="POST" enctype="multipart/form-data"
+                                data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php $validation = \Config\Services::validation(); ?>
                                 <div class="wd-300">
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
                                             <label>Merk <span class="tx-danger">*</span></label>
-                                            <input type="text" name="merk_spidol" class="form-control wd-300" placeholder="Enter Merk" required>
+                                            <input type="text" name="merk_spidol" class="form-control wd-300"
+                                                placeholder="Isi sesuai merek pada barang" required>
                                         </div>
                                         <!-- form-group -->
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                             <label>Gambar <span class="tx-danger">*</span></label>
-                                            <input type="file" name="gambar_spidol" class="form-control wd-300" placeholder="Enter gambar" required>
+                                            <input type="file" name="gambar_spidol" class="form-control wd-300"
+                                                placeholder="Enter gambar" required>
                                         </div>
                                         <!-- form-group -->
                                     </div>
@@ -42,7 +45,10 @@
                                             <div class="d-md-flex" style="margin-right: 50px;">
                                                 <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
                                                     <label>Kondisi <span class="tx-danger">*</span></label>
-                                                    <select class="form-control select2 wd-300" id="kondisi_spidol" name="kondisi_spidol" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required>
+                                                    <select class="form-control select2 wd-300" id="kondisi_spidol"
+                                                        name="kondisi_spidol" data-placeholder="Choose one"
+                                                        data-parsley-class-handler="#slWrapper"
+                                                        data-parsley-errors-container="#slErrorContainer" required>
                                                         <option label="Pilih Kondisi"></option>
                                                         <option value="Baik">Baik</option>
                                                         <option value="Kerusakan Ringan">Kerusakan Ringan
@@ -74,7 +80,8 @@
                                     <div class="d-md-flex">
                                         <div class="form-group mg-b-0">
                                             <label>Warna <span class="tx-danger">*</span></label>
-                                            <input type="text" name="warna_spidol" class="form-control wd-300" placeholder="Enter Warna" required>
+                                            <input type="text" name="warna_spidol" class="form-control wd-300"
+                                                placeholder="Enter Warna" required>
                                         </div>
                                         <!-- form-group -->
                                     </div>
@@ -87,7 +94,8 @@
                                 </div>
                             </form>
                             <a href="<?= base_url('spidol') ?>">
-                                <button class="btn btn-secondary waves-effect" style="margin-left: 120px; margin-top: -60px;">Batal</button>
+                                <button class="btn btn-secondary waves-effect"
+                                    style="margin-left: 120px; margin-top: -60px;">Batal</button>
                             </a>
                         </div>
                     </div>

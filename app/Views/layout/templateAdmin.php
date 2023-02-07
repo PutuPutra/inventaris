@@ -59,7 +59,6 @@ use Myth\Auth\Entities\Group;
                 <a class="logo-img" href="<?= base_url('/') ?>">
                     <img class="desktop-logo" src="../../assets/images/logo.png" alt="">
                     <img class="small-logo" src="../../assets/images/small-logo.png" alt="">
-                    <h1></h1>
                 </a>
                 <a id="sidebar-toggle-button-close"><i class="wd-20 ht-20" data-feather="x"></i> </a>
             </div>
@@ -233,7 +232,7 @@ use Myth\Auth\Entities\Group;
                     <form action="#" method="GET">
                         <div class="input-group">
                             <input class="form-control search-input typeahead" name="search"
-                                placeholder="Type something..." type="text" />
+                                placeholder="Ketik sesuatu..." type="text" />
                             <span class="input-group-btn"><span id="close-search"><i data-feather="x"
                                         class="wd-16"></i></span></span>
                         </div>
@@ -249,7 +248,7 @@ use Myth\Auth\Entities\Group;
                             <li class="list-inline-item">
                                 <a class="hidden-md hidden-lg waves-effect tooltip-primary" href="javascript:void(0)"
                                     id="sidebar-toggle-button" data-toggle="tooltip" title="" data-trigger="hover"
-                                    data-original-title="Toggle Sidebar">
+                                    data-original-title="">
                                     <!-- <svg class="adata-svg-icon">
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                             <rect x="0" y="0" width="24" height="24" />
@@ -295,7 +294,7 @@ use Myth\Auth\Entities\Group;
                             <li class="list-inline-item">
                                 <a class="hidden-xs hidden-sm waves-effect tooltip-primary" href="javascript:void(0)"
                                     id="collapsed-sidebar-toggle-button" data-toggle="tooltip" data-trigger="hover"
-                                    title="" data-original-title="Toggle Sidebar">
+                                    title="" data-original-title="">
                                     <svg class="adata-svg-icon" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256"
                                         height="256" viewBox="0 0 256 256" xml:space="preserve">
@@ -330,7 +329,7 @@ use Myth\Auth\Entities\Group;
                             </li>
                             <li class="list-inline-item">
                                 <a class="waves-effect tooltip-primary" href="javascript:void(0)" id="search-button"
-                                    data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Search">
+                                    data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Pencarian">
                                     <svg class="adata-svg-icon">
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                             <rect x="0" y="0" width="24" height="24" />
@@ -858,52 +857,54 @@ use Myth\Auth\Entities\Group;
                                             </div>
                                         </div>
                                         <a href="/" class="dropdown-item d-flex align-items-center">
-                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
-                                            <i class="fa-solid fa-home"></i>
+                                            <span data-feather="home" class="wd-16 ht-16 mr-2"></span>
+                                            <!-- <i class="fa-solid fa-home"></i> -->
                                             Beranda
                                         </a><a href="" class="dropdown-item d-flex align-items-center">
-                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
-                                            <i class="fa-solid fa-user"></i>
+                                            <span data-feather="user" class="wd-16 ht-16 mr-2"></span>
+                                            <!-- <i class="fa-solid fa-user"></i> -->
                                             Profil
                                         </a>
                                         <?php if (in_groups('super_admin')) : ?>
                                         <a href="" class="dropdown-item d-flex align-items-center">
-                                            <!-- <span data-feather="user" class="wd-16 ht-16 mr-2"></span> -->
-                                            <i class="fa-solid fa-user-gear"></i>
+                                            <span data-feather="user" class="wd-16 ht-16 mr-2"></span>
+                                            <!-- <i class="fa-solid fa-user-gear"></i> -->
                                             Kelola Akun
                                         </a>
                                         <?php endif; ?>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
-                                            <!-- <span data-feather="message-square" class="wd-16 ht-16 mr-2"></span> -->
-                                            <i class="fa-solid fa-message"></i>
-                                            Pesan
-                                        </a>
+                                        <!-- <a href="" class="dropdown-item d-flex align-items-center">
+                                            <span data-feather="message-square" class="wd-16 ht-16 mr-2"></span>
+                                            
+                                        Pesan
+                                        </a> -->
                                         <div class="dropdown-divider"></div>
                                         <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="settings" class="wd-16 ht-16 mr-2"></span>
                                             Pengaturan
                                         </a>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                        <!-- <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="activity" class="wd-16 ht-16 mr-2"></span>
                                             Aktivitas
-                                        </a>
+                                        </a> -->
                                         <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="download" class="wd-16 ht-16 mr-2"></span>
                                             Unduhan
                                         </a>
                                         <div class="dropdown-divider"></div>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                        <!-- <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="layout" class="wd-16 ht-16 mr-2"></span>
                                             Forum
+                                        </a> -->
+                                        <a href="tentang" class="dropdown-item d-flex align-items-center">
+                                            <!-- <span data-feather="headphones" class="wd-16 ht-16 mr-2"></span> -->
+                                            <span data-feather="info" class="wd-16 ht-16 mr-2"></span>
+                                            <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                            Tentang
                                         </a>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
-                                            <span data-feather="headphones" class="wd-16 ht-16 mr-2"></span>
-                                            Dukungan
-                                        </a>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                        <!-- <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="life-buoy" class="wd-16 ht-16 mr-2"></span>
                                             Bantuan
-                                        </a>
+                                        </a> -->
                                         <a href="<?= base_url('logout') ?>"
                                             class="dropdown-item d-flex align-items-center"><span data-feather="log-out"
                                                 class="wd-16 ht-16 mr-2"></span>

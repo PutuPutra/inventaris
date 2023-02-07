@@ -24,7 +24,7 @@
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
                                             <label>Merk <span class="tx-danger">*</span></label>
-                                            <input type="text" name="merk_penggaris" class="form-control wd-300" placeholder="Enter Merk" required>
+                                            <input type="text" name="merk_penggaris" class="form-control wd-300" placeholder="Isi sesuai merek pada barang" required>
                                         </div>
                                         <!-- form-group -->
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
@@ -74,7 +74,7 @@
                                     <div class="d-md-flex">
                                         <div class="form-group mg-b-0">
                                             <label>Panjang <span class="tx-danger">*</span></label>
-                                            <input type="text" name="panjang_penggaris" class="form-control wd-300" placeholder="Enter Panjang" required>
+                                            <input type="text" name="panjang_penggaris" class="form-control wd-300" placeholder="contoh : 60cm" required>
                                         </div>
                                         <!-- form-group -->
                                     </div>

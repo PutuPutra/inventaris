@@ -24,7 +24,7 @@
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
                                             <label>Merk <span class="tx-danger">*</span></label>
-                                            <input type="text" name="merk_penghapus" class="form-control wd-300" placeholder="Enter Merk" required>
+                                            <input type="text" name="merk_penghapus" class="form-control wd-300" placeholder="Isi sesuai merek pada barang" required>
                                         </div>
                                         <!-- form-group -->
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
