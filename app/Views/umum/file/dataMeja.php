@@ -43,7 +43,7 @@
                         <?php foreach ($tables as $meja) : ?>
                             <tr>
                                 <td><?= $meja->ukuran_meja; ?></td>
-                                <td><?= $meja->gambar_meja; ?></td>
+                                <td><img src="/assets/foto/<?= $meja->gambar_meja ?>" height="100" width="150"></td>
                                 <td><?= $meja->kondisi_meja; ?></td>
                             </tr>
                         <?php endforeach; ?>

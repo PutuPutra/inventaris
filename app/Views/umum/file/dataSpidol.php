@@ -45,7 +45,7 @@
                             <tr>
                                 <td><?= $spidol->serial_number; ?></td>
                                 <td><?= $spidol->merk_spidol; ?></td>
-                                <td><?= $spidol->gambar_spidol; ?></td>
+                                <td><img src="/assets/foto/<?= $spidol->gambar_spidol ?>" height="100" width="150"></td>
                                 <td><?= $spidol->kondisi_spidol; ?></td>
                                 <td><?= $spidol->warna_spidol; ?></td>
                             </tr>

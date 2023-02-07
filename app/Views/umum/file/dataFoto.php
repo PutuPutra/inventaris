@@ -43,7 +43,7 @@
                         <tr>
                             <?php foreach ($photos as $photo) : ?>
                                 <td><?= $photo->ukuran_foto; ?></td>
-                                <td><img src="" alt="" width="100px"></td>
+                                <td><img src="/assets/foto/<?= $photo->gambar_foto ?>" height="100" width="150"></td>
                                 <td><?= $photo->kondisi_foto; ?></td>
                             <?php endforeach; ?>
                         </tr>

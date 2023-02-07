@@ -44,7 +44,7 @@
                         <?php foreach ($computers as $komputer) : ?>
                             <tr>
                                 <td><?= $komputer->brand_komputer; ?></td>
-                                <td><img src="" alt="" srcset=""></td>
+                                <td><img src="/assets/foto/<?= $komputer->gambar_komputer ?>" height="100" width="150"></td>
                                 <td><?= $komputer->kondisi_komputer ?></td>
                                 <td><textarea readonly cols="50" rows="10" disabled><?= $komputer->spesifikasi_komputer ?></textarea></td>
                                 <td><?= $komputer->jenis_produk_komputer ?></td>

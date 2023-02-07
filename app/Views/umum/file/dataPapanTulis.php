@@ -45,7 +45,7 @@
                             <tr>
                                 <td><?= $papan->serial_number; ?></td>
                                 <td><?= $papan->ukuran_papan_tulis; ?></td>
-                                <td><?= $papan->gambar_papan_tulis; ?></td>
+                                <td><img src="/assets/foto/<?= $papan->gambar_papan_tulis ?>" height="100" width="150"></td>
                                 <td><?= $papan->kondisi_papan_tulis; ?></td>
                             </tr>
                         <?php endforeach; ?>
