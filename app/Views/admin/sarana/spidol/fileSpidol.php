@@ -13,7 +13,7 @@
                 </div>
                 <div class="card-body pd-0">
                     <div class="table-responsive">
-                        <table class="table table-bordered table-hover mb-0" id="table1">
+                        <table class="table table-bordered mb-0" id="table1">
                             <thead>
                                 <tr>
                                     <th>Merk</th>

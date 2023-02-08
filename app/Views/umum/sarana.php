@@ -58,10 +58,10 @@
                     <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <div class="meja">
+                                <!-- <div class="meja">
                                     <img src="assets/img/meja.png" alt="" srcset="" width="60px">
-                                </div>
-                                <!-- <i class="fa fa-table-picnic fa-2x"></i> -->
+                                </div> -->
+                                <i class="fa fa-table-picnic fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Meja</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>

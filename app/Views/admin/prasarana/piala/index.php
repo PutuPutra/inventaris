@@ -13,7 +13,7 @@
                 </div>
                 <div class="card-body pd-0">
                     <div class="table-responsive">
-                        <table class="table table-bordered table-hover mb-0" id="table1">
+                        <table class="table table-bordered mb-0" id="table1">
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -28,20 +28,22 @@
                             <tbody>
                                 <?php $i = 1;
                                 foreach ($piala as $pl) : ?>
-                                    <tr style="text-align: center;">
-                                        <td><?= $i; ?></td>
-                                        <td><?= $pl['nama_piala']; ?></td>
-                                        <td><?= $pl['tingkat']; ?></td>
-                                        <td><?= $pl['peserta']; ?></td>
-                                        <td><?= $pl['posisi']; ?></td>
-                                        <td><?= $pl['tahun']; ?></td>
-                                        <td>
-                                            <div class="buttons">
-                                                <a href="<?= base_url('editKelas/' . $pl['id_piala']) ?>" class="btn btn-primary btn-sm">Edit</a>
-                                                <a href="<?= base_url('piala/delete/' . $pl['id_piala']) ?>" class="btn btn-danger btn-sm">Delete</a>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                <tr style="text-align: center;">
+                                    <td><?= $i; ?></td>
+                                    <td><?= $pl['nama_piala']; ?></td>
+                                    <td><?= $pl['tingkat']; ?></td>
+                                    <td><?= $pl['peserta']; ?></td>
+                                    <td><?= $pl['posisi']; ?></td>
+                                    <td><?= $pl['tahun']; ?></td>
+                                    <td>
+                                        <div class="buttons">
+                                            <a href="<?= base_url('editKelas/' . $pl['id_piala']) ?>"
+                                                class="btn btn-primary btn-sm">Edit</a>
+                                            <a href="<?= base_url('piala/delete/' . $pl['id_piala']) ?>"
+                                                class="btn btn-danger btn-sm">Delete</a>
+                                        </div>
+                                    </td>
+                                </tr>
                                 <?php
                                     $i++;
                                 endforeach ?>

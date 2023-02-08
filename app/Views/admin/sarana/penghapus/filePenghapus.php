@@ -13,7 +13,7 @@
                 </div>
                 <div class="card-body pd-0">
                     <div class="table-responsive">
-                        <table class="table table-bordered table-hover mb-0" id="table1">
+                        <table class="table table-bordered mb-0" id="table1">
                             <thead>
                                 <tr>
                                     <th>Merk</th>
@@ -24,22 +24,18 @@
                             </thead>
                             <tbody>
                                 <?php foreach ($files_penghapus as $f) : ?>
-                                <tr>
-                                    <td id="isiTable"><?= $f->merk_penghapus; ?></td>
-                                    <td id="isiTable"><img class="pictures"
-                                            src="/assets/foto/<?= $f->gambar_penghapus; ?>" alt="" width="100px"></img>
-                                    </td>
-                                    <td id="isiTable"><?= $f->kondisi_penghapus; ?></td>
-                                    <td id="isiTable">
-                                        <div class="buttons">
-                                            <a href="<?= base_url('PenghapusEdit') . '/' . $f->id ?>"
-                                                class="btn btn-warning"><i
-                                                    class="fa-solid fa-pen-to-square"></i></i></a>
-                                            <a href="<?= base_url('penghapus/deleted') . '/' . $f->id ?>"
-                                                class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td id="isiTable"><?= $f->merk_penghapus; ?></td>
+                                        <td id="isiTable"><img class="pictures" src="/assets/foto/<?= $f->gambar_penghapus; ?>" alt="" width="100px"></img>
+                                        </td>
+                                        <td id="isiTable"><?= $f->kondisi_penghapus; ?></td>
+                                        <td id="isiTable">
+                                            <div class="buttons">
+                                                <a href="<?= base_url('PenghapusEdit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
+                                                <a href="<?= base_url('penghapus/deleted') . '/' . $f->id ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 <?php
                                 endforeach ?>
                             </tbody>
