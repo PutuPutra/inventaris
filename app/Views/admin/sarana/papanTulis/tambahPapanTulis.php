@@ -81,7 +81,7 @@
                                     <div class="wd-30">
                                         <div class="d-md-flex mg-b-30">
                                             <div class="form-group mg-b-0">
-                                                <label>No.SN <span class="tx-danger">*</span></label>
+                                                <label>Nomor Seri<span class="tx-danger">*</span></label>
                                                 <input type="text" name="serial_number" class="form-control wd-300"
                                                     placeholder="Enter Serial Number" required>
                                             </div>
