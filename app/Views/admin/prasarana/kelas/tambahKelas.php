@@ -11,35 +11,48 @@
 
                 <div class="custom-fieldset-style mg-b-30">
                     <div class="clearfix">
-                        <!-- <label class="custom-label">Example</label> -->
+
                         <div class="clearfix">
                             <form action="<?= base_url('kelas/store') ?>" method="POST" enctype="multipart/form-data"
                                 data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php $validation = \Config\Services::validation(); ?>
                                 <div class="wd-300">
+
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
                                             <label>Nama Kelas <span class="tx-danger">*</span></label>
                                             <input type="text" name="nama_kelas" class="form-control wd-300"
                                                 placeholder="Masukkan Nama Kelas" required>
                                         </div>
-                                        <!-- form-group -->
-                                        <div class="form-group mg-b-0">
-                                            <label>Wali Kelas <span class="tx-danger">*</span></label>
-                                            <input type="text" name="wali_kelas" class="form-control wd-300"
-                                                placeholder="Masukkan Nama Wali Kelas" required>
-                                        </div>
-                                        <!-- form-group -->
-                                    </div>
-                                    <div class="wd-250">
-                                        <div class="form-group mg-b-0">
-                                            <label>Ketua Kelas <span class="tx-danger">*</span></label>
-                                            <input type="text" name="ketua_kelas" class="form-control wd-300"
-                                                placeholder="Masukkan Nama Ketua Kelas" required>
+                                        <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                                            <label>Gambar <span class="tx-danger">*</span></label>
+                                            <input type="file" name="gambar_kelas" class="form-control wd-300" required>
                                         </div>
 
-                                        <!-- d-flex -->
+
+                                    </div>
+
+                                    <div class="wd-300">
+                                        <div class="d-md-flex mg-b-30">
+                                            <div class="form-group mg-b-0">
+                                                <label>Ketua Kelas <span class="tx-danger">*</span></label>
+                                                <input type="text" name="ketua_kelas" class="form-control wd-300"
+                                                    placeholder="Masukkan Nama Ketua Kelas" required>
+                                            </div>
+                                            <div class="mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                                                <div class="form-group mg-b-0">
+                                                    <label>Wali Kelas <span class="tx-danger">*</span></label>
+                                                    <input type="text" name="wali_kelas" class="form-control wd-300"
+                                                        placeholder="Masukkan Nama Wali Kelas" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wd-250">
+
+
                                         <div class="form-layout-footer mg-t-8">
                                             <button class="btn btn-primary waves-effect">Simpan
                                                 Data</button>

@@ -11,7 +11,6 @@
 
                 <div class="custom-fieldset-style mg-b-30">
                     <div class="clearfix">
-                        <!-- <label class="custom-label">Example</label> -->
                         <div class="clearfix">
                             <form action="<?= base_url('piala/store') ?>" method="POST" enctype="multipart/form-data"
                                 data-parsley-validate>
@@ -24,7 +23,7 @@
                                             <input type="text" name="nama_piala" class="form-control wd-300"
                                                 placeholder="Masukkan Nama Piala" required>
                                         </div>
-                                        <!-- form-group -->
+
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                             <div class="d-md-flex" style="margin-right: 50px;">
                                                 <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
@@ -42,13 +41,13 @@
                                                         <option value="Provinsi">Provinsi
                                                         </option>
                                                         <option value="Nasional">Nasional</option>
-                                                        <option value="Inter Nasional">Inter Nasional</option>
+                                                        <option value="Inter Nasional">Internasional</option>
                                                     </select>
                                                     <div id="slErrorContainer"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- form-group -->
+
                                     </div>
 
                                     <div class="wd-300">
@@ -79,7 +78,7 @@
                                     </div>
 
                                     <div class="wd-250">
-                                        <!-- d-flex -->
+
                                         <div class="form-layout-footer mg-t-8">
                                             <button class="btn btn-primary waves-effect">Simpan
                                                 Data</button>
