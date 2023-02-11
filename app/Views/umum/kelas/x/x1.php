@@ -42,7 +42,8 @@
                             </div>
                             <h5 class="mb-3">Papan Tulis</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/papan_tulis') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto"
+                                href="<?= base_url('/x/1/papantulis') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -92,7 +93,8 @@
                             </div>
                             <h5 class="mb-3">Penghapus</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/penghapus') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto"
+                                href="<?= base_url('/x/1/penghapus') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -112,7 +114,8 @@
                             </div>
                             <h5 class="mb-3">Penggaris</h5>
                             <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/penggaris') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto"
+                                href="<?= base_url('/x/1/penggaris') ?>">Selengkapnya</a>
                         </div>
                     </div>
                 </div>

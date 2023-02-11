@@ -616,7 +616,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis', $data);
+        return view('umum/kelas/x/data/x1/papantulis/papanTulis', $data);
     }
     public function x1meja()
     {
@@ -1218,7 +1218,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x9/buku/papan_tulis/papanTulis', $data);
+        return view('umum/kelas/x/data/x9/buku/papantulis/filepapanTulis', $data);
     }
     public function x9meja()
     {
