@@ -1432,6 +1432,1762 @@ class Umum extends BaseController
 
     // =============================kelas xi====================================
 
+    //XI IPS1
+    public function xiips1buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi1/buku/filebuku', $data);
+    }
+    public function xiips1papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi1/papan_tulis/papanTulis', $data);
+    }
+    public function xiips1meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi1/meja/meja', $data);
+    }
+    public function xiips1kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi1/kursi/kursi', $data);
+    }
+    public function xiips1foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi1/foto/foto', $data);
+    }
+    public function xiips1spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi1/spidol/spidol', $data);
+    }
+    public function xiips1penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi1/penghapus/penghapus', $data);
+    }
+    public function xiips1pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi1/pena/pena', $data);
+    }
+    public function xiips1penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi1/penggaris/penggaris', $data);
+    }
+    //XI IPS2
+    public function xiips2buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi2/buku/filebuku', $data);
+    }
+    public function xiips2papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi2/papan_tulis/papanTulis', $data);
+    }
+    public function xiips2meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi2/meja/meja', $data);
+    }
+    public function xiips2kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi2/kursi/kursi', $data);
+    }
+    public function xiips2foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi2/foto/foto', $data);
+    }
+    public function xiips2spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi2/spidol/spidol', $data);
+    }
+    public function xiips2penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi2/penghapus/penghapus', $data);
+    }
+    public function xiips2pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi2/pena/pena', $data);
+    }
+    public function xiips2penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi2/penggaris/penggaris', $data);
+    }
+    //XI IPS3
+    public function xiips3buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi3/buku/filebuku', $data);
+    }
+    public function xiips3papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi3/papan_tulis/papanTulis', $data);
+    }
+    public function xiips3meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi3/meja/meja', $data);
+    }
+    public function xiips3kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi3/kursi/kursi', $data);
+    }
+    public function xiips3foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi3/foto/foto', $data);
+    }
+    public function xiips3spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi3/spidol/spidol', $data);
+    }
+    public function xiips3penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi3/penghapus/penghapus', $data);
+    }
+    public function xiips3pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi3/pena/pena', $data);
+    }
+    public function xiips3penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi3/penggaris/penggaris', $data);
+    }
+    //XI IPS4
+    public function xiips4buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi4/buku/filebuku', $data);
+    }
+    public function xiips4papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi4/papan_tulis/papanTulis', $data);
+    }
+    public function xiips4meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi4/meja/meja', $data);
+    }
+    public function xiips4kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi4/kursi/kursi', $data);
+    }
+    public function xiips4foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi4/foto/foto', $data);
+    }
+    public function xiips4spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi4/spidol/spidol', $data);
+    }
+    public function xiips4penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi4/penghapus/penghapus', $data);
+    }
+    public function xiips4pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi4/pena/pena', $data);
+    }
+    public function xiips4penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ips/xi4/penggaris/penggaris', $data);
+    }
+    //===============
+    // XI IPA 1
+    public function xiipa1buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi1/buku/filebuku', $data);
+    }
+    public function xiipa1papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi1/papan_tulis/papanTulis', $data);
+    }
+    public function xiipa1meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi1/meja/meja', $data);
+    }
+    public function xiipa1kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi1/kursi/kursi', $data);
+    }
+    public function xiipa1foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi1/foto/foto', $data);
+    }
+    public function xiipa1spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi1/spidol/spidol', $data);
+    }
+    public function xiipa1penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi1/penghapus/penghapus', $data);
+    }
+    public function xiipa1pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi1/pena/pena', $data);
+    }
+    public function xiipa1penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi1/penggaris/penggaris', $data);
+    }
+    // XI IPA 2
+    public function xiipa2buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi2/buku/filebuku', $data);
+    }
+    public function xiipa2papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi2/papan_tulis/papanTulis', $data);
+    }
+    public function xiipa2meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi2/meja/meja', $data);
+    }
+    public function xiipa2kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi2/kursi/kursi', $data);
+    }
+    public function xiipa2foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi2/foto/foto', $data);
+    }
+    public function xiipa2spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi2/spidol/spidol', $data);
+    }
+    public function xiipa2penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi2/penghapus/penghapus', $data);
+    }
+    public function xiipa2pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi2/pena/pena', $data);
+    }
+    public function xiipa2penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi2/penggaris/penggaris', $data);
+    }
+    // XI IPA 3
+    public function xiipa3buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi3/buku/filebuku', $data);
+    }
+    public function xiipa3papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi3/papan_tulis/papanTulis', $data);
+    }
+    public function xiipa3meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi3/meja/meja', $data);
+    }
+    public function xiipa3kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi3/kursi/kursi', $data);
+    }
+    public function xiipa3foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi3/foto/foto', $data);
+    }
+    public function xiipa3spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi3/spidol/spidol', $data);
+    }
+    public function xiipa3penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi3/penghapus/penghapus', $data);
+    }
+    public function xiipa3pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi3/pena/pena', $data);
+    }
+    public function xiipa3penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi3/penggaris/penggaris', $data);
+    }
+    // XI IPA 4
+    public function xiipa4buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi4/buku/filebuku', $data);
+    }
+    public function xiipa4papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi4/papan_tulis/papanTulis', $data);
+    }
+    public function xiipa4meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi4/meja/meja', $data);
+    }
+    public function xiipa4kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi4/kursi/kursi', $data);
+    }
+    public function xiipa4foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi4/foto/foto', $data);
+    }
+    public function xiipa4spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi4/spidol/spidol', $data);
+    }
+    public function xiipa4penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi4/penghapus/penghapus', $data);
+    }
+    public function xiipa4pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi4/pena/pena', $data);
+    }
+    public function xiipa4penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi4/penggaris/penggaris', $data);
+    }
+    // XI IPA 5
+    public function xiipa5buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi5/buku/filebuku', $data);
+    }
+    public function xiipa5papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi5/papan_tulis/papanTulis', $data);
+    }
+    public function xiipa5meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi5/meja/meja', $data);
+    }
+    public function xiipa5kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi5/kursi/kursi', $data);
+    }
+    public function xiipa5foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi5/foto/foto', $data);
+    }
+    public function xiipa5spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi5/spidol/spidol', $data);
+    }
+    public function xiipa5penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi5/penghapus/penghapus', $data);
+    }
+    public function xiipa5pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi5/pena/pena', $data);
+    }
+    public function xiipa5penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi5/penggaris/penggaris', $data);
+    }
+    // XI IPA 6
+    public function xiipa6buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi6/buku/filebuku', $data);
+    }
+    public function xiipa6papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi6/papan_tulis/papanTulis', $data);
+    }
+    public function xiipa6meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi6/meja/meja', $data);
+    }
+    public function xiipa6kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi6/kursi/kursi', $data);
+    }
+    public function xiipa6foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi6/foto/foto', $data);
+    }
+    public function xiipa6spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi6/spidol/spidol', $data);
+    }
+    public function xiipa6penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi6/penghapus/penghapus', $data);
+    }
+    public function xiipa6pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi6/pena/pena', $data);
+    }
+    public function xiipa6penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi6/penggaris/penggaris', $data);
+    }
+    // XI IPA 7
+    public function xiipa7buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi7/buku/filebuku', $data);
+    }
+    public function xiipa7papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi7/papan_tulis/papanTulis', $data);
+    }
+    public function xiipa7meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi7/meja/meja', $data);
+    }
+    public function xiipa7kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi7/kursi/kursi', $data);
+    }
+    public function xiipa7foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi7/foto/foto', $data);
+    }
+    public function xiipa7spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi7/spidol/spidol', $data);
+    }
+    public function xiipa7penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi7/penghapus/penghapus', $data);
+    }
+    public function xiipa7pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi7/pena/pena', $data);
+    }
+    public function xiipa7penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi7/penggaris/penggaris', $data);
+    }
+    // XI IPA 8
+    public function xiipa8buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi8/buku/filebuku', $data);
+    }
+    public function xiipa8papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi8/papan_tulis/papanTulis', $data);
+    }
+    public function xiipa8meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi8/meja/meja', $data);
+    }
+    public function xiipa8kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi8/kursi/kursi', $data);
+    }
+    public function xiipa8foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi8/foto/foto', $data);
+    }
+    public function xiipa8spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi8/spidol/spidol', $data);
+    }
+    public function xiipa8penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi8/penghapus/penghapus', $data);
+    }
+    public function xiipa8pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi8/pena/pena', $data);
+    }
+    public function xiipa8penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xi/data/ipa/xi8/penggaris/penggaris', $data);
+    }
     // =============================kelas xi====================================
+
+    // =============================kelas xii===================================
+    //XII IPS 1
+    public function xiiips1buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii1/buku/filebuku', $data);
+    }
+    public function xiiips1papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii1/papan_tulis/papanTulis', $data);
+    }
+    public function xiiips1meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii1/meja/meja', $data);
+    }
+    public function xiiips1kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii1/kursi/kursi', $data);
+    }
+    public function xiiips1foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii1/foto/foto', $data);
+    }
+    public function xiiips1spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii1/spidol/spidol', $data);
+    }
+    public function xiiips1penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii1/penghapus/penghapus', $data);
+    }
+    public function xiiips1pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii1/pena/pena', $data);
+    }
+    public function xiiips1penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii1/penggaris/penggaris', $data);
+    }
+    //XII IPS 2
+    public function xiiips2buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii2/buku/filebuku', $data);
+    }
+    public function xiiips2papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii2/papan_tulis/papanTulis', $data);
+    }
+    public function xiiips2meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii2/meja/meja', $data);
+    }
+    public function xiiips2kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii2/kursi/kursi', $data);
+    }
+    public function xiiips2foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii2/foto/foto', $data);
+    }
+    public function xiiips2spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii2/spidol/spidol', $data);
+    }
+    public function xiiips2penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii2/penghapus/penghapus', $data);
+    }
+    public function xiiips2pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii2/pena/pena', $data);
+    }
+    public function xiiips2penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii2/penggaris/penggaris', $data);
+    }
+    //XII IPS 3
+    public function xiiips3buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii3/buku/filebuku', $data);
+    }
+    public function xiiips3papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii3/papan_tulis/papanTulis', $data);
+    }
+    public function xiiips3meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii3/meja/meja', $data);
+    }
+    public function xiiips3kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii3/kursi/kursi', $data);
+    }
+    public function xiiips3foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii3/foto/foto', $data);
+    }
+    public function xiiips3spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii3/spidol/spidol', $data);
+    }
+    public function xiiips3penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii3/penghapus/penghapus', $data);
+    }
+    public function xiiips3pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii3/pena/pena', $data);
+    }
+    public function xiiips3penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii3/penggaris/penggaris', $data);
+    }
+    //XII IPS 4
+    public function xiiips4buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii4/buku/filebuku', $data);
+    }
+    public function xiiips4papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii4/papan_tulis/papanTulis', $data);
+    }
+    public function xiiips4meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii4/meja/meja', $data);
+    }
+    public function xiiips4kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii4/kursi/kursi', $data);
+    }
+    public function xiiips4foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii4/foto/foto', $data);
+    }
+    public function xiiips4spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii4/spidol/spidol', $data);
+    }
+    public function xiiips4penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii4/penghapus/penghapus', $data);
+    }
+    public function xiiips4pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii4/pena/pena', $data);
+    }
+    public function xiiips4penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ips/xii4/penggaris/penggaris', $data);
+    }
+    //XII IPA 1
+    public function xiiipa1buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii1/buku/filebuku', $data);
+    }
+    public function xiiipa1papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii1/papan_tulis/papanTulis', $data);
+    }
+    public function xiiipa1meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii1/meja/meja', $data);
+    }
+    public function xiiipa1kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii1/kursi/kursi', $data);
+    }
+    public function xiiipa1foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii1/foto/foto', $data);
+    }
+    public function xiiipa1spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii1/spidol/spidol', $data);
+    }
+    public function xiiipa1penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii1/penghapus/penghapus', $data);
+    }
+    public function xiiipa1pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii1/pena/pena', $data);
+    }
+    public function xiiipa1penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii1/penggaris/penggaris', $data);
+    }
+    //XII IPA 2
+    public function xiiipa2buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii2/buku/filebuku', $data);
+    }
+    public function xiiipa2papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii2/papan_tulis/papanTulis', $data);
+    }
+    public function xiiipa2meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii2/meja/meja', $data);
+    }
+    public function xiiipa2kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii2/kursi/kursi', $data);
+    }
+    public function xiiipa2foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii2/foto/foto', $data);
+    }
+    public function xiiipa2spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii2/spidol/spidol', $data);
+    }
+    public function xiiipa2penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii2/penghapus/penghapus', $data);
+    }
+    public function xiiipa2pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii2/pena/pena', $data);
+    }
+    public function xiiipa2penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii2/penggaris/penggaris', $data);
+    }
+    //XII IPA 3
+    public function xiiipa3buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii3/buku/filebuku', $data);
+    }
+    public function xiiipa3papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii3/papan_tulis/papanTulis', $data);
+    }
+    public function xiiipa3meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii3/meja/meja', $data);
+    }
+    public function xiiipa3kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii3/kursi/kursi', $data);
+    }
+    public function xiiipa3foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii3/foto/foto', $data);
+    }
+    public function xiiipa3spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii3/spidol/spidol', $data);
+    }
+    public function xiiipa3penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii3/penghapus/penghapus', $data);
+    }
+    public function xiiipa3pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii3/pena/pena', $data);
+    }
+    public function xiiipa3penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii3/penggaris/penggaris', $data);
+    }
+    //XII IPA 4
+    public function xiiipa4buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii4/buku/filebuku', $data);
+    }
+    public function xiiipa4papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii4/papan_tulis/papanTulis', $data);
+    }
+    public function xiiipa4meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii4/meja/meja', $data);
+    }
+    public function xiiipa4kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii4/kursi/kursi', $data);
+    }
+    public function xiiipa4foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii4/foto/foto', $data);
+    }
+    public function xiiipa4spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii4/spidol/spidol', $data);
+    }
+    public function xiiipa4penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii4/penghapus/penghapus', $data);
+    }
+    public function xiiipa4pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii4/pena/pena', $data);
+    }
+    public function xiiipa4penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii4/penggaris/penggaris', $data);
+    }
+    //XII IPA 5
+    public function xiiipa5buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii5/buku/filebuku', $data);
+    }
+    public function xiiipa5papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii5/papan_tulis/papanTulis', $data);
+    }
+    public function xiiipa5meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii5/meja/meja', $data);
+    }
+    public function xiiipa5kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii5/kursi/kursi', $data);
+    }
+    public function xiiipa5foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii5/foto/foto', $data);
+    }
+    public function xiiipa5spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii5/spidol/spidol', $data);
+    }
+    public function xiiipa5penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii5/penghapus/penghapus', $data);
+    }
+    public function xiiipa5pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii5/pena/pena', $data);
+    }
+    public function xiiipa5penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii5/penggaris/penggaris', $data);
+    }
+    //XII IPA 6
+    public function xiiipa6buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii6/buku/filebuku', $data);
+    }
+    public function xiiipa6papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii6/papan_tulis/papanTulis', $data);
+    }
+    public function xiiipa6meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii6/meja/meja', $data);
+    }
+    public function xiiipa6kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii6/kursi/kursi', $data);
+    }
+    public function xiiipa6foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii6/foto/foto', $data);
+    }
+    public function xiiipa6spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii6/spidol/spidol', $data);
+    }
+    public function xiiipa6penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii6/penghapus/penghapus', $data);
+    }
+    public function xiiipa6pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii6/pena/pena', $data);
+    }
+    public function xiiipa6penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii6/penggaris/penggaris', $data);
+    }
+    //XII IPA 7
+    public function xiiipa7buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii7/buku/filebuku', $data);
+    }
+    public function xiiipa7papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii7/papan_tulis/papanTulis', $data);
+    }
+    public function xiiipa7meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii7/meja/meja', $data);
+    }
+    public function xiiipa7kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii7/kursi/kursi', $data);
+    }
+    public function xiiipa7foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii7/foto/foto', $data);
+    }
+    public function xiiipa7spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii7/spidol/spidol', $data);
+    }
+    public function xiiipa7penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii7/penghapus/penghapus', $data);
+    }
+    public function xiiipa7pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii7/pena/pena', $data);
+    }
+    public function xiiipa7penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii7/penggaris/penggaris', $data);
+    }
+    //XII IPA 8
+    public function xiiipa8buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii8/buku/filebuku', $data);
+    }
+    public function xiiipa8papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii8/papan_tulis/papanTulis', $data);
+    }
+    public function xiiipa8meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii8/meja/meja', $data);
+    }
+    public function xiiipa8kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii8/kursi/kursi', $data);
+    }
+    public function xiiipa8foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii8/foto/foto', $data);
+    }
+    public function xiiipa8spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii8/spidol/spidol', $data);
+    }
+    public function xiiipa8penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii8/penghapus/penghapus', $data);
+    }
+    public function xiiipa8pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii8/pena/pena', $data);
+    }
+    public function xiiipa8penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/xii/data/ipa/xii8/penggaris/penggaris', $data);
+    }
+    // =============================kelas xii===================================
 
 }
