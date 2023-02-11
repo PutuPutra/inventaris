@@ -692,7 +692,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x2/buku/papan_tulis/papanTulis', $data);
+        return view('umum/kelas/x/data/x2/papan_tulis/papanTulis', $data);
     }
     public function x2meja()
     {
@@ -768,7 +768,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x3/buku/papan_tulis/papanTulis', $data);
+        return view('umum/kelas/x/data/x3/papan_tulis/papanTulis', $data);
     }
     public function x3meja()
     {
@@ -843,7 +843,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x4/buku/papan_tulis/papanTulis', $data);
+        return view('umum/kelas/x/data/x4/papan_tulis/papanTulis', $data);
     }
     public function x4meja()
     {
@@ -918,7 +918,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x5/buku/papan_tulis/papanTulis', $data);
+        return view('umum/kelas/x/data/x5/papan_tulis/papanTulis', $data);
     }
     public function x5meja()
     {
@@ -993,7 +993,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x6/buku/papan_tulis/papanTulis', $data);
+        return view('umum/kelas/x/data/x6/papan_tulis/papanTulis', $data);
     }
     public function x6meja()
     {
@@ -1068,7 +1068,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x7/buku/papan_tulis/papanTulis', $data);
+        return view('umum/kelas/x/data/x7/papan_tulis/papanTulis', $data);
     }
     public function x7meja()
     {
@@ -1143,7 +1143,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x8/buku/papan_tulis/papanTulis', $data);
+        return view('umum/kelas/x/data/x8/papan_tulis/papanTulis', $data);
     }
     public function x8meja()
     {
@@ -1218,7 +1218,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x9/buku/papantulis/filepapanTulis', $data);
+        return view('umum/kelas/x/data/x9/papan_tulis/papanTulis', $data);
     }
     public function x9meja()
     {
@@ -1294,7 +1294,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x10/buku/papan_tulis/papanTulis', $data);
+        return view('umum/kelas/x/data/x10/papan_tulis/papanTulis', $data);
     }
     public function x10meja()
     {
@@ -1369,7 +1369,7 @@ class Umum extends BaseController
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/x/data/x11/buku/papan_tulis/papanTulis', $data);
+        return view('umum/kelas/x/data/x11/papan_tulis/papanTulis', $data);
     }
     public function x11meja()
     {
