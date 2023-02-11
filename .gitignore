@@ -100,10 +100,10 @@ Vagrantfile
 *.iml
 
 # Netbeans
-nbproject/
-build/
-nbbuild/
-dist/
+# nbproject/
+# build/
+# nbbuild/
+# dist/
 nbdist/
 nbactions.xml
 nb-configuration.xml
