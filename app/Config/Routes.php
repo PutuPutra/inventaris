@@ -369,7 +369,7 @@ $routes->get('/x/11/spidol', 'Umum::x11spidol');
 $routes->get('/x/11/penghapus', 'Umum::x11penghapus');
 $routes->get('/x/11/pena', 'Umum::x11pena');
 $routes->get('/x/11/penggaris', 'Umum::x11penggaris');
-// sarana kelas x 1
+// sarana kelas x 11
 
 
 
