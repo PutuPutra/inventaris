@@ -229,14 +229,154 @@ $routes->get('/tambahPenggaris', 'penggarisController::tambahPenggaris', ['filte
 $routes->get('/penggaris/deleted/(:num)', 'penggarisController::deleted/$1', ['filter' => 'login']);
 
 //prasarana
-$routes->get('/kelas','Kelas::index', ['filter' => 'login']);
-$routes->get('/tambahKelas','Kelas::tambahKelas', ['filter' => 'login']);
-$routes->post('/kelas/store','Kelas::store', ['filter' => 'login']);
+$routes->get('/kelas', 'Kelas::index', ['filter' => 'login']);
+$routes->get('/tambahKelas', 'Kelas::tambahKelas', ['filter' => 'login']);
+$routes->post('/kelas/store', 'Kelas::store', ['filter' => 'login']);
 //piala
 $routes->get('/piala', 'PialaController::index', ['filter' => 'login']);
 $routes->get('/piala/tambahPiala', 'PialaController::tambahPiala', ['filter' => 'login']);
 $routes->get('/piala/delete/(:num)', 'PialaController::destroy/$1', ['filter' => 'login']);
 $routes->post('/piala/store', 'PialaController::store', ['filter' => 'login']);
+
+
+// sarana kelas x 1
+$routes->get('/x/1/buku', 'Umum::x1buku');
+$routes->get('/x/1/papan_tulis', 'Umum::x1papanTulis');
+$routes->get('/x/1/meja', 'Umum::x1meja');
+$routes->get('/x/1/kursi', 'Umum::x1kursi');
+$routes->get('/x/1/foto', 'Umum::x1foto');
+$routes->get('/x/1/spidol', 'Umum::x1spidol');
+$routes->get('/x/1/penghapus', 'Umum::x1penghapus');
+$routes->get('/x/1/pena', 'Umum::x1pena');
+$routes->get('/x/1/penggaris', 'Umum::x1penggaris');
+// sarana kelas x 1
+
+// sarana kelas x 2
+$routes->get('/x/2/buku', 'Umum::x2buku');
+$routes->get('/x/2/papan_tulis', 'Umum::x2papanTulis');
+$routes->get('/x/2/meja', 'Umum::x2meja');
+$routes->get('/x/2/kursi', 'Umum::x2kursi');
+$routes->get('/x/2/foto', 'Umum::x2foto');
+$routes->get('/x/2/spidol', 'Umum::x2spidol');
+$routes->get('/x/2/penghapus', 'Umum::x2penghapus');
+$routes->get('/x/2/pena', 'Umum::x2pena');
+$routes->get('/x/2/penggaris', 'Umum::x2penggaris');
+// sarana kelas x 2
+
+// sarana kelas x 3
+$routes->get('/x/3/buku', 'Umum::x3buku');
+$routes->get('/x/3/papan_tulis', 'Umum::x3papanTulis');
+$routes->get('/x/3/meja', 'Umum::x3meja');
+$routes->get('/x/3/kursi', 'Umum::x3kursi');
+$routes->get('/x/3/foto', 'Umum::x3foto');
+$routes->get('/x/3/spidol', 'Umum::x3spidol');
+$routes->get('/x/3/penghapus', 'Umum::x3penghapus');
+$routes->get('/x/3/pena', 'Umum::x3pena');
+$routes->get('/x/3/penggaris', 'Umum::x3penggaris');
+// sarana kelas x 3
+
+// sarana kelas x 4
+$routes->get('/x/4/buku', 'Umum::x4buku');
+$routes->get('/x/4/papan_tulis', 'Umum::x4papanTulis');
+$routes->get('/x/4/meja', 'Umum::x1meja');
+$routes->get('/x/4/kursi', 'Umum::x4kursi');
+$routes->get('/x/4/foto', 'Umum::x4foto');
+$routes->get('/x/4/spidol', 'Umum::x4spidol');
+$routes->get('/x/4/penghapus', 'Umum::x4penghapus');
+$routes->get('/x/4/pena', 'Umum::x4pena');
+$routes->get('/x/4/penggaris', 'Umum::x4penggaris');
+// sarana kelas x 4
+
+// sarana kelas x 5
+$routes->get('/x/5/buku', 'Umum::x5buku');
+$routes->get('/x/5/papan_tulis', 'Umum::x5papanTulis');
+$routes->get('/x/5/meja', 'Umum::x5meja');
+$routes->get('/x/5/kursi', 'Umum::x5kursi');
+$routes->get('/x/5/foto', 'Umum::x5foto');
+$routes->get('/x/5/spidol', 'Umum::x5spidol');
+$routes->get('/x/5/penghapus', 'Umum::x5penghapus');
+$routes->get('/x/5/pena', 'Umum::x5pena');
+$routes->get('/x/5/penggaris', 'Umum::x5penggaris');
+// sarana kelas x 5
+
+// sarana kelas x 6
+$routes->get('/x/6/buku', 'Umum::x6buku');
+$routes->get('/x/6/papan_tulis', 'Umum::x6papanTulis');
+$routes->get('/x/6/meja', 'Umum::x6meja');
+$routes->get('/x/6/kursi', 'Umum::x6kursi');
+$routes->get('/x/6/foto', 'Umum::x6foto');
+$routes->get('/x/6/spidol', 'Umum::x6spidol');
+$routes->get('/x/6/penghapus', 'Umum::x6penghapus');
+$routes->get('/x/6/pena', 'Umum::x6pena');
+$routes->get('/x/6/penggaris', 'Umum::x6penggaris');
+// sarana kelas x 6
+
+// sarana kelas x 7
+$routes->get('/x/7/buku', 'Umum::x7buku');
+$routes->get('/x/7/papan_tulis', 'Umum::x7papanTulis');
+$routes->get('/x/7/meja', 'Umum::x7meja');
+$routes->get('/x/7/kursi', 'Umum::x7kursi');
+$routes->get('/x/7/foto', 'Umum::x7foto');
+$routes->get('/x/7/spidol', 'Umum::x7spidol');
+$routes->get('/x/7/penghapus', 'Umum::x7penghapus');
+$routes->get('/x/7/pena', 'Umum::x7pena');
+$routes->get('/x/7/penggaris', 'Umum::x7penggaris');
+// sarana kelas x 7
+
+// sarana kelas x 8
+$routes->get('/x/8/buku', 'Umum::x8buku');
+$routes->get('/x/8/papan_tulis', 'Umum::x8papanTulis');
+$routes->get('/x/8/meja', 'Umum::x8meja');
+$routes->get('/x/8/kursi', 'Umum::x8kursi');
+$routes->get('/x/8/foto', 'Umum::x8foto');
+$routes->get('/x/8/spidol', 'Umum::x8spidol');
+$routes->get('/x/8/penghapus', 'Umum::x8penghapus');
+$routes->get('/x/8/pena', 'Umum::x8pena');
+$routes->get('/x/8/penggaris', 'Umum::x8penggaris');
+// sarana kelas x 8
+
+// sarana kelas x 9
+$routes->get('/x/9/buku', 'Umum::x9buku');
+$routes->get('/x/9/papan_tulis', 'Umum::x9papanTulis');
+$routes->get('/x/9/meja', 'Umum::x9meja');
+$routes->get('/x/9/kursi', 'Umum::x9kursi');
+$routes->get('/x/9/foto', 'Umum::x9foto');
+$routes->get('/x/9/spidol', 'Umum::x9spidol');
+$routes->get('/x/9/penghapus', 'Umum::x9penghapus');
+$routes->get('/x/9/pena', 'Umum::x9pena');
+$routes->get('/x/9/penggaris', 'Umum::x9penggaris');
+// sarana kelas x 9
+
+// sarana kelas x 10
+$routes->get('/x/10/buku', 'Umum::x10buku');
+$routes->get('/x/10/papan_tulis', 'Umum::x10papanTulis');
+$routes->get('/x/10/meja', 'Umum::x10meja');
+$routes->get('/x/10/kursi', 'Umum::x10kursi');
+$routes->get('/x/10/foto', 'Umum::x10foto');
+$routes->get('/x/10/spidol', 'Umum::x10spidol');
+$routes->get('/x/10/penghapus', 'Umum::x10penghapus');
+$routes->get('/x/10/pena', 'Umum::x10pena');
+$routes->get('/x/10/penggaris', 'Umum::x10penggaris');
+// sarana kelas x 10
+
+// sarana kelas x 11
+$routes->get('/x/11/buku', 'Umum::x11buku');
+$routes->get('/x/11/papan_tulis', 'Umum::x11papanTulis');
+$routes->get('/x/11/meja', 'Umum::x11meja');
+$routes->get('/x/11/kursi', 'Umum::x11kursi');
+$routes->get('/x/11/foto', 'Umum::x11foto');
+$routes->get('/x/11/spidol', 'Umum::x11spidol');
+$routes->get('/x/11/penghapus', 'Umum::x11penghapus');
+$routes->get('/x/11/pena', 'Umum::x11pena');
+$routes->get('/x/11/penggaris', 'Umum::x11penggaris');
+// sarana kelas x 1
+
+
+
+
+
+
+
 
 
 

@@ -185,14 +185,8 @@
             </div>
             <div class="col-sm-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.7s">
                 <i class="fa fa-award fa-3x text-white mb-3"></i>
-<<<<<<< HEAD
                 <h1 class="display-4 text-white" data-toggle="counter-up"><?= $piala; ?></h1>
                 <span class="fs-5 text-white">Piala</span>
-=======
-                <h1 class="display-4 text-white"></h1>
-                <h1 class="display-4 text-white" data-toggle="counter-up">500</h1>
-                <span class="fs-5 text-white"></span>
->>>>>>> d91efb92354f53e78b1cac5f55e8951d81a26154
                 <hr class="bg-white w-25 mx-auto mb-0">
             </div>
         </div>

@@ -196,7 +196,7 @@ class Umum extends BaseController
             'spidols' => (new SpidolModel())->where('id_kelas', '4')->findAll(),
             'pens' => (new PenaModel())->where('id_kelas', '4')->findAll(),
             'rules' => (new PenggarisModel())->where('id_kelas', '4')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '4')->findAll(),            
+            'erasers' => (new PenghapusModel())->where('id_kelas', '4')->findAll(),
         ];
         return view('umum/kelas/x/x3', $data);
     }
@@ -600,4 +600,158 @@ class Umum extends BaseController
         ];
         return view('umum/ruangan/dapur', $data);
     }
+
+    // isi kelas x1
+    public function x1buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/kelas/x/data/x1/buku/filebuku', $data);
+    }
+    public function x1papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x1meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x1kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x1foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x1spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x1penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x1pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x1penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    // isi kelas x1
+
+
+    // isi kelas x2
+    public function x2buku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x2papanTulis()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x2meja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x2kursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x2foto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x2spidol()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x2penghapus()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x2pena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    public function x2penggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/dapur', $data);
+    }
+    // isi kelas x2
+
+
+
 }

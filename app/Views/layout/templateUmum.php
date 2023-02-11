@@ -37,9 +37,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -65,8 +63,7 @@
 
 <body onload="setInterval('displayTime()',1000);">
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -89,8 +86,7 @@
             <a href="/" class="navbar-brand ms-4 ms-lg-0">
                 <h1 class="display-5 text-primary m-0">E-SARPRAS</h1>
             </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -102,9 +98,6 @@
                         <div class="dropdown-menu border-light m-0">
                             <a href="/sarana" class="dropdown-item">Sarana</a>
                             <a href="/prasarana" class="dropdown-item">Prasarana</a>
-                            <!-- <a href="team.html" class="dropdown-item">Team Member</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a> -->
                         </div>
                     </div>
                     <a href="<?= base_url('dashboard') ?>" class="nav-item nav-link">Admin</a>
@@ -128,18 +121,15 @@
                     <div class="d-flex pt-2">
                         <!-- <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a> -->
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://id-id.facebook.com/sman9bdl/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://www.youtube.com/@sman9bdl"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://id-id.facebook.com/sman9bdl/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.youtube.com/@sman9bdl" target="_blank"><i class="fab fa-youtube"></i></a>
                         <!-- <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                                 class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 px-lg-5">
-                    <a href="https://smalan.sch.id/"><img class="logo" src="./assets/img/smalan.png" alt=""
-                            style="width:180px;margin-left:40px"></a>
+                    <a href="https://smalan.sch.id/" target="_blank"><img class="logo" src="./assets/img/smalan.png" alt="" style="width:180px;margin-left:40px"></a>
                 </div>
                 <div class="col-lg-5 col-md-6 px-lg-5">
                     <div id="clock" class="me-5" style="margin-right:1000px;">
@@ -169,9 +159,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="https://smalan.sch.id/">Copyright
+                    &copy; <a class="border-bottom" href="https://smalan.sch.id/" target="blank">Copyright
                         <script>
-                        document.write(new Date().getFullYear())
+                            document.write(new Date().getFullYear())
                         </script>
                     </a>, SMAN 9 Bandarlampung
                 </div>
