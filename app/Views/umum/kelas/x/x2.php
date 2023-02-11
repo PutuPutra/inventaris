@@ -23,16 +23,20 @@
         <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
             <div class="col-lg-4">
                 <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
                         <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Meja</h5>
                     </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
                         <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Kursi</h5>
                     </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
                         <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Foto</h5>
                     </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
                         <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Papan Tulis</h5>
                     </button>
 
@@ -44,7 +48,8 @@
                         <div class="row g-4">
                             <div class="col-md-6" style="min-height: 350px;">
                                 <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/meja.jpg" style="object-fit:fill;" alt="">
+                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/meja.jpg"
+                                        style="object-fit:fill;" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -58,7 +63,8 @@
                         <div class="row g-4">
                             <div class="col-md-6" style="min-height: 350px;">
                                 <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/kursi.jpg" style="object-fit: fill;" alt="">
+                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/kursi.jpg"
+                                        style="object-fit: fill;" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -71,7 +77,8 @@
                         <div class="row g-4">
                             <div class="col-md-6" style="min-height: 350px;">
                                 <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/foto.jpg" style="object-fit: fill;" alt="">
+                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/foto.jpg"
+                                        style="object-fit: fill;" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -84,7 +91,8 @@
                         <div class="row g-4">
                             <div class="col-md-6" style="min-height: 350px;">
                                 <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/papan-tulis.jpg" style="object-fit: fill;" alt="">
+                                    <img class="position-absolute rounded w-100 h-100"
+                                        src="/assets/foto/papan-tulis.jpg" style="object-fit: fill;" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -110,16 +118,20 @@
         <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
             <div class="col-lg-4">
                 <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
                         <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Spidol</h5>
                     </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
                         <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Pena</h5>
                     </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-7" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-7" type="button">
                         <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Penggaris</h5>
                     </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-8" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0"
+                        data-bs-toggle="pill" data-bs-target="#tab-pane-8" type="button">
                         <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Penghapus</h5>
                     </button>
 
@@ -131,7 +143,8 @@
                         <div class="row g-4">
                             <div class="col-md-6" style="min-height: 350px;">
                                 <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/spidol.jpg" style="object-fit: fill;" alt="">
+                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/spidol.jpg"
+                                        style="object-fit: fill;" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -144,7 +157,8 @@
                         <div class="row g-4">
                             <div class="col-md-6" style="min-height: 350px;">
                                 <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/pena.jpg" style="object-fit: fill;" alt="">
+                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/pena.jpg"
+                                        style="object-fit: fill;" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -157,7 +171,8 @@
                         <div class="row g-4">
                             <div class="col-md-6" style="min-height: 350px;">
                                 <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/penggaris.jpg" style="object-fit: fill;" alt="">
+                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/penggaris.jpg"
+                                        style="object-fit: fill;" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -170,7 +185,8 @@
                         <div class="row g-4">
                             <div class="col-md-6" style="min-height: 350px;">
                                 <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/penghapus.jpg" style="object-fit: fill;" alt="">
+                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/penghapus.jpg"
+                                        style="object-fit: fill;" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
