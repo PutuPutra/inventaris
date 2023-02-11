@@ -241,7 +241,7 @@ $routes->post('/piala/store', 'PialaController::store', ['filter' => 'login']);
 
 // sarana kelas x 1
 $routes->get('/x/1/buku', 'Umum::x1buku');
-$routes->get('/x/1/papan_tulis', 'Umum::x1papanTulis');
+$routes->get('/x/1/papantulis', 'Umum::x1papanTulis');
 $routes->get('/x/1/meja', 'Umum::x1meja');
 $routes->get('/x/1/kursi', 'Umum::x1kursi');
 $routes->get('/x/1/foto', 'Umum::x1foto');
@@ -349,7 +349,7 @@ $routes->get('/x/9/penggaris', 'Umum::x9penggaris');
 
 // sarana kelas x 10
 $routes->get('/x/10/buku', 'Umum::x10buku');
-$routes->get('/x/10/papan_tulis', 'Umum::x10papanTulis');
+$routes->get('/x/10/papantulis', 'Umum::x10papanTulis');
 $routes->get('/x/10/meja', 'Umum::x10meja');
 $routes->get('/x/10/kursi', 'Umum::x10kursi');
 $routes->get('/x/10/foto', 'Umum::x10foto');

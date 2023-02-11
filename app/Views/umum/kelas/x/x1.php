@@ -42,7 +42,7 @@
                             </div>
                             <h5 class="mb-3">Papan Tulis</h5>
                             <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/papan_tulis') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/papantulis') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -51,7 +51,7 @@
                                 <i class="fa fa-table-picnic fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Meja</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <p>Penunjang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/meja') ?>">Selengkapnya</a>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                                 <i class="fa fa-chair fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Kursi</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <p>Penunjang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/kursi') ?>">Selengkapnya</a>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                                 <i class="fa fa-image fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Foto</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <p>Penunjang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/foto') ?>">Selengkapnya</a>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                                 <i class="fa fa-pen fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Spidol</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <p>Penunjang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/spidol') ?>">Selengkapnya</a>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                                 <i class="fa fa-eraser fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Penghapus</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <p>Penunjang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/penghapus') ?>">Selengkapnya</a>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                                 <i class="fa fa-pen fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Pena</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <p>Penunjang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/pena') ?>">Selengkapnya</a>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                                 <i class="fa fa-ruler fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Penggaris</h5>
-                            <p>Penujang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <p>Penunjang Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/penggaris') ?>">Selengkapnya</a>
                         </div>
                     </div>

@@ -197,3 +197,263 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:51:59 --> Invalid file: "umum/kelas/x/data/x1/buku/papan_tulis/papanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:52:11 --> Invalid file: "umum/kelas/x/data/x1/buku/papan_tulis/papanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:53:53 --> Invalid file: "umum/kelas/x/data/x1/buku/papan_tulis/papanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:55:48 --> Invalid file: "umum/kelas/x/data/x1/buku/papan_tulis/papanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:56:16 --> Invalid file: "umum/kelas/x/data/x1/buku/papan_tulis/papanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papan_tulis/papanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:21 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:22 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:22 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:23 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:23 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:24 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:24 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:24 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:24 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:24 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:24 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:25 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:25 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:25 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:25 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:26 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:26 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:57:26 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/filepapanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:58:13 --> Invalid file: "umum/kelas/x/data/x1/buku/papantulis/papanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/buku/papantulis/papanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/buku/papantulis/papanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/buku/papantulis/papanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:58:37 --> Invalid file: "umum/kelas/x/data/x1/papan_tulis/papanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/papan_tulis/papanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/papan_tulis/papanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/papan_tulis/papanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 16:58:42 --> Invalid file: "umum/kelas/x/data/x1/papan_tulis/papanTulis.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/kelas/x/data/x1/papan_tulis/papanTulis.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/kelas/x/data/x1/papan_tulis/papanTulis', [], true)
+ 3 APPPATH\Controllers\Umum.php(619): view('umum/kelas/x/data/x1/papan_tulis/papanTulis', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->x1papanTulis()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
