@@ -157,6 +157,14 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'tables' => (new MejaModel())->where('id_kelas', '1')->findAll(),
+            'chairs' => (new KursiModel())->where('id_kelas', '1')->findAll(),
+            'photos' => (new FotoModel())->where('id_kelas', '1')->findAll(),
+            'boards' => (new PapanTulisModel())->where('id_kelas', '1')->findAll(),
+            'spidols' => (new SpidolModel())->where('id_kelas', '1')->findAll(),
+            'pens' => (new PenaModel())->where('id_kelas', '1')->findAll(),
+            'rules' => (new PenggarisModel())->where('id_kelas', '1')->findAll(),
+            'erasers' => (new PenghapusModel())->where('id_kelas', '1')->findAll(),
         ];
         return view('umum/kelas/x/x1', $data);
     }
@@ -165,6 +173,14 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'tables' => (new MejaModel())->where('id_kelas', '2')->findAll(),
+            'chairs' => (new KursiModel())->where('id_kelas', '2')->findAll(),
+            'photos' => (new FotoModel())->where('id_kelas', '2')->findAll(),
+            'boards' => (new PapanTulisModel())->where('id_kelas', '2')->findAll(),
+            'spidols' => (new SpidolModel())->where('id_kelas', '2')->findAll(),
+            'pens' => (new PenaModel())->where('id_kelas', '2')->findAll(),
+            'rules' => (new PenggarisModel())->where('id_kelas', '2')->findAll(),
+            'erasers' => (new PenghapusModel())->where('id_kelas', '2')->findAll(),
         ];
         return view('umum/kelas/x/x2', $data);
     }
@@ -173,6 +189,14 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'tables' => (new MejaModel())->where('id_kelas', '4')->findAll(),
+            'chairs' => (new KursiModel())->where('id_kelas', '4')->findAll(),
+            'photos' => (new FotoModel())->where('id_kelas', '4')->findAll(),
+            'boards' => (new PapanTulisModel())->where('id_kelas', '4')->findAll(),
+            'spidols' => (new SpidolModel())->where('id_kelas', '4')->findAll(),
+            'pens' => (new PenaModel())->where('id_kelas', '4')->findAll(),
+            'rules' => (new PenggarisModel())->where('id_kelas', '4')->findAll(),
+            'erasers' => (new PenghapusModel())->where('id_kelas', '4')->findAll(),            
         ];
         return view('umum/kelas/x/x3', $data);
     }

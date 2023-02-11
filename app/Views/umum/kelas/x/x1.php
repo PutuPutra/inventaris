@@ -49,8 +49,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h3 class="mb-4">Meja</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Ukuran</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
+                                <p><i class="fa fa-circle text-primary me-3"></i>Jumlah : <?= count($tables) ?></p>
                                 <!-- <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a> -->
                             </div>
                         </div>
@@ -64,8 +63,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h3 class="mb-4">Kursi</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Ukuran</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
+                                <p><i class="fa fa-circle text-primary me-3"></i>Jumlah : <?= count($chairs) ?></p>
                             </div>
                         </div>
                     </div>
@@ -78,8 +76,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h3 class="mb-4">Foto</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Ukuran</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
+                                <p><i class="fa fa-circle text-primary me-3"></i>Jumlah : <?= count($photos) ?></p>
                             </div>
                         </div>
                     </div>
@@ -92,8 +89,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h3 class="mb-4">Papan Tulis</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Ukuran</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
+                                <p><i class="fa fa-circle text-primary me-3"></i>Jumlah : <?= count($boards) ?></p>
                             </div>
                         </div>
                     </div>
@@ -140,9 +136,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h3 class="mb-4">Spidol</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Merek</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Warna</p>
+                                <p><i class="fa fa-circle text-primary me-3"></i>Jumlah : <?= count($spidols) ?></p>
                             </div>
                         </div>
                     </div>
@@ -155,8 +149,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h3 class="mb-4">Pena</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Merek</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
+                                <p><i class="fa fa-circle text-primary me-3"></i>Jumlah : <?= count($pens) ?></p>
                             </div>
                         </div>
                     </div>
@@ -169,9 +162,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h3 class="mb-4">Penggaris</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Ukuran</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Panjang</p>
+                                <p><i class="fa fa-circle text-primary me-3"></i>Jumlah : <?= count($rules) ?></p>
                             </div>
                         </div>
                     </div>
@@ -184,8 +175,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h3 class="mb-4">Penghapus</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Merek</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
+                                <p><i class="fa fa-circle text-primary me-3"></i>Jumlah : <?= count($erasers) ?></p>
                             </div>
                         </div>
                     </div>
