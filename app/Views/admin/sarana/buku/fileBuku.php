@@ -35,7 +35,7 @@
                                             <textarea disabled class="container-fluid" name="" id="description"
                                                 cols="50" rows="5">
                                             <?= $f->deskripsi_buku; ?>
-                                        </textarea>
+                                            </textarea>
                                         </div>
                                     </td>
                                     <td id="isiTable">
