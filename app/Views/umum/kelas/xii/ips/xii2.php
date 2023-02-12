@@ -13,187 +13,115 @@
 </div>
 <!-- Page Header End -->
 
-<!-- Sarana Start -->
+<!-- Prasarana Start -->
 <div class="container-xxl service py-5">
     <div class="container">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <!-- <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Services</p> -->
-            <!-- <h1 class="display-5 mb-5">Awesome Financial Services For Business</h1> -->
-        </div>
-        <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="col-lg-4">
-                <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Meja</h5>
-                    </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Kursi</h5>
-                    </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Foto</h5>
-                    </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Papan Tulis</h5>
-                    </button>
 
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div class="tab-content w-100">
-                    <div class="tab-pane fade show active" id="tab-pane-1">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/meja.jpg" style="object-fit:fill;" alt="">
-                                </div>
+        <!-- Kelas X Start -->
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <!-- <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Kelas</p> -->
+            <!-- <h6 class="display-5 mb-5">X</h6> -->
+        </div>
+        <div class="container-xxl py-1">
+            <div class="container px-lg-1">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa-solid fa-books fa-2x"></i>
                             </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-4">Meja</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Ukuran</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
-                                <!-- <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a> -->
-                            </div>
+                            <h5 class="mb-3">Buku</h5>
+                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/xii/ips/2/buku') ?>">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="tab-pane-2">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/kursi.jpg" style="object-fit: fill;" alt="">
-                                </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-chalkboard fa-2x"></i>
                             </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-4">Kursi</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Ukuran</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
-                            </div>
+                            <h5 class="mb-3">Papan Tulis</h5>
+                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/xii/ips/2/papantulis') ?>">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="tab-pane-3">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/foto.jpg" style="object-fit: fill;" alt="">
-                                </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-table-picnic fa-2x"></i>
                             </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-4">Foto</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Ukuran</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
-                            </div>
+                            <h5 class="mb-3">Meja</h5>
+                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/xii/ips/2/meja') ?>">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="tab-pane-4">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/papan-tulis.jpg" style="object-fit: fill;" alt="">
-                                </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-chair fa-2x"></i>
                             </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-4">Papan Tulis</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Ukuran</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
+                            <h5 class="mb-3">Kursi</h5>
+                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/xii/ips/2/kursi') ?>">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-image fa-2x"></i>
                             </div>
+                            <h5 class="mb-3">Foto</h5>
+                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/xii/ips/2/foto') ?>">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-pen fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Spidol</h5>
+                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/xii/ips/2/spidol') ?>">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-eraser fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Penghapus</h5>
+                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/xii/ips/2/penghapus') ?>">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-pen fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Pena</h5>
+                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/xii/ips/2/pena') ?>">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-ruler fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Penggaris</h5>
+                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/xii/ips/2/penggaris') ?>">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Kelas X End -->
+
     </div>
 </div>
-<!-- Sarana End -->
-
-<!-- Sarana Start -->
-<div class="container-xxl service py-5">
-    <div class="container">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <!-- <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Services</p> -->
-            <!-- <h1 class="display-5 mb-5">Awesome Financial Services For Business</h1> -->
-        </div>
-        <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="col-lg-4">
-                <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
-                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Spidol</h5>
-                    </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
-                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Pena</h5>
-                    </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-7" type="button">
-                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Penggaris</h5>
-                    </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-8" type="button">
-                        <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Penghapus</h5>
-                    </button>
-
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div class="tab-content w-100">
-                    <div class="tab-pane fade show active" id="tab-pane-5">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/spidol.jpg" style="object-fit: fill;" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-4">Spidol</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Merek</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Warna</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab-pane-6">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/pena.jpg" style="object-fit: fill;" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-4">Pena</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Merek</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab-pane-7">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/penggaris.jpg" style="object-fit: fill;" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-4">Penggaris</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Ukuran</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Panjang</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab-pane-8">
-                        <div class="row g-4">
-                            <div class="col-md-6" style="min-height: 350px;">
-                                <div class="position-relative h-100">
-                                    <img class="position-absolute rounded w-100 h-100" src="/assets/foto/penghapus.jpg" style="object-fit: fill;" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h3 class="mb-4">Penghapus</h3>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Merek</p>
-                                <p><i class="fa fa-circle text-primary me-3"></i>Kondisi</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Sarana End -->
+<!-- Prasarana End -->
 
 <?= $this->endSection(); ?>
