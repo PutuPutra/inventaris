@@ -152,6 +152,22 @@ class Umum extends BaseController
         ];
         return view('umum/file/dataPenggaris', $data);
     }
+    // public function x1()
+    // {
+    //     $data = [
+    //         'navbar1' => null,
+    //         'navbar2' => null,
+    //         'tables' => (new MejaModel())->where('id_kelas', '1')->findAll(),
+    //         'chairs' => (new KursiModel())->where('id_kelas', '1')->findAll(),
+    //         'photos' => (new FotoModel())->where('id_kelas', '1')->findAll(),
+    //         'boards' => (new PapanTulisModel())->where('id_kelas', '1')->findAll(),
+    //         'spidols' => (new SpidolModel())->where('id_kelas', '1')->findAll(),
+    //         'pens' => (new PenaModel())->where('id_kelas', '1')->findAll(),
+    //         'rules' => (new PenggarisModel())->where('id_kelas', '1')->findAll(),
+    //         'erasers' => (new PenghapusModel())->where('id_kelas', '1')->findAll(),
+    //     ];
+    //     return view('umum/kelas/x/x1', $data);
+    // }
     public function x1()
     {
         $data = [
@@ -264,69 +280,69 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/x/x11', $data);
     }
-    public function ximmipa1()
+    public function ximipa1()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xi/mmipa/xi1', $data);
+        return view('umum/kelas/xi/mipa/xi1', $data);
     }
-    public function ximmipa2()
+    public function ximipa2()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xi/mmipa/xi2', $data);
+        return view('umum/kelas/xi/mipa/xi2', $data);
     }
-    public function ximmipa3()
+    public function ximipa3()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xi/mmipa/xi3', $data);
+        return view('umum/kelas/xi/mipa/xi3', $data);
     }
-    public function ximmipa4()
+    public function ximipa4()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xi/mmipa/xi4', $data);
+        return view('umum/kelas/xi/mipa/xi4', $data);
     }
-    public function ximmipa5()
+    public function ximipa5()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xi/mmipa/xi5', $data);
+        return view('umum/kelas/xi/mipa/xi5', $data);
     }
-    public function ximmipa6()
+    public function ximipa6()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xi/mmipa/xi6', $data);
+        return view('umum/kelas/xi/mipa/xi6', $data);
     }
-    public function ximmipa7()
+    public function ximipa7()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xi/mmipa/xi7', $data);
+        return view('umum/kelas/xi/mipa/xi7', $data);
     }
-    public function ximmipa8()
+    public function ximipa8()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xi/mmipa/xi8', $data);
+        return view('umum/kelas/xi/mipa/xi8', $data);
     }
     public function xiips1()
     {
@@ -360,61 +376,61 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xi/ips/xi4', $data);
     }
-    public function xiimmipa1()
+    public function xiimipa1()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xii/mmipa/xii1', $data);
+        return view('umum/kelas/xii/mipa/xii1', $data);
     }
-    public function xiimmipa2()
+    public function xiimipa2()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xii/mmipa/xii2', $data);
+        return view('umum/kelas/xii/mipa/xii2', $data);
     }
-    public function xiimmipa3()
+    public function xiimipa3()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xii/mmipa/xii3', $data);
+        return view('umum/kelas/xii/mipa/xii3', $data);
     }
-    public function xiimmipa4()
+    public function xiimipa4()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xii/mmipa/xii4', $data);
+        return view('umum/kelas/xii/mipa/xii4', $data);
     }
-    public function xiimmipa5()
+    public function xiimipa5()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xii/mmipa/xii5', $data);
+        return view('umum/kelas/xii/mipa/xii5', $data);
     }
-    public function xiimmipa6()
+    public function xiimipa6()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xii/mmipa/xii6', $data);
+        return view('umum/kelas/xii/mipa/xii6', $data);
     }
-    public function xiimmipa7()
+    public function xiimipa7()
     {
         $data = [
             'navbar1' => null,
             'navbar2' => null,
         ];
-        return view('umum/kelas/xii/mmipa/xii7', $data);
+        return view('umum/kelas/xii/mipa/xii7', $data);
     }
     public function xiiips1()
     {
