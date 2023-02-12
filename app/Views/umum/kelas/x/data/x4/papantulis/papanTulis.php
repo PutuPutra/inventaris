@@ -4,7 +4,7 @@
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <h1 class="display-3 mb-4 animated slideInDown">Buku Kelas X 5</h1>
+        <h1 class="display-3 mb-4 animated slideInDown">Papan Tulis Kelas X 4</h1>
         <nav aria-label="breadcrumb animated slideInDown">
 
         </nav>
@@ -36,23 +36,16 @@
                 <table class="table table-striped" id="table1">
                     <thead>
                         <tr>
-                            <th>Penerbit</th>
+                            <th>Ukuran</th>
                             <th>Gambar</th>
-                            <th>Deskripsi</th>
+                            <th>Kondisi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td id="isiTable">Erlangga</td>
                             <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">
-                                <div class="textarea">
-                                    <textarea disabled class="container-fluid" name="" id="description" cols="50"
-                                        rows="5" style="border:none;">
-                                            buku ini sangat bagus
-                                    </textarea>
-                                </div>
-                            </td>
+                            <td id="isiTable">sedang diperbaiki</td>
                         </tr>
 
                     </tbody>

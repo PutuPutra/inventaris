@@ -13,4 +13,35 @@
 <!-- Page Header End -->
 
 
+<div class="page-heading p-5" style="margin-top:-100px;">
+
+    <section class="section">
+        <div class="card">
+            <!-- <div class="card-header">
+                Simple Datatable
+            </div> -->
+            <div class="card-body">
+                <table class="table table-striped" id="table1">
+                    <thead>
+                        <tr>
+                            <th>Ukuran</th>
+                            <th>Gambar</th>
+                            <th>Kondisi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="isiTable">Erlangga</td>
+                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
+                            <td id="isiTable">sedang diperbaiki</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+</div>
+
 <?= $this->endSection(); ?>
