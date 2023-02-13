@@ -3217,14 +3217,38 @@ class Umum extends BaseController
         ];
         return view('umum/bangunan/data/aula/meja/meja', $data);
     }
-    // public function xiimipa8papanTulis()
-    // {
-    //     $data = [
-    //         'navbar1' => null,
-    //         'navbar2' => null,
-    //     ];
-    //     return view('umum/kelas/xii/data/mipa/xii8/papantulis/papanTulis', $data);
-    // }
+    public function aulakursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/bangunan/data/aula/kursi/kursi', $data);
+    }
+    public function aulapiala()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/bangunan/data/aula/piala/piala', $data);
+    }
+    public function aulalemari()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/bangunan/data/aula/lemari/lemari', $data);
+    }
+    public function aulakipasangin()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/bangunan/data/aula/kipasangin/kipasangin', $data);
+    }
     // public function xiimipa8meja()
     // {
     //     $data = [

@@ -687,15 +687,11 @@ $routes->get('/xii/ips/4/penggaris', 'Umum::xiiips4penggaris');
 // ================================================== xii ips end =====================================================
 
 // sarana Aula start
-$routes->get('/aula/buku', 'Umum::aulabuku');
-$routes->get('/aula/papantulis', 'Umum::aulapapanTulis');
 $routes->get('/aula/meja', 'Umum::aulameja');
 $routes->get('/aula/kursi', 'Umum::aulakursi');
-$routes->get('/aula/foto', 'Umum::aulafoto');
-$routes->get('/aula/spidol', 'Umum::aulaspidol');
-$routes->get('/aula/penghapus', 'Umum::aulapenghapus');
-$routes->get('/aula/pena', 'Umum::aulapena');
-$routes->get('/aula/penggaris', 'Umum::aulapenggaris');
+$routes->get('/aula/piala', 'Umum::aulapiala');
+$routes->get('/aula/lemari', 'Umum::aulalemari');
+$routes->get('/aula/kipas_angin', 'Umum::aulakipasangin');
 // sarana Aula end
 
 // sarana masjid start
