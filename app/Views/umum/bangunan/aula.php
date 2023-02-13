@@ -5,7 +5,7 @@
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <h1 class="display-3 mb-4 animated slideInDown">Kelas X 1</h1>
+        <h1 class="display-3 mb-4 animated slideInDown">Aula</h1>
         <nav aria-label="breadcrumb animated slideInDown">
 
         </nav>
@@ -48,7 +48,7 @@
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-chair fa-2x"></i>
+                                <i class="fa-solid fa-trophy-star fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Piala</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
@@ -58,7 +58,7 @@
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-chair fa-2x"></i>
+                                <i class="fa-solid fa-cabinet-filing fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Lemari</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
@@ -68,11 +68,12 @@
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-chair fa-2x"></i>
+                                <i class="fa-regular fa-fan-table fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Kipas Angin</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/aula/kipas_angin') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto"
+                                href="<?= base_url('/aula/kipas_angin') ?>">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
