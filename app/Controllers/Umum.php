@@ -3206,4 +3206,80 @@ class Umum extends BaseController
     }
     // =============================kelas xii===================================
 
+    // =============================bangunan====================================
+
+    //Aula
+    public function aulameja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/bangunan/data/aula/meja/meja', $data);
+    }
+    // public function xiimipa8papanTulis()
+    // {
+    //     $data = [
+    //         'navbar1' => null,
+    //         'navbar2' => null,
+    //     ];
+    //     return view('umum/kelas/xii/data/mipa/xii8/papantulis/papanTulis', $data);
+    // }
+    // public function xiimipa8meja()
+    // {
+    //     $data = [
+    //         'navbar1' => null,
+    //         'navbar2' => null,
+    //     ];
+    //     return view('umum/kelas/xii/data/mipa/xii8/meja/meja', $data);
+    // }
+    // public function xiimipa8kursi()
+    // {
+    //     $data = [
+    //         'navbar1' => null,
+    //         'navbar2' => null,
+    //     ];
+    //     return view('umum/kelas/xii/data/mipa/xii8/kursi/kursi', $data);
+    // }
+    // public function xiimipa8foto()
+    // {
+    //     $data = [
+    //         'navbar1' => null,
+    //         'navbar2' => null,
+    //     ];
+    //     return view('umum/kelas/xii/data/mipa/xii8/foto/foto', $data);
+    // }
+    // public function xiimipa8spidol()
+    // {
+    //     $data = [
+    //         'navbar1' => null,
+    //         'navbar2' => null,
+    //     ];
+    //     return view('umum/kelas/xii/data/mipa/xii8/spidol/spidol', $data);
+    // }
+    // public function xiimipa8penghapus()
+    // {
+    //     $data = [
+    //         'navbar1' => null,
+    //         'navbar2' => null,
+    //     ];
+    //     return view('umum/kelas/xii/data/mipa/xii8/penghapus/penghapus', $data);
+    // }
+    // public function xiimipa8pena()
+    // {
+    //     $data = [
+    //         'navbar1' => null,
+    //         'navbar2' => null,
+    //     ];
+    //     return view('umum/kelas/xii/data/mipa/xii8/pena/pena', $data);
+    // }
+    // public function xiimipa8penggaris()
+    // {
+    //     $data = [
+    //         'navbar1' => null,
+    //         'navbar2' => null,
+    //     ];
+    //     return view('umum/kelas/xii/data/mipa/xii8/penggaris/penggaris', $data);
+    // }
+
 }
