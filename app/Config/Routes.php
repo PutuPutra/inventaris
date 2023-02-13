@@ -696,14 +696,8 @@ $routes->get('/aula/kipas_angin', 'Umum::aulakipasangin');
 
 // sarana masjid start
 $routes->get('/masjid/buku', 'Umum::masjidbuku');
-$routes->get('/masjid/papantulis', 'Umum::masjidpapanTulis');
 $routes->get('/masjid/meja', 'Umum::masjidmeja');
-$routes->get('/masjid/kursi', 'Umum::masjidkursi');
-$routes->get('/masjid/foto', 'Umum::masjidfoto');
-$routes->get('/masjid/spidol', 'Umum::masjidspidol');
-$routes->get('/masjid/penghapus', 'Umum::masjidpenghapus');
-$routes->get('/masjid/pena', 'Umum::masjidpena');
-$routes->get('/masjid/penggaris', 'Umum::masjidpenggaris');
+$routes->get('/masjid/tirai', 'Umum::masjidtirai');
 // sarana masjid end
 
 // sarana satpam start

@@ -52,7 +52,7 @@
                             </div>
                             <h5 class="mb-3">Tirai</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/masjid/meja') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/masjid/tirai') ?>">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
