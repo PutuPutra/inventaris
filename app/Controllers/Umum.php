@@ -3273,6 +3273,33 @@ class Umum extends BaseController
         ];
         return view('umum/bangunan/data/masjid/tirai/tirai', $data);
     }
+
+    public function satpammeja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/bangunan/data/satpam/meja/meja', $data);
+    }
+
+    public function satpamkursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/bangunan/data/satpam/kursi/kursi', $data);
+    }
+
+    public function satpamjam()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/bangunan/data/satpam/jam/jam', $data);
+    }
     // public function xiimipa8meja()
     // {
     //     $data = [

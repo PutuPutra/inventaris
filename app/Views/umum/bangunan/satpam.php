@@ -5,7 +5,7 @@
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <h1 class="display-3 mb-4 animated slideInDown">Pos Satuan Keamanan</h1>
+        <h1 class="display-3 mb-4 animated slideInDown">Pos Satuan Pengamanan</h1>
         <nav aria-label="breadcrumb animated slideInDown">
 
         </nav>
@@ -32,7 +32,7 @@
                             </div>
                             <h5 class="mb-3">Meja</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/meja') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/satpam/meja') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
@@ -42,7 +42,7 @@
                             </div>
                             <h5 class="mb-3">Kursi</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/x/1/kursi') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/satpam/kursi') ?>">Selengkapnya</a>
                         </div>
                     </div>
 
@@ -53,8 +53,7 @@
                             </div>
                             <h5 class="mb-3">Jam</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/x/1/penggaris') ?>">Selengkapnya</a>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/satpam/jam') ?>">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
