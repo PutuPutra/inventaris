@@ -50,3 +50,163 @@ INFO - 2023-02-15 12:43:10 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-02-15 12:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-02-15 12:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-02-15 12:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-15 14:21:15 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/buku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/buku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/buku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/buku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:31 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:32 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:33 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:33 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:33 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:33 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:33 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:34 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:34 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:34 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:34 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:34 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:35 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:35 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 14:21:35 --> Invalid file: "umum/ruangan/data/waka/kurikulum/buku/filebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/waka/kurikulum/buku/filebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/waka/kurikulum/buku/filebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3373): view('umum/ruangan/data/waka/kurikulum/buku/filebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kurikulumbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

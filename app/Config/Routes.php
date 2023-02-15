@@ -723,6 +723,7 @@ $routes->get('/ruangan/waka/kurikulum/kursi', 'Umum::kurikulumkursi');
 $routes->get('/ruangan/waka/kurikulum/foto', 'Umum::kurikulumfoto');
 $routes->get('/ruangan/waka/kurikulum/pena', 'Umum::kurikulumpena');
 $routes->get('/ruangan/waka/kurikulum/penggaris', 'Umum::kurikulumpenggaris');
+$routes->get('/ruangan/waka/kurikulum/ac', 'Umum::kurikulumac');
 // sarana waka kurikulum end
 
 // sarana waka kesiswaan start

@@ -3363,6 +3363,69 @@ class Umum extends BaseController
         ];
         return view('umum/ruangan/data/kepsek/ac/ac', $data);
     }
+
+    public function kurikulumbuku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kurikulum/buku/filebuku', $data);
+    }
+
+    public function kurikulummeja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kurikulum/meja/meja', $data);
+    }
+
+    public function kurikulumkursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kurikulum/kursi/kursi', $data);
+    }
+
+    public function kurikulumfoto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kurikulum/foto/foto', $data);
+    }
+
+    public function kurikulumpena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kurikulum/pena/pena', $data);
+    }
+
+    public function kurikulumpenggaris()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kurikulum/penggaris/penggaris', $data);
+    }
+
+    public function kurikulumac()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kurikulum/ac/ac', $data);
+    }
     // public function xiimipa8meja()
     // {
     //     $data = [
