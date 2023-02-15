@@ -414,7 +414,7 @@ screen and (-ms-high-contrast:active) {
 body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-color: var(--bs-body-bg);
+    /* background-color: var(--bs-body-bg); */
     color: var(--bs-body-color);
     font-family: var(--bs-body-font-family);
     font-size: var(--bs-body-font-size);

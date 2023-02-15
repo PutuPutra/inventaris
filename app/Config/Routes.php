@@ -713,6 +713,7 @@ $routes->get('/ruangan/kepsek/kursi', 'Umum::kepsekkursi');
 $routes->get('/ruangan/kepsek/foto', 'Umum::kepsekfoto');
 $routes->get('/ruangan/kepsek/pena', 'Umum::kepsekpena');
 $routes->get('/ruangan/kepsek/penggaris', 'Umum::kepsekpenggaris');
+$routes->get('/ruangan/kepsek/ac', 'Umum::kepsekac');
 // sarana kepsek end
 
 // sarana waka kurikulum start

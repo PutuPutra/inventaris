@@ -145,3 +145,43 @@ INFO - 2023-02-13 22:11:56 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-02-13 22:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-02-13 22:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-02-13 22:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-13 22:39:11 --> Invalid file: "umum/ruangan/data/kepsek/buku/filkebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/kepsek/buku/filkebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/kepsek/buku/filkebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3310): view('umum/ruangan/data/kepsek/buku/filkebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kepsekbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-13 22:40:11 --> Invalid file: "umum/ruangan/data/kepsek/buku/filkebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/kepsek/buku/filkebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/kepsek/buku/filkebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3310): view('umum/ruangan/data/kepsek/buku/filkebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kepsekbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-13 22:40:11 --> Invalid file: "umum/ruangan/data/kepsek/buku/filkebuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/kepsek/buku/filkebuku.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/kepsek/buku/filkebuku', [], true)
+ 3 APPPATH\Controllers\Umum.php(3310): view('umum/ruangan/data/kepsek/buku/filkebuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kepsekbuku()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-13 22:42:15 --> Invalid file: "umum/ruangan/data/kepsek/ac/ac.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('umum/ruangan/data/kepsek/ac/ac.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('umum/ruangan/data/kepsek/ac/ac', [], true)
+ 3 APPPATH\Controllers\Umum.php(3364): view('umum/ruangan/data/kepsek/ac/ac', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Umum->kepsekac()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Umum))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
