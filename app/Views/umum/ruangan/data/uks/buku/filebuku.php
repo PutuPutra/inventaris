@@ -6,7 +6,7 @@
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <h1 class="display-3 mb-4 animated slideInDown">Buku Kelas X 1</h1>
+        <h1 class="display-3 mb-4 animated slideInDown">Buku Ruangan Unit Kesehatan Sekolah</h1>
         <nav aria-label="breadcrumb animated slideInDown">
 
         </nav>
@@ -49,8 +49,7 @@
                             <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
                             <td id="isiTable">
                                 <div class="textarea">
-                                    <textarea disabled class="container-fluid" name="" id="description" cols="50"
-                                        rows="5" style="border:none;">
+                                    <textarea disabled class="container-fluid" name="" id="description" cols="50" rows="5" style="border:none;">
                                             buku ini sangat bagus
                                     </textarea>
                                 </div>

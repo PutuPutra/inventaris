@@ -49,8 +49,7 @@
                             <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
                             <td id="isiTable">
                                 <div class="textarea">
-                                    <textarea disabled class="container-fluid" name="" id="description" cols="50"
-                                        rows="5" style="border:none;">
+                                    <textarea disabled class="container-fluid" name="" id="description" cols="50" rows="5" style="border:none;">
                                             buku ini sangat bagus
                                     </textarea>
                                 </div>
