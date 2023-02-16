@@ -785,6 +785,7 @@ $routes->get('/ruangan/waka/humas/kursi', 'Umum::humaskursi');
 $routes->get('/ruangan/waka/humas/foto', 'Umum::humasfoto');
 $routes->get('/ruangan/waka/humas/pena', 'Umum::humaspena');
 $routes->get('/ruangan/waka/humas/penggaris', 'Umum::humaspenggaris');
+$routes->get('/ruangan/waka/humas/ac', 'Umum::humasac');
 // sarana waka humas end
 
 // sarana guru start
@@ -794,6 +795,7 @@ $routes->get('/ruangan/guru/kursi', 'Umum::gurukursi');
 $routes->get('/ruangan/guru/foto', 'Umum::gurufoto');
 $routes->get('/ruangan/guru/pena', 'Umum::gurupena');
 $routes->get('/ruangan/guru/penggaris', 'Umum::gurupenggaris');
+$routes->get('/ruangan/guru/ac', 'Umum::guruac');
 // sarana guru end
 
 // sarana bk start
@@ -803,6 +805,7 @@ $routes->get('/ruangan/bk/kursi', 'Umum::bkkursi');
 $routes->get('/ruangan/bk/foto', 'Umum::bkfoto');
 $routes->get('/ruangan/bk/pena', 'Umum::bkpena');
 $routes->get('/ruangan/bk/penggaris', 'Umum::bkpenggaris');
+$routes->get('/ruangan/bk/ac', 'Umum::bkac');
 // sarana bk end
 
 // sarana uks start
@@ -812,6 +815,7 @@ $routes->get('/ruangan/uks/kursi', 'Umum::ukskursi');
 $routes->get('/ruangan/uks/foto', 'Umum::uksfoto');
 $routes->get('/ruangan/uks/pena', 'Umum::ukspena');
 $routes->get('/ruangan/uks/penggaris', 'Umum::ukspenggaris');
+$routes->get('/ruangan/uks/ac', 'Umum::uksac');
 // sarana uks end
 
 // sarana tu start
@@ -821,6 +825,7 @@ $routes->get('/ruangan/tu/kursi', 'Umum::tukursi');
 $routes->get('/ruangan/tu/foto', 'Umum::tufoto');
 $routes->get('/ruangan/tu/pena', 'Umum::tupena');
 $routes->get('/ruangan/tu/penggaris', 'Umum::tupenggaris');
+$routes->get('/ruangan/tu/ac', 'Umum::tuac');
 // sarana tu end
 
 // sarana koker start
@@ -830,6 +835,7 @@ $routes->get('/ruangan/koker/kursi', 'Umum::kokerkursi');
 $routes->get('/ruangan/koker/foto', 'Umum::kokerfoto');
 $routes->get('/ruangan/koker/pena', 'Umum::kokerpena');
 $routes->get('/ruangan/koker/penggaris', 'Umum::kokerpenggaris');
+$routes->get('/ruangan/koker/ac', 'Umum::kokerac');
 // sarana koker end
 
 // sarana bahasa start
