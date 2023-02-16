@@ -625,6 +625,7 @@ class Umum extends BaseController
             'navbar2' => null,
             'testing' => 1,
             'books' => (new BukuModel())->where('id_kelas', 1)->findAll() 
+
         ];
         return view('umum/kelas/x/data/x1/buku/filebuku', $data);
     }
@@ -633,7 +634,6 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'boards' => (new PapanTulisModel())->where('id_kelas', 1)->findAll()
         ];
         return view('umum/kelas/x/data/x1/papantulis/papanTulis', $data);
     }
