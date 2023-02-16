@@ -43,11 +43,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($tables as $table) : ?>
                         <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
+                            <td><?= $table->ukuran_meja ?></td>
+                            <td><img src="/assets/foto/<?= $table->gambar_meja ?>" width="100"></td>
+                            <td>
+                                <?= $table->kondisi_meja ?>
+                            </td>
                         </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

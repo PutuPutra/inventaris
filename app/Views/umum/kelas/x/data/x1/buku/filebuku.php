@@ -45,9 +45,9 @@
                     </thead>
                     <tbody>
                         <?php foreach($books as $book):?>
-                            <td><?= $book->penerbit_buku ?></td>
-                            <td><img src="/assets/foto/<?= $book->gambar_buku?>" width="100"></td>
-                            <td><textarea readonly>
+                        <td><?= $book->penerbit_buku ?></td>
+                        <td><img src="/assets/foto/<?= $book->gambar_buku?>" width="100"></td>
+                        <td><textarea readonly>
                                 <?= $book->deskripsi_buku ?>
                             </textarea></td>
                         <?php endforeach;?>
