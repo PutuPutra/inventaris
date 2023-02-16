@@ -110,12 +110,22 @@ class laptopController extends BaseController
     public function updateKomputer($id)
     {
         $komputer = new KomputerModel();
-        $files_komputer = $komputer->where('id', $id);
-        $files = $this->request->getFile('gambar_komputer');
-        $names = $files->getName();
-        $files->move('assets/foto', $names);
-        $komputer->update($this->request->getPost('id'), $this->request->getPost());
-        $komputer->where('id', $id)->set('gambar_komputer', $names)->update();
+        if($this->request->getFile('gambar_komputer')->getName() == ''){
+            $data = [
+                'brand_komputer' => $this->request->getPost('brand_komputer'),
+                'kondisi_komputer' => $this->request->getPost('kondisi_komputer'),
+                'spesifikasi_komputer' => $this->request->getPost('spesifikasi_komputer'),
+                'jenis_produk_komputer' => $this->request->getPost('jenis_produk_komputer'),
+            ];
+            $komputer->where('id', $id)->set($data)->update();
+        }else{
+
+            $files = $this->request->getFile('gambar_komputer');
+            $names = $files->getName();
+            $files->move('assets/foto', $names);
+            $komputer->update($this->request->getPost('id'), $this->request->getPost());
+            $komputer->where('id', $id)->set('gambar_komputer', $names)->update();
+        }
         return redirect()->to(base_url('/komputer'));
     }
 
