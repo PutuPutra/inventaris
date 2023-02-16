@@ -44,18 +44,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">
-                                <div class="textarea">
-                                    <textarea disabled class="container-fluid" name="" id="description" cols="50"
-                                        rows="5" style="border:none;">
-                                            buku ini sangat bagus
-                                    </textarea>
-                                </div>
-                            </td>
-                        </tr>
+                        <?php foreach($books as $book):?>
+                            <td><?= $book->penerbit_buku ?></td>
+                            <td><img src="/assets/foto/<?= $book->gambar_buku?>" width="100"></td>
+                            <td><textarea readonly>
+                                <?= $book->deskripsi_buku ?>
+                            </textarea></td>
+                        <?php endforeach;?>
 
                     </tbody>
                 </table>
