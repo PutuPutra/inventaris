@@ -33,7 +33,7 @@
                             <h5 class="mb-3">Buku</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/ruangan/kepsek/buku') ?>">Selengkapnya</a>
+                                href="<?= base_url('/ruangan/uks/buku') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -44,7 +44,7 @@
                             <h5 class="mb-3">Meja</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/ruangan/kepsek/meja') ?>">Selengkapnya</a>
+                                href="<?= base_url('/ruangan/uks/meja') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
@@ -55,7 +55,7 @@
                             <h5 class="mb-3">Kursi</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/ruangan/kepsek/kursi') ?>">Selengkapnya</a>
+                                href="<?= base_url('/ruangan/uks/kursi') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -66,7 +66,7 @@
                             <h5 class="mb-3">Foto</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/ruangan/kepsek/foto') ?>">Selengkapnya</a>
+                                href="<?= base_url('/ruangan/uks/foto') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
@@ -77,7 +77,7 @@
                             <h5 class="mb-3">Pena</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/ruangan/kepsek/pena') ?>">Selengkapnya</a>
+                                href="<?= base_url('/ruangan/uks/pena') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -88,7 +88,7 @@
                             <h5 class="mb-3">Penggaris</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/ruangan/kepsek/penggaris') ?>">Selengkapnya</a>
+                                href="<?= base_url('/ruangan/uks/penggaris') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -99,7 +99,7 @@
                             <h5 class="mb-3">Pendingin Ruangan</h5>
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/ruangan/kepsek/ac') ?>">Selengkapnya</a>
+                                href="<?= base_url('/ruangan/uks/ac') ?>">Selengkapnya</a>
                         </div>
                     </div>
                 </div>

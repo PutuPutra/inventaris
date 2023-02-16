@@ -733,6 +733,7 @@ $routes->get('/ruangan/waka/kesiswaan/kursi', 'Umum::kesiswaankursi');
 $routes->get('/ruangan/waka/kesiswaan/foto', 'Umum::kesiswaanfoto');
 $routes->get('/ruangan/waka/kesiswaan/pena', 'Umum::kesiswaanpena');
 $routes->get('/ruangan/waka/kesiswaan/penggaris', 'Umum::kesiswaanpenggaris');
+$routes->get('/ruangan/waka/kesiswaan/ac', 'Umum::kesiswaanac');
 // sarana waka kesiswaan end
 
 // sarana waka sarpras start
@@ -742,6 +743,7 @@ $routes->get('/ruangan/waka/sarpras/kursi', 'Umum::sarpraskursi');
 $routes->get('/ruangan/waka/sarpras/foto', 'Umum::sarprasfoto');
 $routes->get('/ruangan/waka/sarpras/pena', 'Umum::sarpraspena');
 $routes->get('/ruangan/waka/sarpras/penggaris', 'Umum::sarpraspenggaris');
+$routes->get('/ruangan/waka/sarpras/ac', 'Umum::sarprasac');
 // sarana waka sarpras end
 
 // sarana waka humas start

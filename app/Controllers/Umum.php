@@ -3426,61 +3426,112 @@ class Umum extends BaseController
         ];
         return view('umum/ruangan/data/kurikulum/ac/ac', $data);
     }
-    // public function xiimipa8meja()
-    // {
-    //     $data = [
-    //         'navbar1' => null,
-    //         'navbar2' => null,
-    //     ];
-    //     return view('umum/kelas/xii/data/mipa/xii8/meja/meja', $data);
-    // }
-    // public function xiimipa8kursi()
-    // {
-    //     $data = [
-    //         'navbar1' => null,
-    //         'navbar2' => null,
-    //     ];
-    //     return view('umum/kelas/xii/data/mipa/xii8/kursi/kursi', $data);
-    // }
-    // public function xiimipa8foto()
-    // {
-    //     $data = [
-    //         'navbar1' => null,
-    //         'navbar2' => null,
-    //     ];
-    //     return view('umum/kelas/xii/data/mipa/xii8/foto/foto', $data);
-    // }
-    // public function xiimipa8spidol()
-    // {
-    //     $data = [
-    //         'navbar1' => null,
-    //         'navbar2' => null,
-    //     ];
-    //     return view('umum/kelas/xii/data/mipa/xii8/spidol/spidol', $data);
-    // }
-    // public function xiimipa8penghapus()
-    // {
-    //     $data = [
-    //         'navbar1' => null,
-    //         'navbar2' => null,
-    //     ];
-    //     return view('umum/kelas/xii/data/mipa/xii8/penghapus/penghapus', $data);
-    // }
-    // public function xiimipa8pena()
-    // {
-    //     $data = [
-    //         'navbar1' => null,
-    //         'navbar2' => null,
-    //     ];
-    //     return view('umum/kelas/xii/data/mipa/xii8/pena/pena', $data);
-    // }
-    // public function xiimipa8penggaris()
-    // {
-    //     $data = [
-    //         'navbar1' => null,
-    //         'navbar2' => null,
-    //     ];
-    //     return view('umum/kelas/xii/data/mipa/xii8/penggaris/penggaris', $data);
-    // }
 
+
+    public function kesiswaanbuku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kesiswaan/buku/filebuku', $data);
+    }
+
+    public function kesiswaanmeja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kesiswaan/meja/meja', $data);
+    }
+
+    public function kesiswaankursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kesiswaan/kursi/kursi', $data);
+    }
+
+    public function kesiswaanfoto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kesiswaan/foto/foto', $data);
+    }
+
+    public function kesiswaanpena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kesiswaan/pena/pena', $data);
+    }
+
+    public function kesiswaanac()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/kesiswaan/ac/ac', $data);
+    }
+    public function sarprasbuku()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/sarpras/buku/filebuku', $data);
+    }
+
+    public function sarprasmeja()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/sarpras/meja/meja', $data);
+    }
+
+    public function sarpraskursi()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/sarpras/kursi/kursi', $data);
+    }
+
+    public function sarprasfoto()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/sarpras/foto/foto', $data);
+    }
+
+    public function sarpraspena()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/sarpras/pena/pena', $data);
+    }
+
+    public function sarprasac()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+        ];
+        return view('umum/ruangan/data/sarpras/ac/ac', $data);
+    }
 }
