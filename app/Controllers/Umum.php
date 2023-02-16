@@ -1714,6 +1714,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'penggaris' => (new PenggarisModel())->where('id_kelas', 12)->findAll(),
         ];
         return view('umum/kelas/xi/data/ips/xi1/penggaris/penggaris', $data);
     }
@@ -1723,6 +1724,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'buku' => (new BukuModel())->where('id_kelas', 13)->findAll(),
         ];
         return view('umum/kelas/xi/data/ips/xi2/buku/filebuku', $data);
     }
@@ -1731,6 +1733,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'papanTulis' => (new PapanTulisModel())->where('id_kelas', 12)->findAll(),
         ];
         return view('umum/kelas/xi/data/ips/xi2/papantulis/papanTulis', $data);
     }
@@ -1739,6 +1742,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'meja' => (new MejaModel())->where('id_kelas', 12)->findAll(),
         ];
         return view('umum/kelas/xi/data/ips/xi2/meja/meja', $data);
     }
@@ -1747,6 +1751,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'kursi' => (new KursiModel())->where('id_kelas', 12)->findAll(),
         ];
         return view('umum/kelas/xi/data/ips/xi2/kursi/kursi', $data);
     }
@@ -1755,6 +1760,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'foto' => (new FotoModel())->where('id_kelas', 12)->findAll(),
         ];
         return view('umum/kelas/xi/data/ips/xi2/foto/foto', $data);
     }
@@ -1763,6 +1769,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'spidol' => (new SpidolModel())->where('id_kelas', 12)->findAll(),
         ];
         return view('umum/kelas/xi/data/ips/xi2/spidol/spidol', $data);
     }
@@ -1771,6 +1778,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'penghapus' => (new PenghapusModel())->where('id_kelas', 12)->findAll(),
         ];
         return view('umum/kelas/xi/data/ips/xi2/penghapus/penghapus', $data);
     }
@@ -1787,6 +1795,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+
         ];
         return view('umum/kelas/xi/data/ips/xi2/penggaris/penggaris', $data);
     }
