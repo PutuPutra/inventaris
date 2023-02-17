@@ -42,11 +42,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($foto as $f) : ?>
                         <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
+                            <td><?= $f->ukuran_foto ?></td>
+                            <td><img src="/assets/foto/<?= $f->gambar_foto ?>" width="100"></td>
+                            <td>
+                                <?= $f->kondisi_foto ?>
+                            </td>
                         </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>
