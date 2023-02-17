@@ -173,14 +173,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '1')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '1')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '1')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '1')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '1')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '1')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '1')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '1')->findAll(),
+
         ];
         return view('umum/kelas/x/x1', $data);
     }
@@ -189,14 +182,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '2')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '2')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '2')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '2')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '2')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '2')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '2')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '2')->findAll(),
+
         ];
         return view('umum/kelas/x/x2', $data);
     }
@@ -205,14 +191,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '3')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '3')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '3')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '3')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '3')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '3')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '3')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '3')->findAll(),
+
         ];
         return view('umum/kelas/x/x3', $data);
     }
@@ -221,14 +200,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '4')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '4')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '4')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '4')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '4')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '4')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '4')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '4')->findAll(),
+
         ];
         return view('umum/kelas/x/x4', $data);
     }
@@ -237,14 +209,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '5')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '5')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '5')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '5')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '5')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '5')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '5')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '5')->findAll(),
+
         ];
         return view('umum/kelas/x/x5', $data);
     }
@@ -253,14 +218,6 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '6')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '6')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '6')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '6')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '6')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '6')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '6')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '6')->findAll(),
         ];
         return view('umum/kelas/x/x6', $data);
     }
@@ -269,14 +226,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '7')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '7')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '7')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '7')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '7')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '7')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '7')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '7')->findAll(),
+
         ];
         return view('umum/kelas/x/x7', $data);
     }
@@ -285,14 +235,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '8')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '8')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '8')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '8')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '8')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '8')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '8')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '8')->findAll(),
+
         ];
         return view('umum/kelas/x/x8', $data);
     }
@@ -301,14 +244,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '9')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '9')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '9')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '9')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '9')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '9')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '9')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '9')->findAll(),
+
         ];
         return view('umum/kelas/x/x9', $data);
     }
@@ -317,14 +253,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '10')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '10')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '10')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '10')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '10')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '10')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '10')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '10')->findAll(),
+
         ];
         return view('umum/kelas/x/x10', $data);
     }
@@ -333,14 +262,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '11')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '11')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '11')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '11')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '11')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '11')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '11')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '11')->findAll(),
+
         ];
         return view('umum/kelas/x/x11', $data);
     }
@@ -349,14 +271,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '12')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '12')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '12')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '12')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '12')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '12')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '12')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '12')->findAll(),
+
         ];
         return view('umum/kelas/xi/mipa/xi1', $data);
     }
@@ -365,14 +280,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '13')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '13')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '13')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '13')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '13')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '13')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '13')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '13')->findAll(),
+
         ];
         return view('umum/kelas/xi/mipa/xi2', $data);
     }
@@ -381,14 +289,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '14')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '14')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '14')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '14')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '14')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '14')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '14')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '14')->findAll(),
+
         ];
         return view('umum/kelas/xi/mipa/xi3', $data);
     }
@@ -397,14 +298,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '15')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '15')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '15')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '15')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '15')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '15')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '15')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '15')->findAll(),
+
         ];
         return view('umum/kelas/xi/mipa/xi4', $data);
     }
@@ -413,14 +307,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '16')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '16')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '16')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '16')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '16')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '16')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '16')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '16')->findAll(),
+
         ];
         return view('umum/kelas/xi/mipa/xi5', $data);
     }
@@ -429,14 +316,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '17')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '17')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '17')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '17')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '17')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '17')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '17')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '17')->findAll(),
+
         ];
         return view('umum/kelas/xi/mipa/xi6', $data);
     }
@@ -445,14 +325,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '18')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '18')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '18')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '18')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '18')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '18')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '18')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '18')->findAll(),
+
         ];
         return view('umum/kelas/xi/mipa/xi7', $data);
     }
@@ -461,14 +334,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '19')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '19')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '19')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '19')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '19')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '19')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '19')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '19')->findAll(),
+
         ];
         return view('umum/kelas/xi/mipa/xi8', $data);
     }
@@ -477,14 +343,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '20')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '20')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '20')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '20')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '20')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '20')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '20')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '20')->findAll(),
+
         ];
         return view('umum/kelas/xi/ips/xi1', $data);
     }
@@ -493,14 +352,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '21')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '21')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '21')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '21')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '21')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '21')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '21')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '21')->findAll(),
+
         ];
         return view('umum/kelas/xi/ips/xi2', $data);
     }
@@ -509,14 +361,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '22')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '22')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '22')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '22')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '22')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '22')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '22')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '22')->findAll(),
+
         ];
         return view('umum/kelas/xi/ips/xi3', $data);
     }
@@ -525,14 +370,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '23')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '23')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '23')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '23')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '23')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '23')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '23')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '23')->findAll(),
+
         ];
         return view('umum/kelas/xi/ips/xi4', $data);
     }
@@ -541,14 +379,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '24')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '24')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '24')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '24')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '24')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '24')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '24')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '24')->findAll(),
+
         ];
         return view('umum/kelas/xii/mipa/xii1', $data);
     }
@@ -557,14 +388,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '25')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '25')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '25')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '25')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '25')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '25')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '25')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '25')->findAll(),
+
         ];
         return view('umum/kelas/xii/mipa/xii2', $data);
     }
@@ -573,14 +397,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '26')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '26')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '26')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '26')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '26')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '26')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '26')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '26')->findAll(),
+
         ];
         return view('umum/kelas/xii/mipa/xii3', $data);
     }
@@ -589,14 +406,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '27')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '27')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '27')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '27')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '27')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '27')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '27')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '27')->findAll(),
+
         ];
         return view('umum/kelas/xii/mipa/xii4', $data);
     }
@@ -605,14 +415,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '28')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '28')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '28')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '28')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '28')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '28')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '28')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '28')->findAll(),
+
         ];
         return view('umum/kelas/xii/mipa/xii5', $data);
     }
@@ -621,14 +424,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '29')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '29')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '29')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '29')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '29')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '29')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '29')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '29')->findAll(),
+
         ];
         return view('umum/kelas/xii/mipa/xii6', $data);
     }
@@ -637,14 +433,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '30')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '30')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '30')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '30')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '30')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '30')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '30')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '30')->findAll(),
+
         ];
         return view('umum/kelas/xii/mipa/xii7', $data);
     }
@@ -653,14 +442,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '31')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '31')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '31')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '31')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '31')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '31')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '31')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '31')->findAll(),
+
         ];
         return view('umum/kelas/xii/ips/xii1', $data);
     }
@@ -669,14 +451,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '32')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '32')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '32')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '32')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '32')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '32')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '32')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '32')->findAll(),
+
         ];
         return view('umum/kelas/xii/ips/xii2', $data);
     }
@@ -685,14 +460,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '33')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '33')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '33')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '33')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '33')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '33')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '33')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '33')->findAll(),
+
         ];
         return view('umum/kelas/xii/ips/xii3', $data);
     }
@@ -701,14 +469,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->where('id_kelas', '34')->findAll(),
-            'chairs' => (new KursiModel())->where('id_kelas', '34')->findAll(),
-            'photos' => (new FotoModel())->where('id_kelas', '34')->findAll(),
-            'boards' => (new PapanTulisModel())->where('id_kelas', '34')->findAll(),
-            'spidols' => (new SpidolModel())->where('id_kelas', '34')->findAll(),
-            'pens' => (new PenaModel())->where('id_kelas', '34')->findAll(),
-            'rules' => (new PenggarisModel())->where('id_kelas', '34')->findAll(),
-            'erasers' => (new PenghapusModel())->where('id_kelas', '34')->findAll(),
+
         ];
         return view('umum/kelas/xii/ips/xii4', $data);
     }
@@ -717,7 +478,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            
+
         ];
         return view('umum/bangunan/aula', $data);
     }
