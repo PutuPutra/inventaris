@@ -30,11 +30,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($chairs as $chair) : ?>
                         <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
+                            <td><?= $chair->ukuran_kursi ?></td>
+                            <td><img src="/assets/foto/<?= $chair->gambar_kursi ?>" width="100"></td>
+                            <td>
+                                <?= $chair->kondisi_kursi ?>
+                            </td>
                         </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

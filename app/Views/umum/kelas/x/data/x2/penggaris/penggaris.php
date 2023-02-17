@@ -44,12 +44,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($penggaris as $p) : ?>
                         <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
-                            <td id="isiTable">30cm</td>
+                            <td><?= $p->merk_penggaris ?></td>
+                            <td><img src="/assets/foto/<?= $p->gambar_penggaris ?>" width="100"></td>
+                            <td>
+                                <?= $p->kondisi_penggaris ?>
+                            </td>
                         </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>
