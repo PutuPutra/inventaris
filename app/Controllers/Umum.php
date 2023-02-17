@@ -730,6 +730,8 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
+            'papanTulis' => (new PapanTulisModel())->where('id_kelas', 2)->findAll(),
+
         ];
         return view('umum/kelas/x/data/x2/papantulis/papanTulis', $data);
     }
