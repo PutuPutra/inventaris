@@ -42,11 +42,18 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($papanTulis as $board) : ?>
                         <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
+                            <td>
+                                <?= $board->ukuran_papan_tulis ?>
+                            </td>
+                            <td>
+                                <img src="/assets/foto/<?= $board->gambar_papan_tulis ?>" width="100">
+                            </td>
+                            <td><?= $board->kondisi_papan_tulis ?>
+                            </td>
                         </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>
