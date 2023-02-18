@@ -168,6 +168,8 @@ $routes->get('/buku/deleted/(:num)', 'bukuController::deleted/$1', ['filter' => 
 $routes->post('/papanTulis/store', 'papanTulisController::store', ['filter' => 'login']);
 
 //papan tulis
+$routes->post('/papanTulis/update/(:num)', 'papanTulisController::updatePapanTulis/$1', ['filter' => 'login']);
+$routes->get('/papanTulis/edit/(:num)', 'papanTulisController::editPapanTulis/$1', ['filter' => 'login']);
 $routes->get('/papanTulis', 'papanTulisController::papanTulis', ['filter' => 'login']);
 $routes->get('/tambahPapanTulis', 'papanTulisController::tambahPapanTulis', ['filter' => 'login']);
 $routes->get('/papanTulis/deleted/(:num)', 'papanTulisController::deleted/$1', ['filter' => 'login']);
@@ -176,6 +178,8 @@ $routes->get('/papanTulis/deleted/(:num)', 'papanTulisController::deleted/$1', [
 $routes->post('/meja/store', 'mejaController::store', ['filter' => 'login']);
 
 // meja
+$routes->post('/meja/update/(:num)', 'mejaController::updateMeja/$1', ['filter' => 'login']);
+$routes->get('/meja/edit/(:num)', 'mejaController::editMeja/$1', ['filter' => 'login']);
 $routes->get('/meja', 'mejaController::meja', ['filter' => 'login']);
 $routes->get('/tambahMeja', 'mejaController::tambahMeja', ['filter' => 'login']);
 $routes->get('/meja/deleted/(:num)', 'mejaController::deleted/$1', ['filter' => 'login']);
@@ -184,6 +188,8 @@ $routes->get('/meja/deleted/(:num)', 'mejaController::deleted/$1', ['filter' => 
 $routes->post('/kursi/store', 'kursiController::store', ['filter' => 'login']);
 
 // meja
+$routes->post('/kursi/update/(:num)', 'kursiController::updateKursi/$1', ['filter' => 'login']);
+$routes->get('/kursi/edit/(:num)', 'kursiController::editKursi/$1', ['filter' => 'login']);
 $routes->get('/kursi', 'kursiController::kursi', ['filter' => 'login']);
 $routes->get('/tambahKursi', 'kursiController::tambahKursi', ['filter' => 'login']);
 $routes->get('/kursi/deleted/(:num)', 'kursiController::deleted/$1', ['filter' => 'login']);
@@ -192,6 +198,8 @@ $routes->get('/kursi/deleted/(:num)', 'kursiController::deleted/$1', ['filter' =
 $routes->post('/foto/store', 'fotoController::store', ['filter' => 'login']);
 
 // foto
+$routes->post('/foto/update/(:num)', 'fotoController::updateFoto/$1', ['filter' => 'login']);
+$routes->get('/foto/edit/(:num)', 'fotoController::editFoto/$1', ['filter' => 'login']);
 $routes->get('/foto', 'fotoController::foto', ['filter' => 'login']);
 $routes->get('/tambahFoto', 'fotoController::tambahFoto', ['filter' => 'login']);
 $routes->get('/foto/deleted/(:num)', 'fotoController::deleted/$1', ['filter' => 'login']);
@@ -200,6 +208,8 @@ $routes->get('/foto/deleted/(:num)', 'fotoController::deleted/$1', ['filter' => 
 $routes->post('/spidol/store', 'spidolController::store', ['filter' => 'login']);
 
 // spidol
+$routes->post('/spidol/update/(:num)', 'spidolController::updateSpidol/$1', ['filter' => 'login']);
+$routes->get('/spidol/edit/(:num)', 'spidolController::editSpidol/$1', ['filter' => 'login']);
 $routes->get('/spidol', 'spidolController::spidol', ['filter' => 'login']);
 $routes->get('/tambahSpidol', 'spidolController::tambahSpidol', ['filter' => 'login']);
 $routes->get('/spidol/deleted/(:num)', 'spidolController::deleted/$1', ['filter' => 'login']);

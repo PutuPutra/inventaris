@@ -31,7 +31,7 @@
                                     <td id="isiTable"><?= $f->kondisi_foto; ?></td>
                                     <td id="isiTable">
                                         <div class="buttons">
-                                            <a href="<?= base_url('FotoEdit') . '/' . $f->id ?>"
+                                            <a href="<?= base_url('foto/edit') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i
                                                     class="fa-solid fa-pen-to-square"></i></i></a>
                                             <a href="<?= base_url('foto/deleted') . '/' . $f->id ?>"
