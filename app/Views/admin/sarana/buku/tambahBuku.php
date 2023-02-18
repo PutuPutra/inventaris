@@ -13,23 +13,20 @@
                     <div class="clearfix">
                         <!-- <label class="custom-label">Example</label> -->
                         <div class="clearfix">
-                            <form action="<?= base_url('buku/store') ?>" method="POST" enctype="multipart/form-data"
-                                data-parsley-validate>
+                            <form action="<?= base_url('buku/store') ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php $validation = \Config\Services::validation(); ?>
                                 <div class="wd-300">
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
                                             <label>Penerbit <span class="tx-danger">*</span></label>
-                                            <input type="text" name="penerbit_buku" class="form-control wd-300"
-                                                placeholder="Penerbit Buku" required>
+                                            <input type="text" name="penerbit_buku" class="form-control wd-300" placeholder="Penerbit Buku" required>
                                         </div>
 
                                         <!-- form-group -->
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                             <label>Gambar <span class="tx-danger">*</span></label>
-                                            <input type="file" name="gambar_buku" class="form-control wd-300"
-                                                placeholder="Enter Gambar" required>
+                                            <input type="file" name="gambar_buku" class="form-control wd-300" placeholder="Enter Gambar" required>
                                         </div>
                                         <!-- form-group -->
                                     </div>
@@ -38,10 +35,7 @@
                                             <div class="d-md-flex" style="margin-right: 50px;">
                                                 <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
                                                     <label>Kondisi <span class="tx-danger">*</span></label>
-                                                    <select class="form-control select2 wd-300" id="kondisi_buku"
-                                                        name="kondisi_buku" data-placeholder="Choose one"
-                                                        data-parsley-class-handler="#slWrapper"
-                                                        data-parsley-errors-container="#slErrorContainer" required>
+                                                    <select class="form-control select2 wd-300" id="kondisi_buku" name="kondisi_buku" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required>
                                                         <option label="Pilih Kondisi"></option>
                                                         <option value="Baik">Baik</option>
                                                         <option value="Kerusakan Ringan">
@@ -62,14 +56,11 @@
                                                 <div class="d-md-flex" style="margin-right: 50px;">
                                                     <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
                                                         <label>Kelas <span class="tx-danger">*</span></label>
-                                                        <select class="form-control select2 wd-300" id="id_kelas"
-                                                            name="id_kelas" data-placeholder="Choose one"
-                                                            data-parsley-class-handler="#slWrapper"
-                                                            data-parsley-errors-container="#slErrorContainer" required>
+                                                        <select class="form-control select2 wd-300" id="id_kelas" name="id_kelas" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required>
                                                             <?php foreach ($kelas as $k) : ?>
-                                                            <option value="<?= $k['id_kelas']; ?>">
-                                                                <?= $k['nama_kelas'] . ' - ' . $k['wali_kelas'] ?>
-                                                            </option>
+                                                                <option value="<?= $k['id_kelas']; ?>">
+                                                                    <?= $k['nama_kelas'] . ' - ' . $k['wali_kelas'] ?>
+                                                                </option>
                                                             <?php endforeach ?>
                                                         </select>
                                                         <div id="slErrorContainer"></div>
@@ -83,8 +74,7 @@
                                         <div class="d-md-flex mg-b-30">
                                             <div class="form-group mg-b-0">
                                                 <label>Nomor Seri<span class="tx-danger">*</span></label>
-                                                <input type="text" name="serial_number" class="form-control wd-300"
-                                                    placeholder="Masukkan Nomor Seri " required>
+                                                <input type="text" name="serial_number" class="form-control wd-300" placeholder="Masukkan Nomor Seri " required>
                                             </div>
                                         </div>
                                     </div>
@@ -99,8 +89,7 @@
                             </form>
                             <a href="<?= base_url('buku') ?>">
                                 <div class="class">
-                                    <button class="btn btn-secondary waves-effect"
-                                        style="margin-left: 120px; margin-top: -60px;">Batal</button>
+                                    <button class="btn btn-secondary waves-effect" style="margin-left: 120px; margin-top: -60px;">Batal</button>
                                 </div>
                             </a>
                         </div>

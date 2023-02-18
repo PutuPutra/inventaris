@@ -67,12 +67,6 @@ class bukuController extends BaseController
                     'required' => 'Harus mengisi bagian ini',
                 ],
             ],
-            'deskripsi_buku' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Harus mengisi bagian ini',
-                ],
-            ],
             'gambar_buku' => [
                 'label' => 'gambar_buku',
                 'rules' => 'uploaded[gambar_buku]|mime_in[gambar_buku,image/jpg,image/jpeg,image/png]',
@@ -112,25 +106,6 @@ class bukuController extends BaseController
         return redirect()->to(base_url('buku'));
     }
 
-    public function updateBuk($id)
-    {
-        $buku = new bukuModel();
-        if ($this->request->getFile('gambar_buku')->getName() == '') {
-            $data = [
-                'penerbit_buku' => $this->request->getPost('penerbit_buku'),
-                'kondisi_buku' => $this->request->getPost('kondisi_buku'),
-            ];
-            $buku->where('id', $id)->set($data)->update();
-        } else {
-
-            $files = $this->request->getFile('gambar_buku');
-            $names = $files->getName();
-            $files->move('assets/foto', $names);
-            $buku->update($this->request->getPost('id'), $this->request->getPost());
-            $buku->where('id', $id)->set('gambar_buku', $names)->update();
-        }
-        return redirect()->to(base_url('/buku'));
-    }
     public function updateBuku($id)
     {
         $buku = new BukuModel();
