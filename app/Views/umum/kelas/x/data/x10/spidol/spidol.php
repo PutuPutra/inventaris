@@ -12,5 +12,57 @@
 </div>
 <!-- Page Header End -->
 
+<!-- Start -->
+<div class="container-xxl service py-5">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <!-- <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Sarana</p> -->
+            <!-- <h6 class="display-5 mb-5">Data Buku</h6> -->
+        </div>
+
+
+    </div>
+</div>
+<!-- End -->
+
+<div class="page-heading p-5" style="margin-top:-100px;">
+
+    <section class="section">
+        <div class="card">
+            <!-- <div class="card-header">
+                Simple Datatable
+            </div> -->
+            <div class="card-body">
+                <table class="table table-striped" id="table1">
+                    <thead>
+                        <tr>
+                            <th>Merek</th>
+                            <th>Gambar</th>
+                            <th>Kondisi</th>
+                            <th>Warna</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($spidol as $s) : ?>
+                            <tr>
+                                <td><?= $s->merk_spidol ?></td>
+                                <td><img src="/assets/foto/<?= $s->gambar_spidol ?>" width="100"></td>
+                                <td>
+                                    <?= $s->kondisi_spidol ?>
+                                </td>
+                                <td>
+                                    <?= $s->warna_spidol ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+</div>
+
 
 <?= $this->endSection(); ?>

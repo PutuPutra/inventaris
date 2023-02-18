@@ -43,11 +43,13 @@
                     </thead>
                     <tbody>
                         <?php foreach ($books as $book) : ?>
+                        <tr>
                             <td><?= $book->penerbit_buku ?></td>
                             <td><img src="/assets/foto/<?= $book->gambar_buku ?>" width="100"></td>
-                            <td><textarea readonly>
+                            <td><textarea disabled class="container-fluid" name="" id="description" cols="50" rows="5">
                                 <?= $book->deskripsi_buku ?>
                             </textarea></td>
+                        </tr>
                         <?php endforeach; ?>
 
                     </tbody>

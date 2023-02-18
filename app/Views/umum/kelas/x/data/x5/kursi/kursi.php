@@ -30,11 +30,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($kursi as $k) : ?>
                         <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
+                            <td><?= $k->ukuran_kursi ?></td>
+                            <td><img src="/assets/foto/<?= $k->gambar_kursi ?>" width="100"></td>
+                            <td>
+                                <?= $k->kondisi_kursi ?>
+                            </td>
                         </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>
