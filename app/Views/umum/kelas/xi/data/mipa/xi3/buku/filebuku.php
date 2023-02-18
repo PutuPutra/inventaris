@@ -40,7 +40,7 @@
                         <tr>
                             <th>Penerbit</th>
                             <th>Gambar</th>
-                            <th>Deskripsi</th>
+                            <th>Kondisi Buku</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -49,9 +49,7 @@
                             <td id="isiTable"><?= $book->penerbit_buku ?></td>
                             <td id="isiTable"><img src="/assets/foto/<?= $book->gambar_buku ?>" width="100"></td>
                             <td id="isiTable">
-                                <textarea disabled class="container-fluid" name="" id="description" cols="50" rows="5">
-                                <?= $book->deskripsi_buku ?>
-                                </textarea>
+                                <?= $book->kondisi_buku ?>
                             </td>
                         </tr>
                         <?php endforeach; ?>
