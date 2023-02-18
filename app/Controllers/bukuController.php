@@ -82,6 +82,12 @@ class bukuController extends BaseController
 
                 ],
             ],
+            'serial_number' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Harus mengisi bagian ini',
+                ],
+            ],
         ]);
 
         if (!$validate) {

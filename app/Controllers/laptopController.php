@@ -103,6 +103,7 @@ class laptopController extends BaseController
     public function deleted($id = false)
     {
         $komputer = new KomputerModel();
+        $komputer->where('id', $id);
         $komputer->delete($id);
         return redirect()->to(base_url('/komputer'));
     }
