@@ -36,17 +36,19 @@
                 <table class="table table-striped" id="table1">
                     <thead>
                         <tr>
-                            <th>Ukuran</th>
                             <th>Gambar</th>
                             <th>Kondisi</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($jam as $j) : ?>
                         <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
+                            <td id="isiTable"><img src="/assets/foto/<?= $j->gambar_jam ?>" width="100"></td>
+                            <td id="isiTable">
+                                <?= $j->kondisi_jam ?>
+                            </td>
                         </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

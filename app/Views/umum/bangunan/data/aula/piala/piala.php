@@ -42,11 +42,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($piala as $p) : ?>
                         <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
+                            <td id="isiTable"><?= $p->ukuran_piala ?></td>
+                            <td id="isiTable"><img src="/assets/foto/<?= $p->gambar_piala ?>" width="100"></td>
+                            <td id="isiTable">
+                                <?= $p->kondisi_piala ?>
+                            </td>
                         </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

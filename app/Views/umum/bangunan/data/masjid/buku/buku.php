@@ -42,11 +42,17 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($books as $book) : ?>
                         <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
+                            <td id="isiTable"><?= $book->penerbit_buku ?></td>
+                            <td id="isiTable"><img src="/assets/foto/<?= $book->gambar_buku ?>" width="100"></td>
+                            <td id="isiTable">
+                                <textarea disabled class="container-fluid" name="" id="description" cols="50" rows="5">
+                                <?= $book->deskripsi_buku ?>
+                                </textarea>
+                            </td>
                         </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>
