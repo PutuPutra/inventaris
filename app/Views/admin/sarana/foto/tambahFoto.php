@@ -54,7 +54,6 @@
                                                         </option>
                                                         <option value="Kerusakan Berat">Kerusakan Berat
                                                         </option>
-                                                        <option value="Sedang di">Sedang diperbaiki</option>
                                                     </select>
                                                     <div id="slErrorContainer"></div>
                                                 </div>
