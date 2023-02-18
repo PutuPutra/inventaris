@@ -59,11 +59,12 @@
                                         </div>
                                     </div>
                             </form>
-                            <a href="<?= base_url('kelas/store') ?>">
-                                <button class="btn btn-secondary waves-effect"
-                                    style="margin-left: 120px; margin-top: -60px;">Batal</button>
-                            </a>
+
                         </div>
+                        <a href="<?= base_url('/kelas') ?>">
+                            <button class="btn btn-secondary waves-effect"
+                                style="margin-left: 120px; margin-top: -60px;">Batal</button>
+                        </a>
                     </div>
                 </div>
 
