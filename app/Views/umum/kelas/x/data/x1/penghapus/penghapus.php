@@ -44,9 +44,9 @@
                     <tbody>
                         <?php foreach ($penghapus as $p) : ?>
                         <tr>
-                            <td><?= $p->merk_penghapus ?></td>
-                            <td><img src="/assets/foto/<?= $p->gambar_penghapus ?>" width="100"></td>
-                            <td>
+                            <td id="isiTable"><?= $p->merk_penghapus ?></td>
+                            <td id="isiTable"><img src="/assets/foto/<?= $p->gambar_penghapus ?>" width="100"></td>
+                            <td id="isiTable">
                                 <?= $p->kondisi_penghapus ?>
                             </td>
                         </tr>

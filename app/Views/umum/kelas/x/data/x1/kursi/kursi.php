@@ -44,9 +44,9 @@
                     <tbody>
                         <?php foreach ($kursi as $k) : ?>
                         <tr>
-                            <td><?= $k->ukuran_kursi ?></td>
-                            <td><img src="/assets/foto/<?= $k->gambar_kursi ?>" width="100"></td>
-                            <td>
+                            <td id="isiTable"><?= $k->ukuran_kursi ?></td>
+                            <td id="isiTable"><img src="/assets/foto/<?= $k->gambar_kursi ?>" width="100"></td>
+                            <td id="isiTable">
                                 <?= $k->kondisi_kursi ?>
                             </td>
                         </tr>
