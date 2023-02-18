@@ -110,7 +110,7 @@ class laptopController extends BaseController
     public function updateKomputer($id)
     {
         $komputer = new KomputerModel();
-        if($this->request->getFile('gambar_komputer')->getName() == ''){
+        if ($this->request->getFile('gambar_komputer')->getName() == '') {
             $data = [
                 'brand_komputer' => $this->request->getPost('brand_komputer'),
                 'kondisi_komputer' => $this->request->getPost('kondisi_komputer'),
@@ -118,7 +118,7 @@ class laptopController extends BaseController
                 'jenis_produk_komputer' => $this->request->getPost('jenis_produk_komputer'),
             ];
             $komputer->where('id', $id)->set($data)->update();
-        }else{
+        } else {
 
             $files = $this->request->getFile('gambar_komputer');
             $names = $files->getName();

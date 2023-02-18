@@ -19,7 +19,6 @@
                                     <th>Penerbit</th>
                                     <th>Gambar</th>
                                     <th>Kondisi</th>
-                                    <th>Deskripsi</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -30,14 +29,6 @@
                                     <td id="isiTable"><img class="pictures" src="/assets/foto/<?= $f->gambar_buku; ?>"
                                             alt="" width="100px"></img></td>
                                     <td id="isiTable"><?= $f->kondisi_buku; ?></td>
-                                    <td>
-                                        <div class="textarea">
-                                            <textarea disabled class="container-fluid" name="" id="description"
-                                                cols="50" rows="5">
-                                            <?= $f->deskripsi_buku; ?>
-                                            </textarea>
-                                        </div>
-                                    </td>
                                     <td id="isiTable">
                                         <div class="buttons">
                                             <a href="<?= base_url('buku/edit') . '/' . $f->id ?>"

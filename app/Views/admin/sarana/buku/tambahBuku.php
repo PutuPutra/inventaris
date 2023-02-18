@@ -89,14 +89,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="d-md-flex">
-                                        <div class="form-group mg-b-60">
-                                            <label>Deskripsi <span class="tx-danger">*</span></label>
-                                            <textarea name="deskripsi_buku" id="deskripsi_buku" cols="40" rows="4"
-                                                required></textarea>
-                                        </div>
-                                    </div>
-
                                     <!-- d-flex -->
                                     <div class="form-layout-footer mg-t-8">
                                         <button class="btn btn-primary waves-effect">
