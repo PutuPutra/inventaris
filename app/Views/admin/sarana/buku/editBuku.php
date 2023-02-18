@@ -13,8 +13,8 @@
                     <div class="clearfix">
                         <!-- <label class="custom-label">Example</label> -->
                         <div class="clearfix">
-                            <form action="<?= base_url('buku/store') ?>" method="POST" enctype="multipart/form-data"
-                                data-parsley-validate>
+                            <form action="<?= base_url('/buku/update') . '/' . $files_buku->id ?>" method="POST"
+                                enctype="multipart/form-data" data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php $validation = \Config\Services::validation(); ?>
                                 <div class="wd-300">
@@ -87,18 +87,12 @@
                                             <div class="form-group mg-b-0">
                                                 <label>Nomor Seri<span class="tx-danger">*</span></label>
                                                 <input type="text" name="serial_number" class="form-control wd-300"
-                                                    placeholder="Masukkan Nomor Seri " required>
+                                                    value="<?= $files_buku->serial_number; ?>" required>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="d-md-flex">
-                                        <div class="form-group mg-b-60">
-                                            <label>Deskripsi <span class="tx-danger">*</span></label>
-                                            <textarea name="deskripsi_buku" id="deskripsi_buku" cols="40" rows="4"
-                                                required></textarea>
-                                        </div>
-                                    </div>
+
 
                                     <!-- d-flex -->
                                     <div class="form-layout-footer mg-t-8">

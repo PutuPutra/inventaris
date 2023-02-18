@@ -157,6 +157,7 @@ $routes->get('/editKomputer/(:num)', 'laptopController::editKomputer/$1', ['filt
 $routes->get('/KomputerEdit/(:num)', 'laptopController::KomputerEdit/$1', ['filter' => 'login']);
 
 // buku
+$routes->post('/buku/update/(:num)', 'bukuController::updateBuku/$1', ['filter' => 'login']);
 $routes->post('/buku/store', 'bukuController::store', ['filter' => 'login']);
 $routes->get('/buku/edit/(:num)', 'bukuController::editBuku/$1', ['filter' => 'login']);
 $routes->get('/buku', 'bukuController::buku', ['filter' => 'login']);

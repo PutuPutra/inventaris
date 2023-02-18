@@ -97,7 +97,6 @@ class bukuController extends BaseController
             'gambar_buku' => $names,
             'penerbit_buku' => $this->request->getPost('penerbit_buku'),
             'kondisi_buku' => $this->request->getPost('kondisi_buku'),
-            'deskripsi_buku' => $this->request->getPost('deskripsi_buku'),
             'id_kelas' => $this->request->getPost('id_kelas'),
         ];
         //dd($data);
@@ -106,6 +105,30 @@ class bukuController extends BaseController
 
         return redirect()->to(base_url('buku'));
     }
+
+    public function updateBuku($id)
+    {
+        $buku = new bukuModel();
+        if ($this->request->getFile('gambar_buku')->getName() == '') {
+            $data = [
+                'serial_number' => $this->request->getPost('serial_number'),
+                'penerbit_buku' => $this->request->getPost('penerbit_buku'),
+                'kondisi_buku' => $this->request->getPost('kondisi_buku'),
+                'id_kelas' => $this->request->getPost('id_kelas'),
+            ];
+            $buku->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_buku');
+            $names = $files->getName();
+            $files->move('assets/foto', $names);
+            $buku->update($this->request->getPost('id'), $this->request->getPost());
+            $buku->where('id', $id)->set('gambar_buku', $names)->update();
+        }
+        return redirect()->to(base_url('/buku'));
+    }
+
+    
     public function deleted($id = false)
     {
         $buku = new BukuModel();
@@ -118,7 +141,8 @@ class bukuController extends BaseController
         $files_buku = $buku->find($id);
         $data = [
             'heading' => 'Edit Data Buku',
-            'files_buku' => $files_buku
+            'files_buku' => $files_buku,
+            'kelas' => (new ModelKelas())->findAll(),
         ];
 
         return view('admin/sarana/buku/editBuku', $data);
