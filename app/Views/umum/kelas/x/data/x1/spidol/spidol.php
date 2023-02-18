@@ -50,6 +50,9 @@
                             <td>
                                 <?= $s->kondisi_spidol ?>
                             </td>
+                            <td>
+                                <?= $s->warna_spidol ?>
+                            </td>
                         </tr>
                         <?php endforeach; ?>
 
