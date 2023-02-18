@@ -41,7 +41,7 @@
                                             <div class="form-group mg-b-0 mr-3">
                                                 <label>Nomor Seri<span class="tx-danger">*</span></label>
                                                 <input type="text" name="serial_number" class="form-control wd-300"
-                                                    placeholder="Enter Serial Number" required>
+                                                    placeholder="Masukkan Nomor Seri" required>
                                             </div>
                                             <div class="d-md-flex" style="margin-right: 50px;">
                                                 <div id="slWrapper" class="parsley-select wd-250 mg-b-0">

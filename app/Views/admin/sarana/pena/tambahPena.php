@@ -39,9 +39,9 @@
                                     <div class="wd-250">
                                         <div class="d-md-flex mg-b-30">
                                             <div class="form-group mg-b-0 mr-3">
-                                                <label>NO.SN <span class="tx-danger">*</span></label>
+                                                <label>Nomor Seri <span class="tx-danger">*</span></label>
                                                 <input type="text" name="serial_number" class="form-control wd-300"
-                                                    placeholder="Enter Serial Number" required>
+                                                    placeholder="Masukkan Nomor Seri Pada Pena" required>
                                             </div>
                                             <div class="d-md-flex" style="margin-right: 50px;">
                                                 <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
@@ -54,7 +54,8 @@
                                                         <option value="Baik">Baik</option>
                                                         <option value="Kehabisan Tinta">Kehabisan Tinta
                                                         </option>
-                                                        <option value="Tidak Dapat Digunakan Kembali">Tidak Dapat DigunakanKembali
+                                                        <option value="Tidak Dapat Digunakan Kembali">Tidak Dapat
+                                                            Digunakan Kembali
                                                         </option>
                                                     </select>
                                                     <div id="slErrorContainer"></div>
