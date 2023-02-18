@@ -37,7 +37,7 @@
                         <tr>
                             <th>Penerbit</th>
                             <th>Gambar</th>
-                            <th>Deskripsi</th>
+                            <th>Kondisi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -45,7 +45,7 @@
                         <tr>
                             <td><?= $book->penerbit_buku; ?></td>
                             <td><img src="/assets/foto/<?= $book->gambar_buku ?>" height="100" width="150"></td>
-                            <td><?= $book->deskripsi_buku ?></td>
+                            <td><?= $book->kondisi_buku ?></td>
                         </tr>
                         <?php endforeach; ?>
                     </tbody>

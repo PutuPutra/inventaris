@@ -156,10 +156,10 @@ $routes->post('/updateKomputer/(:num)', 'laptopController::updateKomputer/$1', [
 $routes->get('/editKomputer/(:num)', 'laptopController::editKomputer/$1', ['filter' => 'login']);
 $routes->get('/KomputerEdit/(:num)', 'laptopController::KomputerEdit/$1', ['filter' => 'login']);
 
-// bukuController
+// buku
+$routes->post('/buku/update/(:num)', 'bukuController::updateBuku/$1', ['filter' => 'login']);
 $routes->post('/buku/store', 'bukuController::store', ['filter' => 'login']);
-
-//buku
+$routes->get('/buku/edit/(:num)', 'bukuController::editBuku/$1', ['filter' => 'login']);
 $routes->get('/buku', 'bukuController::buku', ['filter' => 'login']);
 $routes->get('/tambahBuku', 'bukuController::tambahBuku', ['filter' => 'login']);
 $routes->get('/buku/deleted/(:num)', 'bukuController::deleted/$1', ['filter' => 'login']);

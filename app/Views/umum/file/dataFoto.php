@@ -34,7 +34,7 @@
                 <table class="table table-striped" id="table1">
                     <thead>
                         <tr>
-                            <th>Ukuran</th>
+                            <th>Ukuran (PxL) cm</th>
                             <th>Gambar</th>
                             <th>Kondisi</th>
                         </tr>
@@ -42,9 +42,9 @@
                     <tbody>
                         <tr>
                             <?php foreach ($photos as $photo) : ?>
-                                <td><?= $photo->ukuran_foto; ?></td>
-                                <td><img src="/assets/foto/<?= $photo->gambar_foto ?>" height="100" width="150"></td>
-                                <td><?= $photo->kondisi_foto; ?></td>
+                            <td><?= $photo->ukuran_foto; ?></td>
+                            <td><img src="/assets/foto/<?= $photo->gambar_foto ?>" height="100" width="150"></td>
+                            <td><?= $photo->kondisi_foto; ?></td>
                             <?php endforeach; ?>
                         </tr>
                     </tbody>
