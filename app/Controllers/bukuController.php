@@ -85,7 +85,7 @@ class bukuController extends BaseController
         ]);
 
         if (!$validate) {
-            // dd($this->request->getFile('gambar_komputer'));
+            // dd($this->request->getFile('gambar_buku'));
             return redirect()->to('tambahBuku')->withInput();
         }
         $files = $this->request->getFile('gambar_buku');
@@ -111,5 +111,16 @@ class bukuController extends BaseController
         $buku = new BukuModel();
         $buku->delete($id);
         return redirect()->to(base_url('/buku'));
+    }
+    public function editBuku($id = false)
+    {
+        $buku = new BukuModel();
+        $files_buku = $buku->find($id);
+        $data = [
+            'heading' => 'Edit Data Buku',
+            'files_buku' => $files_buku
+        ];
+
+        return view('admin/sarana/buku/editBuku', $data);
     }
 }

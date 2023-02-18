@@ -40,7 +40,7 @@
                                     </td>
                                     <td id="isiTable">
                                         <div class="buttons">
-                                            <a href="<?= base_url('BukuEdit') . '/' . $f->id ?>"
+                                            <a href="<?= base_url('buku/edit') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i
                                                     class="fa-solid fa-pen-to-square"></i></i></a>
                                             <a href="<?= base_url('buku/deleted') . '/' . $f->id ?>"
