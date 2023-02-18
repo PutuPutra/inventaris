@@ -17,6 +17,7 @@ class ModelKelas extends Model
     protected $allowedFields    = [
         'nama_kelas',
         'wali_kelas',
-        'ketua_kelas'
+        'ketua_kelas',
+        'gambar_kelas',
     ];
 }
