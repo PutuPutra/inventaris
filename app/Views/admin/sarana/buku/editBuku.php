@@ -29,7 +29,7 @@
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                             <label>Gambar <span class="tx-danger">*</span></label>
                                             <input type="file" name="gambar_buku" class="form-control wd-300"
-                                                value="<?= $files_buku->gambar_buku; ?>" required>
+                                                value="<?= $files_buku->gambar_buku; ?>">
                                         </div>
                                         <!-- form-group -->
                                     </div>

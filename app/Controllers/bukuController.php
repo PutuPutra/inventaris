@@ -106,15 +106,13 @@ class bukuController extends BaseController
         return redirect()->to(base_url('buku'));
     }
 
-    public function updateBuku($id)
+    public function updateBuk($id)
     {
         $buku = new bukuModel();
         if ($this->request->getFile('gambar_buku')->getName() == '') {
             $data = [
-                'serial_number' => $this->request->getPost('serial_number'),
                 'penerbit_buku' => $this->request->getPost('penerbit_buku'),
                 'kondisi_buku' => $this->request->getPost('kondisi_buku'),
-                'id_kelas' => $this->request->getPost('id_kelas'),
             ];
             $buku->where('id', $id)->set($data)->update();
         } else {
@@ -127,8 +125,31 @@ class bukuController extends BaseController
         }
         return redirect()->to(base_url('/buku'));
     }
+    public function updateBuku($id)
+    {
+        $buku = new BukuModel();
+        $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
+            'penerbit_buku' => $this->request->getPost('penerbit_buku'),
+            'kondisi_buku' => $this->request->getPost('kondisi_buku'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
+        ];
+        if ($this->request->getFile('gambar_buku')->getName() == '') {
 
-    
+            $buku->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_buku');
+            $names = $files->getName();
+            $files->move('assets/foto', $names);
+            $data['gambar_buku'] = $names;
+            $buku->where('id', $id)->set($data)->update();
+        }
+        return redirect()->to(base_url('/buku'));
+    }
+
+
+
     public function deleted($id = false)
     {
         $buku = new BukuModel();
