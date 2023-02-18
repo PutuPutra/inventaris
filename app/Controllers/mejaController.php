@@ -102,7 +102,44 @@ class mejaController extends BaseController
     public function deleted($id = false)
     {
         $meja = new MejaModel();
+        $meja->where('id', $id);
         $meja->delete($id);
         return redirect()->to(base_url('/meja'));
+    }
+
+    public function updateMeja($id)
+    {
+        $meja = new MejaModel();
+        $data = [
+            'ukuran_meja' => $this->request->getPost('ukuran_meja'),
+            'serial_number' => $this->request->getPost('serial_number'),
+            'kondisi_meja' => $this->request->getPost('kondisi_meja'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
+        ];
+        if ($this->request->getFile('gambar_meja')->getName() == '') {
+
+            $meja->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_meja');
+            $names = $files->getName();
+            $files->move('assets/foto', $names);
+            $data['gambar_meja'] = $names;
+            $meja->where('id', $id)->set($data)->update();
+        }
+        return redirect()->to(base_url('/meja'));
+    }
+
+    public function editMeja($id = false)
+    {
+        $meja = new MejaModel();
+        $files_meja = $meja->find($id);
+        $data = [
+            'heading' => 'Edit Data Meja',
+            'files_meja' => $files_meja,
+            'kelas' => (new ModelKelas())->findAll(),
+        ];
+
+        return view('admin/sarana/meja/editMeja', $data);
     }
 }

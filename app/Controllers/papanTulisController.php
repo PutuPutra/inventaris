@@ -102,7 +102,44 @@ class papanTulisController extends BaseController
     public function deleted($id = false)
     {
         $papanTulis = new PapanTulisModel();
+        $papanTulis->where('id', $id);
         $papanTulis->delete($id);
+        return redirect()->to(base_url('/papanTulis'));
+    }
+
+    public function editPapanTulis($id = false)
+    {
+        $papanTulis = new PapanTulisModel();
+        $files_papanTulis = $papanTulis->find($id);
+        $data = [
+            'heading' => 'Edit Data Papan Tulis',
+            'files_papanTulis' => $files_papanTulis,
+            'kelas' => (new ModelKelas())->findAll(),
+        ];
+
+        return view('admin/sarana/papanTulis/editPapanTulis', $data);
+    }
+
+    public function updatePapanTulis($id)
+    {
+        $papanTulis = new PapanTulisModel();
+        $data = [
+            'ukuran_papan_tulis' => $this->request->getPost('ukuran_papan_tulis'),
+            'serial_number' => $this->request->getPost('serial_number'),
+            'kondisi_papan_tulis' => $this->request->getPost('kondisi_papan_tulis'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
+        ];
+        if ($this->request->getFile('gambar_papan_tulis')->getName() == '') {
+
+            $papanTulis->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_papan_tulis');
+            $names = $files->getName();
+            $files->move('assets/foto', $names);
+            $data['gambar_papan_tulis'] = $names;
+            $papanTulis->where('id', $id)->set($data)->update();
+        }
         return redirect()->to(base_url('/papanTulis'));
     }
 }

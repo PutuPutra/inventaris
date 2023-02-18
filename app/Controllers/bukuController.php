@@ -134,6 +134,7 @@ class bukuController extends BaseController
     public function deleted($id = false)
     {
         $buku = new BukuModel();
+        $buku->where('id', $id);
         $buku->delete($id);
         return redirect()->to(base_url('/buku'));
     }

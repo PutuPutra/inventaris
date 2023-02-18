@@ -33,7 +33,7 @@
                                     <td id="isiTable" style="width: 100px;"><?= $f->warna_spidol; ?></td>
                                     <td id="isiTable">
                                         <div class="buttons">
-                                            <a href="<?= base_url('SpidolEdit') . '/' . $f->id ?>"
+                                            <a href="<?= base_url('spidol/edit') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i
                                                     class="fa-solid fa-pen-to-square"></i></i></a>
                                             <a href="<?= base_url('spidol/deleted') . '/' . $f->id ?>"

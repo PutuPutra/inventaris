@@ -31,7 +31,7 @@
                                     <td><?= $f->kondisi_kursi; ?></td>
                                     <td>
                                         <div class="buttons">
-                                            <a href="<?= base_url('KursiEdit') . '/' . $f->id ?>"
+                                            <a href="<?= base_url('kursi/edit') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i
                                                     class="fa-solid fa-pen-to-square"></i></i></a>
                                             <a href="<?= base_url('kursi/deleted') . '/' . $f->id ?>"
