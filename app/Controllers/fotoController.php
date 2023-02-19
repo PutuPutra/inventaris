@@ -85,7 +85,7 @@ class fotoController extends BaseController
         $files = $this->request->getFile('gambar_foto');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/foto', $names);
+        $files->move('assets/dokumen/foto', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'gambar_foto' => $names,
@@ -121,7 +121,7 @@ class fotoController extends BaseController
 
             $files = $this->request->getFile('gambar_foto');
             $names = $files->getName();
-            $files->move('assets/foto', $names);
+            $files->move('assets/dokumen/foto', $names);
             $data['gambar_foto'] = $names;
             $foto->where('id', $id)->set($data)->update();
         }

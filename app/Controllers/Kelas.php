@@ -49,7 +49,7 @@ class Kelas extends BaseController
         $files = $this->request->getFile('gambar_kelas');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/foto/kelas', $names);
+        $files->move('assets/dokumen/kelas/kelas', $names);
         $data = [
             'gambar_kelas' => $names,
             'nama_kelas' => $this->request->getPost('nama_kelas'),
@@ -70,18 +70,18 @@ class Kelas extends BaseController
             'wali_kelas' => $this->request->getPost('wali_kelas'),
             'ketua_kelas' => $this->request->getPost('ketua_kelas'),
         ];
-        if ($this->request->getFile('gambar_buku')->getName() == '') {
+        if ($this->request->getFile('gambar_kelas')->getName() == '') {
 
-            $kelas->where('id', $id)->set($data)->update();
+            $kelas->where('id_kelas', $id)->set($data)->update();
         } else {
 
-            $files = $this->request->getFile('gambar_buku');
+            $files = $this->request->getFile('gambar_kelas');
             $names = $files->getName();
-            $files->move('assets/foto', $names);
-            $data['gambar_buku'] = $names;
-            $kelas->where('id', $id)->set($data)->update();
+            $files->move('assets/dokumen/kelas/kelas', $names);
+            $data['gambar_kelas'] = $names;
+            $kelas->where('id_kelas', $id)->set($data)->update();
         }
-        return redirect()->to(base_url('/buku'));
+        return redirect()->to(base_url('/kelas'));
     }
     public function editKelas($id = false)
     {

@@ -85,7 +85,7 @@ class papanTulisController extends BaseController
         $files = $this->request->getFile('gambar_papan_tulis');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/foto', $names);
+        $files->move('assets/dokumen/papanTulis', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'gambar_papan_tulis' => $names,
@@ -136,7 +136,7 @@ class papanTulisController extends BaseController
 
             $files = $this->request->getFile('gambar_papan_tulis');
             $names = $files->getName();
-            $files->move('assets/foto', $names);
+            $files->move('assets/dokumen/papanTulis', $names);
             $data['gambar_papan_tulis'] = $names;
             $papanTulis->where('id', $id)->set($data)->update();
         }

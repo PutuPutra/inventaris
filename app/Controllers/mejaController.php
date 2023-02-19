@@ -85,7 +85,7 @@ class mejaController extends BaseController
         $files = $this->request->getFile('gambar_meja');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/foto', $names);
+        $files->move('assets/dokumen/meja', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'gambar_meja' => $names,
@@ -123,7 +123,7 @@ class mejaController extends BaseController
 
             $files = $this->request->getFile('gambar_meja');
             $names = $files->getName();
-            $files->move('assets/foto', $names);
+            $files->move('assets/dokumen/meja', $names);
             $data['gambar_meja'] = $names;
             $meja->where('id', $id)->set($data)->update();
         }

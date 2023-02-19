@@ -85,7 +85,7 @@ class kursiController extends BaseController
         $files = $this->request->getFile('gambar_kursi');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/foto', $names);
+        $files->move('assets/dokumen/kursi', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'gambar_kursi' => $names,
@@ -121,7 +121,7 @@ class kursiController extends BaseController
 
             $files = $this->request->getFile('gambar_kursi');
             $names = $files->getName();
-            $files->move('assets/foto', $names);
+            $files->move('assets/dokumen/kursi', $names);
             $data['gambar_kursi'] = $names;
             $kursi->where('id', $id)->set($data)->update();
         }

@@ -85,7 +85,7 @@ class laptopController extends BaseController
         $files = $this->request->getFile('gambar_komputer');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/foto', $names);
+        $files->move('assets/dokumen/laptop', $names);
         $data = [
             'serial_number_komputer' => $this->request->getPost('serial_number_komputer'),
             'gambar_komputer' => $names,
@@ -118,16 +118,15 @@ class laptopController extends BaseController
             'jenis_produk_komputer' => $this->request->getPost('jenis_produk_komputer'),
         ];
         if ($this->request->getFile('gambar_komputer')->getName() == '') {
-            
+
             $komputer->where('id', $id)->set($data)->update();
         } else {
 
             $files = $this->request->getFile('gambar_komputer');
             $names = $files->getName();
-            $files->move('assets/foto', $names);
+            $files->move('assets/dokumen/laptop', $names);
             $data['gambar_komputer'] = $names;
             $komputer->where('id', $id)->set($data)->update();
-
         }
         return redirect()->to(base_url('/komputer'));
     }

@@ -91,7 +91,7 @@ class bukuController extends BaseController
         $files = $this->request->getFile('gambar_buku');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/foto', $names);
+        $files->move('assets/dokumen/buku', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'gambar_buku' => $names,
@@ -122,7 +122,7 @@ class bukuController extends BaseController
 
             $files = $this->request->getFile('gambar_buku');
             $names = $files->getName();
-            $files->move('assets/foto', $names);
+            $files->move('assets/dokumen/buku', $names);
             $data['gambar_buku'] = $names;
             $buku->where('id', $id)->set($data)->update();
         }
