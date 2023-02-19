@@ -30,7 +30,7 @@
                                 foreach ($kelas as $k) : ?>
                                 <tr>
                                     <td id="isiTable"><?= $i; ?></td>
-                                    <td id="isiTable"><img src="assets/foto/kelas/<?= $k['gambar_kelas']; ?>" alt=""
+                                    <td id="isiTable"><img src="assets/dokumen/kelas/<?= $k['gambar_kelas']; ?>" alt=""
                                             width="100"></td>
                                     <td id="isiTable"><?= $k['nama_kelas']; ?></td>
                                     <td id="isiTable"><?= $k['wali_kelas']; ?></td>

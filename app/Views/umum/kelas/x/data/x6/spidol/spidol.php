@@ -44,16 +44,18 @@
                     <tbody>
                         <?php foreach ($spidol as $s) : ?>
                         <tr>
-                            <td><?= $s->merk_spidol ?></td>
-                            <td><img src="/assets/foto/<?= $s->gambar_spidol ?>" width="100"></td>
-                            <td>
+                            <td id="isiTable"><?= $s->merk_spidol ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/spidol/<?= $s->gambar_spidol ?>" width="100">
+                            </td>
+                            <td id="isiTable">
                                 <?= $s->kondisi_spidol ?>
                             </td>
-                            <td>
+                            <td id="isiTable">
                                 <?= $s->warna_spidol ?>
                             </td>
                         </tr>
                         <?php endforeach; ?>
+
 
                     </tbody>
                 </table>

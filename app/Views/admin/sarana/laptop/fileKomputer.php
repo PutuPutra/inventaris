@@ -31,7 +31,8 @@
                                         <?= $f->brand_komputer; ?>
                                     </td>
                                     <td id="isiTable"><img class="pictures"
-                                            src="/assets/foto/<?= $f->gambar_komputer; ?>" alt="" width="100px"></img>
+                                            src="/assets/dokumen/komputer/<?= $f->gambar_komputer; ?>" alt=""
+                                            width="100px"></img>
                                     </td>
                                     <td id="isiTable"><?= $f->kondisi_komputer; ?></td>
                                     <td id="isiTable">

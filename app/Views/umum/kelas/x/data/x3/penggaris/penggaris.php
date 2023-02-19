@@ -46,12 +46,13 @@
                     <tbody>
                         <?php foreach ($penggaris as $p) : ?>
                         <tr>
-                            <td><?= $p->merk_penggaris ?></td>
-                            <td><img src="/assets/foto/<?= $p->gambar_penggaris ?>" width="100"></td>
+                            <td id="isiTable"><?= $p->merk_penggaris ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/penggaris/<?= $p->gambar_penggaris ?>"
+                                    width="100"></td>
                             <td>
                                 <?= $p->kondisi_penggaris ?>
                             </td>
-                            <td>
+                            <td id="isiTable">
                                 <?= $p->panjang_penggaris ?>
                             </td>
                         </tr>

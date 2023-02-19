@@ -44,9 +44,9 @@
                     <tbody>
                         <?php foreach ($meja as $m) : ?>
                         <tr>
-                            <td><?= $m->ukuran_meja ?></td>
-                            <td><img src="/assets/foto/<?= $m->gambar_meja ?>" width="100"></td>
-                            <td>
+                            <td id="isiTable"><?= $m->ukuran_meja ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/meja/<?= $m->gambar_meja ?>" width="100"></td>
+                            <td id="isiTable">
                                 <?= $m->kondisi_meja ?>
                             </td>
                         </tr>

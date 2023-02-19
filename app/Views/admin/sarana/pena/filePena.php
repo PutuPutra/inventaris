@@ -24,17 +24,22 @@
                             </thead>
                             <tbody>
                                 <?php foreach ($files_pena as $f) : ?>
-                                    <tr>
-                                        <td id="isiTable"><?= $f->merk_pena; ?></td>
-                                        <td id="isiTable"><img class="pictures" src="/assets/foto/<?= $f->gambar_pena; ?>" alt="" width="100px"></img></td>
-                                        <td id="isiTable"><?= $f->kondisi_pena; ?></td>
-                                        <td id="isiTable">
-                                            <div class="buttons">
-                                                <a href="<?= base_url('pena/edit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
-                                                <a href="<?= base_url('pena/deleted') . '/' . $f->id ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                <tr>
+                                    <td id="isiTable"><?= $f->merk_pena; ?></td>
+                                    <td id="isiTable"><img class="pictures"
+                                            src="/assets/dokumen/pena/<?= $f->gambar_pena; ?>" alt=""
+                                            width="100px"></img></td>
+                                    <td id="isiTable"><?= $f->kondisi_pena; ?></td>
+                                    <td id="isiTable">
+                                        <div class="buttons">
+                                            <a href="<?= base_url('pena/edit') . '/' . $f->id ?>"
+                                                class="btn btn-warning"><i
+                                                    class="fa-solid fa-pen-to-square"></i></i></a>
+                                            <a href="<?= base_url('pena/deleted') . '/' . $f->id ?>"
+                                                class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
                                 <?php
                                 endforeach ?>
                             </tbody>

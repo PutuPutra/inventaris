@@ -44,14 +44,13 @@
                     <tbody>
                         <?php foreach ($pena as $p) : ?>
                         <tr>
-                            <td><?= $p->merk_pena ?></td>
-                            <td><img src="/assets/foto/<?= $p->gambar_pena ?>" width="100"></td>
-                            <td>
+                            <td id="isiTable"><?= $p->merk_pena ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/pena/<?= $p->gambar_pena ?>" width="100"></td>
+                            <td id="isiTable">
                                 <?= $p->kondisi_pena ?>
                             </td>
                         </tr>
                         <?php endforeach; ?>
-
                     </tbody>
                 </table>
             </div>

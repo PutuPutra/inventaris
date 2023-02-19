@@ -32,7 +32,7 @@
                     <tbody>
                         <tr>
                             <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
+                            <td id="isiTable"><img src="/assets/dokumen/kursi/ryzen.jpg" alt="" height="100" width="150"></td>
                             <td id="isiTable">sedang diperbaiki</td>
                         </tr>
 

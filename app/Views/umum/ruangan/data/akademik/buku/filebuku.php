@@ -46,7 +46,8 @@
                     <tbody>
                         <tr>
                             <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
+                            <td id="isiTable"><img src="/assets/dokumen/buku/ryzen.jpg" alt="" height="100" width="150">
+                            </td>
                             <td id="isiTable">
                                 <div class="textarea">
                                     <textarea disabled class="container-fluid" name="" id="description" cols="50"

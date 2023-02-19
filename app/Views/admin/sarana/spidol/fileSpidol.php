@@ -27,8 +27,9 @@
                                 <?php foreach ($files_spidol as $f) : ?>
                                 <tr>
                                     <td id="isiTable"><?= $f->merk_spidol; ?></td>
-                                    <td id="isiTable"><img class="pictures" src="/assets/foto/<?= $f->gambar_spidol; ?>"
-                                            alt="" width="100px"></img></td>
+                                    <td id="isiTable"><img class="pictures"
+                                            src="/assets/dokumen/spidol/<?= $f->gambar_spidol; ?>" alt=""
+                                            width="100px"></img></td>
                                     <td id="isiTable"><?= $f->kondisi_spidol; ?></td>
                                     <td id="isiTable" style="width: 100px;"><?= $f->warna_spidol; ?></td>
                                     <td id="isiTable">

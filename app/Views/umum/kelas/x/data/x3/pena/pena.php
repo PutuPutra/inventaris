@@ -45,7 +45,7 @@
                         <?php foreach ($pena as $p) : ?>
                         <tr>
                             <td><?= $p->merk_pena ?></td>
-                            <td><img src="/assets/foto/<?= $p->gambar_pena ?>" width="100"></td>
+                            <td><img src="/assets/dokumen/pena/<?= $p->gambar_pena ?>" width="100"></td>
                             <td>
                                 <?= $p->kondisi_pena ?>
                             </td>

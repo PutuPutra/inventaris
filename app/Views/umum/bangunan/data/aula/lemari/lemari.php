@@ -45,7 +45,8 @@
                         <?php foreach ($lemari as $l) : ?>
                         <tr>
                             <td id="isiTable"><?= $l->ukuran_lemari ?></td>
-                            <td id="isiTable"><img src="/assets/foto/<?= $l->gambar_lemari ?>" width="100"></td>
+                            <td id="isiTable"><img src="/assets/dokumen/lemari/<?= $l->gambar_lemari ?>" width="100">
+                            </td>
                             <td id="isiTable">
                                 <?= $l->kondisi_lemari ?>
                             </td>

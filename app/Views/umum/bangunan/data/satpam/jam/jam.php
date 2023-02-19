@@ -43,7 +43,7 @@
                     <tbody>
                         <?php foreach ($jam as $j) : ?>
                         <tr>
-                            <td id="isiTable"><img src="/assets/foto/<?= $j->gambar_jam ?>" width="100"></td>
+                            <td id="isiTable"><img src="/assets/dokumen/jam/<?= $j->gambar_jam ?>" width="100"></td>
                             <td id="isiTable">
                                 <?= $j->kondisi_jam ?>
                             </td>

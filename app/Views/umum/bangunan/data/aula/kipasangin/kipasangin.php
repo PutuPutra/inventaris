@@ -43,7 +43,8 @@
                     <tbody>
                         <?php foreach ($kipasAngin as $k) : ?>
                         <tr>
-                            <td id="isiTable"><img src="/assets/foto/<?= $k->gambar_kipas_angin ?>" width="100"></td>
+                            <td id="isiTable"><img src="/assets/dokumen/kipasAngin/<?= $k->gambar_kipas_angin ?>"
+                                    width="100"></td>
                             <td id="isiTable">
                                 <?= $k->kondisi_kipas_angin ?>
                             </td>

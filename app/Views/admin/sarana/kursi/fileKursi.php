@@ -24,21 +24,17 @@
                             </thead>
                             <tbody>
                                 <?php foreach ($files_kursi as $f) : ?>
-                                <tr style="text-align: center;">
-                                    <td><?= $f->ukuran_kursi; ?></td>
-                                    <td><img class="pictures" src="/assets/foto/<?= $f->gambar_kursi; ?>" alt=""
-                                            width="100px"></img></td>
-                                    <td><?= $f->kondisi_kursi; ?></td>
-                                    <td>
-                                        <div class="buttons">
-                                            <a href="<?= base_url('kursi/edit') . '/' . $f->id ?>"
-                                                class="btn btn-warning"><i
-                                                    class="fa-solid fa-pen-to-square"></i></i></a>
-                                            <a href="<?= base_url('kursi/deleted') . '/' . $f->id ?>"
-                                                class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                    <tr style="text-align: center;">
+                                        <td><?= $f->ukuran_kursi; ?></td>
+                                        <td><img class="pictures" src="/assets/dokumen/kursi/<?= $f->gambar_kursi; ?>" alt="" width="100px"></img></td>
+                                        <td><?= $f->kondisi_kursi; ?></td>
+                                        <td>
+                                            <div class="buttons">
+                                                <a href="<?= base_url('kursi/edit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
+                                                <a href="<?= base_url('kursi/deleted') . '/' . $f->id ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 <?php
                                 endforeach ?>
                             </tbody>

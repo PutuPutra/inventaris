@@ -45,7 +45,7 @@
                         <?php foreach ($piala as $p) : ?>
                         <tr>
                             <td id="isiTable"><?= $p->ukuran_piala ?></td>
-                            <td id="isiTable"><img src="/assets/foto/<?= $p->gambar_piala ?>" width="100"></td>
+                            <td id="isiTable"><img src="/assets/dokumen/piala/<?= $p->gambar_piala ?>" width="100"></td>
                             <td id="isiTable">
                                 <?= $p->kondisi_piala ?>
                             </td>

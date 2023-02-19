@@ -45,7 +45,8 @@
                     <tbody>
                         <tr>
                             <td id="isiTable">Snowman</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
+                            <td id="isiTable"><img src="/assets/dokumen/spidol/ryzen.jpg" alt="" height="100"
+                                    width="150"></td>
                             <td id="isiTable">Rusak</td>
                             <td id="isiTable">Merah</td>
                         </tr>

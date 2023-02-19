@@ -27,7 +27,7 @@
                                 <tr>
                                     <td id="isiTable"><?= $f->ukuran_papan_tulis; ?></td>
                                     <td id="isiTable"><img class="pictures"
-                                            src="/assets/foto/<?= $f->gambar_papan_tulis; ?>" alt=""
+                                            src="/assets/dokumen/papanTulis/<?= $f->gambar_papan_tulis; ?>" alt=""
                                             width="100px"></img></td>
                                     <td id="isiTable"><?= $f->kondisi_papan_tulis; ?></td>
                                     <td id="isiTable">

@@ -44,13 +44,13 @@
                     <tbody>
                         <?php foreach ($papanTulis as $board) : ?>
                         <tr>
-                            <td>
+                            <td id="isiTable">
                                 <?= $board->ukuran_papan_tulis ?>
                             </td>
-                            <td>
-                                <img src="/assets/foto/<?= $board->gambar_papan_tulis ?>" width="100">
+                            <td id="isiTable">
+                                <img src="/assets/dokumen/papanTulis/<?= $board->gambar_papan_tulis ?>" width="100">
                             </td>
-                            <td><?= $board->kondisi_papan_tulis ?>
+                            <td id="isiTable"><?= $board->kondisi_papan_tulis ?>
                             </td>
                         </tr>
                         <?php endforeach; ?>

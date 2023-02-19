@@ -26,8 +26,9 @@
                                 <?php foreach ($files_foto as $f) : ?>
                                 <tr>
                                     <td id="isiTable"><?= $f->ukuran_foto; ?></td>
-                                    <td id="isiTable"><img class="pictures" src="/assets/foto/<?= $f->gambar_foto; ?>"
-                                            alt="" width="100px"></img></td>
+                                    <td id="isiTable"><img class="pictures"
+                                            src="/assets/dokumen/foto/<?= $f->gambar_foto; ?>" alt=""
+                                            width="100px"></img></td>
                                     <td id="isiTable"><?= $f->kondisi_foto; ?></td>
                                     <td id="isiTable">
                                         <div class="buttons">
