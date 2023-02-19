@@ -91,7 +91,7 @@ class penggarisController extends BaseController
         $files = $this->request->getFile('gambar_penggaris');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/penggaris', $names);
+        $files->move('assets/dokumen/penggaris', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'id_kelas' => $this->request->getPost('id_kelas'),
@@ -130,7 +130,7 @@ class penggarisController extends BaseController
 
             $files = $this->request->getFile('gambar_penggaris');
             $names = $files->getName();
-            $files->move('assets/penggaris', $names);
+            $files->move('assets/dokumen/penggaris', $names);
             $data['gambar_penggaris'] = $names;
             $penggaris->where('id', $id)->set($data)->update();
         }

@@ -85,7 +85,7 @@ class penghapusController extends BaseController
         $files = $this->request->getFile('gambar_penghapus');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/penghapus', $names);
+        $files->move('assets/dokumen/penghapus', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'id_kelas' => $this->request->getPost('id_kelas'),
@@ -122,7 +122,7 @@ class penghapusController extends BaseController
 
             $files = $this->request->getFile('gambar_penghapus');
             $names = $files->getName();
-            $files->move('assets/penghapus', $names);
+            $files->move('assets/dokumen/penghapus', $names);
             $data['gambar_penghapus'] = $names;
             $penghapus->where('id', $id)->set($data)->update();
         }

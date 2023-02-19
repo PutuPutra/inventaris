@@ -53,7 +53,7 @@ class Gedung extends BaseController
         $files = $this->request->getFile('gambar_gedung');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/dokumen/gedung/gedung', $names);
+        $files->move('assets/dokumen/gedung', $names);
         $data = [
             'gambar_gedung' => $names,
             'nama_gedung' => $this->request->getPost('nama_gedung'),
@@ -77,7 +77,7 @@ class Gedung extends BaseController
 
             $files = $this->request->getFile('gambar_gedung');
             $names = $files->getName();
-            $files->move('assets/dokumen/gedung/gedung', $names);
+            $files->move('assets/dokumen/gedung', $names);
             $data['gambar_gedung'] = $names;
             $gedung->where('id_gedung', $id)->set($data)->update();
         }

@@ -91,7 +91,7 @@ class spidolController extends BaseController
         $files = $this->request->getFile('gambar_spidol');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/spidol', $names);
+        $files->move('assets/dokumen/spidol', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'id_kelas' => $this->request->getPost('id_kelas'),
@@ -131,7 +131,7 @@ class spidolController extends BaseController
 
             $files = $this->request->getFile('gambar_spidol');
             $names = $files->getName();
-            $files->move('assets/spidol', $names);
+            $files->move('assets/dokumen/spidol', $names);
             $data['gambar_spidol'] = $names;
             $spidol->where('id', $id)->set($data)->update();
         }

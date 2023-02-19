@@ -49,7 +49,7 @@ class Kelas extends BaseController
         $files = $this->request->getFile('gambar_kelas');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/dokumen/kelas/kelas', $names);
+        $files->move('assets/dokumen/kelas', $names);
         $data = [
             'gambar_kelas' => $names,
             'nama_kelas' => $this->request->getPost('nama_kelas'),
@@ -77,7 +77,7 @@ class Kelas extends BaseController
 
             $files = $this->request->getFile('gambar_kelas');
             $names = $files->getName();
-            $files->move('assets/dokumen/kelas/kelas', $names);
+            $files->move('assets/dokumen/kelas', $names);
             $data['gambar_kelas'] = $names;
             $kelas->where('id_kelas', $id)->set($data)->update();
         }

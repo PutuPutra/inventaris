@@ -85,7 +85,7 @@ class penaController extends BaseController
         $files = $this->request->getFile('gambar_pena');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/pena', $names);
+        $files->move('assets/dokumen/pena', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'id_kelas' => $this->request->getPost('id_kelas'),
@@ -122,7 +122,7 @@ class penaController extends BaseController
 
             $files = $this->request->getFile('gambar_pena');
             $names = $files->getName();
-            $files->move('assets/pena', $names);
+            $files->move('assets/dokumen/pena', $names);
             $data['gambar_pena'] = $names;
             $pena->where('id', $id)->set($data)->update();
         }
