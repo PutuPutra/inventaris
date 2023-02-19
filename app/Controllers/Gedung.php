@@ -35,52 +35,52 @@ class Gedung extends BaseController
     {
         $validate = $this->validate([
 
-            'gambar_gedung' => [
-                'label' => 'gambar_gedung',
-                'rules' => 'uploaded[gambar_gedung]|mime_in[gambar_gedung,image/jpg,image/jpeg,image/png]',
+            'nama_gedung' => [
+                'rules' => 'required',
                 'errors' => [
-                    'uploaded' => 'Gambar belum dipilih',
-                    'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
-
+                    'required' => 'Harus mengisi bagian ini',
                 ],
             ],
         ]);
 
         if (!$validate) {
-            // dd($this->request->getFile('gambar_komputer'));
             return redirect()->to('tambahGedung')->withInput();
         }
-        $files = $this->request->getFile('gambar_gedung');
-        $names = $files->getName();
-        // dd($files);
-        $files->move('assets/dokumen/gedung', $names);
         $data = [
-            'gambar_gedung' => $names,
             'nama_gedung' => $this->request->getPost('nama_gedung'),
         ];
         $insert = (new GedungModel())->insert($data);
         if ($insert) {
             session()->setFlashdata('success', 'Data Berhasil Ditambahkan');
-            return redirect()->to(base_url('kelas'));
+            return redirect()->to(base_url('gedung'));
         }
     }
-    public function updateKelas($id)
+    public function updateGedung($id)
     {
+        if (!$this->validate([
+            'nama_gedung' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Harus mengisi bagian ini',
+                ],
+            ],
+        ])) {
+            return redirect()->to('gedung' . $id);
+        }
+
         $gedung = new GedungModel();
         $data = [
             'nama_gedung' => $this->request->getPost('nama_gedung'),
         ];
-        if ($this->request->getFile('gambar_gedung')->getName() == '') {
+        $gedung->update($id, $data);
 
-            $gedung->where('id_gedung', $id)->set($data)->update();
-        } else {
-
-            $files = $this->request->getFile('gambar_gedung');
-            $names = $files->getName();
-            $files->move('assets/dokumen/gedung', $names);
-            $data['gambar_gedung'] = $names;
-            $gedung->where('id_gedung', $id)->set($data)->update();
-        }
-        return redirect()->to(base_url('/kelas'));
+        return redirect()->to(base_url('gedung'));
+    }
+    public function deleted($id = false)
+    {
+        $gedung = new GedungModel();
+        $gedung->where('id', $id);
+        $gedung->delete($id);
+        return redirect()->to(base_url('/gedung'));
     }
 }

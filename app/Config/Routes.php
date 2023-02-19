@@ -184,6 +184,14 @@ $routes->get('/meja', 'mejaController::meja', ['filter' => 'login']);
 $routes->get('/tambahMeja', 'mejaController::tambahMeja', ['filter' => 'login']);
 $routes->get('/meja/deleted/(:num)', 'mejaController::deleted/$1', ['filter' => 'login']);
 
+// gedung
+$routes->get('/gedung', 'Gedung::index', ['filter' => 'login']);
+$routes->get('/tambahGedung', 'Gedung::tambahGedung', ['filter' => 'login']);
+$routes->get('/gedung/edit/(:num)', 'Gedung::editGedung/$1', ['filter' => 'login']);
+$routes->post('/gedung/update/(:num)', 'Gedung::updateGedung/$1', ['filter' => 'login']);
+$routes->get('/gedung/deleted/(:num)', 'Gedung::deleted/$1', ['filter' => 'login']);
+
+
 // kursiController
 $routes->post('/kursi/store', 'kursiController::store', ['filter' => 'login']);
 

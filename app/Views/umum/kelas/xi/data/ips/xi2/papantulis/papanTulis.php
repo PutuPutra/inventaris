@@ -48,7 +48,7 @@
                                 <?= $board->ukuran_papan_tulis ?>
                             </td>
                             <td id="isiTable">
-                                <img src="/assets/foto/<?= $board->gambar_papan_tulis ?>" width="100">
+                                <img src="/assets/dokumen/papanTulis/<?= $board->gambar_papan_tulis ?>" width="100">
                             </td>
                             <td id="isiTable"><?= $board->kondisi_papan_tulis ?>
                             </td>
