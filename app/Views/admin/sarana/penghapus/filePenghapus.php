@@ -31,7 +31,7 @@
                                         <td id="isiTable"><?= $f->kondisi_penghapus; ?></td>
                                         <td id="isiTable">
                                             <div class="buttons">
-                                                <a href="<?= base_url('PenghapusEdit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
+                                                <a href="<?= base_url('penghapus/edit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
                                                 <a href="<?= base_url('penghapus/deleted') . '/' . $f->id ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
                                             </div>
                                         </td>

@@ -33,7 +33,7 @@
                                         <td id="isiTable" style="width: 100px;"><?= $f->panjang_penggaris; ?></td>
                                         <td id="isiTable">
                                             <div class="buttons">
-                                                <a href="<?= base_url('PenggarisEdit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
+                                                <a href="<?= base_url('penggaris/edit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
                                                 <a href="<?= base_url('penggaris/deleted') . '/' . $f->id ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
                                             </div>
                                         </td>

@@ -116,6 +116,9 @@ use Myth\Auth\Entities\Group;
                                 <li><a href="<?= base_url('penghapus') ?>">Penghapus</a></li>
                                 <li><a href="<?= base_url('pena') ?>">Pena</a></li>
                                 <li><a href="<?= base_url('penggaris') ?>">Penggaris</a></li>
+                                <li><a href="<?= base_url('ac') ?>">AC</a></li>
+                                <li><a href="<?= base_url('kipasAngin') ?>">Kipas Angin</a></li>
+                                <li><a href="<?= base_url('jam') ?>">Jam</a></li>
 
                             </ul>
                         </li>

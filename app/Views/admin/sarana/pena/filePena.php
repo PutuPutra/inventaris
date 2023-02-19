@@ -30,7 +30,7 @@
                                         <td id="isiTable"><?= $f->kondisi_pena; ?></td>
                                         <td id="isiTable">
                                             <div class="buttons">
-                                                <a href="<?= base_url('PenaEdit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
+                                                <a href="<?= base_url('pena/edit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
                                                 <a href="<?= base_url('pena/deleted') . '/' . $f->id ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
                                             </div>
                                         </td>

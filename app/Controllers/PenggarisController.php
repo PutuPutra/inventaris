@@ -112,4 +112,41 @@ class penggarisController extends BaseController
         $penggaris->delete($id);
         return redirect()->to(base_url('/penggaris'));
     }
+
+    public function updatePenggaris($id)
+    {
+        $penggaris = new PenggarisModel();
+        $data = [
+            'merk_penggaris' => $this->request->getPost('merk_penggaris'),
+            'serial_number' => $this->request->getPost('serial_number'),
+            'kondisi_penggaris' => $this->request->getPost('kondisi_penggaris'),
+            'panjang_penggaris' => $this->request->getPost('panjang_penggaris'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
+        ];
+        if ($this->request->getFile('gambar_penggaris')->getName() == '') {
+
+            $penggaris->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_penggaris');
+            $names = $files->getName();
+            $files->move('assets/penggaris', $names);
+            $data['gambar_penggaris'] = $names;
+            $penggaris->where('id', $id)->set($data)->update();
+        }
+        return redirect()->to(base_url('/penggaris'));
+    }
+
+    public function editPenggaris($id = false)
+    {
+        $penggaris = new PenggarisModel();
+        $files_penggaris = $penggaris->find($id);
+        $data = [
+            'heading' => 'Edit Data Penggaris',
+            'files_penggaris' => $files_penggaris,
+            'kelas' => (new ModelKelas())->findAll(),
+        ];
+
+        return view('admin/sarana/penggaris/editPenggaris', $data);
+    }
 }
