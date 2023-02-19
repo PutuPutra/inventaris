@@ -128,15 +128,22 @@ $routes->get('/lab/biologi', 'Umum::biologi');
 $routes->get('/ruangan/dapur', 'Umum::dapur');
 // ruangan end
 
+//user
+$routes->get('/akun', 'Admin::users', ['filter' => 'role:super_admin']);
+$routes->post('/akun/update/(:num)', 'Admin::updateKomputer/$1', ['filter' => 'login']);
+$routes->get('/akun/tambah', 'Admin::tambahUsers', ['filter' => 'login']);
+$routes->get('/akun/edit/(:num)', 'Admin::editUsers/$1', ['filter' => 'login']);
+$routes->get('/akun/hapus/(:num)', 'Admin::deleted/$1', ['filter' => 'login']);
+
+
 //admin
 $routes->get('/service', 'Admin::service');
 $routes->get('/login', 'Admin::login');
-// $routes->get('/register', 'Admin::register', ['filter' => 'login']);
+$routes->get('/register', 'Admin::register', ['filter' => 'login']);
 $routes->get('/forgot_password', 'Admin::forgot_password');
 $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
 $routes->get('/data', 'Admin::data', ['filter' => 'login']);
 $routes->get('/prasarana', 'Admin::prasarana', ['filter' => 'login']);
-$routes->get('/account', 'Users::index', ['filter' => 'role:super_admin']);
 $routes->get('/settings', 'Admin::settings', ['filter' => 'role:super_admin']);
 $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
 $routes->get('/notifications', 'Admin::notifications', ['filter' => 'login']);

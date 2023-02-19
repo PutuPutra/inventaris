@@ -46,7 +46,8 @@
                         <?php foreach ($penggaris as $p) : ?>
                         <tr>
                             <td id="isiTable"><?= $p->merk_penggaris ?></td>
-                            <td id="isiTable"><img src="/assets/foto/<?= $p->gambar_penggaris ?>" width="100"></td>
+                            <td id="isiTable"><img src="/assets/dokumen/penggaris/<?= $p->gambar_penggaris ?>"
+                                    width="100"></td>
                             <td id="isiTable">
                                 <?= $p->kondisi_penggaris ?>
                             </td>

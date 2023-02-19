@@ -365,13 +365,14 @@
 
                                             Profil
                                         </a> -->
-                                        <!-- <?php if (in_groups('super_admin')) : ?>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                        <?php if (in_groups('super_admin')) : ?>
+                                        <a href="<?= base_url('akun') ?>"
+                                            class="dropdown-item d-flex align-items-center">
                                             <span data-feather="user" class="wd-16 ht-16 mr-2"></span>
 
                                             Kelola Akun
                                         </a>
-                                        <?php endif; ?> -->
+                                        <?php endif; ?>
                                         <!-- <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="message-square" class="wd-16 ht-16 mr-2"></span>
                                             

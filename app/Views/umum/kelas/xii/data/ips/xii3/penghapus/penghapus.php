@@ -43,15 +43,14 @@
                     </thead>
                     <tbody>
                         <?php foreach ($penghapus as $p) : ?>
-                        <tr>
-                            <td id="isiTable"><?= $p->merk_penghapus ?></td>
-                            <td id="isiTable"><img src="/assets/foto/<?= $p->gambar_penghapus ?>" width="100"></td>
-                            <td id="isiTable">
-                                <?= $p->kondisi_penghapus ?>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td id="isiTable"><?= $p->merk_penghapus ?></td>
+                                <td id="isiTable"><img src="/assets/dokumen/penghapus/<?= $p->gambar_penghapus ?>" width="100"></td>
+                                <td id="isiTable">
+                                    <?= $p->kondisi_penghapus ?>
+                                </td>
+                            </tr>
                         <?php endforeach; ?>
-
                     </tbody>
                 </table>
             </div>

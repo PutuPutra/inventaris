@@ -64,10 +64,10 @@ class Admin extends BaseController
     {
         return view('auth/login');
     }
-    // public function register()
-    // {
-    //     return view('formLogin/authRegister');
-    // }
+    public function register()
+    {
+        return view('auth/register');
+    }
     public function forgot_password()
     {
         return view('formLogin/authforgotpassword');
@@ -181,7 +181,8 @@ class Admin extends BaseController
     public function deleted($id = false)
     {
         $users = new UsersModel();
+        $users->where('id', $id);
         $users->delete($id);
-        return redirect()->to(base_url('/users'));
+        return redirect()->to(base_url('akun'));
     }
 }
