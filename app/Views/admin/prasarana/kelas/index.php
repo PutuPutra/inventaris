@@ -37,10 +37,11 @@
                                     <td id="isiTable"><?= $k['ketua_kelas']; ?></td>
                                     <td id="isiTable">
                                         <div class="buttons">
-                                            <a href="<?= base_url('editKelas/' . $k['id_kelas']) ?>"
-                                                class="btn btn-primary btn-sm">Edit</a>
-                                            <a href="<?= base_url('deleteKelas/' . $k['id_kelas']) ?>"
-                                                class="btn btn-danger btn-sm">Delete</a>
+                                            <a href="<?= base_url('/kelas/edit' . '/' . $k['id_kelas']) ?>"
+                                                class="btn btn-warning btn-sm"><i
+                                                    class="fa-solid fa-pen-to-square"></i></a>
+                                            <a href="<?= base_url('/kelas/deleted' . '/' . $k['id_kelas']) ?>"
+                                                class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a>
                                         </div>
                                     </td>
                                 </tr>

@@ -46,10 +46,12 @@
                                     <td id="isiTable">
                                         <div class=" buttons">
                                             <a href="<?= base_url('editLaptop') . '/' . $f->id ?>"
-                                                class="btn btn-warning"><i
-                                                    class="fa-solid fa-pen-to-square"></i></i></a>
-                                            <a href="<?= base_url('deleted') . '/' . $f->id ?>"
-                                                class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                                class="btn btn-warning">
+                                                <i class="fa-solid fa-pen-to-square"></i>
+                                            </a>
+                                            <a href="<?= base_url('deleted') . '/' . $f->id ?>" class="btn btn-danger">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>

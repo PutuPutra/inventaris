@@ -62,4 +62,43 @@ class Kelas extends BaseController
             return redirect()->to(base_url('kelas'));
         }
     }
+    public function updateKelas($id)
+    {
+        $kelas = new ModelKelas();
+        $data = [
+            'nama_kelas' => $this->request->getPost('nama_kelas'),
+            'wali_kelas' => $this->request->getPost('wali_kelas'),
+            'ketua_kelas' => $this->request->getPost('ketua_kelas'),
+        ];
+        if ($this->request->getFile('gambar_buku')->getName() == '') {
+
+            $kelas->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_buku');
+            $names = $files->getName();
+            $files->move('assets/foto', $names);
+            $data['gambar_buku'] = $names;
+            $kelas->where('id', $id)->set($data)->update();
+        }
+        return redirect()->to(base_url('/buku'));
+    }
+    public function editKelas($id = false)
+    {
+        $kelas = new ModelKelas();
+        $files_kelas = $kelas->find($id);
+        $data = [
+            'heading' => 'Edit Data Kelas',
+            'files_kelas' => $files_kelas,
+        ];
+
+        return view('admin/prasarana/kelas/editKelas', $data);
+    }
+    public function deleted($id = false)
+    {
+        $kelas = new ModelKelas();
+        $kelas->where('id_kelas', $id);
+        $kelas->delete($id);
+        return redirect()->to(base_url('/kelas'));
+    }
 }
