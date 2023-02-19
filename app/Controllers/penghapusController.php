@@ -101,7 +101,44 @@ class penghapusController extends BaseController
     public function deleted($id = false)
     {
         $penghapus = new PenghapusModel();
+        $penghapus->where('id', $id);
         $penghapus->delete($id);
         return redirect()->to(base_url('/penghapus'));
+    }
+
+    public function updatePenghapus($id)
+    {
+        $penghapus = new PenghapusModel();
+        $data = [
+            'merk_penghapus' => $this->request->getPost('merk_penghapus'),
+            'serial_number' => $this->request->getPost('serial_number'),
+            'kondisi_penghapus' => $this->request->getPost('kondisi_penghapus'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
+        ];
+        if ($this->request->getFile('gambar_penghapus')->getName() == '') {
+
+            $penghapus->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_penghapus');
+            $names = $files->getName();
+            $files->move('assets/penghapus', $names);
+            $data['gambar_penghapus'] = $names;
+            $penghapus->where('id', $id)->set($data)->update();
+        }
+        return redirect()->to(base_url('/penghapus'));
+    }
+
+    public function editPenghapus($id = false)
+    {
+        $penghapus = new PenghapusModel();
+        $files_penghapus = $penghapus->find($id);
+        $data = [
+            'heading' => 'Edit Data Penghapus',
+            'files_penghapus' => $files_penghapus,
+            'kelas' => (new ModelKelas())->findAll(),
+        ];
+
+        return view('admin/sarana/penghapus/editPenghapus', $data);
     }
 }

@@ -101,7 +101,44 @@ class penaController extends BaseController
     public function deleted($id = false)
     {
         $pena = new PenaModel();
+        $pena->where('id', $id);
         $pena->delete($id);
         return redirect()->to(base_url('/pena'));
+    }
+
+    public function updatePena($id)
+    {
+        $pena = new PenaModel();
+        $data = [
+            'merk_pena' => $this->request->getPost('merk_pena'),
+            'serial_number' => $this->request->getPost('serial_number'),
+            'kondisi_pena' => $this->request->getPost('kondisi_pena'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
+        ];
+        if ($this->request->getFile('gambar_pena')->getName() == '') {
+
+            $pena->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_pena');
+            $names = $files->getName();
+            $files->move('assets/pena', $names);
+            $data['gambar_pena'] = $names;
+            $pena->where('id', $id)->set($data)->update();
+        }
+        return redirect()->to(base_url('/pena'));
+    }
+
+    public function editPena($id = false)
+    {
+        $pena = new PenaModel();
+        $files_pena = $pena->find($id);
+        $data = [
+            'heading' => 'Edit Data Pena',
+            'files_pena' => $files_pena,
+            'kelas' => (new ModelKelas())->findAll(),
+        ];
+
+        return view('admin/sarana/pena/editPena', $data);
     }
 }

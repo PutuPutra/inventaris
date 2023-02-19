@@ -218,6 +218,8 @@ $routes->get('/spidol/deleted/(:num)', 'spidolController::deleted/$1', ['filter'
 $routes->post('/penghapus/store', 'penghapusController::store', ['filter' => 'login']);
 
 // penghapus
+$routes->post('/penghapus/update/(:num)', 'penghapusController::updatePenghapus/$1', ['filter' => 'login']);
+$routes->get('/penghapus/edit/(:num)', 'penghapusController::editPenghapus/$1', ['filter' => 'login']);
 $routes->get('/penghapus', 'penghapusController::penghapus', ['filter' => 'login']);
 $routes->get('/tambahPenghapus', 'penghapusController::tambahPenghapus', ['filter' => 'login']);
 $routes->get('/penghapus/deleted/(:num)', 'penghapusController::deleted/$1', ['filter' => 'login']);
@@ -226,6 +228,8 @@ $routes->get('/penghapus/deleted/(:num)', 'penghapusController::deleted/$1', ['f
 $routes->post('/pena/store', 'penaController::store', ['filter' => 'login']);
 
 // pena
+$routes->post('/pena/update/(:num)', 'penaController::updatePena/$1', ['filter' => 'login']);
+$routes->get('/pena/edit/(:num)', 'penaController::editPena/$1', ['filter' => 'login']);
 $routes->get('/pena', 'penaController::pena', ['filter' => 'login']);
 $routes->get('/tambahPena', 'penaController::tambahPena', ['filter' => 'login']);
 $routes->get('/pena/deleted/(:num)', 'penaController::deleted/$1', ['filter' => 'login']);
@@ -234,6 +238,8 @@ $routes->get('/pena/deleted/(:num)', 'penaController::deleted/$1', ['filter' => 
 $routes->post('/penggaris/store', 'penggarisController::store', ['filter' => 'login']);
 
 // penggaris
+$routes->post('/penggaris/update/(:num)', 'penggarisController::updatePenggaris/$1', ['filter' => 'login']);
+$routes->get('/penggaris/edit/(:num)', 'penggarisController::editPenggaris/$1', ['filter' => 'login']);
 $routes->get('/penggaris', 'penggarisController::penggaris', ['filter' => 'login']);
 $routes->get('/tambahPenggaris', 'penggarisController::tambahPenggaris', ['filter' => 'login']);
 $routes->get('/penggaris/deleted/(:num)', 'penggarisController::deleted/$1', ['filter' => 'login']);
