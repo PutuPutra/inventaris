@@ -42,12 +42,13 @@
                     </thead>
                     <tbody>
                         <?php foreach ($boards as $papan) : ?>
-                            <tr>
-                                <td><?= $papan->serial_number; ?></td>
-                                <td><?= $papan->ukuran_papan_tulis; ?></td>
-                                <td><img src="/assets/foto/<?= $papan->gambar_papan_tulis ?>" height="100" width="150"></td>
-                                <td><?= $papan->kondisi_papan_tulis; ?></td>
-                            </tr>
+                        <tr>
+                            <td id="isiTable"><?= $papan->serial_number; ?></td>
+                            <td id="isiTable"><?= $papan->ukuran_papan_tulis; ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/papanTulis/<?= $papan->gambar_papan_tulis ?>"
+                                    height="100" width="150"></td>
+                            <td id="isiTable"><?= $papan->kondisi_papan_tulis; ?></td>
+                        </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>

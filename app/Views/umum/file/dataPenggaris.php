@@ -34,7 +34,7 @@
                     <thead>
                         <tr>
                             <th>No.SN</th>
-                            <th>Merk</th>
+                            <th>Merek</th>
                             <th>Gambar</th>
                             <th>Kondisi</th>
                             <th>Panjang</th>
@@ -43,11 +43,11 @@
                     <tbody>
                         <?php foreach ($rulers as $penggaris) : ?>
                             <tr>
-                                <td><?= $penggaris->serial_number; ?></td>
-                                <td><?= $penggaris->merk_penggaris; ?></td>
-                                <td><img src="/assets/foto/<?= $penggaris->gambar_penggaris ?>" height="100" width="150"></td>
-                                <td><?= $penggaris->kondisi_penggaris; ?></td>
-                                <td><?= $penggaris->panjang_penggaris; ?></td>
+                                <td id="isiTable"><?= $penggaris->serial_number; ?></td>
+                                <td id="isiTable"><?= $penggaris->merk_penggaris; ?></td>
+                                <td id="isiTable"><img src="/assets/dokumen/penggaris/<?= $penggaris->gambar_penggaris ?>" height="100" width="150"></td>
+                                <td id="isiTable"><?= $penggaris->kondisi_penggaris; ?></td>
+                                <td id="isiTable"><?= $penggaris->panjang_penggaris; ?></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
