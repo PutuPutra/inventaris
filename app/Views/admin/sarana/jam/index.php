@@ -7,7 +7,7 @@
         <div class="col-md-12 mg-t-20 mg-xl-t-0">
             <div class="card">
                 <div class="card-header">
-                    <a href="<?= base_url('tambahJam') ?>">
+                    <a href="<?= base_url('/jam/create') ?>">
                         <button type="button" class="btn btn-success mb-3 mt-3">Tambah Data</button>
                     </a>
                 </div>
@@ -16,7 +16,7 @@
                         <table class="table table-bordered mb-0" id="table1">
                             <thead>
                                 <tr>
-                                    <th>Merek</th>
+                                    <th>Serial Number</th>
                                     <th>Gambar</th>
                                     <th>Kondisi</th>
                                     <th>Aksi</th>
@@ -25,10 +25,9 @@
                             <tbody>
                                 <?php foreach ($files_jam as $f) : ?>
                                 <tr>
-                                    <td id="isiTable"><?= $f->merk_jam; ?></td>
+                                    <td id="isiTable"><?= $f->serial_number; ?></td>
                                     <td id="isiTable"><img class="pictures"
-                                            src="/assets/dokumen/jam/<?= $f->gambar_jam; ?>" alt=""
-                                            width="100px"></img>
+                                            src="/assets/dokumen/jam/<?= $f->gambar_jam; ?>" alt="" width="100px"></img>
                                     </td>
                                     <td id="isiTable"><?= $f->kondisi_jam; ?></td>
                                     <td id="isiTable">

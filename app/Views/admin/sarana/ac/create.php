@@ -17,15 +17,15 @@
                     <div class="clearfix">
                         <!-- <label class="custom-label">Example</label> -->
                         <div class="clearfix">
-                            <form action="<?= base_url('ac/store') ?>" method="POST"
-                                enctype="multipart/form-data" data-parsley-validate>
+                            <form action="<?= base_url('/ac/store') ?>" method="POST" enctype="multipart/form-data"
+                                data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php $validation = \Config\Services::validation(); ?>
                                 <div class="wd-300">
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
                                             <label>Merek <span class="tx-danger">*</span></label>
-                                            <input type="text" name="merk_ac" class="form-control wd-300"
+                                            <input type="text" name="brand_ac" id="brand_ac" class="form-control wd-300"
                                                 placeholder="Isi sesuai merek pada barang" required>
                                         </div>
                                         <!-- form-group -->
@@ -95,7 +95,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <a href="<?= base_url('penghapus') ?>">
+                            <a href="<?= base_url('ac') ?>">
                                 <button class="btn btn-secondary waves-effect"
                                     style="margin-left: 120px; margin-top: -60px;">Batal</button>
                             </a>

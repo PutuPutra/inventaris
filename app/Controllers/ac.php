@@ -86,7 +86,7 @@ class ac extends BaseController
 
         if (!$validate) {
             // dd($this->request->getFile('gambar_ac'));
-            return redirect()->to('create')->withInput();
+            return redirect()->to('/ac/create')->withInput();
         }
         $files = $this->request->getFile('gambar_ac');
         $names = $files->getName();
@@ -128,8 +128,6 @@ class ac extends BaseController
         }
         return redirect()->to(base_url('/ac'));
     }
-
-
 
     public function deleted($id = false)
     {

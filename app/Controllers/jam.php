@@ -3,8 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\JamModel;
-use App\Models\ModelKelas;
 use App\Controllers\BaseController;
+use App\Models\ModelKelas;
 
 class jam extends BaseController
 {
@@ -19,10 +19,10 @@ class jam extends BaseController
             'sidebar2' => 'active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => null,
+            'submenu2' => 'active',
             'submenu3' => null,
             'submenu4' => null,
-            'submenu5' => 'active',
+            'submenu5' => null,
             'submenu6' => null,
             'submenu7' => null,
             'submenu8' => null,
@@ -39,10 +39,10 @@ class jam extends BaseController
             'sidebar2' => 'active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => null,
+            'submenu2' => 'active',
             'submenu3' => null,
             'submenu4' => null,
-            'submenu5' => 'active',
+            'submenu5' => null,
             'submenu6' => null,
             'submenu7' => null,
             'submenu8' => null,
@@ -55,12 +55,6 @@ class jam extends BaseController
     public function store()
     {
         $validate = $this->validate([
-            'serial_number' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Harus mengisi bagian ini',
-                ],
-            ],
             'kondisi_jam' => [
                 'rules' => 'required',
                 'errors' => [
@@ -76,11 +70,17 @@ class jam extends BaseController
 
                 ],
             ],
+            'serial_number' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Harus mengisi bagian ini',
+                ],
+            ],
         ]);
 
         if (!$validate) {
-            // dd($this->request->getFile('gambar_komputer'));
-            return redirect()->to('create')->withInput();
+            // dd($this->request->getFile('gambar_jam'));
+            return redirect()->to('/jam/create')->withInput();
         }
         $files = $this->request->getFile('gambar_jam');
         $names = $files->getName();
@@ -88,23 +88,18 @@ class jam extends BaseController
         $files->move('assets/dokumen/jam', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
-            'gambar_jam' => $names,
             'kondisi_jam' => $this->request->getPost('kondisi_jam'),
+            'gambar_jam' => $names,
             'id_kelas' => $this->request->getPost('id_kelas'),
         ];
+        //dd($data);
         $jam = new JamModel();
         $jam->insert($data);
 
         return redirect()->to(base_url('jam'));
     }
-    public function deleted($id = false)
-    {
-        $jam = new JamModel();
-        $jam->delete($id);
-        return redirect()->to(base_url('/jam'));
-    }
 
-    public function updatejam($id)
+    public function update($id)
     {
         $jam = new JamModel();
         $data = [
@@ -126,12 +121,19 @@ class jam extends BaseController
         return redirect()->to(base_url('/jam'));
     }
 
+    public function deleted($id = false)
+    {
+        $jam = new JamModel();
+        $jam->where('id', $id);
+        $jam->delete($id);
+        return redirect()->to(base_url('/jam'));
+    }
     public function edit($id = false)
     {
         $jam = new JamModel();
         $files_jam = $jam->find($id);
         $data = [
-            'heading' => 'Edit Data Jam',
+            'heading' => 'Edit Data jam',
             'files_jam' => $files_jam,
             'kelas' => (new ModelKelas())->findAll(),
         ];
