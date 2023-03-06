@@ -181,6 +181,20 @@ $routes->get('/papanTulis', 'papanTulisController::papanTulis', ['filter' => 'lo
 $routes->get('/tambahPapanTulis', 'papanTulisController::tambahPapanTulis', ['filter' => 'login']);
 $routes->get('/papanTulis/deleted/(:num)', 'papanTulisController::deleted/$1', ['filter' => 'login']);
 
+//ac
+$routes->post('/ac/update/(:num)', 'ac::update/$1', ['filter' => 'login']);
+$routes->get('/ac/edit/(:num)', 'ac::edit/$1', ['filter' => 'login']);
+$routes->get('/ac', 'ac::papanTulis', ['filter' => 'login']);
+$routes->get('/ac/create', 'ac::create', ['filter' => 'login']);
+$routes->get('/ac/deleted/(:num)', 'ac::deleted/$1', ['filter' => 'login']);
+
+//jam
+$routes->post('/jam/update/(:num)', 'jam::update/$1', ['filter' => 'login']);
+$routes->get('/jam/edit/(:num)', 'jam::edit/$1', ['filter' => 'login']);
+$routes->get('/jam', 'jam::papanTulis', ['filter' => 'login']);
+$routes->get('/jam/create', 'jam::create', ['filter' => 'login']);
+$routes->get('/jam/deleted/(:num)', 'jam::deleted/$1', ['filter' => 'login']);
+
 // mejaController
 $routes->post('/meja/store', 'mejaController::store', ['filter' => 'login']);
 
