@@ -29,8 +29,6 @@
                                             <label>Gambar <span class="tx-danger">*</span></label>
                                             <input type="file" name="gambar_kelas" class="form-control wd-300" required>
                                         </div>
-
-
                                     </div>
 
                                     <div class="wd-300">

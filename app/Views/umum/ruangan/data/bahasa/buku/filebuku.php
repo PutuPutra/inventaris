@@ -45,6 +45,16 @@
                     </thead>
                     <tbody>
                         <?php foreach ($books as $book) : ?>
+                        <tr>
+                            <td id="isiTable"><?= $book->penerbit_buku ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/buku/<?= $book->gambar_buku ?>" width="100">
+                            </td>
+                            <td id="isiTable">
+                                <?= $book->kondisi_buku ?>
+                            </td>
+                        </tr>
+                        <?php endforeach; ?>
+                        <?php foreach ($books as $book) : ?>
                             <tr>
                                 <td id="isiTable"><?= $book->penerbit_buku ?></td>
                                 <td id="isiTable"><img src="/assets/dokumen/buku/<?= $book->gambar_buku ?>" width="100"></td>
