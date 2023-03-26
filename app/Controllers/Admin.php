@@ -91,6 +91,8 @@ class Admin extends BaseController
             'submenu11' => null,
             'submenu12' => null,
             'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'jumlah_kelas' => (new ModelKelas())->countAllResults(),
             'jumlah_meja' => (new MejaModel())->countAllResults(),
             'jumlah_kursi' => (new KursiModel())->countAllResults(),
@@ -104,8 +106,6 @@ class Admin extends BaseController
 
         return view('admin/dashboard', $data);
     }
-
-
 
     public function prasarana()
     {
