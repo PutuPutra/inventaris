@@ -16,7 +16,7 @@ class mejaController extends BaseController
             'files_meja' => $files_meja,
             'heading' => 'Meja',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -28,6 +28,11 @@ class mejaController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
         ];
         return view('admin/sarana/meja/fileMeja', $data);
     }
@@ -36,7 +41,7 @@ class mejaController extends BaseController
         $data = [
             'heading' => 'Tambah Data Meja',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -48,6 +53,11 @@ class mejaController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/meja/tambahMeja', $data);
@@ -136,6 +146,24 @@ class mejaController extends BaseController
         $files_meja = $meja->find($id);
         $data = [
             'heading' => 'Edit Data Meja',
+            'sidebar1' => null,
+            'sidebar2' => 'open active',
+            'sidebar3' => null,
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => 'active',
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'files_meja' => $files_meja,
             'kelas' => (new ModelKelas())->findAll(),
         ];

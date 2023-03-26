@@ -10,8 +10,7 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-lg-8">
-                                <p
-                                    class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
+                                <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
                                     Selamat Datang di E-SARPRAS</p>
                                 <h1 class="display-1 mb-4 animated slideInDown">SMAN 9 Bandarlampung</h1>
                                 <!-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a> -->

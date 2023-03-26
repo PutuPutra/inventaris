@@ -16,7 +16,7 @@ class spidolController extends BaseController
             'files_spidol' => $files_spidol,
             'heading' => 'Spidol',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -28,6 +28,11 @@ class spidolController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
         ];
         return view('admin/sarana/spidol/fileSpidol', $data);
     }
@@ -36,7 +41,7 @@ class spidolController extends BaseController
         $data = [
             'heading' => 'Tambah Data Spidol',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -48,6 +53,11 @@ class spidolController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/spidol/tambahSpidol', $data);
@@ -144,6 +154,24 @@ class spidolController extends BaseController
         $files_spidol = $spidol->find($id);
         $data = [
             'heading' => 'Edit Data Spidol',
+            'sidebar1' => null,
+            'sidebar2' => 'open active',
+            'sidebar3' => null,
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => 'active',
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'files_spidol' => $files_spidol,
             'kelas' => (new ModelKelas())->findAll(),
         ];

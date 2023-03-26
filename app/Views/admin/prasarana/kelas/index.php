@@ -28,23 +28,23 @@
                                 <?php $i = 1;
 
                                 foreach ($kelas as $k) : ?>
-                                <tr>
-                                    <td id="isiTable"><?= $i; ?></td>
-                                    <td id="isiTable"><img src="assets/dokumen/kelas/<?= $k['gambar_kelas']; ?>" alt=""
-                                            width="100"></td>
-                                    <td id="isiTable"><?= $k['nama_kelas']; ?></td>
-                                    <td id="isiTable"><?= $k['wali_kelas']; ?></td>
-                                    <td id="isiTable"><?= $k['ketua_kelas']; ?></td>
-                                    <td id="isiTable">
-                                        <div class="buttons">
-                                            <a href="<?= base_url('/kelas/edit' . '/' . $k['id_kelas']) ?>"
-                                                class="btn btn-warning btn-sm"><i
-                                                    class="fa-solid fa-pen-to-square"></i></a>
-                                            <a href="<?= base_url('/kelas/deleted' . '/' . $k['id_kelas']) ?>"
-                                                class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td id="isiTable"><?= $i; ?></td>
+                                        <td id="isiTable"><img src="assets/dokumen/kelas/<?= $k['gambar_kelas']; ?>" alt="" width="100"></td>
+                                        <td id="isiTable"><?= $k['nama_kelas']; ?></td>
+                                        <td id="isiTable"><?= $k['wali_kelas']; ?></td>
+                                        <td id="isiTable"><?= $k['ketua_kelas']; ?></td>
+                                        <td id="isiTable">
+                                            <div class="buttons">
+                                                <a href="<?= base_url('/kelas/edit' . '/' . $k['id_kelas']) ?>" class="btn btn-warning btn-sm">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </a>
+                                                <a href="<?= base_url('/kelas/deleted' . '/' . $k['id_kelas']) ?>" class="btn btn-danger btn-sm">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 <?php
                                     $i++;
                                 endforeach ?>

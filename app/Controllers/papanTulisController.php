@@ -16,7 +16,7 @@ class papanTulisController extends BaseController
             'files_papan_tulis' => $files_papan_tulis,
             'heading' => 'Papan Tulis',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -28,6 +28,11 @@ class papanTulisController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
         ];
         return view('admin/sarana/papanTulis/filePapanTulis', $data);
     }
@@ -36,7 +41,7 @@ class papanTulisController extends BaseController
         $data = [
             'heading' => 'Tambah Data Papan Tulis',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -48,6 +53,11 @@ class papanTulisController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/papanTulis/tambahPapanTulis', $data);
@@ -113,6 +123,24 @@ class papanTulisController extends BaseController
         $files_papanTulis = $papanTulis->find($id);
         $data = [
             'heading' => 'Edit Data Papan Tulis',
+            'sidebar1' => null,
+            'sidebar2' => 'open active',
+            'sidebar3' => null,
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => 'active',
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'files_papanTulis' => $files_papanTulis,
             'kelas' => (new ModelKelas())->findAll(),
         ];

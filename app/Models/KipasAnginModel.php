@@ -7,8 +7,8 @@ use CodeIgniter\Model;
 class KipasAnginModel extends Model
 {
 
-    protected $table            = 'ac';
-    protected $primaryKey       = 'id_kipas';
+    protected $table            = 'kipas_angin';
+    protected $primaryKey       = 'id';
     protected $returnType       = 'object';
     protected $allowedFields = ['id_kelas', 'serial_number', 'gambar_kipas_angin', 'kondisi_kipas_angin',];
 }

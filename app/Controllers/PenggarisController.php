@@ -16,7 +16,7 @@ class penggarisController extends BaseController
             'files_penggaris' => $files_penggaris,
             'heading' => 'Penggaris',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -28,6 +28,11 @@ class penggarisController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => 'active',
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
         ];
         return view('admin/sarana/penggaris/filePenggaris', $data);
     }
@@ -36,7 +41,7 @@ class penggarisController extends BaseController
         $data = [
             'heading' => 'Tambah Data Penggaris',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -48,6 +53,11 @@ class penggarisController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => 'active',
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/penggaris/tambahPenggaris', $data);
@@ -143,6 +153,24 @@ class penggarisController extends BaseController
         $files_penggaris = $penggaris->find($id);
         $data = [
             'heading' => 'Edit Data Penggaris',
+            'sidebar1' => null,
+            'sidebar2' => 'open active',
+            'sidebar3' => null,
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => 'active',
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'files_penggaris' => $files_penggaris,
             'kelas' => (new ModelKelas())->findAll(),
         ];

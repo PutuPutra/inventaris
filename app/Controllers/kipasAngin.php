@@ -2,24 +2,24 @@
 
 namespace App\Controllers;
 
-use App\Models\BukuModel;
+use App\Models\KipasAnginModel;
 use App\Controllers\BaseController;
 use App\Models\ModelKelas;
 
-class bukuController extends BaseController
+class kipasAngin extends BaseController
 {
-    public function buku()
+    public function index()
     {
-        $buku = new BukuModel();
-        $files_buku = $buku->findAll();
+        $kipasAngin = new KipasAnginModel();
+        $files_kipas_angin = $kipasAngin->findAll();
         $data = [
-            'files_buku' => $files_buku,
-            'heading' => 'Buku',
+            'files_kipas_angin' => $files_kipas_angin,
+            'heading' => 'Data Kipas Angin',
             'sidebar1' => null,
             'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => 'active',
+            'submenu2' => null,
             'submenu3' => null,
             'submenu4' => null,
             'submenu5' => null,
@@ -29,22 +29,22 @@ class bukuController extends BaseController
             'submenu9' => null,
             'submenu10' => null,
             'submenu11' => null,
-            'submenu12' => null,
+            'submenu12' => 'active',
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
         ];
-        return view('admin/sarana/buku/fileBuku', $data);
+        return view('admin/sarana/kipasAngin/index', $data);
     }
-    public function tambahBuku()
+    public function create()
     {
         $data = [
-            'heading' => 'Tambah Data Buku',
+            'heading' => 'Tambah Data Kipas Angin',
             'sidebar1' => null,
             'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => 'active',
+            'submenu2' => null,
             'submenu3' => null,
             'submenu4' => null,
             'submenu5' => null,
@@ -54,32 +54,26 @@ class bukuController extends BaseController
             'submenu9' => null,
             'submenu10' => null,
             'submenu11' => null,
-            'submenu12' => null,
+            'submenu12' => 'active',
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
             'kelas' => (new ModelKelas())->findAll(),
         ];
-        return view('admin/sarana/buku/tambahBuku', $data);
+        return view('admin/sarana/kipasAngin/create', $data);
     }
     public function store()
     {
         $validate = $this->validate([
-            'penerbit_buku' => [
+            'kondisi_kipas_angin' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Harus mengisi bagian ini',
                 ],
             ],
-            'kondisi_buku' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Harus mengisi bagian ini',
-                ],
-            ],
-            'gambar_buku' => [
-                'label' => 'gambar_buku',
-                'rules' => 'uploaded[gambar_buku]|mime_in[gambar_buku,image/jpg,image/jpeg,image/png]',
+            'gambar_kipas_angin' => [
+                'label' => 'gambar_kipas_angin',
+                'rules' => 'uploaded[gambar_kipas_angin]|mime_in[gambar_kipas_angin,image/jpg,image/jpeg,image/png]',
                 'errors' => [
                     'uploaded' => 'Gambar belum dipilih',
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
@@ -95,70 +89,66 @@ class bukuController extends BaseController
         ]);
 
         if (!$validate) {
-            // dd($this->request->getFile('gambar_buku'));
-            return redirect()->to('tambahBuku')->withInput();
+            // dd($this->request->getFile('gambar_kipas_angin'));
+            return redirect()->to('/kipasAngin/create')->withInput();
         }
-        $files = $this->request->getFile('gambar_buku');
+        $files = $this->request->getFile('gambar_kipas_angin');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/dokumen/buku', $names);
+        $files->move('assets/dokumen/kipasAngin', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
-            'gambar_buku' => $names,
-            'penerbit_buku' => $this->request->getPost('penerbit_buku'),
-            'kondisi_buku' => $this->request->getPost('kondisi_buku'),
+            'kondisi_kipas_angin' => $this->request->getPost('kondisi_kipas_angin'),
+            'gambar_kipas_angin' => $names,
             'id_kelas' => $this->request->getPost('id_kelas'),
         ];
         //dd($data);
-        $buku = new BukuModel();
-        $buku->insert($data);
+        $kipasAngin = new KipasAnginModel();
+        $kipasAngin->insert($data);
 
-        return redirect()->to(base_url('buku'));
+        return redirect()->to(base_url('kipasAngin'));
     }
 
-    public function updateBuku($id)
+    public function update($id)
     {
-        $buku = new BukuModel();
+        $kipasAngin = new KipasAnginModel();
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
-            'penerbit_buku' => $this->request->getPost('penerbit_buku'),
-            'kondisi_buku' => $this->request->getPost('kondisi_buku'),
+            'kondisi_kipas_angin' => $this->request->getPost('kondisi_kipas_angin'),
             'id_kelas' => $this->request->getPost('id_kelas'),
         ];
-        if ($this->request->getFile('gambar_buku')->getName() == '') {
+        if ($this->request->getFile('gambar_kipas_angin')->getName() == '') {
 
-            $buku->where('id', $id)->set($data)->update();
+            $kipasAngin->where('id', $id)->set($data)->update();
         } else {
 
-            $files = $this->request->getFile('gambar_buku');
+            $files = $this->request->getFile('gambar_kipas_angin');
             $names = $files->getName();
-            $files->move('assets/dokumen/buku', $names);
-            $data['gambar_buku'] = $names;
-            $buku->where('id', $id)->set($data)->update();
+            $files->move('assets/dokumen/kipasAngin', $names);
+            $data['gambar_kipas_angin'] = $names;
+            $kipasAngin->where('id', $id)->set($data)->update();
         }
-        return redirect()->to(base_url('/buku'));
+        return redirect()->to(base_url('/kipasAngin'));
     }
-
-
 
     public function deleted($id = false)
     {
-        $buku = new BukuModel();
-        $buku->where('id', $id);
-        $buku->delete($id);
-        return redirect()->to(base_url('/buku'));
+        $kipasAngin = new KipasAnginModel();
+        $kipasAngin->where('id', $id);
+        $kipasAngin->delete($id);
+        return redirect()->to(base_url('/kipasAngin'));
     }
-    public function editBuku($id = false)
+    public function edit($id = false)
     {
-        $buku = new BukuModel();
-        $files_buku = $buku->find($id);
+        $kipasAngin = new KipasAnginModel();
+        $files_kipas_angin = $kipasAngin->find($id);
         $data = [
-            'heading' => 'Edit Data Buku',
+            'heading' => 'Edit Data Kipas Angin',
             'sidebar1' => null,
             'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => 'active',
+            'submenu2' => null,
             'submenu3' => null,
             'submenu4' => null,
             'submenu5' => null,
@@ -168,14 +158,14 @@ class bukuController extends BaseController
             'submenu9' => null,
             'submenu10' => null,
             'submenu11' => null,
-            'submenu12' => null,
+            'submenu12' => 'active',
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
-            'files_buku' => $files_buku,
+            'files_kipas_angin' => $files_kipas_angin,
             'kelas' => (new ModelKelas())->findAll(),
         ];
 
-        return view('admin/sarana/buku/editBuku', $data);
+        return view('admin/sarana/kipasAngin/edit', $data);
     }
 }

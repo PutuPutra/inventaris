@@ -12,6 +12,24 @@ class Kelas extends BaseController
     {
         $data = [
             'title' => 'Kelas',
+            'sidebar1' => null,
+            'sidebar2' => null,
+            'sidebar3' => 'open active',
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => 'active',
+            'sub2' => null,
             'kelas' => (new ModelKelas())->findAll(),
 
         ];
@@ -24,6 +42,24 @@ class Kelas extends BaseController
     {
         $data = [
             'title' => 'Tambah Kelas',
+            'sidebar1' => null,
+            'sidebar2' => null,
+            'sidebar3' => 'open active',
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => 'active',
+            'sub2' => null,
         ];
         return view('admin/prasarana/kelas/tambahKelas', $data);
     }
@@ -89,6 +125,24 @@ class Kelas extends BaseController
         $files_kelas = $kelas->find($id);
         $data = [
             'heading' => 'Edit Data Kelas',
+            'sidebar1' => null,
+            'sidebar2' => null,
+            'sidebar3' => 'open active',
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => 'active',
+            'sub2' => null,
             'files_kelas' => $files_kelas,
         ];
 

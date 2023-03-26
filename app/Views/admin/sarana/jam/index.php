@@ -16,7 +16,7 @@
                         <table class="table table-bordered mb-0" id="table1">
                             <thead>
                                 <tr>
-                                    <th>Serial Number</th>
+                                    <th>Nomor Seri</th>
                                     <th>Gambar</th>
                                     <th>Kondisi</th>
                                     <th>Aksi</th>

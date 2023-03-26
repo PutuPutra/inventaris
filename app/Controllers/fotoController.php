@@ -16,7 +16,7 @@ class fotoController extends BaseController
             'files_foto' => $files_foto,
             'heading' => 'Foto',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -28,6 +28,11 @@ class fotoController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
         ];
         return view('admin/sarana/foto/fileFoto', $data);
     }
@@ -36,7 +41,7 @@ class fotoController extends BaseController
         $data = [
             'heading' => 'Tambah Data Foto',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -48,6 +53,11 @@ class fotoController extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/foto/tambahFoto', $data);
@@ -134,6 +144,24 @@ class fotoController extends BaseController
         $files_foto = $foto->find($id);
         $data = [
             'heading' => 'Edit Data Foto',
+            'sidebar1' => null,
+            'sidebar2' => 'open active',
+            'sidebar3' => null,
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => 'active',
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'files_foto' => $files_foto,
             'kelas' => (new ModelKelas())->findAll(),
         ];

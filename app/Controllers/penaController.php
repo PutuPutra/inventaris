@@ -16,7 +16,7 @@ class penaController extends BaseController
             'files_pena' => $files_pena,
             'heading' => 'Pena',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -28,6 +28,11 @@ class penaController extends BaseController
             'submenu8' => null,
             'submenu9' => 'active',
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
         ];
         return view('admin/sarana/pena/filePena', $data);
     }
@@ -36,7 +41,7 @@ class penaController extends BaseController
         $data = [
             'heading' => 'Tambah Data Pena',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -48,6 +53,11 @@ class penaController extends BaseController
             'submenu8' => null,
             'submenu9' => 'active',
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/pena/tambahPena', $data);
@@ -135,6 +145,24 @@ class penaController extends BaseController
         $files_pena = $pena->find($id);
         $data = [
             'heading' => 'Edit Data Pena',
+            'sidebar1' => null,
+            'sidebar2' => 'open active',
+            'sidebar3' => null,
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => 'active',
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'files_pena' => $files_pena,
             'kelas' => (new ModelKelas())->findAll(),
         ];

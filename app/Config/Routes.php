@@ -190,6 +190,14 @@ $routes->get('/ac/create', 'ac::create', ['filter' => 'login']);
 $routes->get('/ac/deleted/(:num)', 'ac::deleted/$1', ['filter' => 'login']);
 $routes->post('/ac/store', 'ac::store', ['filter' => 'login']);
 
+//kipas Angin
+$routes->post('/kipasAngin/update/(:num)', 'kipasAngin::update/$1', ['filter' => 'login']);
+$routes->get('/kipasAngin/edit/(:num)', 'kipasAngin::edit/$1', ['filter' => 'login']);
+$routes->get('/kipasAngin', 'kipasAngin::index', ['filter' => 'login']);
+$routes->get('/kipasAngin/create', 'kipasAngin::create', ['filter' => 'login']);
+$routes->get('/kipasAngin/deleted/(:num)', 'kipasAngin::deleted/$1', ['filter' => 'login']);
+$routes->post('/kipasAngin/store', 'kipasAngin::store', ['filter' => 'login']);
+
 //jam
 $routes->post('/jam/update/(:num)', 'jam::update/$1', ['filter' => 'login']);
 $routes->get('/jam/edit/(:num)', 'jam::edit/$1', ['filter' => 'login']);
@@ -722,19 +730,6 @@ $routes->get('/xii/ips/3/penghapus', 'Umum::xiiips3penghapus');
 $routes->get('/xii/ips/3/pena', 'Umum::xiiips3pena');
 $routes->get('/xii/ips/3/penggaris', 'Umum::xiiips3penggaris');
 // sarana kelas xii ips 3 end
-
-
-// sarana kelas xii ips 4 start
-$routes->get('/xii/ips/4/buku', 'Umum::xiiips4buku');
-$routes->get('/xii/ips/4/papantulis', 'Umum::xiiips4papanTulis');
-$routes->get('/xii/ips/4/meja', 'Umum::xiiips4meja');
-$routes->get('/xii/ips/4/kursi', 'Umum::xiiips4kursi');
-$routes->get('/xii/ips/4/foto', 'Umum::xiiips4foto');
-$routes->get('/xii/ips/4/spidol', 'Umum::xiiips4spidol');
-$routes->get('/xii/ips/4/penghapus', 'Umum::xiiips4penghapus');
-$routes->get('/xii/ips/4/pena', 'Umum::xiiips4pena');
-$routes->get('/xii/ips/4/penggaris', 'Umum::xiiips4penggaris');
-// sarana kelas xii ips 4 end
 
 // ================================================== xii ips end =====================================================
 

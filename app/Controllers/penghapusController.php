@@ -16,7 +16,7 @@ class penghapusController extends BaseController
             'files_penghapus' => $files_penghapus,
             'heading' => 'Penghapus',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -28,6 +28,11 @@ class penghapusController extends BaseController
             'submenu8' => 'active',
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
         ];
         return view('admin/sarana/penghapus/filePenghapus', $data);
     }
@@ -36,7 +41,7 @@ class penghapusController extends BaseController
         $data = [
             'heading' => 'Tambah Data Penghapus',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
             'submenu2' => null,
@@ -48,6 +53,11 @@ class penghapusController extends BaseController
             'submenu8' => 'active',
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/penghapus/tambahPenghapus', $data);
@@ -135,6 +145,24 @@ class penghapusController extends BaseController
         $files_penghapus = $penghapus->find($id);
         $data = [
             'heading' => 'Edit Data Penghapus',
+            'sidebar1' => null,
+            'sidebar2' => 'open active',
+            'sidebar3' => null,
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => 'active',
+            'submenu9' => null,
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
             'files_penghapus' => $files_penghapus,
             'kelas' => (new ModelKelas())->findAll(),
         ];

@@ -75,6 +75,22 @@ class Admin extends BaseController
     public function dashboard()
     {
         $data = [
+            'sidebar1' => 'open active',
+            'sidebar2' => null,
+            'sidebar3' => null,
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
             'jumlah_kelas' => (new ModelKelas())->countAllResults(),
             'jumlah_meja' => (new MejaModel())->countAllResults(),
             'jumlah_kursi' => (new KursiModel())->countAllResults(),

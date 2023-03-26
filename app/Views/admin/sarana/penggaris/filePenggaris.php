@@ -16,7 +16,7 @@
                         <table class="table table-bordered mb-0" id="table1">
                             <thead>
                                 <tr>
-                                    <th>Merk</th>
+                                    <th>Merek</th>
                                     <th>Gambar</th>
                                     <th>Kondisi</th>
                                     <th>Panjang</th>
@@ -25,24 +25,19 @@
                             </thead>
                             <tbody>
                                 <?php foreach ($files_penggaris as $f) : ?>
-                                <tr>
-                                    <td id="isiTable"><?= $f->merk_penggaris; ?></td>
-                                    <td id="isiTable"><img class="pictures"
-                                            src="/assets/dokumen/penggaris/<?= $f->gambar_penggaris; ?>" alt=""
-                                            width="100px"></img>
-                                    </td>
-                                    <td id="isiTable"><?= $f->kondisi_penggaris; ?></td>
-                                    <td id="isiTable" style="width: 100px;"><?= $f->panjang_penggaris; ?></td>
-                                    <td id="isiTable">
-                                        <div class="buttons">
-                                            <a href="<?= base_url('penggaris/edit') . '/' . $f->id ?>"
-                                                class="btn btn-warning"><i
-                                                    class="fa-solid fa-pen-to-square"></i></i></a>
-                                            <a href="<?= base_url('penggaris/deleted') . '/' . $f->id ?>"
-                                                class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td id="isiTable"><?= $f->merk_penggaris; ?></td>
+                                        <td id="isiTable"><img class="pictures" src="/assets/dokumen/penggaris/<?= $f->gambar_penggaris; ?>" alt="" width="100px"></img>
+                                        </td>
+                                        <td id="isiTable"><?= $f->kondisi_penggaris; ?></td>
+                                        <td id="isiTable" style="width: 100px;"><?= $f->panjang_penggaris; ?></td>
+                                        <td id="isiTable">
+                                            <div class="buttons">
+                                                <a href="<?= base_url('penggaris/edit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
+                                                <a href="<?= base_url('penggaris/deleted') . '/' . $f->id ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 <?php
                                 endforeach ?>
                             </tbody>

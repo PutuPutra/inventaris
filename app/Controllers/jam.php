@@ -16,10 +16,10 @@ class jam extends BaseController
             'files_jam' => $files_jam,
             'heading' => 'Jam',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => 'active',
+            'submenu2' => null,
             'submenu3' => null,
             'submenu4' => null,
             'submenu5' => null,
@@ -28,6 +28,11 @@ class jam extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => 'active',
+            'sub1' => null,
+            'sub2' => null,
         ];
         return view('admin/sarana/jam/index', $data);
     }
@@ -35,11 +40,12 @@ class jam extends BaseController
     {
         $data = [
             'heading' => 'Tambah Data Jam',
+            'heading' => 'Jam',
             'sidebar1' => null,
-            'sidebar2' => 'active',
+            'sidebar2' => 'open active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => 'active',
+            'submenu2' => null,
             'submenu3' => null,
             'submenu4' => null,
             'submenu5' => null,
@@ -48,6 +54,11 @@ class jam extends BaseController
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => 'active',
+            'sub1' => null,
+            'sub2' => null,
             'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/jam/create', $data);
@@ -134,6 +145,25 @@ class jam extends BaseController
         $files_jam = $jam->find($id);
         $data = [
             'heading' => 'Edit Data jam',
+            'heading' => 'Jam',
+            'sidebar1' => null,
+            'sidebar2' => 'open active',
+            'sidebar3' => null,
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => 'active',
+            'sub1' => null,
+            'sub2' => null,
             'files_jam' => $files_jam,
             'kelas' => (new ModelKelas())->findAll(),
         ];
