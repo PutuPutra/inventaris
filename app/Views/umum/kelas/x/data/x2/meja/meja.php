@@ -48,6 +48,7 @@
                             <td id="isiTable"><img src="/assets/dokumen/meja/<?= $m->gambar_meja ?>" width="100"></td>
                             <td id="isiTable">
                                 <?= $m->kondisi_meja ?>
+
                             </td>
                         </tr>
                         <?php endforeach; ?>

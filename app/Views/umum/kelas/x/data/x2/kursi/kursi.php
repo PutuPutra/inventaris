@@ -36,6 +36,7 @@
                             <td id="isiTable"><img src="/assets/dokumen/kursi/<?= $k->gambar_kursi ?>" width="100"></td>
                             <td id="isiTable">
                                 <?= $k->kondisi_kursi ?>
+
                             </td>
                         </tr>
                         <?php endforeach; ?>
