@@ -762,23 +762,6 @@ $routes->get('/xii/ips/3/penggaris', 'Umum::xiiips3penggaris');
 $routes->get('/xii/ips/3/ac', 'Umum::xiiips3ac');
 // sarana kelas xii ips 3 end
 
-<<<<<<< HEAD
-=======
-
-// sarana kelas xii ips 4 start
-$routes->get('/xii/ips/4/buku', 'Umum::xiiips4buku');
-$routes->get('/xii/ips/4/papantulis', 'Umum::xiiips4papanTulis');
-$routes->get('/xii/ips/4/meja', 'Umum::xiiips4meja');
-$routes->get('/xii/ips/4/kursi', 'Umum::xiiips4kursi');
-$routes->get('/xii/ips/4/foto', 'Umum::xiiips4foto');
-$routes->get('/xii/ips/4/spidol', 'Umum::xiiips4spidol');
-$routes->get('/xii/ips/4/penghapus', 'Umum::xiiips4penghapus');
-$routes->get('/xii/ips/4/pena', 'Umum::xiiips4pena');
-$routes->get('/xii/ips/4/penggaris', 'Umum::xiiips4penggaris');
-$routes->get('/xii/ips/4/ac', 'Umum::xiiips4ac');
-// sarana kelas xii ips 4 end
-
->>>>>>> refs/remotes/origin/main
 // ================================================== xii ips end =====================================================
 
 // sarana Aula start
