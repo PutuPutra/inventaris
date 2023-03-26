@@ -27,12 +27,12 @@
                                 <tr>
                                     <td id="isiTable"><?= $f->ukuran_papan_tulis; ?></td>
                                     <td id="isiTable"><img class="pictures"
-                                            src="/assets/foto/<?= $f->gambar_papan_tulis; ?>" alt=""
+                                            src="/assets/dokumen/papanTulis/<?= $f->gambar_papan_tulis; ?>" alt=""
                                             width="100px"></img></td>
                                     <td id="isiTable"><?= $f->kondisi_papan_tulis; ?></td>
                                     <td id="isiTable">
                                         <div class="buttons">
-                                            <a href="<?= base_url('PapanTulisEdit') . '/' . $f->id ?>"
+                                            <a href="<?= base_url('papanTulis/edit') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i
                                                     class="fa-solid fa-pen-to-square"></i></i></a>
                                             <a href="<?= base_url('papanTulis/deleted') . '/' . $f->id ?>"

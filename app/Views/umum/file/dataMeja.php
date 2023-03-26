@@ -35,17 +35,19 @@
                     <thead>
                         <tr>
                             <th>Ukuran</th>
-                            <th>Foto</th>
+                            <th>Gambar</th>
                             <th>Kondisi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($tables as $meja) : ?>
-                            <tr>
-                                <td><?= $meja->ukuran_meja; ?></td>
-                                <td><img src="/assets/foto/<?= $meja->gambar_meja ?>" height="100" width="150"></td>
-                                <td><?= $meja->kondisi_meja; ?></td>
-                            </tr>
+                        <?php foreach ($meja as $m) : ?>
+                        <tr>
+                            <td id="isiTable"><?= $m->ukuran_meja ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/meja/<?= $m->gambar_meja ?>" width="100"></td>
+                            <td id="isiTable">
+                                <?= $m->kondisi_meja ?>
+                            </td>
+                        </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>

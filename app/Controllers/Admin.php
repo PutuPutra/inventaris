@@ -3,10 +3,17 @@
 namespace App\Controllers;
 
 use App\Models\BukuModel;
-use App\Models\KursiModel;
 use App\Models\MejaModel;
+use App\Models\PenaModel;
+use App\Models\KursiModel;
 use App\Models\ModelKelas;
+use App\Models\PialaModel;
 use App\Models\UsersModel;
+use App\Models\SpidolModel;
+use App\Models\KomputerModel;
+use App\Models\PenghapusModel;
+use App\Models\PapanTulisModel;
+use App\Controllers\BaseController;
 
 class Admin extends BaseController
 {
@@ -57,10 +64,10 @@ class Admin extends BaseController
     {
         return view('auth/login');
     }
-    // public function register()
-    // {
-    //     return view('formLogin/authRegister');
-    // }
+    public function register()
+    {
+        return view('auth/register');
+    }
     public function forgot_password()
     {
         return view('formLogin/authforgotpassword');
@@ -72,8 +79,13 @@ class Admin extends BaseController
             'jumlah_meja' => (new MejaModel())->countAllResults(),
             'jumlah_kursi' => (new KursiModel())->countAllResults(),
             'jumlah_buku' => (new BukuModel())->countAllResults(),
+            'jumlah_piala' => (new PialaModel())->countAllResults(),
+            'jumlah_komputer' => (new KomputerModel())->countAllResults(),
+            'jumlah_papan_tulis' => (new PapanTulisModel())->countAllResults(),
+            'jumlah_bangunan' => (new PapanTulisModel())->countAllResults(),
+            'jumlah_alat_tulis' => (new PenaModel())->countAllResults() + (new PenghapusModel())->countAllResults() + (new SpidolModel())->countAllResults(),
         ];
-    
+
         return view('admin/dashboard', $data);
     }
 
@@ -169,7 +181,8 @@ class Admin extends BaseController
     public function deleted($id = false)
     {
         $users = new UsersModel();
+        $users->where('id', $id);
         $users->delete($id);
-        return redirect()->to(base_url('/users'));
+        return redirect()->to(base_url('akun'));
     }
 }

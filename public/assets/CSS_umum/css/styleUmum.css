@@ -96,6 +96,10 @@ h6,
   vertical-align: middle;
   text-align: center;
 }
+#table1 th {
+  vertical-align: middle;
+  text-align: center;
+}
 
 /*** Navbar ***/
 .fixed-top {

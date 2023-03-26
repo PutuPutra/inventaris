@@ -34,19 +34,21 @@
                     <thead>
                         <tr>
                             <th>No.SN</th>
-                            <th>Merk</th>
+                            <th>Merek</th>
                             <th>Gambar</th>
                             <th>Kondisi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php foreach ($erasers as $penghapus) : ?>
-                            <tr>
-                                <td><?= $penghapus->serial_number; ?></td>
-                                <td><?= $penghapus->merk_penghapus; ?></td>
-                                <td><img src="/assets/foto/<?= $penghapus->gambar_penghapus ?>" height="100" width="150"></td>
-                                <td><?= $penghapus->kondisi_penghapus; ?></td>
-                            </tr>
+                        <tr>
+                            <td id="isiTable"><?= $penghapus->serial_number; ?></td>
+                            <td id="isiTable"><?= $penghapus->merk_penghapus; ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/penghapus/<?= $penghapus->gambar_penghapus ?>"
+                                    height="100" width="150">
+                            </td>
+                            <td id="isiTable"><?= $penghapus->kondisi_penghapus; ?></td>
+                        </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>

@@ -22,7 +22,7 @@
                                         <div class="form-group mg-b-0">
                                             <label>Ukuran <span class="tx-danger">*</span></label>
                                             <input type="text" name="ukuran_foto" class="form-control wd-300"
-                                                placeholder="Enter Ukuran" required>
+                                                placeholder="Contoh: 5x10 M" required>
                                         </div>
                                         <!-- form-group -->
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
@@ -54,7 +54,6 @@
                                                         </option>
                                                         <option value="Kerusakan Berat">Kerusakan Berat
                                                         </option>
-                                                        <option value="Sedang di">Sedang diperbaiki</option>
                                                     </select>
                                                     <div id="slErrorContainer"></div>
                                                 </div>

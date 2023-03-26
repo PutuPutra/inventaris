@@ -3,12 +3,12 @@
 #-------------------------
 
 # OS X
-# .DS_Store
-# .AppleDouble
-# .LSOverride
+.DS_Store
+.AppleDouble
+.LSOverride
 
 # OS X Thumbnails
-# ._*
+._*
 
 # Windows image file caches
 # Thumbs.db
@@ -16,7 +16,7 @@
 # Desktop.ini
 
 # Recycle Bin used on file shares
-# $RECYCLE.BIN/
+$RECYCLE.BIN/
 
 # Windows Installer files
 # *.cab
@@ -28,13 +28,13 @@
 # *.lnk
 
 # Linux
-# *~
+*~
 
 # # KDE directory preferences
-# .directory
+.directory
 
 # # Linux trash folder which might appear on any partition or disk
-# .Trash-*
+.Trash-*
 
 #-------------------------
 # Environment Files

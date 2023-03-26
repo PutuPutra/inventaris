@@ -67,12 +67,6 @@ class bukuController extends BaseController
                     'required' => 'Harus mengisi bagian ini',
                 ],
             ],
-            'deskripsi_buku' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Harus mengisi bagian ini',
-                ],
-            ],
             'gambar_buku' => [
                 'label' => 'gambar_buku',
                 'rules' => 'uploaded[gambar_buku]|mime_in[gambar_buku,image/jpg,image/jpeg,image/png]',
@@ -82,22 +76,27 @@ class bukuController extends BaseController
 
                 ],
             ],
+            'serial_number' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Harus mengisi bagian ini',
+                ],
+            ],
         ]);
 
         if (!$validate) {
-            // dd($this->request->getFile('gambar_komputer'));
+            // dd($this->request->getFile('gambar_buku'));
             return redirect()->to('tambahBuku')->withInput();
         }
         $files = $this->request->getFile('gambar_buku');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/foto', $names);
+        $files->move('assets/dokumen/buku', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'gambar_buku' => $names,
             'penerbit_buku' => $this->request->getPost('penerbit_buku'),
             'kondisi_buku' => $this->request->getPost('kondisi_buku'),
-            'deskripsi_buku' => $this->request->getPost('deskripsi_buku'),
             'id_kelas' => $this->request->getPost('id_kelas'),
         ];
         //dd($data);
@@ -106,10 +105,49 @@ class bukuController extends BaseController
 
         return redirect()->to(base_url('buku'));
     }
+
+    public function updateBuku($id)
+    {
+        $buku = new BukuModel();
+        $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
+            'penerbit_buku' => $this->request->getPost('penerbit_buku'),
+            'kondisi_buku' => $this->request->getPost('kondisi_buku'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
+        ];
+        if ($this->request->getFile('gambar_buku')->getName() == '') {
+
+            $buku->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_buku');
+            $names = $files->getName();
+            $files->move('assets/dokumen/buku', $names);
+            $data['gambar_buku'] = $names;
+            $buku->where('id', $id)->set($data)->update();
+        }
+        return redirect()->to(base_url('/buku'));
+    }
+
+
+
     public function deleted($id = false)
     {
         $buku = new BukuModel();
+        $buku->where('id', $id);
         $buku->delete($id);
         return redirect()->to(base_url('/buku'));
+    }
+    public function editBuku($id = false)
+    {
+        $buku = new BukuModel();
+        $files_buku = $buku->find($id);
+        $data = [
+            'heading' => 'Edit Data Buku',
+            'files_buku' => $files_buku,
+            'kelas' => (new ModelKelas())->findAll(),
+        ];
+
+        return view('admin/sarana/buku/editBuku', $data);
     }
 }

@@ -42,13 +42,15 @@
                     </thead>
                     <tbody>
                         <?php foreach ($computers as $komputer) : ?>
-                            <tr>
-                                <td><?= $komputer->brand_komputer; ?></td>
-                                <td><img src="/assets/foto/<?= $komputer->gambar_komputer ?>" height="100" width="150"></td>
-                                <td><?= $komputer->kondisi_komputer ?></td>
-                                <td><textarea readonly cols="50" rows="10" disabled><?= $komputer->spesifikasi_komputer ?></textarea></td>
-                                <td><?= $komputer->jenis_produk_komputer ?></td>
-                            </tr>
+                        <tr>
+                            <td id="isiTable"><?= $komputer->brand_komputer; ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/komputer/<?= $komputer->gambar_komputer ?>"
+                                    height="100" width="150"></td>
+                            <td id="isiTable"><?= $komputer->kondisi_komputer ?></td>
+                            <td id="isiTable"><textarea readonly cols="50" rows="10"
+                                    disabled><?= $komputer->spesifikasi_komputer ?></textarea></td>
+                            <td id="isiTable"><?= $komputer->jenis_produk_komputer ?></td>
+                        </tr>
                         <?php endforeach; ?>
 
                     </tbody>

@@ -26,12 +26,13 @@
                                 <?php foreach ($files_meja as $f) : ?>
                                 <tr>
                                     <td id="isiTable"><?= $f->ukuran_meja; ?></td>
-                                    <td id="isiTable"><img class="pictures" src="/assets/foto/<?= $f->gambar_meja; ?>"
-                                            alt="" width="100px"></img></td>
+                                    <td id="isiTable"><img class="pictures"
+                                            src="/assets/dokumen/meja/<?= $f->gambar_meja; ?>" alt=""
+                                            width="100px"></img></td>
                                     <td id="isiTable"><?= $f->kondisi_meja; ?></td>
                                     <td id="isiTable">
                                         <div class="buttons">
-                                            <a href="<?= base_url('MejaEdit') . '/' . $f->id ?>"
+                                            <a href="<?= base_url('meja/edit') . '/' . $f->id ?>"
                                                 class="btn btn-warning"><i
                                                     class="fa-solid fa-pen-to-square"></i></i></a>
                                             <a href="<?= base_url('meja/deleted') . '/' . $f->id ?>"

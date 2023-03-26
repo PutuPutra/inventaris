@@ -42,10 +42,11 @@
                         </tr>
                     </thead>
                     <tbody>
+
                         <?php foreach ($penghapus as $p) : ?>
                             <tr>
                                 <td><?= $p->merk_penghapus ?></td>
-                                <td><img src="/assets/foto/<?= $p->gambar_penghapus ?>" width="100"></td>
+                                <td><img src="/assets/dokumen/penghapus/<?= $p->gambar_penghapus ?>" width="100"></td>
                                 <td>
                                     <?= $p->kondisi_penghapus ?>
                                 </td>

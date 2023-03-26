@@ -29,8 +29,6 @@
                                             <label>Gambar <span class="tx-danger">*</span></label>
                                             <input type="file" name="gambar_kelas" class="form-control wd-300" required>
                                         </div>
-
-
                                     </div>
 
                                     <div class="wd-300">
@@ -59,11 +57,12 @@
                                         </div>
                                     </div>
                             </form>
-                            <a href="<?= base_url('kelas/store') ?>">
-                                <button class="btn btn-secondary waves-effect"
-                                    style="margin-left: 120px; margin-top: -60px;">Batal</button>
-                            </a>
+
                         </div>
+                        <a href="<?= base_url('/kelas') ?>">
+                            <button class="btn btn-secondary waves-effect"
+                                style="margin-left: 120px; margin-top: -60px;">Batal</button>
+                        </a>
                     </div>
                 </div>
 

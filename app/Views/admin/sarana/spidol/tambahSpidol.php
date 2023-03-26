@@ -52,13 +52,10 @@
                                                         data-parsley-errors-container="#slErrorContainer" required>
                                                         <option label="Pilih Kondisi"></option>
                                                         <option value="Baik">Baik</option>
-                                                        <option value="Kerusakan Ringan">Kerusakan Ringan
+                                                        <option value="Kehabisan Tinta">Kehabisan Tinta
                                                         </option>
-                                                        <option value="Kerusakan Sedang">Kerusakan Sedang
+                                                        <option value="Tidak Dapat Digunakan Kembali">Tidak Dapat Digunakan Kembali
                                                         </option>
-                                                        <option value="Kerusakan Berat">Kerusakan Berat
-                                                        </option>
-                                                        <option value="Sedang di">Sedang diperbaiki</option>
                                                     </select>
                                                     <div id="slErrorContainer"></div>
                                                 </div>

@@ -120,6 +120,9 @@
                                 <li><a href="<?= base_url('penghapus') ?>">Penghapus</a></li>
                                 <li><a href="<?= base_url('pena') ?>">Pena</a></li>
                                 <li><a href="<?= base_url('penggaris') ?>">Penggaris</a></li>
+                                <li><a href="<?= base_url('ac') ?>">AC</a></li>
+                                <li><a href="<?= base_url('kipasAngin') ?>">Kipas Angin</a></li>
+                                <li><a href="<?= base_url('jam') ?>">Jam</a></li>
                             </ul>
                         </li>
                         <li>
@@ -365,13 +368,14 @@
 
                                             Profil
                                         </a> -->
-                                        <!-- <?php if (in_groups('super_admin')) : ?>
-                                        <a href="" class="dropdown-item d-flex align-items-center">
+                                        <?php if (in_groups('super_admin')) : ?>
+                                        <a href="<?= base_url('akun') ?>"
+                                            class="dropdown-item d-flex align-items-center">
                                             <span data-feather="user" class="wd-16 ht-16 mr-2"></span>
 
                                             Kelola Akun
                                         </a>
-                                        <?php endif; ?> -->
+                                        <?php endif; ?>
                                         <!-- <a href="" class="dropdown-item d-flex align-items-center">
                                             <span data-feather="message-square" class="wd-16 ht-16 mr-2"></span>
                                             

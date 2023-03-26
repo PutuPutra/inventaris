@@ -41,7 +41,7 @@
                                             <div class="form-group mg-b-0 mr-3">
                                                 <label>Nomor Seri<span class="tx-danger">*</span></label>
                                                 <input type="text" name="serial_number" class="form-control wd-300"
-                                                    placeholder="Enter Serial Number" required>
+                                                    placeholder="Masukkan Nomor Seri" required>
                                             </div>
                                             <div class="d-md-flex" style="margin-right: 50px;">
                                                 <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
@@ -58,7 +58,9 @@
                                                         </option>
                                                         <option value="Kerusakan Berat">Kerusakan Berat
                                                         </option>
-                                                        <option value="Sedang di">Sedang diperbaiki</option>
+                                                        <option value="Tidak Dapat Digunakan Kembali">Tidak Dapat
+                                                            Digunakan Kembali
+                                                        </option>
                                                     </select>
                                                     <div id="slErrorContainer"></div>
                                                 </div>

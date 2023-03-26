@@ -92,7 +92,7 @@
                                     </div>
                                     <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                         <h6 class="text-muted font-semibold">Alat Tulis</h6>
-                                        <h6 class="font-extrabold mb-0">12</h6>
+                                        <h6 class="font-extrabold mb-0"><?= $jumlah_alat_tulis ?></h6>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@
                                     </div>
                                     <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                         <h6 class="text-muted font-semibold">Papan Tulis</h6>
-                                        <h6 class="font-extrabold mb-0">12</h6>
+                                        <h6 class="font-extrabold mb-0"><?= $jumlah_papan_tulis ?></h6>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@
                                     </div>
                                     <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                         <h6 class="text-muted font-semibold">Komputer</h6>
-                                        <h6 class="font-extrabold mb-0">10</h6>
+                                        <h6 class="font-extrabold mb-0"><?= $jumlah_komputer ?></h6>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +146,7 @@
                                     </div>
                                     <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                         <h6 class="text-muted font-semibold">Bangunan</h6>
-                                        <h6 class="font-extrabold mb-0">1</h6>
+                                        <h6 class="font-extrabold mb-0">12</h6>
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +164,7 @@
                                     </div>
                                     <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                         <h6 class="text-muted font-semibold">Piala</h6>
-                                        <h6 class="font-extrabold mb-0">100</h6>
+                                        <h6 class="font-extrabold mb-0"><?= $jumlah_piala ?></h6>
                                     </div>
                                 </div>
                             </div>

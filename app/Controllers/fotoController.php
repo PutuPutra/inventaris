@@ -85,7 +85,7 @@ class fotoController extends BaseController
         $files = $this->request->getFile('gambar_foto');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/foto', $names);
+        $files->move('assets/dokumen/foto', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'gambar_foto' => $names,
@@ -103,5 +103,41 @@ class fotoController extends BaseController
         $foto = new FotoModel();
         $foto->delete($id);
         return redirect()->to(base_url('/foto'));
+    }
+
+    public function updateFoto($id)
+    {
+        $foto = new FotoModel();
+        $data = [
+            'ukuran_foto' => $this->request->getPost('ukuran_foto'),
+            'serial_number' => $this->request->getPost('serial_number'),
+            'kondisi_foto' => $this->request->getPost('kondisi_foto'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
+        ];
+        if ($this->request->getFile('gambar_foto')->getName() == '') {
+
+            $foto->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_foto');
+            $names = $files->getName();
+            $files->move('assets/dokumen/foto', $names);
+            $data['gambar_foto'] = $names;
+            $foto->where('id', $id)->set($data)->update();
+        }
+        return redirect()->to(base_url('/foto'));
+    }
+
+    public function editFoto($id = false)
+    {
+        $foto = new FotoModel();
+        $files_foto = $foto->find($id);
+        $data = [
+            'heading' => 'Edit Data Foto',
+            'files_foto' => $files_foto,
+            'kelas' => (new ModelKelas())->findAll(),
+        ];
+
+        return view('admin/sarana/foto/editFoto', $data);
     }
 }

@@ -40,17 +40,21 @@
                         <tr>
                             <th>Penerbit</th>
                             <th>Gambar</th>
-                            <th>Deskripsi</th>
+                            <th>Kondisi Buku</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach($books as $book):?>
-                        <td><?= $book->penerbit_buku ?></td>
-                        <td><img src="/assets/foto/<?= $book->gambar_buku?>" width="100"></td>
-                        <td><textarea readonly>
-                                <?= $book->deskripsi_buku ?>
-                            </textarea></td>
-                        <?php endforeach;?>
+                        <?php foreach ($books as $book) : ?>
+                        <tr>
+                            <td id="isiTable"><?= $book->penerbit_buku ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/buku/<?= $book->gambar_buku ?>" width="100">
+                            </td>
+                            <td id="isiTable">
+                                <?= $book->kondisi_buku ?>
+                            </td>
+                        </tr>
+                        <?php endforeach; ?>
+
 
                     </tbody>
                 </table>

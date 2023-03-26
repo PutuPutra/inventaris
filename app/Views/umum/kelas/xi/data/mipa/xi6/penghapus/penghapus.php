@@ -42,11 +42,15 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">Baik/td>
-                        </tr>
+                        <?php foreach ($penghapus as $p) : ?>
+                            <tr>
+                                <td id="isiTable"><?= $p->merk_penghapus ?></td>
+                                <td id="isiTable"><img src="/assets/dokumen/penghapus/<?= $p->gambar_penghapus ?>" width="100"></td>
+                                <td id="isiTable">
+                                    <?= $p->kondisi_penghapus ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

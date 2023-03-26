@@ -36,17 +36,20 @@
                 <table class="table table-striped" id="table1">
                     <thead>
                         <tr>
-                            <th>Ukuran</th>
                             <th>Gambar</th>
                             <th>Kondisi</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($kipasAngin as $k) : ?>
                         <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
+                            <td id="isiTable"><img src="/assets/dokumen/kipasAngin/<?= $k->gambar_kipas_angin ?>"
+                                    width="100"></td>
+                            <td id="isiTable">
+                                <?= $k->kondisi_kipas_angin ?>
+                            </td>
                         </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

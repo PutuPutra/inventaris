@@ -85,7 +85,7 @@ class kursiController extends BaseController
         $files = $this->request->getFile('gambar_kursi');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/foto', $names);
+        $files->move('assets/dokumen/kursi', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'gambar_kursi' => $names,
@@ -103,5 +103,41 @@ class kursiController extends BaseController
         $kursi = new KursiModel();
         $kursi->delete($id);
         return redirect()->to(base_url('/kursi'));
+    }
+
+    public function updateKursi($id)
+    {
+        $kursi = new KursiModel();
+        $data = [
+            'ukuran_kursi' => $this->request->getPost('ukuran_kursi'),
+            'serial_number' => $this->request->getPost('serial_number'),
+            'kondisi_kursi' => $this->request->getPost('kondisi_kursi'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
+        ];
+        if ($this->request->getFile('gambar_kursi')->getName() == '') {
+
+            $kursi->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_kursi');
+            $names = $files->getName();
+            $files->move('assets/dokumen/kursi', $names);
+            $data['gambar_kursi'] = $names;
+            $kursi->where('id', $id)->set($data)->update();
+        }
+        return redirect()->to(base_url('/kursi'));
+    }
+
+    public function editKursi($id = false)
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->find($id);
+        $data = [
+            'heading' => 'Edit Data Kursi',
+            'files_kursi' => $files_kursi,
+            'kelas' => (new ModelKelas())->findAll(),
+        ];
+
+        return view('admin/sarana/kursi/editKursi', $data);
     }
 }

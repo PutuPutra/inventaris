@@ -46,10 +46,11 @@
                         <?php foreach ($spidol as $s) : ?>
                         <tr>
                             <td><?= $s->merk_spidol ?></td>
-                            <td><img src="/assets/foto/<?= $s->gambar_spidol ?>" width="100"></td>
+                            <td><img src="/assets/dokumen/spidol/<?= $s->gambar_spidol ?>" width="100"></td>
                             <td>
                                 <?= $s->kondisi_spidol ?>
                             </td>
+
                         </tr>
                         <?php endforeach; ?>
 

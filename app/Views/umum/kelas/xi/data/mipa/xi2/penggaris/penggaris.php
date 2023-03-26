@@ -36,21 +36,28 @@
                 <table class="table table-striped" id="table1">
                     <thead>
                         <tr>
-                            <th>Ukuran</th>
+                            <th>Merek</th>
                             <th>Gambar</th>
                             <th>Kondisi</th>
-                            <th>Panjang</th>
+                            <th>Panjang Penggaris</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
-                            <td id="isiTable">30cm</td>
-                        </tr>
+                        <?php foreach ($penggaris as $p) : ?>
+                            <tr>
+                                <td id="isiTable"><?= $p->merk_penggaris ?></td>
+                                <td id="isiTable"><img src="/assets/dokumen/penggaris/<?= $p->gambar_penggaris ?>" width="100"></td>
+                                <td id="isiTable">
+                                    <?= $p->kondisi_penggaris ?>
+                                </td>
+                                <td id="isiTable">
+                                    <?= $p->panjang_penggaris ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
+                </table>
                 </table>
             </div>
         </div>

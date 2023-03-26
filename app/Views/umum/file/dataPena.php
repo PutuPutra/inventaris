@@ -35,7 +35,7 @@
                     <thead>
                         <tr>
                             <th>No.SN</th>
-                            <th>Merk</th>
+                            <th>Merek</th>
                             <th>Gambar</th>
                             <th>Kondisi</th>
 
@@ -43,13 +43,14 @@
                     </thead>
                     <tbody>
                         <?php foreach ($pens as $pena) : ?>
-                            <tr>
-                                <td><?= $pena->serial_number; ?></td>
-                                <td><?= $pena->merk_pena; ?></td>
-                                <td><img src="/assets/foto/<?= $pena->gambar_pena ?>" height="100" width="150"></td>
-                                <td><?= $pena->kondisi_pena; ?></td>
+                        <tr>
+                            <td id="isiTable"><?= $pena->serial_number; ?></td>
+                            <td id="isiTable"><?= $pena->merk_pena; ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/pena/<?= $pena->gambar_pena ?>" height="100"
+                                    width="150"></td>
+                            <td id="isiTable"><?= $pena->kondisi_pena; ?></td>
 
-                            </tr>
+                        </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>

@@ -91,7 +91,7 @@ class spidolController extends BaseController
         $files = $this->request->getFile('gambar_spidol');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/spidol', $names);
+        $files->move('assets/dokumen/spidol', $names);
         $data = [
             'serial_number' => $this->request->getPost('serial_number'),
             'id_kelas' => $this->request->getPost('id_kelas'),
@@ -109,7 +109,45 @@ class spidolController extends BaseController
     public function deleted($id = false)
     {
         $spidol = new SpidolModel();
+        $spidol->where('id', $id);
         $spidol->delete($id);
         return redirect()->to(base_url('/spidol'));
+    }
+
+    public function updateSpidol($id)
+    {
+        $spidol = new SpidolModel();
+        $data = [
+            'merk_spidol' => $this->request->getPost('merk_spidol'),
+            'serial_number' => $this->request->getPost('serial_number'),
+            'kondisi_spidol' => $this->request->getPost('kondisi_spidol'),
+            'warna_spidol' => $this->request->getPost('warna_spidol'),
+            'id_kelas' => $this->request->getPost('id_kelas'),
+        ];
+        if ($this->request->getFile('gambar_spidol')->getName() == '') {
+
+            $spidol->where('id', $id)->set($data)->update();
+        } else {
+
+            $files = $this->request->getFile('gambar_spidol');
+            $names = $files->getName();
+            $files->move('assets/dokumen/spidol', $names);
+            $data['gambar_spidol'] = $names;
+            $spidol->where('id', $id)->set($data)->update();
+        }
+        return redirect()->to(base_url('/spidol'));
+    }
+
+    public function editSpidol($id = false)
+    {
+        $spidol = new SpidolModel();
+        $files_spidol = $spidol->find($id);
+        $data = [
+            'heading' => 'Edit Data Spidol',
+            'files_spidol' => $files_spidol,
+            'kelas' => (new ModelKelas())->findAll(),
+        ];
+
+        return view('admin/sarana/spidol/editSpidol', $data);
     }
 }

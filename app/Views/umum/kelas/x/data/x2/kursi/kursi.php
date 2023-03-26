@@ -30,12 +30,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($chairs as $chair) : ?>
+                        <?php foreach ($kursi as $k) : ?>
                         <tr>
-                            <td><?= $chair->ukuran_kursi ?></td>
-                            <td><img src="/assets/foto/<?= $chair->gambar_kursi ?>" width="100"></td>
-                            <td>
-                                <?= $chair->kondisi_kursi ?>
+                            <td id="isiTable"><?= $k->ukuran_kursi ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/kursi/<?= $k->gambar_kursi ?>" width="100"></td>
+                            <td id="isiTable">
+                                <?= $k->kondisi_kursi ?>
+
                             </td>
                         </tr>
                         <?php endforeach; ?>

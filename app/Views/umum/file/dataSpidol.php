@@ -34,7 +34,7 @@
                     <thead>
                         <tr>
                             <th>No.SN</th>
-                            <th>Merk</th>
+                            <th>Merek</th>
                             <th>Gambar</th>
                             <th>Kondisi</th>
                             <th>Warna</th>
@@ -42,13 +42,14 @@
                     </thead>
                     <tbody>
                         <?php foreach ($spidols as $spidol) : ?>
-                            <tr>
-                                <td><?= $spidol->serial_number; ?></td>
-                                <td><?= $spidol->merk_spidol; ?></td>
-                                <td><img src="/assets/foto/<?= $spidol->gambar_spidol ?>" height="100" width="150"></td>
-                                <td><?= $spidol->kondisi_spidol; ?></td>
-                                <td><?= $spidol->warna_spidol; ?></td>
-                            </tr>
+                        <tr>
+                            <td id="isiTable"><?= $spidol->serial_number; ?></td>
+                            <td id="isiTable"><?= $spidol->merk_spidol; ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/spidol/<?= $spidol->gambar_spidol ?>"
+                                    height="100" width="150"></td>
+                            <td id="isiTable"><?= $spidol->kondisi_spidol; ?></td>
+                            <td id="isiTable"><?= $spidol->warna_spidol; ?></td>
+                        </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>

@@ -2043,6 +2043,11 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
   text-align: center;
 }
 
+#table1 th {
+  vertical-align: middle;
+  text-align: center;
+}
+
 /* table */
 
 /**********************************************************************

@@ -42,12 +42,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($tables as $table) : ?>
+                        <?php foreach ($meja as $m) : ?>
                         <tr>
-                            <td><?= $table->ukuran_meja ?></td>
-                            <td><img src="/assets/foto/<?= $table->gambar_meja ?>" width="100"></td>
-                            <td>
-                                <?= $table->kondisi_meja ?>
+                            <td id="isiTable"><?= $m->ukuran_meja ?></td>
+                            <td id="isiTable"><img src="/assets/dokumen/meja/<?= $m->gambar_meja ?>" width="100"></td>
+                            <td id="isiTable">
+                                <?= $m->kondisi_meja ?>
+
                             </td>
                         </tr>
                         <?php endforeach; ?>

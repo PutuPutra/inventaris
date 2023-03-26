@@ -43,12 +43,18 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td id="isiTable">Snowman</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">Rusak</td>
-                            <td id="isiTable">Merah</td>
-                        </tr>
+                        <?php foreach ($spidol as $s) : ?>
+                            <tr>
+                                <td id="isiTable"><?= $s->merk_spidol ?></td>
+                                <td id="isiTable"><img src="/assets/dokumen/spidol/<?= $s->gambar_spidol ?>" width="100"></td>
+                                <td id="isiTable">
+                                    <?= $s->kondisi_spidol ?>
+                                </td>
+                                <td id="isiTable">
+                                    <?= $s->warna_spidol ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

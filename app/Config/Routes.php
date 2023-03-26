@@ -128,15 +128,22 @@ $routes->get('/lab/biologi', 'Umum::biologi');
 $routes->get('/ruangan/dapur', 'Umum::dapur');
 // ruangan end
 
+//user
+$routes->get('/akun', 'Admin::users', ['filter' => 'role:super_admin']);
+$routes->post('/akun/update/(:num)', 'Admin::updateKomputer/$1', ['filter' => 'login']);
+$routes->get('/akun/tambah', 'Admin::tambahUsers', ['filter' => 'login']);
+$routes->get('/akun/edit/(:num)', 'Admin::editUsers/$1', ['filter' => 'login']);
+$routes->get('/akun/hapus/(:num)', 'Admin::deleted/$1', ['filter' => 'login']);
+
+
 //admin
 $routes->get('/service', 'Admin::service');
 $routes->get('/login', 'Admin::login');
-// $routes->get('/register', 'Admin::register', ['filter' => 'login']);
+$routes->get('/register', 'Admin::register', ['filter' => 'login']);
 $routes->get('/forgot_password', 'Admin::forgot_password');
 $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
 $routes->get('/data', 'Admin::data', ['filter' => 'login']);
 $routes->get('/prasarana', 'Admin::prasarana', ['filter' => 'login']);
-$routes->get('/account', 'Users::index', ['filter' => 'role:super_admin']);
 $routes->get('/settings', 'Admin::settings', ['filter' => 'role:super_admin']);
 $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
 $routes->get('/notifications', 'Admin::notifications', ['filter' => 'login']);
@@ -156,10 +163,10 @@ $routes->post('/updateKomputer/(:num)', 'laptopController::updateKomputer/$1', [
 $routes->get('/editKomputer/(:num)', 'laptopController::editKomputer/$1', ['filter' => 'login']);
 $routes->get('/KomputerEdit/(:num)', 'laptopController::KomputerEdit/$1', ['filter' => 'login']);
 
-// bukuController
+// buku
+$routes->post('/buku/update/(:num)', 'bukuController::updateBuku/$1', ['filter' => 'login']);
 $routes->post('/buku/store', 'bukuController::store', ['filter' => 'login']);
-
-//buku
+$routes->get('/buku/edit/(:num)', 'bukuController::editBuku/$1', ['filter' => 'login']);
 $routes->get('/buku', 'bukuController::buku', ['filter' => 'login']);
 $routes->get('/tambahBuku', 'bukuController::tambahBuku', ['filter' => 'login']);
 $routes->get('/buku/deleted/(:num)', 'bukuController::deleted/$1', ['filter' => 'login']);
@@ -168,22 +175,53 @@ $routes->get('/buku/deleted/(:num)', 'bukuController::deleted/$1', ['filter' => 
 $routes->post('/papanTulis/store', 'papanTulisController::store', ['filter' => 'login']);
 
 //papan tulis
+$routes->post('/papanTulis/update/(:num)', 'papanTulisController::updatePapanTulis/$1', ['filter' => 'login']);
+$routes->get('/papanTulis/edit/(:num)', 'papanTulisController::editPapanTulis/$1', ['filter' => 'login']);
 $routes->get('/papanTulis', 'papanTulisController::papanTulis', ['filter' => 'login']);
 $routes->get('/tambahPapanTulis', 'papanTulisController::tambahPapanTulis', ['filter' => 'login']);
 $routes->get('/papanTulis/deleted/(:num)', 'papanTulisController::deleted/$1', ['filter' => 'login']);
+$routes->post('/papanTulis/store', 'papanTulisController::store', ['filter' => 'login']);
+
+//ac
+$routes->post('/ac/update/(:num)', 'ac::update/$1', ['filter' => 'login']);
+$routes->get('/ac/edit/(:num)', 'ac::edit/$1', ['filter' => 'login']);
+$routes->get('/ac', 'ac::ac', ['filter' => 'login']);
+$routes->get('/ac/create', 'ac::create', ['filter' => 'login']);
+$routes->get('/ac/deleted/(:num)', 'ac::deleted/$1', ['filter' => 'login']);
+$routes->post('/ac/store', 'ac::store', ['filter' => 'login']);
+
+//jam
+$routes->post('/jam/update/(:num)', 'jam::update/$1', ['filter' => 'login']);
+$routes->get('/jam/edit/(:num)', 'jam::edit/$1', ['filter' => 'login']);
+$routes->get('/jam', 'jam::jam', ['filter' => 'login']);
+$routes->get('/jam/create', 'jam::create', ['filter' => 'login']);
+$routes->get('/jam/deleted/(:num)', 'jam::deleted/$1', ['filter' => 'login']);
+$routes->post('/jam/store', 'jam::store', ['filter' => 'login']);
 
 // mejaController
 $routes->post('/meja/store', 'mejaController::store', ['filter' => 'login']);
 
 // meja
+$routes->post('/meja/update/(:num)', 'mejaController::updateMeja/$1', ['filter' => 'login']);
+$routes->get('/meja/edit/(:num)', 'mejaController::editMeja/$1', ['filter' => 'login']);
 $routes->get('/meja', 'mejaController::meja', ['filter' => 'login']);
 $routes->get('/tambahMeja', 'mejaController::tambahMeja', ['filter' => 'login']);
 $routes->get('/meja/deleted/(:num)', 'mejaController::deleted/$1', ['filter' => 'login']);
+
+// gedung
+$routes->get('/gedung', 'Gedung::index', ['filter' => 'login']);
+$routes->get('/tambahGedung', 'Gedung::tambahGedung', ['filter' => 'login']);
+$routes->get('/gedung/edit/(:num)', 'Gedung::editGedung/$1', ['filter' => 'login']);
+$routes->post('/gedung/update/(:num)', 'Gedung::updateGedung/$1', ['filter' => 'login']);
+$routes->get('/gedung/deleted/(:num)', 'Gedung::deleted/$1', ['filter' => 'login']);
+
 
 // kursiController
 $routes->post('/kursi/store', 'kursiController::store', ['filter' => 'login']);
 
 // meja
+$routes->post('/kursi/update/(:num)', 'kursiController::updateKursi/$1', ['filter' => 'login']);
+$routes->get('/kursi/edit/(:num)', 'kursiController::editKursi/$1', ['filter' => 'login']);
 $routes->get('/kursi', 'kursiController::kursi', ['filter' => 'login']);
 $routes->get('/tambahKursi', 'kursiController::tambahKursi', ['filter' => 'login']);
 $routes->get('/kursi/deleted/(:num)', 'kursiController::deleted/$1', ['filter' => 'login']);
@@ -192,6 +230,8 @@ $routes->get('/kursi/deleted/(:num)', 'kursiController::deleted/$1', ['filter' =
 $routes->post('/foto/store', 'fotoController::store', ['filter' => 'login']);
 
 // foto
+$routes->post('/foto/update/(:num)', 'fotoController::updateFoto/$1', ['filter' => 'login']);
+$routes->get('/foto/edit/(:num)', 'fotoController::editFoto/$1', ['filter' => 'login']);
 $routes->get('/foto', 'fotoController::foto', ['filter' => 'login']);
 $routes->get('/tambahFoto', 'fotoController::tambahFoto', ['filter' => 'login']);
 $routes->get('/foto/deleted/(:num)', 'fotoController::deleted/$1', ['filter' => 'login']);
@@ -200,6 +240,8 @@ $routes->get('/foto/deleted/(:num)', 'fotoController::deleted/$1', ['filter' => 
 $routes->post('/spidol/store', 'spidolController::store', ['filter' => 'login']);
 
 // spidol
+$routes->post('/spidol/update/(:num)', 'spidolController::updateSpidol/$1', ['filter' => 'login']);
+$routes->get('/spidol/edit/(:num)', 'spidolController::editSpidol/$1', ['filter' => 'login']);
 $routes->get('/spidol', 'spidolController::spidol', ['filter' => 'login']);
 $routes->get('/tambahSpidol', 'spidolController::tambahSpidol', ['filter' => 'login']);
 $routes->get('/spidol/deleted/(:num)', 'spidolController::deleted/$1', ['filter' => 'login']);
@@ -208,6 +250,8 @@ $routes->get('/spidol/deleted/(:num)', 'spidolController::deleted/$1', ['filter'
 $routes->post('/penghapus/store', 'penghapusController::store', ['filter' => 'login']);
 
 // penghapus
+$routes->post('/penghapus/update/(:num)', 'penghapusController::updatePenghapus/$1', ['filter' => 'login']);
+$routes->get('/penghapus/edit/(:num)', 'penghapusController::editPenghapus/$1', ['filter' => 'login']);
 $routes->get('/penghapus', 'penghapusController::penghapus', ['filter' => 'login']);
 $routes->get('/tambahPenghapus', 'penghapusController::tambahPenghapus', ['filter' => 'login']);
 $routes->get('/penghapus/deleted/(:num)', 'penghapusController::deleted/$1', ['filter' => 'login']);
@@ -216,6 +260,8 @@ $routes->get('/penghapus/deleted/(:num)', 'penghapusController::deleted/$1', ['f
 $routes->post('/pena/store', 'penaController::store', ['filter' => 'login']);
 
 // pena
+$routes->post('/pena/update/(:num)', 'penaController::updatePena/$1', ['filter' => 'login']);
+$routes->get('/pena/edit/(:num)', 'penaController::editPena/$1', ['filter' => 'login']);
 $routes->get('/pena', 'penaController::pena', ['filter' => 'login']);
 $routes->get('/tambahPena', 'penaController::tambahPena', ['filter' => 'login']);
 $routes->get('/pena/deleted/(:num)', 'penaController::deleted/$1', ['filter' => 'login']);
@@ -224,14 +270,20 @@ $routes->get('/pena/deleted/(:num)', 'penaController::deleted/$1', ['filter' => 
 $routes->post('/penggaris/store', 'penggarisController::store', ['filter' => 'login']);
 
 // penggaris
+$routes->post('/penggaris/update/(:num)', 'penggarisController::updatePenggaris/$1', ['filter' => 'login']);
+$routes->get('/penggaris/edit/(:num)', 'penggarisController::editPenggaris/$1', ['filter' => 'login']);
 $routes->get('/penggaris', 'penggarisController::penggaris', ['filter' => 'login']);
 $routes->get('/tambahPenggaris', 'penggarisController::tambahPenggaris', ['filter' => 'login']);
 $routes->get('/penggaris/deleted/(:num)', 'penggarisController::deleted/$1', ['filter' => 'login']);
 
 //prasarana
+$routes->post('/kelas/update/(:num)', 'Kelas::updateKelas/$1', ['filter' => 'login']);
+$routes->get('/kelas/deleted/(:num)', 'Kelas::deleted/$1', ['filter' => 'login']);
 $routes->get('/kelas', 'Kelas::index', ['filter' => 'login']);
 $routes->get('/tambahKelas', 'Kelas::tambahKelas', ['filter' => 'login']);
 $routes->post('/kelas/store', 'Kelas::store', ['filter' => 'login']);
+$routes->get('/kelas/edit/(:num)', 'Kelas::editKelas/$1', ['filter' => 'login']);
+
 //piala
 $routes->get('/piala', 'PialaController::index', ['filter' => 'login']);
 $routes->get('/piala/tambahPiala', 'PialaController::tambahPiala', ['filter' => 'login']);
