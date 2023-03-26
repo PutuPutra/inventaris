@@ -35,12 +35,12 @@
                 Simple Datatable
             </div> -->
             <div class="card-body">
-                <table class="table table-striped" id="table1">
+            <table class="table table-striped" id="table1">
                     <thead>
                         <tr>
                             <th>Penerbit</th>
                             <th>Gambar</th>
-                            <th>Deskripsi</th>
+                            <th>Kondisi Buku</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -54,9 +54,19 @@
                             </td>
                         </tr>
                         <?php endforeach; ?>
+                        <?php foreach ($books as $book) : ?>
+                            <tr>
+                                <td id="isiTable"><?= $book->penerbit_buku ?></td>
+                                <td id="isiTable"><img src="/assets/dokumen/buku/<?= $book->gambar_buku ?>" width="100"></td>
+                                <td id="isiTable">
+                                    <?= $book->kondisi_buku ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>
+            </div>
             </div>
         </div>
 
