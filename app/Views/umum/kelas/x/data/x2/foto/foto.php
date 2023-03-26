@@ -51,6 +51,7 @@
                                     <?= $f->kondisi_foto ?>
                                 </td>
                             </tr>
+
                         <?php endforeach; ?>
 
                     </tbody>

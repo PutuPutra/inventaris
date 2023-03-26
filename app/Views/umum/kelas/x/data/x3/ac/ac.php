@@ -4,7 +4,7 @@
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <h1 class="display-3 mb-4 animated slideInDown">Papan Tulis Kelas X 2</h1>
+        <h1 class="display-3 mb-4 animated slideInDown">Pendingin Ruangan Kepala Sekolah</h1>
         <nav aria-label="breadcrumb animated slideInDown">
 
         </nav>
@@ -42,19 +42,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($papanTulis as $board) : ?>
                         <tr>
-                            <td id="isiTable">
-                                <?= $board->ukuran_papan_tulis ?>
-                            </td>
-                            <td id="isiTable">
-                                <img src="/assets/dokumen/papanTulis/<?= $board->gambar_papan_tulis ?>" width="100">
-                            </td>
-                            <td id="isiTable"><?= $board->kondisi_papan_tulis ?>
-
-                            </td>
+                            <td id="isiTable">Erlangga</td>
+                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
+                            <td id="isiTable">sedang diperbaiki</td>
                         </tr>
-                        <?php endforeach; ?>
 
                     </tbody>
                 </table>
@@ -63,5 +55,6 @@
 
     </section>
 </div>
+
 
 <?= $this->endSection(); ?>
