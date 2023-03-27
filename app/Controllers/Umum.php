@@ -717,6 +717,15 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/x/data/x1/penggaris/penggaris', $data);
     }
+    public function x1ac()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'penggaris' => (new AcModel())->where('id_kelas', 1)->findAll(),
+        ];
+        return view('umum/kelas/x/data/x1/ac/ac', $data);
+    }
     // isi kelas x1
 
 
@@ -802,6 +811,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', '2')->findAll(),
         ];
         return view('umum/kelas/x/data/x2/penggaris/penggaris', $data);
+    }
+    
+    public function x2ac()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'penggaris' => (new AcModel())->where('id_kelas', 1)->findAll(),
+        ];
+        return view('umum/kelas/x/data/x2/ac/ac', $data);
     }
     // isi kelas x2
 
