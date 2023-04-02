@@ -115,6 +115,16 @@
                             <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/xii/mipa/4/penggaris') ?>">Selengkapnya</a>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa-solid fa-air-conditioner fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Pendingin Ruangan</h5>
+                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/xii/mipa/4/ac') ?>">Selengkapnya</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

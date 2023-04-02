@@ -139,6 +139,15 @@ class Umum extends BaseController
         ];
         return view('umum/file/dataPenghapus', $data);
     }
+    public function dataAC()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->findAll(),
+        ];
+        return view('umum/file/ac', $data);
+    }
     public function dataPena()
     {
         $data = [
@@ -720,9 +729,10 @@ class Umum extends BaseController
     public function x1ac()
     {
         $data = [
+            'heading' => 'Pendingin Ruangan Kelas X 1',
             'navbar1' => null,
             'navbar2' => null,
-            'penggaris' => (new AcModel())->where('id_kelas', 1)->findAll(),
+            'ac' => (new AcModel())->where('id_kelas', 1)->findAll(),
         ];
         return view('umum/kelas/x/data/x1/ac/ac', $data);
     }
@@ -812,13 +822,14 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/x/data/x2/penggaris/penggaris', $data);
     }
-    
+
     public function x2ac()
     {
         $data = [
+            'heading' => 'Pendingin Ruangan Kelas X 2',
             'navbar1' => null,
             'navbar2' => null,
-            'penggaris' => (new AcModel())->where('id_kelas', 1)->findAll(),
+            'ac' => (new AcModel())->where('id_kelas', 2)->findAll(),
         ];
         return view('umum/kelas/x/data/x2/ac/ac', $data);
     }
@@ -907,6 +918,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/x/data/x3/penggaris/penggaris', $data);
     }
+    public function x3ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas X 3',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 3)->findAll(),
+        ];
+        return view('umum/kelas/x/data/x3/ac/ac', $data);
+    }
     // isi kelas x3
 
     // isi kelas x4
@@ -990,6 +1011,15 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 4)->findAll(),
         ];
         return view('umum/kelas/x/data/x4/penggaris/penggaris', $data);
+    }
+    public function x4ac()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 4)->findAll(),
+        ];
+        return view('umum/kelas/x/data/x4/ac/ac', $data);
     }
     // isi kelas x4
 
@@ -1075,6 +1105,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/x/data/x5/penggaris/penggaris', $data);
     }
+    public function x5ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas X 5',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 5)->findAll(),
+        ];
+        return view('umum/kelas/x/data/x5/ac/ac', $data);
+    }
     // isi kelas x5
 
     // isi kelas x6
@@ -1092,7 +1132,6 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-
             'papanTulis' => (new PapanTulisModel())->where('id_kelas', 6)->findAll(),
         ];
         return view('umum/kelas/x/data/x6/papantulis/papanTulis', $data);
@@ -1159,6 +1198,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 6)->findAll(),
         ];
         return view('umum/kelas/x/data/x6/penggaris/penggaris', $data);
+    }
+    public function x6ac()
+    {
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'heading' => 'Pendingin Ruangan Kelas X 6',
+            'ac' => (new AcModel())->where('id_kelas', 6)->findAll(),
+        ];
+        return view('umum/kelas/x/data/x6/ac/ac', $data);
     }
     // isi kelas x6
 
@@ -1243,6 +1292,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 7)->findAll(),
         ];
         return view('umum/kelas/x/data/x7/penggaris/penggaris', $data);
+    }
+    public function x7ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas X 7',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 7)->findAll(),
+        ];
+        return view('umum/kelas/x/data/x7/ac/ac', $data);
     }
     // isi kelas x7
 
@@ -1329,6 +1388,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/x/data/x8/penggaris/penggaris', $data);
     }
+    public function x8ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas X 8',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 8)->findAll(),
+        ];
+        return view('umum/kelas/x/data/x8/ac/ac', $data);
+    }
     // isi kelas x8
 
     // isi kelas x9
@@ -1412,6 +1481,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 9)->findAll(),
         ];
         return view('umum/kelas/x/data/x9/penggaris/penggaris', $data);
+    }
+    public function x9ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas X 9',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 9)->findAll(),
+        ];
+        return view('umum/kelas/x/data/x9/ac/ac', $data);
     }
     // isi kelas x9
 
@@ -1498,6 +1577,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/x/data/x10/penggaris/penggaris', $data);
     }
+    public function x10ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas X 10',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 10)->findAll(),
+        ];
+        return view('umum/kelas/x/data/x10/ac/ac', $data);
+    }
     // isi kelas x10
 
     // isi kelas x10
@@ -1581,6 +1670,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 11)->findAll(),
         ];
         return view('umum/kelas/x/data/x11/penggaris/penggaris', $data);
+    }
+    public function x11ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas X 11',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 11)->findAll(),
+        ];
+        return view('umum/kelas/x/data/x11/ac/ac', $data);
     }
     // isi kelas x11
 
@@ -1669,6 +1768,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xi/data/ips/xi1/penggaris/penggaris', $data);
     }
+    public function xiips1ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI IPS 1',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 12)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/ips/xi1/ac/ac', $data);
+    }
     //XI IPS2
     public function xiips2buku()
     {
@@ -1750,6 +1859,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 13)->findAll(),
         ];
         return view('umum/kelas/xi/data/ips/xi2/penggaris/penggaris', $data);
+    }
+    public function xiips2ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI IPS 2',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 13)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/ips/xi2/ac/ac', $data);
     }
     //XI IPS3
     public function xiips3buku()
@@ -1833,6 +1952,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xi/data/ips/xi3/penggaris/penggaris', $data);
     }
+    public function xiips3ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI IPS 3',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 14)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/ips/xi3/ac/ac', $data);
+    }
     //XI IPS4
     public function xiips4buku()
     {
@@ -1914,6 +2043,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 15)->findAll(),
         ];
         return view('umum/kelas/xi/data/ips/xi4/penggaris/penggaris', $data);
+    }
+    public function xiips4ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI IPS 4',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 15)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/ips/xi4/ac/ac', $data);
     }
     //================================================================================================================
     // XI mipa 1
@@ -1998,6 +2137,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xi/data/mipa/xi1/penggaris/penggaris', $data);
     }
+    public function ximipa1ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 1',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 16)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/mipa/xi1/ac/ac', $data);
+    }
     // XI mipa 2
     public function ximipa2buku()
     {
@@ -2079,6 +2228,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 17)->findAll(),
         ];
         return view('umum/kelas/xi/data/mipa/xi2/penggaris/penggaris', $data);
+    }
+    public function ximipa2ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 2',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 17)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/mipa/xi2/ac/ac', $data);
     }
     // XI mipa 3
     public function ximipa3buku()
@@ -2162,6 +2321,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xi/data/mipa/xi3/penggaris/penggaris', $data);
     }
+    public function ximipa3ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 3',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 18)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/mipa/xi3/ac/ac', $data);
+    }
     // XI mipa 4
     public function ximipa4buku()
     {
@@ -2243,6 +2412,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 19)->findAll(),
         ];
         return view('umum/kelas/xi/data/mipa/xi4/penggaris/penggaris', $data);
+    }
+    public function ximipa4ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 4',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 19)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/mipa/xi4/ac/ac', $data);
     }
     // XI mipa 5
     public function ximipa5buku()
@@ -2326,6 +2505,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xi/data/mipa/xi5/penggaris/penggaris', $data);
     }
+    public function ximipa5ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 5',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 20)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/mipa/xi5/ac/ac', $data);
+    }
     // XI mipa 6
     public function ximipa6buku()
     {
@@ -2408,6 +2597,18 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xi/data/mipa/xi6/penggaris/penggaris', $data);
     }
+    public function ximipa6ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 6',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 21)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/mipa/xi6/ac/ac', $data);
+    }
+
+
     // XI mipa 7
     public function ximipa7buku()
     {
@@ -2490,6 +2691,17 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xi/data/mipa/xi7/penggaris/penggaris', $data);
     }
+
+    public function ximipa7ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 7',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 22)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/mipa/xi7/ac/ac', $data);
+    }
     // XI mipa 8
     public function ximipa8buku()
     {
@@ -2571,6 +2783,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 23)->findAll(),
         ];
         return view('umum/kelas/xi/data/mipa/xi8/penggaris/penggaris', $data);
+    }
+    public function ximipa8ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 8',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 23)->findAll(),
+        ];
+        return view('umum/kelas/xi/data/mipa/xi8/ac/ac', $data);
     }
     // =============================kelas xi====================================
 
@@ -2657,6 +2879,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xii/data/ips/xii1/penggaris/penggaris', $data);
     }
+    public function xiiips1ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII IPS 1',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 24)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/ips/xii1/ac/ac', $data);
+    }
     //XII IPS 2
     public function xiiips2buku()
     {
@@ -2738,6 +2970,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 25)->findAll(),
         ];
         return view('umum/kelas/xii/data/ips/xii2/penggaris/penggaris', $data);
+    }
+    public function xiiips2ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII IPS 2',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 25)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/ips/xii2/ac/ac', $data);
     }
     //XII IPS 3
     public function xiiips3buku()
@@ -2821,6 +3063,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xii/data/ips/xii3/penggaris/penggaris', $data);
     }
+    public function xiiips3ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII IPS 3',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 26)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/ips/xii3/ac/ac', $data);
+    }
     //XII IPS 4
     public function xiiips4buku()
     {
@@ -2902,6 +3154,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 27)->findAll(),
         ];
         return view('umum/kelas/xii/data/ips/xii4/penggaris/penggaris', $data);
+    }
+    public function xiiips4ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII IPS 4',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 27)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/ips/xii4/ac/ac', $data);
     }
     //XII mipa 1
     public function xiimipa1buku()
@@ -2985,6 +3247,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xii/data/mipa/xii1/penggaris/penggaris', $data);
     }
+    public function xiimipa1ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 1',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 28)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/mipa/xii1/ac/ac', $data);
+    }
     //XII mipa 2
     public function xiimipa2buku()
     {
@@ -3066,6 +3338,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 29)->findAll(),
         ];
         return view('umum/kelas/xii/data/mipa/xii2/penggaris/penggaris', $data);
+    }
+    public function xiimipa2ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 2',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 29)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/mipa/xii2/ac/ac', $data);
     }
     //XII mipa 3
     public function xiimipa3buku()
@@ -3149,6 +3431,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xii/data/mipa/xii3/penggaris/penggaris', $data);
     }
+    public function xiimipa3ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 3',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 30)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/mipa/xii3/ac/ac', $data);
+    }
     //XII mipa 4
     public function xiimipa4buku()
     {
@@ -3230,6 +3522,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 31)->findAll(),
         ];
         return view('umum/kelas/xii/data/mipa/xii4/penggaris/penggaris', $data);
+    }
+    public function xiimipa4ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 4',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 31)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/mipa/xii4/ac/ac', $data);
     }
     //XII mipa 5
     public function xiimipa5buku()
@@ -3313,6 +3615,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xii/data/mipa/xii5/penggaris/penggaris', $data);
     }
+    public function xiimipa5ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 5',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 32)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/mipa/xii5/ac/ac', $data);
+    }
     //XII mipa 6
     public function xiimipa6buku()
     {
@@ -3394,6 +3706,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 33)->findAll(),
         ];
         return view('umum/kelas/xii/data/mipa/xii6/penggaris/penggaris', $data);
+    }
+    public function xiimipa6ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 6',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 33)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/mipa/xii6/ac/ac', $data);
     }
     //XII mipa 7
     public function xiimipa7buku()
@@ -3477,6 +3799,16 @@ class Umum extends BaseController
         ];
         return view('umum/kelas/xii/data/mipa/xii7/penggaris/penggaris', $data);
     }
+    public function xiimipa7ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 7',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 34)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/mipa/xii7/ac/ac', $data);
+    }
     //XII mipa 8
     public function xiimipa8buku()
     {
@@ -3558,6 +3890,16 @@ class Umum extends BaseController
             'penggaris' => (new PenggarisModel())->where('id_kelas', 35)->findAll(),
         ];
         return view('umum/kelas/xii/data/mipa/xii8/penggaris/penggaris', $data);
+    }
+    public function xiimipa8ac()
+    {
+        $data = [
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 8',
+            'navbar1' => null,
+            'navbar2' => null,
+            'ac' => (new AcModel())->where('id_kelas', 35)->findAll(),
+        ];
+        return view('umum/kelas/xii/data/mipa/xii8/ac/ac', $data);
     }
     // =============================kelas xii===================================
 

@@ -4,7 +4,7 @@
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <h1 class="display-3 mb-4 animated slideInDown">Pendingin Ruangan Kepala Sekolah</h1>
+        <h1 class="display-3 mb-4 animated slideInDown"><?= $heading ?></h1>
         <nav aria-label="breadcrumb animated slideInDown">
 
         </nav>
@@ -36,17 +36,23 @@
                 <table class="table table-striped" id="table1">
                     <thead>
                         <tr>
-                            <th>Ukuran</th>
+                            <th>Merek</th>
                             <th>Gambar</th>
+                            <th>Nomor Seri</th>
                             <th>Kondisi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
-                        </tr>
+                        <?php foreach ($ac as $a) : ?>
+                            <tr>
+                                <td id="isiTable"><?= $a->brand_ac ?></td>
+                                <td id="isiTable"><img src="/assets/foto/buku/<?= $a->gambar_ac ?>" width="100">
+                                </td>
+                                <td id="isiTable">
+                                    <?= $a->kondisi_ac ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

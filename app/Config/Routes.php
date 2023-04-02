@@ -49,6 +49,7 @@ $routes->get('/dataKursi', 'Umum::dataKursi');
 $routes->get('/dataFoto', 'Umum::dataFoto');
 $routes->get('/dataSpidol', 'Umum::dataSpidol');
 $routes->get('/dataPenghapus', 'Umum::dataPenghapus');
+$routes->get('/dataAC', 'Umum::dataAC');
 $routes->get('/dataPena', 'Umum::dataPena');
 $routes->get('/dataPenggaris', 'Umum::dataPenggaris');
 
