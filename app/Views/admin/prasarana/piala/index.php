@@ -19,9 +19,9 @@
                                     <th>No</th>
                                     <th>Nama Piala</th>
                                     <th>Tingkat</th>
-                                    <th>Tahun</th>
-                                    <th>Posisi</th>
                                     <th>Peserta</th>
+                                    <th>Posisi</th>
+                                    <th>Tahun</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
