@@ -21,7 +21,7 @@
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
                                             <label>Nama Ruangan <span class="tx-danger">*</span></label>
-                                            <input type="text" name="nama_kelas" class="form-control wd-300" placeholder="Masukkan Nama Kelas" required>
+                                            <input type="text" name="nama_kelas" class="form-control wd-300" placeholder="Masukkan Nama Kelas atau Ruangan" required>
                                         </div>
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                             <label>Gambar <span class="tx-danger">*</span></label>
@@ -33,13 +33,13 @@
                                         <div class="d-md-flex mg-b-30">
                                             <div class="form-group mg-b-0">
                                                 <label>Ketua Kelas/Ruangan <span class="tx-danger">*</span></label>
-                                                <input type="text" name="ketua_kelas" class="form-control wd-300" placeholder="Masukkan Nama Ketua Kelas" required>
+                                                <input type="text" name="ketua_kelas" class="form-control wd-300" placeholder="Masukkan Nama Ketua Kelas atau Ruangan" required>
                                                 <label class="form-text text-muted">Beri tanda " - " jika tidak ada</label>
                                             </div>
                                             <div class="mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                                 <div class="form-group mg-b-0">
                                                     <label>Wali Kelas/Ruangan <span class="tx-danger">*</span></label>
-                                                    <input type="text" name="wali_kelas" class="form-control wd-300" placeholder="Masukkan Nama Wali Kelas" required>
+                                                    <input type="text" name="wali_kelas" class="form-control wd-300" placeholder="Masukkan Nama Wali Kelas atau Ruangan" required>
                                                     <label class="form-text text-muted">Beri tanda " - " jika tidak ada</label>
                                                 </div>
                                             </div>
