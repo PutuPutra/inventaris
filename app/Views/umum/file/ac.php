@@ -46,7 +46,10 @@
                         <?php foreach ($ac as $a) : ?>
                             <tr>
                                 <td id="isiTable"><?= $a->brand_ac ?></td>
-                                <td id="isiTable"><img src="/assets/foto/buku/<?= $a->gambar_ac ?>" width="100">
+                                <td id="isiTable"><img src="/assets/dokumen/ac/<?= $a->gambar_ac ?>" width="100">
+                                </td>
+                                <td id="isiTable">
+                                    <?= $a->serial_number ?>
                                 </td>
                                 <td id="isiTable">
                                     <?= $a->kondisi_ac ?>

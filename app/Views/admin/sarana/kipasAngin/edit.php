@@ -69,12 +69,11 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <div class="wd-30">
                                             <div class="mg-b-0">
                                                 <div class="d-md-flex" style="margin-right: 50px;">
                                                     <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
-                                                        <label>Kelas <span class="tx-danger">*</span></label>
+                                                        <label>Ruangan <span class="tx-danger">*</span></label>
                                                         <select class="form-control select2 wd-300" id="id_kelas"
                                                             name="id_kelas" data-placeholder="Choose one"
                                                             data-parsley-class-handler="#slWrapper"

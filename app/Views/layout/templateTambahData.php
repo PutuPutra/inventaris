@@ -127,7 +127,7 @@
                                 <span>Prasarana</span><i class="accordion-icon fa fa-angle-left"></i>
                             </a>
                             <ul class="sub-menu">
-                                <li class="<?= $sub1 ?>"><a href="/kelas">Kelas</a></li>
+                                <li class="<?= $sub1 ?>"><a href="/kelas">Ruangan</a></li>
                                 <li class="<?= $sub2 ?>"><a href="/piala">Piala</a></li>
                             </ul>
                         </li>

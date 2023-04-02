@@ -3,7 +3,7 @@
 
 <div class="page-inner" style="margin-top:20px;">
     <div class="row row-xs">
-        <h1 class="mt-5 mb-5">Data Kelas</h1>
+        <h1 class="mt-5 mb-5">Data Ruangan</h1>
         <div class="col-md-12 mg-t-20 mg-xl-t-0">
             <div class="card">
                 <div class="card-header">
@@ -17,10 +17,10 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Gambar Kelas</th>
-                                    <th>Nama Kelas</th>
-                                    <th>Wali Kelas</th>
-                                    <th>Ketua Kelas</th>
+                                    <th>Gambar Ruangan</th>
+                                    <th>Nama Ruangan</th>
+                                    <th>Wali</th>
+                                    <th>Ketua</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
