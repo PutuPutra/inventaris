@@ -16,7 +16,7 @@
                         <table class="table table-bordered mb-0" id="table1">
                             <thead>
                                 <tr>
-                                    <th>Brand</th>
+                                    <th>Merek</th>
                                     <th>Gambar</th>
                                     <th>Kondisi</th>
                                     <th>Spesifikasi</th>

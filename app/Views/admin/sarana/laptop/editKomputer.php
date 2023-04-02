@@ -28,7 +28,7 @@
                                 <div class="wd-300">
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
-                                            <label>Brand <span class="tx-danger">*</span></label>
+                                            <label>Merek <span class="tx-danger">*</span></label>
                                             <input type="text" name="brand_komputer" class="form-control wd-300"
                                                 value="<?= $files_komputer->brand_komputer; ?>" required>
                                         </div>
