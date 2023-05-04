@@ -121,7 +121,7 @@ class laptopController extends BaseController
         $files = $this->request->getFile('gambar_komputer');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/dokumen/laptop', $names);
+        $files->move('assets/dokumen/komputer', $names);
         $data = [
             'serial_number_komputer' => $this->request->getPost('serial_number_komputer'),
             'gambar_komputer' => $names,
@@ -160,7 +160,7 @@ class laptopController extends BaseController
 
             $files = $this->request->getFile('gambar_komputer');
             $names = $files->getName();
-            $files->move('assets/dokumen/laptop', $names);
+            $files->move('assets/dokumen/komputer', $names);
             $data['gambar_komputer'] = $names;
             $komputer->where('id', $id)->set($data)->update();
         }

@@ -26,7 +26,6 @@
                             </thead>
                             <tbody>
                                 <?php $i = 1;
-
                                 foreach ($kelas as $k) : ?>
                                     <tr>
                                         <td id="isiTable"><?= $i; ?></td>
@@ -39,9 +38,11 @@
                                                 <a href="<?= base_url('/kelas/edit' . '/' . $k['id_kelas']) ?>" class="btn btn-warning btn-sm">
                                                     <i class="fa-solid fa-pen-to-square"></i>
                                                 </a>
-                                                <a href="<?= base_url('/kelas/deleted' . '/' . $k['id_kelas']) ?>" class="btn btn-danger btn-sm">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </a>
+                                                <?php if (in_groups('super_admin')) : ?>
+                                                    <a href="<?= base_url('/kelas/deleted' . '/' . $k['id_kelas']) ?>" class="btn btn-danger btn-sm">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </a>
+                                                <?php endif; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -54,10 +55,6 @@
                 </div>
             </div>
         </div>
-
     </div>
-
-
 </div>
-
 <?= $this->endSection(); ?>

@@ -222,7 +222,7 @@ use Myth\Auth\Entities\Group;
                                     </svg>
                                 </a>
                             </li>
-                            <li class="list-inline-item">
+                            <!-- <li class="list-inline-item">
                                 <a class="waves-effect tooltip-primary" href="javascript:void(0)" id="search-button" data-toggle="tooltip" data-trigger="hover" title="" data-original-title="Pencarian">
                                     <svg class="adata-svg-icon">
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -232,7 +232,7 @@ use Myth\Auth\Entities\Group;
                                         </g>
                                     </svg>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <!--/ Brand and Logo End -->

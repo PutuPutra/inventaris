@@ -64,11 +64,6 @@
                 </div>
             </div>
         </div>
-
     </div>
-
-
 </div>
-<!--/ Page Inner End -->
-<!--================================-->
 <?= $this->endSection(); ?>
