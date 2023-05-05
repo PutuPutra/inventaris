@@ -117,6 +117,7 @@ class PialaController extends BaseController
             'data_piala' => $data_piala,
             'kelas' => (new ModelKelas())->findAll(),
         ];
+        return view('admin/prasarana/piala/edit', $data);
     }
     public function destroy($id){
         $model = new PialaModel();

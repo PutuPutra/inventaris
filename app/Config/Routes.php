@@ -298,6 +298,7 @@ $routes->get('/kelas/edit/(:num)', 'Kelas::editKelas/$1', ['filter' => 'login'])
 //piala
 $routes->get('/piala', 'PialaController::index', ['filter' => 'login']);
 $routes->get('/piala/tambahPiala', 'PialaController::tambahPiala', ['filter' => 'login']);
+$routes->get('/piala/edit', 'PialaController::edit', ['filter' => 'login']);
 $routes->get('/piala/delete/(:num)', 'PialaController::destroy/$1', ['filter' => 'login']);
 $routes->post('/piala/store', 'PialaController::store', ['filter' => 'login']);
 
