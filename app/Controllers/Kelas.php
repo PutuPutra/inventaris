@@ -63,6 +63,27 @@ class Kelas extends BaseController
         ];
         return view('admin/prasarana/kelas/tambahKelas', $data);
     }
+
+    public function update($id)
+    {
+        $kelas = new ModelKelas();
+        $data = [
+            'nama_kelas' => $this->request->getPost('nama_kelas'),
+            'wali_kelas' => $this->request->getPost('wali_kelas'),
+            'ketua_kelas' => $this->request->getPost('ketua_kelas'),
+        ];
+
+        if ($this->request->getFile('gambar_kelas')->getName() != '') {
+            $files = $this->request->getFile('gambar_kelas');
+            $names = $files->getName();
+            $files->move('assets/dokumen/kelas', $names);
+            $data['gambar_kelas'] = $names;
+        }
+
+        $kelas->where('id_kelas', $id)->set($data)->update();
+        return redirect()->to(base_url('/kelas'));
+    }
+
     public function store()
     {
         $validate = $this->validate([
@@ -76,6 +97,30 @@ class Kelas extends BaseController
 
                 ],
             ],
+            'nama_kelas' => [
+                'label' => 'Nama Kelas',
+                'rules' => 'required|max_length[255]',
+                'errors' => [
+                    'required' => 'Field Nama Kelas harus diisi',
+                    'max_length' => 'Field Nama Kelas maksimal 255 karakter',
+                ],
+            ],
+            'wali_kelas' => [
+                'label' => 'Wali Kelas',
+                'rules' => 'required|max_length[255]',
+                'errors' => [
+                    'required' => 'Field Wali Kelas harus diisi',
+                    'max_length' => 'Field Wali Kelas maksimal 255 karakter',
+                ],
+            ],
+            'ketua_kelas' => [
+                'label' => 'Ketua Kelas',
+                'rules' => 'required|max_length[255]',
+                'errors' => [
+                    'required' => 'Field Ketua Kelas harus diisi',
+                    'max_length' => 'Field Ketua Kelas maksimal 255 karakter',
+                ],
+            ],
         ]);
 
         if (!$validate) {
@@ -86,6 +131,34 @@ class Kelas extends BaseController
         $names = $files->getName();
         // dd($files);
         $files->move('assets/dokumen/kelas', $names);
+
+        $nama_kelas = $this->request->getPost('nama_kelas');
+        $wali_kelas = $this->request->getPost('wali_kelas');
+        $ketua_kelas = $this->request->getPost('ketua_kelas');
+
+        // Validasi input hanya satu kali kecuali dengan tanda "-"
+        // $nama_kelas = preg_replace('/\s+/', '-', $nama_kelas); // ganti spasi dengan -
+        $nama_kelas = preg_replace('/-+/', '-', $nama_kelas); // hapus kelebihan tanda -
+        $nama_kelas = trim($nama_kelas, '-'); // hapus tanda - di awal dan akhir
+
+        $wali_kelas = preg_replace('/\s+/', '-', $wali_kelas);
+        $wali_kelas = preg_replace('/-+/', '-', $wali_kelas);
+        $wali_kelas = trim($wali_kelas, '-');
+
+        $ketua_kelas = preg_replace('/\s+/', '-', $ketua_kelas);
+        $ketua_kelas = preg_replace('/-+/', '-', $ketua_kelas);
+        $ketua_kelas = trim($ketua_kelas, '-');
+
+        // Check jika nama_kelas sudah pernah ada di database
+        $kelas = new ModelKelas();
+        $existing_kelas = $kelas->where('nama_kelas', $nama_kelas)->first();
+        if ($existing_kelas) {
+            session()->setFlashdata('error', 'Nama Kelas sudah ada di database, silahkan input nama kelas yang lain');
+            return redirect()->back()->withInput();
+        }
+        // Validasi inputan form
+
+
         $data = [
             'gambar_kelas' => $names,
             'nama_kelas' => $this->request->getPost('nama_kelas'),
@@ -98,27 +171,49 @@ class Kelas extends BaseController
             return redirect()->to(base_url('kelas'));
         }
     }
-    public function updateKelas($id)
+    public function updateKelass($id)
     {
         $kelas = new ModelKelas();
-        $data = [
-            'nama_kelas' => $this->request->getPost('nama_kelas'),
-            'wali_kelas' => $this->request->getPost('wali_kelas'),
-            'ketua_kelas' => $this->request->getPost('ketua_kelas'),
-        ];
-        if ($this->request->getFile('gambar_kelas')->getName() == '') {
+        $nama_kelas = $this->request->getPost('nama_kelas');
+        $wali_kelas = $this->request->getPost('wali_kelas');
+        $ketua_kelas = $this->request->getPost('ketua_kelas');
 
+        // Validasi input hanya satu kali kecuali dengan tanda "-"
+        $nama_kelas = preg_replace('/-+/', '-', $nama_kelas); // hapus kelebihan tanda -
+        $nama_kelas = trim($nama_kelas, '-'); // hapus tanda - di awal dan akhir
+
+        $wali_kelas = preg_replace('/-+/', '-', $wali_kelas);
+        $wali_kelas = trim($wali_kelas, '-');
+
+        $ketua_kelas = preg_replace('/-+/', '-', $ketua_kelas);
+        $ketua_kelas = trim($ketua_kelas, '-');
+
+        // Check jika nama_kelas sudah pernah ada di database selain kelas dengan id yang sama
+        $existing_kelas = $kelas->where('nama_kelas', $nama_kelas)->whereNotIn('id_kelas', [$id])->first();
+        if ($existing_kelas) {
+            session()->setFlashdata('error', 'Nama Kelas sudah ada di database, silahkan input nama kelas yang lain');
+            return redirect()->back()->withInput();
+        }
+
+        $data = [
+            'nama_kelas' => $nama_kelas,
+            'wali_kelas' => $wali_kelas,
+            'ketua_kelas' => $ketua_kelas,
+        ];
+
+        if ($this->request->getFile('gambar_kelas')->getName() == '') {
             $kelas->where('id_kelas', $id)->set($data)->update();
         } else {
-
             $files = $this->request->getFile('gambar_kelas');
             $names = $files->getName();
             $files->move('assets/dokumen/kelas', $names);
             $data['gambar_kelas'] = $names;
             $kelas->where('id_kelas', $id)->set($data)->update();
         }
+
         return redirect()->to(base_url('/kelas'));
     }
+
     public function editKelas($id = false)
     {
         $kelas = new ModelKelas();

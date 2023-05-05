@@ -286,7 +286,9 @@ $routes->get('/tambahPenggaris', 'penggarisController::tambahPenggaris', ['filte
 $routes->get('/penggaris/deleted/(:num)', 'penggarisController::deleted/$1', ['filter' => 'login']);
 
 //prasarana
-$routes->post('/kelas/update/(:num)', 'Kelas::updateKelas/$1', ['filter' => 'login']);
+
+//kelas
+$routes->post('/kelas/update/(:num)', 'Kelas::update/$1', ['filter' => 'login']);
 $routes->get('/kelas/deleted/(:num)', 'Kelas::deleted/$1', ['filter' => 'login']);
 $routes->get('/kelas', 'Kelas::index', ['filter' => 'login']);
 $routes->get('/tambahKelas', 'Kelas::tambahKelas', ['filter' => 'login']);
@@ -298,7 +300,6 @@ $routes->get('/piala', 'PialaController::index', ['filter' => 'login']);
 $routes->get('/piala/tambahPiala', 'PialaController::tambahPiala', ['filter' => 'login']);
 $routes->get('/piala/delete/(:num)', 'PialaController::destroy/$1', ['filter' => 'login']);
 $routes->post('/piala/store', 'PialaController::store', ['filter' => 'login']);
-
 
 // sarana kelas x 1
 $routes->get('/x/1/buku', 'Umum::x1buku');
