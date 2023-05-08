@@ -33,6 +33,7 @@ class ac extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
         ];
         return view('admin/sarana/ac/index', $data);
     }
@@ -58,6 +59,7 @@ class ac extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
             'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/ac/create', $data);
@@ -170,6 +172,7 @@ class ac extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
             'files_ac' => $files_ac,
             'kelas' => (new ModelKelas())->findAll(),
         ];
