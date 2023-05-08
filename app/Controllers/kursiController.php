@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\KursiModel;
 use App\Models\ModelKelas;
+use App\Models\RuanganModel;
 use App\Controllers\BaseController;
 
 class kursiController extends BaseController
@@ -64,6 +65,7 @@ class kursiController extends BaseController
             'sub2' => null,
             'sub3' => null,
             'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
         ];
         return view('admin/sarana/kursi/tambahKursi', $data);
     }
@@ -170,6 +172,7 @@ class kursiController extends BaseController
             'sub3' => null,
             'files_kursi' => $files_kursi,
             'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
         ];
 
         return view('admin/sarana/kursi/editKursi', $data);
