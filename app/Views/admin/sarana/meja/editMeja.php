@@ -33,7 +33,7 @@
                                     <div class="wd-300">
                                         <div class="d-md-flex mg-b-30">
                                             <div class="form-group mg-b-0">
-                                                <label>No. SN <span class="tx-danger">*</span></label>
+                                                <label>Nomor Seri <span class="tx-danger">*</span></label>
                                                 <input type="text" name="serial_number" class="form-control wd-300" value="<?= $files_meja->serial_number; ?>" required>
                                             </div>
                                             <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
@@ -58,16 +58,23 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="wd-30">
-                                            <div class="mg-b-0">
+                                    </div>
+                                    <div class="wd-300">
+                                        <div class="d-md-flex mg-b-30">
+                                            <div class="form-group mg-b-0">
+                                                <label>Jumlah Meja <span class="tx-danger">*</span></label>
+                                                <input type="number" name="jumlah_meja" class="form-control wd-300" value="<?= $files_meja->jumlah_meja; ?>" required>
+                                            </div>
+                                            <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                                 <div class="d-md-flex" style="margin-right: 50px;">
                                                     <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
-                                                        <label>Ruangan <span class="tx-danger">*</span></label>
+                                                        <label>Kelas <span class="tx-danger">*</span></label>
                                                         <select class="form-control select2 wd-300" id="id_kelas" name="id_kelas" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required>
+                                                            <option value="Tidak Ada">Tidak Ada</option>
                                                             <?php foreach ($kelas as $k) : ?>
                                                                 <option value="<?= $k['id_kelas']; ?>">
-                                                                    <?= $k['nama_kelas'] . ' - ' . $k['wali_kelas'] ?>
+                                                                    <?= $k['nama_kelas'] ?>
+                                                                    <!-- <?= $k['nama_kelas'] . ' - ' . $k['wali_kelas'] ?> -->
                                                                 </option>
                                                             <?php endforeach ?>
                                                         </select>
@@ -76,15 +83,30 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="wd-250">
+                                        <div class="d-md-flex mg-b-30">
+                                            <div class="d-md-flex" style="margin-right: 50px;">
+                                                <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
+                                                    <label>Ruangan <span class="tx-danger">*</span></label>
+                                                    <select class="form-control select2 wd-300" id="id_ruangan" name="id_ruangan" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required>
+                                                        <option value="Tidak Ada">Tidak Ada</option>
+                                                        <?php foreach ($ruangan as $r) : ?>
+                                                            <option value="<?= $r->id_ruangan ?>">
+                                                                <?= $r->nama_ruangan ?></option>
+                                                        <?php endforeach ?>
 
-
-
-                                        <!-- d-flex -->
-                                        <div class="form-layout-footer mg-t-8">
-                                            <button class="btn btn-primary waves-effect">
-                                                Simpan Data
-                                            </button>
+                                                    </select>
+                                                    <div id="slErrorContainer"></div>
+                                                </div>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <!-- d-flex -->
+                                    <div class="form-layout-footer mg-t-8">
+                                        <button class="btn btn-primary waves-effect">
+                                            Simpan Data
+                                        </button>
                                     </div>
                             </form>
                             <a href="<?= base_url('meja') ?>">

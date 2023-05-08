@@ -150,19 +150,16 @@ $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
 $routes->get('/notifications', 'Admin::notifications', ['filter' => 'login']);
 
 // laptopController
-$routes->post('/komputer/store', 'laptopController::store', ['filter' => 'login']);
-$routes->post('/buku/store', 'bukuController::store', ['filter' => 'login']);
-$routes->post('/papanTulis/store', 'papanTulisController::store', ['filter' => 'login']);
 
-// laptop
-$routes->get('/komputer', 'laptopController::komputer', ['filter' => 'login']);
-$routes->get('/editnya', 'laptopController::editnya', ['filter' => 'login']);
-$routes->get('/tambahLaptop', 'laptopController::tambahLaptop', ['filter' => 'login']);
-$routes->get('/editLaptop/(:num)', 'laptopController::editLaptop/$1', ['filter' => 'login']);
-$routes->get('/deleted/(:num)', 'laptopController::deleted/$1', ['filter' => 'login']);
-$routes->post('/updateKomputer/(:num)', 'laptopController::updateKomputer/$1', ['filter' => 'login']);
-$routes->get('/editKomputer/(:num)', 'laptopController::editKomputer/$1', ['filter' => 'login']);
-$routes->get('/KomputerEdit/(:num)', 'laptopController::KomputerEdit/$1', ['filter' => 'login']);
+$routes->group('komputer', ['filter' => 'login'], function ($routes) {
+    $routes->get('/', 'laptopController::index');
+    $routes->get('create', 'laptopController::create');
+    $routes->post('store', 'laptopController::store');
+    $routes->get('edit/(:num)', 'laptopController::edit/$1');
+    $routes->get('detail/(:num)', 'laptopController::detail/$1');
+    $routes->post('update/(:num)', 'laptopController::update/$1');
+    $routes->get('delete/(:num)', 'laptopController::delete/$1');
+});
 
 // buku
 $routes->post('/buku/update/(:num)', 'bukuController::updateBuku/$1', ['filter' => 'login']);
@@ -208,14 +205,26 @@ $routes->get('/jam/deleted/(:num)', 'jam::deleted/$1', ['filter' => 'login']);
 $routes->post('/jam/store', 'jam::store', ['filter' => 'login']);
 
 // mejaController
-$routes->post('/meja/store', 'mejaController::store', ['filter' => 'login']);
+$routes->group('meja', ['filter' => 'login'], function ($routes) {
+    $routes->get(
+        '/',
+        'mejaController::index'
+    );
+    $routes->get('create', 'mejaController::create');
+    $routes->post('store', 'mejaController::store');
+    $routes->get('edit/(:num)', 'mejaController::edit/$1');
+    $routes->post('update/(:num)', 'mejaController::update/$1');
+    $routes->get('delete/(:num)', 'mejaController::delete/$1');
+});
+
+// $routes->post('/meja/store', 'mejaController::store', ['filter' => 'login']);
 
 // meja
-$routes->post('/meja/update/(:num)', 'mejaController::updateMeja/$1', ['filter' => 'login']);
-$routes->get('/meja/edit/(:num)', 'mejaController::editMeja/$1', ['filter' => 'login']);
-$routes->get('/meja', 'mejaController::meja', ['filter' => 'login']);
-$routes->get('/tambahMeja', 'mejaController::tambahMeja', ['filter' => 'login']);
-$routes->get('/meja/deleted/(:num)', 'mejaController::deleted/$1', ['filter' => 'login']);
+// $routes->post('/meja/update/(:num)', 'mejaController::updateMeja/$1', ['filter' => 'login']);
+// $routes->get('/meja/edit/(:num)', 'mejaController::editMeja/$1', ['filter' => 'login']);
+// $routes->get('/meja', 'mejaController::meja', ['filter' => 'login']);
+// $routes->get('/tambahMeja', 'mejaController::tambahMeja', ['filter' => 'login']);
+// $routes->get('/meja/deleted/(:num)', 'mejaController::deleted/$1', ['filter' => 'login']);
 
 // gedung
 $routes->get('/gedung', 'Gedung::index', ['filter' => 'login']);

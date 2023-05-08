@@ -4,14 +4,19 @@ namespace App\Controllers;
 
 use App\Models\MejaModel;
 use App\Models\ModelKelas;
+use App\Models\RuanganModel;
 use App\Controllers\BaseController;
 
 class mejaController extends BaseController
 {
-    public function meja()
+
+    public function index()
     {
         $meja = new MejaModel();
-        $files_meja = $meja->findAll();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->findAll();
         $data = [
             'files_meja' => $files_meja,
             'heading' => 'Meja',
@@ -33,10 +38,14 @@ class mejaController extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
+            'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
         ];
         return view('admin/sarana/meja/fileMeja', $data);
     }
-    public function tambahMeja()
+
+    public function create()
     {
         $data = [
             'heading' => 'Tambah Data Meja',
@@ -58,7 +67,9 @@ class mejaController extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
             'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
         ];
         return view('admin/sarana/meja/tambahMeja', $data);
     }
@@ -72,6 +83,12 @@ class mejaController extends BaseController
                 ],
             ],
             'kondisi_meja' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Harus mengisi bagian ini',
+                ],
+            ],
+            'jumlah_meja' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Harus mengisi bagian ini',
@@ -101,6 +118,7 @@ class mejaController extends BaseController
             'gambar_meja' => $names,
             'ukuran_meja' => $this->request->getPost('ukuran_meja'),
             'kondisi_meja' => $this->request->getPost('kondisi_meja'),
+            'jumlah_meja' => $this->request->getPost('jumlah_meja'),
             'id_kelas' => $this->request->getPost('id_kelas'),
         ];
         //dd($data);
@@ -109,7 +127,7 @@ class mejaController extends BaseController
 
         return redirect()->to(base_url('meja'));
     }
-    public function deleted($id = false)
+    public function delete($id = false)
     {
         $meja = new MejaModel();
         $meja->where('id', $id);
@@ -117,13 +135,14 @@ class mejaController extends BaseController
         return redirect()->to(base_url('/meja'));
     }
 
-    public function updateMeja($id)
+    public function update($id)
     {
         $meja = new MejaModel();
         $data = [
             'ukuran_meja' => $this->request->getPost('ukuran_meja'),
             'serial_number' => $this->request->getPost('serial_number'),
             'kondisi_meja' => $this->request->getPost('kondisi_meja'),
+            'jumlah_meja' => $this->request->getPost('jumlah_meja'),
             'id_kelas' => $this->request->getPost('id_kelas'),
         ];
         if ($this->request->getFile('gambar_meja')->getName() == '') {
@@ -140,7 +159,7 @@ class mejaController extends BaseController
         return redirect()->to(base_url('/meja'));
     }
 
-    public function editMeja($id = false)
+    public function edit($id = false)
     {
         $meja = new MejaModel();
         $files_meja = $meja->find($id);
@@ -164,8 +183,10 @@ class mejaController extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
             'files_meja' => $files_meja,
             'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
         ];
 
         return view('admin/sarana/meja/editMeja', $data);

@@ -1,5 +1,40 @@
 <?= $this->extend('/layout/templateTambahData'); ?>
 <?= $this->section('tambahData'); ?>
+<style>
+    textarea {
+        resize: none;
+        font-family: "Inter", sans-serif;
+    }
+
+    select,
+    textarea {
+        outline: 0;
+    }
+
+
+    /* textarea {
+        height: 180px;
+        width: 200px;
+    }
+    .html-editor textarea.form-control {
+        height: 300px;
+        font-weight: 400;
+    }
+
+    .task-list-form textarea.form-control {
+        height: 80px;
+    }
+
+    .chat-footer .chat_text_area textarea {
+        width: 100%;
+        height: 78px;
+        border: 0;
+        font-size: 16px;
+        color: #33484f;
+        padding-top: 33px;
+    } */
+</style>
+
 <!--================================-->
 <!-- Page Inner Content Start -->
 <!--================================-->
@@ -17,7 +52,7 @@
                     <div class="clearfix">
                         <!-- <label class="custom-label">Example</label> -->
                         <div class="clearfix">
-                            <form action="<?= base_url('updateKomputer') . '/' . $files_komputer->id ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
+                            <form action="<?= base_url('komputer/update') . '/' . $files_komputer->id ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php
 
@@ -62,26 +97,43 @@
                                             </div>
                                             <div class="mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                                 <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
-                                                    <label>Jenis Barang <span class="tx-danger">*</span></label>
-                                                    <select class="form-control select3 wd-300" id="jenis_produk_komputer" name="jenis_produk_komputer" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required>
-                                                        <option value="Laptop" <?= "Laptop" == $files_komputer->jenis_produk_komputer ? 'selected' : null ?>>
-                                                            Laptop</option>
-                                                        <option value="Komputer" <?= "Komputer" == $files_komputer->jenis_produk_komputer ? 'selected' : null ?>>
-                                                            Komputer</option>
-                                                    </select>
+                                                    <label>Tipe <span class="tx-danger">*</span></label>
+                                                    <input type="text" name="tipe" id="tipe" class="form-control wd-300" placeholder="Tipe" value="<?= $files_komputer->tipe; ?>" required>
                                                     <div id="slErrorContainer"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="d-md-flex mg-b-30">
+                                        <div class="form-group mg-b-0">
+                                            <label>Nomor Seri<span class="tx-danger">*</span></label>
+                                            <input type="text" name="serial_number" id="serial_number" class="form-control wd-300" placeholder="Nomor Seri" value="<?= $files_komputer->serial_number; ?>" required>
+                                        </div>
+                                        <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                                            <div class="d-md-flex">
+                                                <div id="slWrapper" class="parsley-select wd-250 mg-b-0">
+                                                    <label>Ruangan <span class="tx-danger">*</span></label>
+                                                    <select class="form-control select2 wd-300" id="id_ruangan" name="id_ruangan" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required>
+                                                        <?php foreach ($ruangan as $r) : ?>
+                                                            <option value="<?= $r->id_ruangan ?>">
+                                                                <?= $r->nama_ruangan ?></option>
+                                                        <?php endforeach ?>
+                                                    </select>
+                                                    <div id="slErrorContainer"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                     <div class="d-md-flex">
-                                        <div class="form-group mg-b-60">
-                                            <label>Spesifikasi <span class="tx-danger">*</span></label>
-                                            <textarea name="spesifikasi_komputer" id="spesifikasi_komputer" cols="40" rows="4" required>
+                                        <div class="form-group">
+                                            <label>Textarea</label>
+                                            <textarea class="form-control" id="spesifikasi_komputer" rows="4" cols="40" name="spesifikasi_komputer">
                                                 <?= $files_komputer->spesifikasi_komputer; ?>
                                             </textarea>
                                         </div>
-                                        <!-- form-group -->
                                     </div>
 
                                     <!-- d-flex -->

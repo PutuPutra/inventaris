@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\ModelKelas;
+use App\Models\RuanganModel;
 use App\Models\KomputerModel;
 use App\Controllers\BaseController;
 
@@ -12,7 +13,7 @@ class laptopController extends BaseController
     {
         helper('text');
     }
-    public function komputer()
+    public function index()
     {
         $komputer = new KomputerModel();
         $files_komputer = $komputer->findAll();
@@ -41,7 +42,7 @@ class laptopController extends BaseController
         ];
         return view('admin/sarana/laptop/fileKomputer', $data);
     }
-    public function tambahLaptop()
+    public function create()
     {
         $data = [
             'heading' => 'Tambah Data Komputer',
@@ -64,7 +65,7 @@ class laptopController extends BaseController
             'sub1' => null,
             'sub2' => null,
             'sub3' => null,
-            'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
         ];
         return view('admin/sarana/laptop/tambahLaptop', $data);
     }
@@ -99,7 +100,13 @@ class laptopController extends BaseController
                     'required' => 'Harus mengisi bagian ini',
                 ],
             ],
-            'jenis_produk_komputer' => [
+            'serial_number' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Harus mengisi bagian ini',
+                ],
+            ],
+            'tipe' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Harus mengisi bagian ini',
@@ -125,10 +132,10 @@ class laptopController extends BaseController
         // dd($files);
         $files->move('assets/dokumen/komputer', $names);
         $data = [
-            'serial_number_komputer' => $this->request->getPost('serial_number_komputer'),
             'gambar_komputer' => $names,
-            'jenis_produk_komputer' => $this->request->getPost('jenis_produk_komputer'),
+            'tipe' => $this->request->getPost('tipe'),
             'kondisi_komputer' => $this->request->getPost('kondisi_komputer'),
+            'serial_number' => $this->request->getPost('serial_number'),
             'brand_komputer' => $this->request->getPost('brand_komputer'),
             'spesifikasi_komputer' => $this->request->getPost('spesifikasi_komputer'),
             'id_kelas' => $this->request->getPost('id_kelas'),
@@ -138,7 +145,7 @@ class laptopController extends BaseController
 
         return redirect()->to(base_url('komputer'));
     }
-    public function deleted($id = false)
+    public function delete($id = false)
     {
         $komputer = new KomputerModel();
         $komputer->where('id', $id);
@@ -146,14 +153,15 @@ class laptopController extends BaseController
         return redirect()->to(base_url('/komputer'));
     }
 
-    public function updateKomputer($id)
+    public function update($id)
     {
         $komputer = new KomputerModel();
         $data = [
+            'serial_number' => $this->request->getPost('serial_number'),
             'brand_komputer' => $this->request->getPost('brand_komputer'),
             'kondisi_komputer' => $this->request->getPost('kondisi_komputer'),
             'spesifikasi_komputer' => $this->request->getPost('spesifikasi_komputer'),
-            'jenis_produk_komputer' => $this->request->getPost('jenis_produk_komputer'),
+            'tipe' => $this->request->getPost('tipe'),
         ];
         if ($this->request->getFile('gambar_komputer')->getName() == '') {
 
@@ -169,7 +177,7 @@ class laptopController extends BaseController
         return redirect()->to(base_url('/komputer'));
     }
 
-    public function editLaptop($id = false)
+    public function edit($id = false)
     {
         $komputer = new KomputerModel();
         $files_komputer = $komputer->find($id);
@@ -194,9 +202,47 @@ class laptopController extends BaseController
             'sub1' => null,
             'sub2' => null,
             'sub3' => null,
+            'kelas' => (new ModelKelas())->findAll(),
             'files_komputer' => $files_komputer
         ];
 
         return view('admin/sarana/laptop/editKomputer', $data);
+    }
+
+
+
+    public function detail($id = false)
+    {
+        $komputer = new KomputerModel();
+        $files_komputer = $komputer->find($id);
+
+        $ruangan = new RuanganModel();
+        $data['ruangan'] = $ruangan->find($files_komputer->id_ruangan);
+
+        $data = [
+            'heading' => 'Edit Data Komputer',
+            'sidebar1' => null,
+            'sidebar2' => 'open active',
+            'sidebar3' => null,
+            'submenu1' => 'active',
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
+            'submenu11' => null,
+            'submenu12' => null,
+            'submenu13' => null,
+            'sub1' => null,
+            'sub2' => null,
+            'sub3' => null,
+            'files_komputer' => $files_komputer,
+        ];
+
+        return view('admin/sarana/laptop/detail', $data);
     }
 }
