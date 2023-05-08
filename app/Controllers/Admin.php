@@ -8,6 +8,7 @@ use App\Models\PenaModel;
 use App\Models\KursiModel;
 use App\Models\ModelKelas;
 use App\Models\PialaModel;
+use App\Models\RuanganModel;
 use App\Models\UsersModel;
 use App\Models\SpidolModel;
 use App\Models\KomputerModel;
@@ -39,6 +40,7 @@ class Admin extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
         ];
 
         return view('admin/account', $data);
@@ -65,6 +67,7 @@ class Admin extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
         ];
 
         return view('admin/settings', $data);
@@ -103,7 +106,8 @@ class Admin extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
-            'jumlah_kelas' => (new ModelKelas())->countAllResults(),
+            'sub3' => null,
+            'jumlah_kelas' => (new ModelKelas())->countAllResults() + (new RuanganModel())->countAllResults(),
             'jumlah_meja' => (new MejaModel())->countAllResults(),
             'jumlah_kursi' => (new KursiModel())->countAllResults(),
             'jumlah_buku' => (new BukuModel())->countAllResults(),
@@ -148,6 +152,7 @@ class Admin extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
         ];
         return view('admin/account', $data);
     }
@@ -173,6 +178,7 @@ class Admin extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
         ];
         return view('admin/tambahUsers', $data);
     }

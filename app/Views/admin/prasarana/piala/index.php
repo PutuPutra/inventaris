@@ -37,7 +37,7 @@
                                         <td><?= $pl['tahun']; ?></td>
                                         <td>
                                             <div class="buttons">
-                                                <a href="<?= base_url('piala/edit' . $pl['id_piala']) ?>" class="btn btn-primary btn-sm">
+                                                <a href="<?= base_url('piala/edit/' . $pl['id_piala']) ?>" class="btn btn-primary btn-sm">
                                                     <i class="fa-solid fa-pen-to-square"></i>
                                                 </a>
                                                 <a href="<?= base_url('piala/delete/' . $pl['id_piala']) ?>" class="btn btn-danger btn-sm">

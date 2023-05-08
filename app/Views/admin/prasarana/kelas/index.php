@@ -3,11 +3,11 @@
 
 <div class="page-inner" style="margin-top:20px;">
     <div class="row row-xs">
-        <h1 class="mt-5 mb-5">Data Ruangan</h1>
+        <h1 class="mt-5 mb-5">Data Kelas</h1>
         <div class="col-md-12 mg-t-20 mg-xl-t-0">
             <div class="card">
                 <div class="card-header">
-                    <a href="<?= base_url('tambahKelas') ?>">
+                    <a href="<?= base_url('kelas/create') ?>">
                         <button type="button" class="btn btn-success mb-3 mt-3">Tambah Data</button>
                     </a>
                 </div>
@@ -17,10 +17,10 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Gambar Ruangan</th>
-                                    <th>Nama Ruangan</th>
-                                    <th>Wali</th>
-                                    <th>Ketua</th>
+                                    <th>Gambar Kelas</th>
+                                    <th>Nama Kelas</th>
+                                    <th>Wali Kelas</th>
+                                    <th>Ketua Kelas</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -39,7 +39,7 @@
                                                     <i class="fa-solid fa-pen-to-square"></i>
                                                 </a>
                                                 <?php if (in_groups('super_admin')) : ?>
-                                                    <a href="<?= base_url('/kelas/deleted' . '/' . $k['id_kelas']) ?>" class="btn btn-danger btn-sm">
+                                                    <a href="<?= base_url('/kelas/delete' . '/' . $k['id_kelas']) ?>" class="btn btn-danger btn-sm">
                                                         <i class="fa-solid fa-trash"></i>
                                                     </a>
                                                 <?php endif; ?>
