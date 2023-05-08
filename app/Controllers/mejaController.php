@@ -79,12 +79,13 @@ class mejaController extends BaseController
             ],
             'gambar_meja' => [
                 'label' => 'gambar_meja',
-                'rules' => 'uploaded[gambar_meja]|mime_in[gambar_meja,image/jpg,image/jpeg,image/png]',
+                'rules' => 'uploaded[gambar_meja]|mime_in[gambar_meja,gambar_meja/jpg,gambar_meja/jpeg,gambar_meja/png]',
                 'errors' => [
                     'uploaded' => 'Gambar belum dipilih',
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
 
                 ],
+                
             ],
         ]);
 
@@ -167,6 +168,8 @@ class mejaController extends BaseController
             'files_meja' => $files_meja,
             'kelas' => (new ModelKelas())->findAll(),
         ];
+
+
 
         return view('admin/sarana/meja/editMeja', $data);
     }
