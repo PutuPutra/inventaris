@@ -290,6 +290,7 @@ $routes->get('/penggaris/deleted/(:num)', 'penggarisController::deleted/$1', ['f
 //kelas
 // $routes->post('/kelas/update/(:num)', 'kelas::updateKelas/$1', ['filter' => 'login']);
 $routes->post('/kelas/update/(:num)', 'Kelas::update/$1', ['filter' => 'login']);
+// $routes->post('/kelas/update/(:num)', 'Kelas::update/$1', ['filter' => 'login']);
 $routes->get('/kelas/deleted/(:num)', 'Kelas::deleted/$1', ['filter' => 'login']);
 $routes->get('/kelas', 'Kelas::index', ['filter' => 'login']);
 $routes->get('/tambahKelas', 'Kelas::tambahKelas', ['filter' => 'login']);

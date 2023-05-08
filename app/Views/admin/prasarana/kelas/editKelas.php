@@ -13,11 +13,10 @@
                     <div class="clearfix">
 
                         <div class="clearfix">
-                            <form action="<?= base_url('/kelas/update') . '/' . $files_kelas['id_kelas'] ?> ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
-                                <?= csrf_field(); ?>
+                            <form action="<?= base_url('/kelas/update'). '/'. $files_kelas['id_kelas']?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
+                            <?= csrf_field(); ?>
                                 <?php $validation = \Config\Services::validation(); ?>
                                 <div class="wd-300">
-
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
                                             <label>Nama Kelas <span class="tx-danger">*</span></label>

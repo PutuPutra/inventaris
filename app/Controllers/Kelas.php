@@ -313,6 +313,8 @@ class Kelas extends BaseController
             'sub2' => null,
             'sub3' => null,
             'files_kelas' => $files_kelas,
+            'id' => $id,
+            'id_kelas' => $id,
         ];
 
         return view('admin/prasarana/kelas/editKelas', $data);
