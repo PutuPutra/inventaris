@@ -20,6 +20,8 @@
                                     <th>Gambar</th>
                                     <th>Nomor Seri</th>
                                     <th>Kondisi</th>
+                                    <th>Nama Ruangan</th>
+                                    <th>Nama Kelas</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -31,6 +33,8 @@
                                         </td>
                                         <td id="isiTable"><?= $f->serial_number; ?></td>
                                         <td id="isiTable"><?= $f->kondisi_ac; ?></td>
+                                        <td id="isiTable"><?= $f->nama_ruangan; ?></td>
+                                        <td id="isiTable"><?= $f->nama_kelas; ?></td>
                                         <td id="isiTable">
                                             <div class="buttons">
                                                 <a href="<?= base_url('ac/edit') . '/' . $f->id ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>

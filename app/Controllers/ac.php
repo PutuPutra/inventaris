@@ -3,15 +3,19 @@
 namespace App\Controllers;
 
 use App\Models\AcModel;
-use App\Controllers\BaseController;
 use App\Models\ModelKelas;
+use App\Models\RuanganModel;
+use App\Controllers\BaseController;
 
 class ac extends BaseController
 {
     public function ac()
     {
         $ac = new AcModel();
-        $files_ac = $ac->findAll();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->findAll();
         $data = [
             'files_ac' => $files_ac,
             'heading' => 'ac',
@@ -21,22 +25,25 @@ class ac extends BaseController
             'submenu1' => null,
             'submenu2' => null,
             'submenu3' => null,
-            'submenu4' => null,
+            'submenu4' => 'active',
             'submenu5' => null,
             'submenu6' => null,
             'submenu7' => null,
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
-            'submenu11' => 'active',
+            'submenu11' => null,
             'submenu12' => null,
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
             'sub3' => null,
+            'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
         ];
         return view('admin/sarana/ac/index', $data);
     }
+
     public function create()
     {
         $data = [
@@ -61,6 +68,7 @@ class ac extends BaseController
             'sub2' => null,
             'sub3' => null,
             'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
         ];
         return view('admin/sarana/ac/create', $data);
     }
@@ -175,6 +183,7 @@ class ac extends BaseController
             'sub3' => null,
             'files_ac' => $files_ac,
             'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
         ];
 
         return view('admin/sarana/ac/edit', $data);

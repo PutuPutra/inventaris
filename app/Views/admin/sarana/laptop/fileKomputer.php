@@ -20,7 +20,7 @@
                                     <th>Merek</th>
                                     <th>Gambar</th>
                                     <th>Kondisi</th>
-                                    <th>Jenis Produk</th>
+                                    <th>Tipe</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
