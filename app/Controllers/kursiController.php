@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\KursiModel;
 use App\Models\ModelKelas;
+use App\Models\RuanganModel;
 use App\Controllers\BaseController;
 
 class kursiController extends BaseController
@@ -11,7 +12,10 @@ class kursiController extends BaseController
     public function kursi()
     {
         $kursi = new KursiModel();
-        $files_kursi = $kursi->findAll();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->findAll();
         $data = [
             'files_kursi' => $files_kursi,
             'heading' => 'Kursi',
@@ -33,6 +37,7 @@ class kursiController extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
         ];
         return view('admin/sarana/kursi/fileKursi', $data);
     }
@@ -58,7 +63,9 @@ class kursiController extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
             'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
         ];
         return view('admin/sarana/kursi/tambahKursi', $data);
     }
@@ -162,8 +169,10 @@ class kursiController extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
             'files_kursi' => $files_kursi,
             'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
         ];
 
         return view('admin/sarana/kursi/editKursi', $data);
