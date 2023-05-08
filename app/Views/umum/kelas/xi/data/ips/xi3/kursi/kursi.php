@@ -36,21 +36,31 @@
                 <table class="table table-striped" id="table1">
                     <thead>
                         <tr>
-                            <th>Ukuran</th>
+                            <th>No</th>
+                            <th>Ukuran (PxL) cm</th>
                             <th>Gambar</th>
+                            <th>Nomor Seri</th>
                             <th>Kondisi</th>
+                            <th>Ruangan</th>
+                            <th>Kelas</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($kursi as $k) : ?>
-                        <tr>
-                            <td id="isiTable"><?= $k->ukuran_kursi ?></td>
-                            <td id="isiTable"><img src="/assets/dokumen/kursi/<?= $k->gambar_kursi ?>" width="100"></td>
-                            <td id="isiTable">
-                                <?= $k->kondisi_kursi ?>
-                            </td>
-                        </tr>
-                        <?php endforeach; ?>
+                        <?php
+                        $i = 1;
+                        foreach ($files_kursi as $f) : ?>
+                            <tr style="text-align: center;">
+                                <td><?= $i; ?></td>
+                                <td><?= $f->ukuran_kursi; ?></td>
+                                <td><?= $f->serial_number; ?></td>
+                                <td><img class="pictures" src="/assets/dokumen/kursi/<?= $f->gambar_kursi; ?>" alt="" width="100px"></img></td>
+                                <td><?= $f->kondisi_kursi; ?></td>
+                                <td><?= $f->nama_ruangan; ?></td>
+                                <td><?= $f->nama_kelas; ?></td>
+                            </tr>
+                        <?php
+                            $i++;
+                        endforeach ?>
 
                     </tbody>
                 </table>

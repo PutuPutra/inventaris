@@ -42,11 +42,10 @@
                             <th>Kondisi</th>
                             <th>Nama Ruangan</th>
                             <th>Nama Kelas</th>
-                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($ac as $a) : ?>
+                        <?php foreach ($files_ac as $f) : ?>
                             <tr>
                                 <td id="isiTable"><?= $f->brand_ac; ?></td>
                                 <td id="isiTable"><img class="pictures" src="/assets/dokumen/ac/<?= $f->gambar_ac; ?>" alt="" width="100px"></img>

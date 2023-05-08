@@ -33,23 +33,35 @@
                 Simple Datatable
             </div> -->
             <div class="card-body">
-                <table class="table table-striped" id="table1">
-                    <thead>
-                        <tr>
-                            <th>Ukuran</th>
-                            <th>Gambar</th>
-                            <th>Kondisi</th>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Ukuran (PxL) cm</th>
+                        <th>Gambar</th>
+                        <th>Nomor Seri</th>
+                        <th>Kondisi</th>
+                        <th>Ruangan</th>
+                        <th>Kelas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $i = 1;
+                    foreach ($files_kursi as $f) : ?>
+                        <tr style="text-align: center;">
+                            <td><?= $i; ?></td>
+                            <td><?= $f->ukuran_kursi; ?></td>
+                            <td><?= $f->serial_number; ?></td>
+                            <td><img class="pictures" src="/assets/dokumen/kursi/<?= $f->gambar_kursi; ?>" alt="" width="100px"></img></td>
+                            <td><?= $f->kondisi_kursi; ?></td>
+                            <td><?= $f->nama_ruangan; ?></td>
+                            <td><?= $f->nama_kelas; ?></td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
-                        </tr>
+                    <?php
+                        $i++;
+                    endforeach ?>
 
-                    </tbody>
-                </table>
+                </tbody>
             </div>
         </div>
 

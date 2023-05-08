@@ -111,10 +111,16 @@ class Umum extends BaseController
     }
     public function dataKursi()
     {
+
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'kursi' => (new KursiModel())->findAll(),
+            'files_kursi' => $files_kursi,
         ];
         return view('umum/file/dataKursi', $data);
     }
@@ -147,10 +153,15 @@ class Umum extends BaseController
     }
     public function dataAC()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->findAll(),
+            'files_ac' => $files_ac,
         ];
         return view('umum/file/ac', $data);
     }
@@ -606,6 +617,7 @@ class Umum extends BaseController
         ];
         return view('umum/ruangan/koker', $data);
     }
+    
     public function bahasa()
     {
         $data = [
@@ -749,10 +761,10 @@ class Umum extends BaseController
     {
         $ac = new AcModel();
         $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
-        ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
-        ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
-        ->where('ac.id_kelas', 1)
-        ->findAll();
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 1)
+            ->findAll();
         $data = [
             'heading' => 'Pendingin Ruangan Kelas X 1',
             'navbar1' => null,
@@ -862,11 +874,17 @@ class Umum extends BaseController
 
     public function x2ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 2)
+            ->findAll();
         $data = [
             'heading' => 'Pendingin Ruangan Kelas X 2',
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 2)->findAll(),
+            'files_ac' => $files_ac,
         ];
         return view('umum/kelas/x/data/x2/ac/ac', $data);
     }
@@ -969,11 +987,17 @@ class Umum extends BaseController
     }
     public function x3ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 3)
+            ->findAll();
         $data = [
             'heading' => 'Pendingin Ruangan Kelas X 3',
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 3)->findAll(),
+            'files_ac' => $files_ac,
         ];
         return view('umum/kelas/x/data/x3/ac/ac', $data);
     }
@@ -1075,10 +1099,17 @@ class Umum extends BaseController
     }
     public function x4ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 4)
+            ->findAll();
         $data = [
+            'heading' => 'Pendingin Ruangan Kelas X 4',
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 4)->findAll(),
+            'files_ac' => $files_ac,
         ];
         return view('umum/kelas/x/data/x4/ac/ac', $data);
     }
@@ -1174,11 +1205,17 @@ class Umum extends BaseController
     }
     public function x5ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 5)
+            ->findAll();
         $data = [
             'heading' => 'Pendingin Ruangan Kelas X 5',
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 5)->findAll(),
+            'files_ac' => $files_ac,
         ];
         return view('umum/kelas/x/data/x5/ac/ac', $data);
     }
@@ -1280,11 +1317,17 @@ class Umum extends BaseController
     }
     public function x6ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 6)
+            ->findAll();
         $data = [
+            'heading' => 'Pendingin Ruangan Kelas X 6',
             'navbar1' => null,
             'navbar2' => null,
-            'heading' => 'Pendingin Ruangan Kelas X 6',
-            'ac' => (new AcModel())->where('id_kelas', 6)->findAll(),
+            'files_ac' => $files_ac,
         ];
         return view('umum/kelas/x/data/x6/ac/ac', $data);
     }
@@ -1386,11 +1429,17 @@ class Umum extends BaseController
     }
     public function x7ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 7)
+            ->findAll();
         $data = [
             'heading' => 'Pendingin Ruangan Kelas X 7',
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 7)->findAll(),
+            'files_ac' => $files_ac,
         ];
         return view('umum/kelas/x/data/x7/ac/ac', $data);
     }
@@ -1493,11 +1542,17 @@ class Umum extends BaseController
     }
     public function x8ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 8)
+            ->findAll();
         $data = [
             'heading' => 'Pendingin Ruangan Kelas X 8',
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 8)->findAll(),
+            'files_ac' => $files_ac,
         ];
         return view('umum/kelas/x/data/x8/ac/ac', $data);
     }
@@ -1599,11 +1654,17 @@ class Umum extends BaseController
     }
     public function x9ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 9)
+            ->findAll();
         $data = [
             'heading' => 'Pendingin Ruangan Kelas X 9',
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 9)->findAll(),
+            'files_ac' => $files_ac,
         ];
         return view('umum/kelas/x/data/x9/ac/ac', $data);
     }
@@ -1706,11 +1767,17 @@ class Umum extends BaseController
     }
     public function x10ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 10)
+            ->findAll();
         $data = [
             'heading' => 'Pendingin Ruangan Kelas X 10',
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 10)->findAll(),
+            'files_ac' => $files_ac,
         ];
         return view('umum/kelas/x/data/x10/ac/ac', $data);
     }
@@ -1812,11 +1879,17 @@ class Umum extends BaseController
     }
     public function x11ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 11)
+            ->findAll();
         $data = [
             'heading' => 'Pendingin Ruangan Kelas X 11',
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 11)->findAll(),
+            'files_ac' => $files_ac,
         ];
         return view('umum/kelas/x/data/x11/ac/ac', $data);
     }
@@ -1921,11 +1994,18 @@ class Umum extends BaseController
     }
     public function xiips1ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 12)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI IPS 1',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 12)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XI IPS 1',
         ];
         return view('umum/kelas/xi/data/ips/xi1/ac/ac', $data);
     }
@@ -2025,11 +2105,18 @@ class Umum extends BaseController
     }
     public function xiips2ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 13)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI IPS 2',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 13)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XI IPS 2',
         ];
         return view('umum/kelas/xi/data/ips/xi2/ac/ac', $data);
     }
@@ -2129,11 +2216,18 @@ class Umum extends BaseController
     }
     public function xiips3ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 14)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI IPS 3',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 14)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XI IPS 3',
         ];
         return view('umum/kelas/xi/data/ips/xi3/ac/ac', $data);
     }
@@ -2233,11 +2327,18 @@ class Umum extends BaseController
     }
     public function xiips4ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 15)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI IPS 4',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 15)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XI IPS 4',
         ];
         return view('umum/kelas/xi/data/ips/xi4/ac/ac', $data);
     }
@@ -2338,11 +2439,18 @@ class Umum extends BaseController
     }
     public function ximipa1ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 16)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI MIPA 1',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 16)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 1',
         ];
         return view('umum/kelas/xi/data/mipa/xi1/ac/ac', $data);
     }
@@ -2442,11 +2550,18 @@ class Umum extends BaseController
     }
     public function ximipa2ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 17)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI MIPA 2',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 17)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 2',
         ];
         return view('umum/kelas/xi/data/mipa/xi2/ac/ac', $data);
     }
@@ -2546,11 +2661,18 @@ class Umum extends BaseController
     }
     public function ximipa3ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 18)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI MIPA 3',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 18)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 3',
         ];
         return view('umum/kelas/xi/data/mipa/xi3/ac/ac', $data);
     }
@@ -2650,11 +2772,18 @@ class Umum extends BaseController
     }
     public function ximipa4ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 19)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI MIPA 4',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 19)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 4',
         ];
         return view('umum/kelas/xi/data/mipa/xi4/ac/ac', $data);
     }
@@ -2754,11 +2883,18 @@ class Umum extends BaseController
     }
     public function ximipa5ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 20)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI MIPA 5',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 20)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 5',
         ];
         return view('umum/kelas/xi/data/mipa/xi5/ac/ac', $data);
     }
@@ -2858,11 +2994,18 @@ class Umum extends BaseController
     }
     public function ximipa6ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 21)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI MIPA 6',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 21)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 6',
         ];
         return view('umum/kelas/xi/data/mipa/xi6/ac/ac', $data);
     }
@@ -2965,11 +3108,18 @@ class Umum extends BaseController
 
     public function ximipa7ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 22)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI MIPA 7',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 22)->findAll(),
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 7',
+            'files_ac' => $files_ac,
         ];
         return view('umum/kelas/xi/data/mipa/xi7/ac/ac', $data);
     }
@@ -3069,11 +3219,18 @@ class Umum extends BaseController
     }
     public function ximipa8ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 23)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XI MIPA 8',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 23)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XI MIPA 8',
         ];
         return view('umum/kelas/xi/data/mipa/xi8/ac/ac', $data);
     }
@@ -3176,11 +3333,18 @@ class Umum extends BaseController
     }
     public function xiiips1ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 24)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XII IPS 1',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 24)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XII IPS 1',
         ];
         return view('umum/kelas/xii/data/ips/xii1/ac/ac', $data);
     }
@@ -3280,11 +3444,18 @@ class Umum extends BaseController
     }
     public function xiiips2ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 25)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XII IPS 2',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 25)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XII IPS 2',
         ];
         return view('umum/kelas/xii/data/ips/xii2/ac/ac', $data);
     }
@@ -3384,11 +3555,18 @@ class Umum extends BaseController
     }
     public function xiiips3ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 26)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XII IPS 3',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 26)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XII IPS 3',
         ];
         return view('umum/kelas/xii/data/ips/xii3/ac/ac', $data);
     }
@@ -3488,8 +3666,20 @@ class Umum extends BaseController
     }
     public function xiiips4ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 27)
+            ->findAll();
         $data = [
+
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_ac' => $files_ac,
             'heading' => 'Pendingin Ruangan Kelas XII IPS 4',
+        ];
+        $data = [
             'navbar1' => null,
             'navbar2' => null,
             'ac' => (new AcModel())->where('id_kelas', 27)->findAll(),
@@ -3593,11 +3783,18 @@ class Umum extends BaseController
     }
     public function xiimipa1ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 28)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XII MIPA 1',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 28)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 1',
         ];
         return view('umum/kelas/xii/data/mipa/xii1/ac/ac', $data);
     }
@@ -3698,11 +3895,18 @@ class Umum extends BaseController
     }
     public function xiimipa2ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 29)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XII MIPA 2',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 29)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 2',
         ];
         return view('umum/kelas/xii/data/mipa/xii2/ac/ac', $data);
     }
@@ -3803,11 +4007,18 @@ class Umum extends BaseController
     }
     public function xiimipa3ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 30)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XII MIPA 3',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 30)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 3',
         ];
         return view('umum/kelas/xii/data/mipa/xii3/ac/ac', $data);
     }
@@ -3909,11 +4120,18 @@ class Umum extends BaseController
     }
     public function xiimipa4ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 31)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XII MIPA 4',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 31)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 4',
         ];
         return view('umum/kelas/xii/data/mipa/xii4/ac/ac', $data);
     }
@@ -3941,10 +4159,10 @@ class Umum extends BaseController
 
         $meja = new MejaModel();
         $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
-        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
-        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
-        ->where('meja.id_kelas', 32)
-        ->findAll();
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 32)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
@@ -3956,10 +4174,10 @@ class Umum extends BaseController
     {
         $kursi = new KursiModel();
         $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
-        ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
-        ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
-        ->where('kursi.id_kelas', 32)
-        ->findAll();
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('kursi.id_kelas', 32)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
@@ -4014,11 +4232,18 @@ class Umum extends BaseController
     }
     public function xiimipa5ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 32)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XII MIPA 5',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 32)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 5',
         ];
         return view('umum/kelas/xii/data/mipa/xii5/ac/ac', $data);
     }
@@ -4046,10 +4271,10 @@ class Umum extends BaseController
 
         $meja = new MejaModel();
         $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
-        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
-        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
-        ->where('meja.id_kelas', 33)
-        ->findAll();
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 33)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
@@ -4061,10 +4286,10 @@ class Umum extends BaseController
     {
         $kursi = new KursiModel();
         $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
-        ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
-        ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
-        ->where('kursi.id_kelas', 33)
-        ->findAll();
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('kursi.id_kelas', 33)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
@@ -4119,11 +4344,18 @@ class Umum extends BaseController
     }
     public function xiimipa6ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 33)
+            ->findAll();
         $data = [
-            'heading' => 'Pendingin Ruangan Kelas XII MIPA 6',
+
             'navbar1' => null,
             'navbar2' => null,
-            'ac' => (new AcModel())->where('id_kelas', 33)->findAll(),
+            'files_ac' => $files_ac,
+            'heading' => 'Pendingin Ruangan Kelas XII MIPA 6',
         ];
         return view('umum/kelas/xii/data/mipa/xii6/ac/ac', $data);
     }
@@ -4151,10 +4383,10 @@ class Umum extends BaseController
 
         $meja = new MejaModel();
         $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
-        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
-        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
-        ->where('meja.id_kelas', 34)
-        ->findAll();
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 34)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
@@ -4166,10 +4398,10 @@ class Umum extends BaseController
     {
         $kursi = new KursiModel();
         $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
-        ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
-        ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
-        ->where('kursi.id_kelas', 32)
-        ->findAll();
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('kursi.id_kelas', 32)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
@@ -4224,8 +4456,20 @@ class Umum extends BaseController
     }
     public function xiimipa7ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 34)
+            ->findAll();
         $data = [
+
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_ac' => $files_ac,
             'heading' => 'Pendingin Ruangan Kelas XII MIPA 7',
+        ];
+        $data = [
             'navbar1' => null,
             'navbar2' => null,
             'ac' => (new AcModel())->where('id_kelas', 34)->findAll(),
@@ -4256,10 +4500,10 @@ class Umum extends BaseController
 
         $meja = new MejaModel();
         $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
-        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
-        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
-        ->where('meja.id_kelas', 35)
-        ->findAll();
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 35)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
@@ -4271,10 +4515,10 @@ class Umum extends BaseController
     {
         $kursi = new KursiModel();
         $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
-        ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
-        ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
-        ->where('kursi.id_kelas', 35)
-        ->findAll();
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('kursi.id_kelas', 35)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
@@ -4329,8 +4573,20 @@ class Umum extends BaseController
     }
     public function xiimipa8ac()
     {
+        $ac = new AcModel();
+        $files_ac = $ac->select('ac.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = ac.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = ac.id_ruangan')
+            ->where('ac.id_kelas', 35)
+            ->findAll();
         $data = [
+
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_ac' => $files_ac,
             'heading' => 'Pendingin Ruangan Kelas XII MIPA 8',
+        ];
+        $data = [
             'navbar1' => null,
             'navbar2' => null,
             'ac' => (new AcModel())->where('id_kelas', 35)->findAll(),
@@ -4353,10 +4609,16 @@ class Umum extends BaseController
     }
     public function aulakursi()
     {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 1)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'kursi' => (new KursiModel())->where('id_kelas', 36)->findAll(),
+            'files_kursi' => $files_kursi,
         ];
         return view('umum/bangunan/data/aula/kursi/kursi', $data);
     }
@@ -4427,10 +4689,16 @@ class Umum extends BaseController
 
     public function satpamkursi()
     {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 3)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'kursi' => (new KursiModel())->where('id_kelas', 38)->findAll(),
+            'files_kursi' => $files_kursi,
         ];
         return view('umum/bangunan/data/satpam/kursi/kursi', $data);
     }
@@ -4468,10 +4736,16 @@ class Umum extends BaseController
 
     public function kepsekkursi()
     {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 4)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'kursi' => (new KursiModel())->where('id_kelas', 39)->findAll(),
+            'files_kursi' => $files_kursi,
         ];
         return view('umum/ruangan/data/kepsek/kursi/kursi', $data);
     }
@@ -4538,10 +4812,16 @@ class Umum extends BaseController
 
     public function kurikulumkursi()
     {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 5)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'kursi' => (new KursiModel())->where('id_kelas', 40)->findAll(),
+            'files_kursi' => $files_kursi,
         ];
         return view('umum/ruangan/data/kurikulum/kursi/kursi', $data);
     }
@@ -4609,10 +4889,16 @@ class Umum extends BaseController
 
     public function kesiswaankursi()
     {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 5)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'kursi' => (new KursiModel())->where('id_kelas', 41)->findAll(),
+            'files_kursi' => $files_kursi,
         ];
         return view('umum/ruangan/data/kesiswaan/kursi/kursi', $data);
     }
@@ -4668,10 +4954,16 @@ class Umum extends BaseController
 
     public function sarpraskursi()
     {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 6)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'kursi' => (new KursiModel())->where('id_kelas', 42)->findAll(),
+            'files_kursi' => $files_kursi,
         ];
         return view('umum/ruangan/data/sarpras/kursi/kursi', $data);
     }
@@ -4704,5 +4996,20 @@ class Umum extends BaseController
             'ac' => (new AcModel())->where('id_kelas', 42)->findAll(),
         ];
         return view('umum/ruangan/data/sarpras/ac/ac', $data);
+    }
+    public function kokerkursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+        ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+        ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+        ->where('ruangan.id_ruangan', 7)
+        ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/koker', $data);
     }
 }

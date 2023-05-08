@@ -25,17 +25,6 @@
         <div class="container-xxl py-1">
             <div class="container px-lg-1">
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa-solid fa-books fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Buku</h5>
-                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/ruangan/uks/buku') ?>">Selengkapnya</a>
-                        </div>
-                    </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
@@ -56,39 +45,6 @@
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto"
                                 href="<?= base_url('/ruangan/uks/kursi') ?>">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-image fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Foto</h5>
-                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/ruangan/uks/foto') ?>">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-pen fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Pena</h5>
-                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/ruangan/uks/pena') ?>">Selengkapnya</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-ruler fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Penggaris</h5>
-                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
-                            <a class="btn px-3 mt-auto mx-auto"
-                                href="<?= base_url('/ruangan/uks/penggaris') ?>">Selengkapnya</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
