@@ -670,13 +670,20 @@ class Umum extends BaseController
     }
     public function x1meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 1)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 1)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/x/data/x1/meja/meja', $data);
     }
+
     public function x1kursi()
     {
         $data = [
@@ -767,10 +774,16 @@ class Umum extends BaseController
     }
     public function x2meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 2)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', '2')->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/x/data/x2/meja/meja', $data);
     }
@@ -863,10 +876,16 @@ class Umum extends BaseController
     }
     public function x3meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 3)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', '3')->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/x/data/x3/meja/meja', $data);
     }
@@ -957,10 +976,16 @@ class Umum extends BaseController
     }
     public function x4meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 4)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 4)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/x/data/x4/meja/meja', $data);
     }
@@ -1050,10 +1075,16 @@ class Umum extends BaseController
     }
     public function x5meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 5)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 5)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/x/data/x5/meja/meja', $data);
     }
@@ -1144,10 +1175,16 @@ class Umum extends BaseController
     }
     public function x6meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 6)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 6)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/x/data/x6/meja/meja', $data);
     }
@@ -1238,10 +1275,16 @@ class Umum extends BaseController
     }
     public function x7meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 7)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 7)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/x/data/x7/meja/meja', $data);
     }
@@ -1333,10 +1376,16 @@ class Umum extends BaseController
     }
     public function x8meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 8)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 8)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/x/data/x8/meja/meja', $data);
     }
@@ -1427,10 +1476,16 @@ class Umum extends BaseController
     }
     public function x9meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 9)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 9)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/x/data/x9/meja/meja', $data);
     }
@@ -1522,10 +1577,16 @@ class Umum extends BaseController
     }
     public function x10meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 10)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 10)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/x/data/x10/meja/meja', $data);
     }
@@ -1616,10 +1677,16 @@ class Umum extends BaseController
     }
     public function x11meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 11)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 11)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/x/data/x11/meja/meja', $data);
     }
@@ -1713,10 +1780,16 @@ class Umum extends BaseController
     }
     public function xiips1meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 12)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 12)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/ips/xi1/meja/meja', $data);
     }
@@ -1805,10 +1878,16 @@ class Umum extends BaseController
     }
     public function xiips2meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 13)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 13)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/ips/xi2/meja/meja', $data);
     }
@@ -1897,10 +1976,16 @@ class Umum extends BaseController
     }
     public function xiips3meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 14)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 14)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/ips/xi3/meja/meja', $data);
     }
@@ -1989,10 +2074,16 @@ class Umum extends BaseController
     }
     public function xiips4meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 15)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 15)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/ips/xi4/meja/meja', $data);
     }
@@ -2082,10 +2173,16 @@ class Umum extends BaseController
     }
     public function ximipa1meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 16)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 16)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/mipa/xi1/meja/meja', $data);
     }
@@ -2174,10 +2271,16 @@ class Umum extends BaseController
     }
     public function ximipa2meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->where('meja.id_kelas', 17)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 17)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/mipa/xi2/meja/meja', $data);
     }
@@ -2266,10 +2369,16 @@ class Umum extends BaseController
     }
     public function ximipa3meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+        ->where('meja.id_kelas', 18)
+        ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 18)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/mipa/xi3/meja/meja', $data);
     }
@@ -2358,10 +2467,16 @@ class Umum extends BaseController
     }
     public function ximipa4meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+        ->where('meja.id_kelas', 19)
+        ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 19)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/mipa/xi4/meja/meja', $data);
     }
@@ -2450,10 +2565,16 @@ class Umum extends BaseController
     }
     public function ximipa5meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+        ->where('meja.id_kelas', 20)
+        ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 20)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/mipa/xi5/meja/meja', $data);
     }
@@ -2542,10 +2663,16 @@ class Umum extends BaseController
     }
     public function ximipa6meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+        ->where('meja.id_kelas', 21)
+        ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 21)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/mipa/xi6/meja/meja', $data);
     }
@@ -2636,10 +2763,16 @@ class Umum extends BaseController
     }
     public function ximipa7meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+        ->where('meja.id_kelas', 22)
+        ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 22)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/mipa/xi7/meja/meja', $data);
     }
@@ -2729,10 +2862,16 @@ class Umum extends BaseController
     }
     public function ximipa8meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+        ->where('meja.id_kelas', 23)
+        ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 23)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xi/data/mipa/xi8/meja/meja', $data);
     }
@@ -2824,10 +2963,16 @@ class Umum extends BaseController
     }
     public function xiiips1meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+        ->where('meja.id_kelas', 24)
+        ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 24)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xii/data/ips/xii1/meja/meja', $data);
     }
@@ -2916,10 +3061,16 @@ class Umum extends BaseController
     }
     public function xiiips2meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+        ->where('meja.id_kelas', 25)
+        ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 25)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xii/data/ips/xii2/meja/meja', $data);
     }
@@ -3008,10 +3159,16 @@ class Umum extends BaseController
     }
     public function xiiips3meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+        ->where('meja.id_kelas', 26)
+        ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 26)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xii/data/ips/xii3/meja/meja', $data);
     }
@@ -3100,10 +3257,16 @@ class Umum extends BaseController
     }
     public function xiiips4meja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+        ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+        ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+        ->where('meja.id_kelas', 27)
+        ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'meja' => (new MejaModel())->where('id_kelas', 27)->findAll(),
+            'files_meja' => $files_meja,
         ];
         return view('umum/kelas/xii/data/ips/xii4/meja/meja', $data);
     }

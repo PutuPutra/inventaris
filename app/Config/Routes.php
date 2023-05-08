@@ -371,7 +371,7 @@ $routes->get('/x/3/ac', 'Umum::x3ac');
 // sarana kelas x 4
 $routes->get('/x/4/buku', 'Umum::x4buku');
 $routes->get('/x/4/papantulis', 'Umum::x4papanTulis');
-$routes->get('/x/4/meja', 'Umum::x1meja');
+$routes->get('/x/4/meja', 'Umum::x4meja');
 $routes->get('/x/4/kursi', 'Umum::x4kursi');
 $routes->get('/x/4/foto', 'Umum::x4foto');
 $routes->get('/x/4/spidol', 'Umum::x4spidol');

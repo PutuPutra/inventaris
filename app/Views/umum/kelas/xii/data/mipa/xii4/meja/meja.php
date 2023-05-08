@@ -36,22 +36,34 @@
                 <table class="table table-striped" id="table1">
                     <thead>
                         <tr>
+                            <th>No</th>
                             <th>Ukuran</th>
+                            <th>Nomor Seri</th>
                             <th>Gambar</th>
                             <th>Kondisi</th>
+                            <th>Jumlah Meja</th>
+                            <th>Ruangan</th>
+                            <th>Kelas</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($meja as $m) : ?>
+                        <?php $i = 1;
+                        foreach ($files_meja as $m) : ?>
                             <tr>
-                                <td id="isiTable"><?= $m->ukuran_meja ?></td>
-                                <td id="isiTable"><img src="/assets/dokumen/meja/<?= $m->gambar_meja ?>" width="100"></td>
-                                <td id="isiTable">
-                                    <?= $m->kondisi_meja ?>
-                                </td>
+                                <td id="isiTable"><?= $i; ?></td>
+                                <td id="isiTable"><?= $m->ukuran_meja; ?></td>
+                                <td id="isiTable"><?= $m->serial_number; ?></td>
+                                <td id="isiTable"><img class="pictures" src="/assets/dokumen/meja/<?= $m->gambar_meja; ?>" alt="" width="100px"></img></td>
+                                <td id="isiTable"><?= $m->kondisi_meja; ?></td>
+                                <td id="isiTable"><?= $m->jumlah_meja; ?></td>
+                                <td id="isiTable"><?= $m->nama_ruangan; ?></td>
+                                <td id="isiTable"><?= $m->nama_kelas; ?></td>
                             </tr>
-                        <?php endforeach; ?>
+                        <?php
+                            $i++;
+                        endforeach; ?>
                     </tbody>
+                </table>
                 </table>
             </div>
         </div>
