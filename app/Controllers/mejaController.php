@@ -102,7 +102,7 @@ class mejaController extends BaseController
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
 
                 ],
-                
+
             ],
         ]);
 

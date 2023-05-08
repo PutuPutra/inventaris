@@ -96,10 +96,16 @@ class Umum extends BaseController
     }
     public function dataMeja()
     {
+        $meja = new MejaModel();
+        $files_meja = $meja->select('meja.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = meja.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = meja.id_ruangan')
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'tables' => (new MejaModel())->findAll(),
+            'files_meja' => $files_meja,
+            // 'meja' => (new MejaModel())->findAll(),
         ];
         return view('umum/file/dataMeja', $data);
     }
@@ -108,7 +114,7 @@ class Umum extends BaseController
         $data = [
             'navbar1' => null,
             'navbar2' => null,
-            'chairs' => (new KursiModel())->findAll(),
+            'kursi' => (new KursiModel())->findAll(),
         ];
         return view('umum/file/dataKursi', $data);
     }

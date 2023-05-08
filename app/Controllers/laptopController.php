@@ -203,6 +203,7 @@ class laptopController extends BaseController
             'sub2' => null,
             'sub3' => null,
             'kelas' => (new ModelKelas())->findAll(),
+            'ruangan' => (new RuanganModel())->findAll(),
             'files_komputer' => $files_komputer
         ];
 

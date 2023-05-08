@@ -49,7 +49,7 @@
                             <td id="isiTable"><?= $komputer->kondisi_komputer ?></td>
                             <td id="isiTable"><textarea readonly cols="50" rows="10"
                                     disabled><?= $komputer->spesifikasi_komputer ?></textarea></td>
-                            <td id="isiTable"><?= $komputer->jenis_produk_komputer ?></td>
+                            <td id="isiTable"><?= $komputer->tipe ?></td>
                         </tr>
                         <?php endforeach; ?>
 
