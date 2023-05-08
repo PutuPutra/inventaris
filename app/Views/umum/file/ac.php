@@ -40,20 +40,21 @@
                             <th>Gambar</th>
                             <th>Nomor Seri</th>
                             <th>Kondisi</th>
+                            <th>Nama Ruangan</th>
+                            <th>Nama Kelas</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php foreach ($ac as $a) : ?>
                             <tr>
-                                <td id="isiTable"><?= $a->brand_ac ?></td>
-                                <td id="isiTable"><img src="/assets/dokumen/ac/<?= $a->gambar_ac ?>" width="100">
+                                <td id="isiTable"><?= $f->brand_ac; ?></td>
+                                <td id="isiTable"><img class="pictures" src="/assets/dokumen/ac/<?= $f->gambar_ac; ?>" alt="" width="100px"></img>
                                 </td>
-                                <td id="isiTable">
-                                    <?= $a->serial_number ?>
-                                </td>
-                                <td id="isiTable">
-                                    <?= $a->kondisi_ac ?>
-                                </td>
+                                <td id="isiTable"><?= $f->serial_number; ?></td>
+                                <td id="isiTable"><?= $f->kondisi_ac; ?></td>
+                                <td id="isiTable"><?= $f->nama_ruangan; ?></td>
+                                <td id="isiTable"><?= $f->nama_kelas; ?></td>
                             </tr>
                         <?php endforeach; ?>
 

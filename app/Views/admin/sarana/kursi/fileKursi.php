@@ -16,6 +16,7 @@
                         <table class="table table-bordered  mb-0" id="table1">
                             <thead>
                                 <tr>
+                                    <th>No</th>
                                     <th>Ukuran (PxL) cm</th>
                                     <th>Gambar</th>
                                     <th>Nomor Seri</th>
@@ -26,8 +27,11 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($files_kursi as $f) : ?>
+                                <?php
+                                $i = 1;
+                                foreach ($files_kursi as $f) : ?>
                                     <tr style="text-align: center;">
+                                        <td><?= $i; ?></td>
                                         <td><?= $f->ukuran_kursi; ?></td>
                                         <td><?= $f->serial_number; ?></td>
                                         <td><img class="pictures" src="/assets/dokumen/kursi/<?= $f->gambar_kursi; ?>" alt="" width="100px"></img></td>
@@ -42,6 +46,7 @@
                                         </td>
                                     </tr>
                                 <?php
+                                    $i++;
                                 endforeach ?>
                             </tbody>
                         </table>
