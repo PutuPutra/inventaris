@@ -617,7 +617,7 @@ class Umum extends BaseController
         ];
         return view('umum/ruangan/koker', $data);
     }
-    
+
     public function bahasa()
     {
         $data = [
@@ -4997,19 +4997,189 @@ class Umum extends BaseController
         ];
         return view('umum/ruangan/data/sarpras/ac/ac', $data);
     }
-    public function kokerkursi()
+    public function humaskursi()
     {
         $kursi = new KursiModel();
         $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
-        ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
-        ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
-        ->where('ruangan.id_ruangan', 7)
-        ->findAll();
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 7)
+            ->findAll();
         $data = [
             'navbar1' => null,
             'navbar2' => null,
             'files_kursi' => $files_kursi,
         ];
-        return view('umum/ruangan/koker', $data);
+        return view('umum/ruangan/data/humas/kursi/kursi', $data);
+    }
+    public function akademikkursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 8)
+            ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/data/akademik/kursi/kursi', $data);
+    }
+    public function gurukursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 9)
+            ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/data/guru/kursi/kursi', $data);
+    }
+    public function bkkursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 10)
+            ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/data/bk/kursi/kursi', $data);
+    }
+    public function ukskursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 11)
+            ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/data/uks/kursi/kursi', $data);
+    }
+    public function tukursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 12)
+            ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/data/tu/kursi/kursi', $data);
+    }
+    public function kokerkursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 13)
+            ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/data/koker/kursi/kursi', $data);
+    }
+
+    public function bahasakursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 14)
+            ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/data/bahasa/kursi/kursi', $data);
+    }
+
+    public function kimiakursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 15)
+            ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/data/kimia/kursi/kursi', $data);
+    }
+
+    public function fisikakursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 16)
+            ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/data/fisika/kursi/kursi', $data);
+    }
+
+    public function biologikursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 17)
+            ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/data/biologi/kursi/kursi', $data);
+    }
+
+    public function dapurkursi()
+    {
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->select('kursi.*, kelas.nama_kelas, ruangan.nama_ruangan')
+            ->join('kelas', 'kelas.id_kelas = kursi.id_kelas')
+            ->join('ruangan', 'ruangan.id_ruangan = kursi.id_ruangan')
+            ->where('ruangan.id_ruangan', 18)
+            ->findAll();
+        $data = [
+            'navbar1' => null,
+            'navbar2' => null,
+            'files_kursi' => $files_kursi,
+        ];
+        return view('umum/ruangan/data/dapur/kursi/kursi', $data);
     }
 }
