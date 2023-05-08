@@ -216,9 +216,6 @@ class laptopController extends BaseController
         $komputer = new KomputerModel();
         $files_komputer = $komputer->find($id);
 
-        $ruangan = new RuanganModel();
-        $data['ruangan'] = $ruangan->find($files_komputer->id_ruangan);
-
         $data = [
             'heading' => 'Edit Data Komputer',
             'sidebar1' => null,
