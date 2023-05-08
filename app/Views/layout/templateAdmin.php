@@ -107,18 +107,9 @@ use Myth\Auth\Entities\Group;
                             </a>
                             <ul class="sub-menu">
                                 <li class="<?= $submenu1 ?>"><a href="<?= base_url('komputer') ?>">Komputer</a></li>
-                                <li class="<?= $submenu2 ?>"><a href="<?= base_url('buku') ?>">Buku</a></li>
-                                <li class="<?= $submenu3 ?>"><a href="<?= base_url('papanTulis') ?>">Papan Tulis</a></li>
                                 <li class="<?= $submenu4 ?>"><a href="<?= base_url('meja') ?>">Meja</a></li>
                                 <li class="<?= $submenu5 ?>"><a href="<?= base_url('kursi') ?>">Kursi</a></li>
-                                <li class="<?= $submenu6 ?>"><a href="<?= base_url('foto') ?>">Foto</a></li>
-                                <li class="<?= $submenu7 ?>"><a href="<?= base_url('spidol') ?>">Spidol</a></li>
-                                <li class="<?= $submenu8 ?>"><a href="<?= base_url('penghapus') ?>">Penghapus</a></li>
-                                <li class="<?= $submenu9 ?>"><a href="<?= base_url('pena') ?>">Pena</a></li>
-                                <li class="<?= $submenu10 ?>"><a href="<?= base_url('penggaris') ?>">Penggaris</a></li>
                                 <li class="<?= $submenu11 ?>"><a href="<?= base_url('ac') ?>">AC</a></li>
-                                <li class="<?= $submenu12 ?>"><a href="<?= base_url('kipasAngin') ?>">Kipas Angin</a></li>
-                                <li class="<?= $submenu13 ?>"><a href="<?= base_url('jam') ?>">Jam</a></li>
 
                             </ul>
                         </li>

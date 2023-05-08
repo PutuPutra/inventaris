@@ -13,7 +13,7 @@
                     <div class="clearfix">
 
                         <div class="clearfix">
-                            <form action="<?= base_url('/ruangan/store') ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
+                            <form action="<?= base_url('ruangan/store') ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php $validation = \Config\Services::validation(); ?>
                                 <div class="wd-300">
@@ -21,14 +21,14 @@
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
                                             <label>Nama Ruangan <span class="tx-danger">*</span></label>
-                                            <input type="text" name="nama_ruangan" class="form-control wd-300" placeholder="Masukkan Nama Ruangan" required>
+                                            <input type="text" name="nama_ruangan" class="form-control wd-300" placeholder="Nama Ruangan" required>
                                             <?php if (session('errors.nama_ruangan')) : ?>
                                                 <div class="invalid-feedback"><?php echo session('errors.nama_ruuangan') ?></div>
                                             <?php endif ?>
                                         </div>
                                         <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                             <label>Gambar <span class="tx-danger">*</span></label>
-                                            <input type="file" name="gambar_kelas" class="form-control wd-300" required>
+                                            <input type="file" name="gambar_ruangan" id="gambar_ruangan" class="form-control wd-300" required>
                                         </div>
                                     </div>
 
@@ -36,7 +36,7 @@
                                         <div class="d-md-flex mg-b-30">
                                             <div class="form-group mg-b-0">
                                                 <label>Kepala Ruangan <span class="tx-danger">*</span></label>
-                                                <input type="text" name="kepala_ruangan" class="form-control wd-300" placeholder="Masukkan Nama Kepala Ruangan" required>
+                                                <input type="text" name="kepala_ruangan" class="form-control wd-300" placeholder="Kepala Ruangan" required>
                                                 <label class="form-text text-muted">Beri tanda " - " jika tidak ada</label>
                                                 <?php if (session('errors.kepala_ruangan')) : ?>
                                                     <div class="invalid-feedback"><?php echo session('errors.kepala_ruangan') ?></div>

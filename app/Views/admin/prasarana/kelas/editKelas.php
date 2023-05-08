@@ -7,7 +7,7 @@
         <!--================================-->
         <div class="col-lg-7  page-content-area" style="justify-content:center;">
             <div class="inner-content">
-                <h1>Tambah Data Kelas</h1>
+                <h1>Edit Data Kelas</h1>
 
                 <div class="custom-fieldset-style mg-b-30">
                     <div class="clearfix">

@@ -28,7 +28,7 @@
                                 foreach ($files_ruangan as $r) : ?>
                                     <tr>
                                         <td id="isiTable"><?= $i; ?></td>
-                                        <td id="isiTable"><img src="assets/dokumen/ruangan/ <?= $r->gambar_ruangan; ?>" alt="" width="100"></td>
+                                        <td id="isiTable"><img class="pictures" src="/assets/dokumen/ruangan/<?= $r->gambar_ruangan; ?>" alt="" width="100px"></img>
                                         <td id="isiTable"> <?= $r->nama_ruangan; ?></td>
                                         <td id="isiTable"><?= $r->kepala_ruangan; ?></td>
                                         <td id="isiTable">
@@ -37,7 +37,7 @@
                                                     <i class="fa-solid fa-pen-to-square"></i>
                                                 </a>
                                                 <?php if (in_groups('super_admin')) : ?>
-                                                    <a href="<?= base_url('/ruangan/delete' . '/'. $r->id_ruangan) ?>" class="btn btn-danger btn-sm">
+                                                    <a href="<?= base_url('/ruangan/delete' . '/' . $r->id_ruangan) ?>" class="btn btn-danger btn-sm">
                                                         <i class="fa-solid fa-trash"></i>
                                                     </a>
                                                 <?php endif; ?>

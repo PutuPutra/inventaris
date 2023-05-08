@@ -39,7 +39,7 @@ class Kelas extends BaseController
         return view('admin/prasarana/kelas/index', $data);
     }
 
-    public function tambahKelas()
+    public function create()
     {
         $data = [
             'title' => 'Tambah Kelas',
@@ -287,7 +287,7 @@ class Kelas extends BaseController
         return redirect()->to(base_url('/kelas'));
     }
 
-    public function editKelas($id = false)
+    public function edit($id = false)
     {
         $kelas = new ModelKelas();
         $files_kelas = $kelas->find($id);
@@ -319,7 +319,7 @@ class Kelas extends BaseController
 
         return view('admin/prasarana/kelas/editKelas', $data);
     }
-    public function deleted($id = false)
+    public function delete($id = false)
     {
         $kelas = new ModelKelas();
         $kelas->where('id_kelas', $id);
