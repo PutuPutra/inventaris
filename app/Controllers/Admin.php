@@ -39,6 +39,7 @@ class Admin extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
         ];
 
         return view('admin/account', $data);
@@ -65,6 +66,7 @@ class Admin extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
         ];
 
         return view('admin/settings', $data);
@@ -103,6 +105,7 @@ class Admin extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
             'jumlah_kelas' => (new ModelKelas())->countAllResults(),
             'jumlah_meja' => (new MejaModel())->countAllResults(),
             'jumlah_kursi' => (new KursiModel())->countAllResults(),
@@ -148,6 +151,7 @@ class Admin extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
         ];
         return view('admin/account', $data);
     }
@@ -173,6 +177,7 @@ class Admin extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
         ];
         return view('admin/tambahUsers', $data);
     }

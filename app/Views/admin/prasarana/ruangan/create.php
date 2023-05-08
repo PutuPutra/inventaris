@@ -7,46 +7,46 @@
         <!--================================-->
         <div class="col-lg-7  page-content-area" style="justify-content:center;">
             <div class="inner-content">
-                <h1>Tambah Data Kelas</h1>
+                <h1>Tambah Data Ruangan</h1>
 
                 <div class="custom-fieldset-style mg-b-30">
                     <div class="clearfix">
 
                         <div class="clearfix">
-                            <form action="<?= base_url('/kelas/update') . '/' . $files_kelas['id_kelas'] ?> ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
+                            <form action="<?= base_url('/ruangan/store') ?>" method="POST" enctype="multipart/form-data" data-parsley-validate>
                                 <?= csrf_field(); ?>
                                 <?php $validation = \Config\Services::validation(); ?>
                                 <div class="wd-300">
 
                                     <div class="d-md-flex mg-b-30">
                                         <div class="form-group mg-b-0">
-                                            <label>Nama Kelas <span class="tx-danger">*</span></label>
-                                            <input type="text" name="nama_kelas" class="form-control wd-300" value="<?= $files_kelas['nama_kelas']; ?>" required>
+                                            <label>Nama Ruangan <span class="tx-danger">*</span></label>
+                                            <input type="text" name="nama_ruangan" class="form-control wd-300" placeholder="Masukkan Nama Ruangan" required>
+                                            <?php if (session('errors.nama_ruangan')) : ?>
+                                                <div class="invalid-feedback"><?php echo session('errors.nama_ruuangan') ?></div>
+                                            <?php endif ?>
                                         </div>
-                                        <div class=" form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                                        <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                                             <label>Gambar <span class="tx-danger">*</span></label>
-                                            <input type="file" name="gambar_kelas" class="form-control wd-300" value="<?= $files_kelas['gambar_kelas']; ?>">
+                                            <input type="file" name="gambar_kelas" class="form-control wd-300" required>
                                         </div>
-
-
                                     </div>
 
-                                    <div class=" wd-300">
+                                    <div class="wd-300">
                                         <div class="d-md-flex mg-b-30">
                                             <div class="form-group mg-b-0">
-                                                <label>Ketua Kelas <span class="tx-danger">*</span></label>
-                                                <input type="text" name="ketua_kelas" class="form-control wd-300" value="<?= $files_kelas['ketua_kelas']; ?>" required>
-                                            </div>
-                                            <div class=" mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
-                                                <div class="form-group mg-b-0">
-                                                    <label>Wali Kelas <span class="tx-danger">*</span></label>
-                                                    <input type="text" name="wali_kelas" class="form-control wd-300" value="<?= $files_kelas['wali_kelas']; ?>" required>
-                                                </div>
+                                                <label>Kepala Ruangan <span class="tx-danger">*</span></label>
+                                                <input type="text" name="kepala_ruangan" class="form-control wd-300" placeholder="Masukkan Nama Kepala Ruangan" required>
+                                                <label class="form-text text-muted">Beri tanda " - " jika tidak ada</label>
+                                                <?php if (session('errors.kepala_ruangan')) : ?>
+                                                    <div class="invalid-feedback"><?php echo session('errors.kepala_ruangan') ?></div>
+                                                <?php endif ?>
                                             </div>
                                         </div>
                                     </div>
+                                    <span>Catatan : Pastikan saat memasukkan Nama Ruangan, dan Kepala Ruangan tidak ada yang sama dengan data sebelumnya </span>
 
-                                    <div class=" wd-250">
+                                    <div class="wd-250">
 
 
                                         <div class="form-layout-footer mg-t-8">
@@ -57,7 +57,7 @@
                             </form>
 
                         </div>
-                        <a href="<?= base_url('/kelas') ?>">
+                        <a href="<?= base_url('/ruangan') ?>">
                             <button class="btn btn-secondary waves-effect" style="margin-left: 120px; margin-top: -60px;">Batal</button>
                         </a>
                     </div>

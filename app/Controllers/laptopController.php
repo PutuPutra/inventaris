@@ -37,6 +37,7 @@ class laptopController extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
         ];
         return view('admin/sarana/laptop/fileKomputer', $data);
     }
@@ -62,6 +63,7 @@ class laptopController extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
             'kelas' => (new ModelKelas())->findAll(),
         ];
         return view('admin/sarana/laptop/tambahLaptop', $data);
@@ -191,6 +193,7 @@ class laptopController extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => null,
+            'sub3' => null,
             'files_komputer' => $files_komputer
         ];
 

@@ -288,12 +288,21 @@ $routes->get('/penggaris/deleted/(:num)', 'penggarisController::deleted/$1', ['f
 //prasarana
 
 //kelas
+// $routes->post('/kelas/update/(:num)', 'kelas::updateKelas/$1', ['filter' => 'login']);
 $routes->post('/kelas/update/(:num)', 'Kelas::update/$1', ['filter' => 'login']);
 $routes->get('/kelas/deleted/(:num)', 'Kelas::deleted/$1', ['filter' => 'login']);
 $routes->get('/kelas', 'Kelas::index', ['filter' => 'login']);
 $routes->get('/tambahKelas', 'Kelas::tambahKelas', ['filter' => 'login']);
 $routes->post('/kelas/store', 'Kelas::store', ['filter' => 'login']);
 $routes->get('/kelas/edit/(:num)', 'Kelas::editKelas/$1', ['filter' => 'login']);
+
+//Ruangan
+$routes->get('/ruangan', 'RuanganController::index', ['filter' => 'login']);
+$routes->get('/ruangan/create', 'RuanganController::create', ['filter' => 'login']);
+$routes->get('/ruangan/edit/(:num)', 'RuanganController::edit/$1', ['filter' => 'login']);
+$routes->get('/ruangan/update/(:num)', 'RuanganController::update/$1', ['filter' => 'login']);
+$routes->get('/ruangan/delete/(:num)', 'RuanganController::delete/$1', ['filter' => 'login']);
+$routes->post('/ruangan/store', 'RuanganController::store', ['filter' => 'login']);
 
 //piala
 $routes->get('/piala', 'PialaController::index', ['filter' => 'login']);

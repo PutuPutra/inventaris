@@ -30,6 +30,7 @@ class Kelas extends BaseController
             'submenu13' => null,
             'sub1' => 'active',
             'sub2' => null,
+            'sub3' => null,
             'kelas' => (new ModelKelas())->findAll(),
 
         ];
@@ -60,9 +61,79 @@ class Kelas extends BaseController
             'submenu13' => null,
             'sub1' => 'active',
             'sub2' => null,
+            'sub3' => null,
         ];
         return view('admin/prasarana/kelas/tambahKelas', $data);
     }
+    // public function update($id)
+    // {
+    //     $kelas = new ModelKelas();
+    //     $rules = [
+    //         'nama_kelas' => 'required',
+    //         'ketua_kelas' => 'required',
+    //         'wali_kelas' => 'required'
+    //     ];
+
+    //     if (!$this->validate($rules)) {
+    //         return redirect()->back()->withInput()->with('validation', $this->validator);
+    //     }
+
+    //     $data = [
+    //         'nama_kelas' => $this->request->getPost('nama_kelas'),
+    //         'ketua_kelas' => $this->request->getPost('ketua_kelas'),
+    //         'wali_kelas' => $this->request->getPost('wali_kelas'),
+    //     ];
+
+    //     if ($this->request->getFile('gambar_kelas')->isValid()) {
+    //         $files = $this->request->getFile('gambar_kelas');
+    //         $names = $files->getRandomName();
+    //         $files->move('assets/dokumen/kelas', $names);
+    //         $data['gambar_kelas'] = $names;
+    //     }
+
+    //     $kelas->update($id, $data);
+
+    //     return redirect()->to(base_url('/kelas'))->with('success', 'Data kelas berhasil diupdate.');
+    // }
+
+    // public function update($id)
+    // {
+    //     $kelas = new ModelKelas();
+    //     $data = [
+    //         'nama_kelas' => $this->request->getPost('nama_kelas'),
+    //         'wali_kelas' => $this->request->getPost('wali_kelas'),
+    //         'ketua_kelas' => $this->request->getPost('ketua_kelas'),
+    //     ];
+
+    //     if ($this->request->getFile('gambar_kelas')->getName() != '') {
+    //         $files = $this->request->getFile('gambar_kelas');
+    //         $names = $files->getName();
+    //         $files->move('assets/dokumen/kelas', $names);
+    //         $data['gambar_kelas'] = $names;
+    //     }
+
+    //     $kelas->where('id_kelas', $id)->set($data)->update();
+    //     return redirect()->to(base_url('/kelas'));
+    // }
+
+    // public function updated($id)
+    // {
+    //     $kelas = new ModelKelas();
+    //     $data = [
+    //         'nama_kelas' => $this->request->getPost('nama_kelas'),
+    //         'wali_kelas' => $this->request->getPost('wali_kelas'),
+    //         'ketua_kelas' => $this->request->getPost('ketua_kelas'),
+    //     ];
+
+    //     if ($this->request->getFile('gambar_kelas')->getName() != '') {
+    //         $files = $this->request->getFile('gambar_kelas');
+    //         $names = $files->getName();
+    //         $files->move('assets/dokumen/kelas', $names);
+    //         $data['gambar_kelas'] = $names;
+    //     }
+    //     $kelas->where('id_kelas', $id)->set($data)->update();
+    //     return redirect()->to(base_url('/kelas'));
+    // }
 
     public function update($id)
     {
@@ -72,15 +143,17 @@ class Kelas extends BaseController
             'wali_kelas' => $this->request->getPost('wali_kelas'),
             'ketua_kelas' => $this->request->getPost('ketua_kelas'),
         ];
+        if ($this->request->getFile('gambar_kelas')->getName() == '') {
 
-        if ($this->request->getFile('gambar_kelas')->getName() != '') {
+            $kelas->where('id_kelas', $id)->set($data)->update();
+        } else {
+
             $files = $this->request->getFile('gambar_kelas');
             $names = $files->getName();
             $files->move('assets/dokumen/kelas', $names);
             $data['gambar_kelas'] = $names;
+            $kelas->where('id_kelas', $id)->set($data)->update();
         }
-
-        $kelas->where('id_kelas', $id)->set($data)->update();
         return redirect()->to(base_url('/kelas'));
     }
 
@@ -238,6 +311,7 @@ class Kelas extends BaseController
             'submenu13' => null,
             'sub1' => 'active',
             'sub2' => null,
+            'sub3' => null,
             'files_kelas' => $files_kelas,
         ];
 

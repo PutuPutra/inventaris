@@ -3,11 +3,11 @@
 
 <div class="page-inner" style="margin-top:20px;">
     <div class="row row-xs">
-        <h1 class="mt-5 mb-5">Data Piala</h1>
+        <h1 class="mt-5 mb-5">Data Ruangan</h1>
         <div class="col-md-12 mg-t-20 mg-xl-t-0">
             <div class="card">
                 <div class="card-header">
-                    <a href="<?= base_url('/piala/tambahPiala') ?>">
+                    <a href="<?= base_url('/ruangan/create') ?>">
                         <button type="button" class="btn btn-success mb-3 mt-3">Tambah Data</button>
                     </a>
                 </div>
@@ -17,32 +17,30 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama Piala</th>
-                                    <th>Tingkat</th>
-                                    <th>Peserta</th>
-                                    <th>Posisi</th>
-                                    <th>Tahun</th>
+                                    <th>Gambar Ruangan</th>
+                                    <th>Nama Ruangan</th>
+                                    <th>Kepala Ruangan</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php $i = 1;
-                                foreach ($piala as $pl) : ?>
-                                    <tr style="text-align: center;">
-                                        <td><?= $i; ?></td>
-                                        <td><?= $pl['nama_piala']; ?></td>
-                                        <td><?= $pl['tingkat']; ?></td>
-                                        <td><?= $pl['peserta']; ?></td>
-                                        <td><?= $pl['posisi']; ?></td>
-                                        <td><?= $pl['tahun']; ?></td>
-                                        <td>
+                                foreach ($files_ruangan as $r) : ?>
+                                    <tr>
+                                        <td id="isiTable"><?= $i; ?></td>
+                                        <td id="isiTable"><img src="assets/dokumen/ruangan/ <?= $r->gambar_ruangan; ?>" alt="" width="100"></td>
+                                        <td id="isiTable"> <?= $r->nama_ruangan; ?></td>
+                                        <td id="isiTable"><?= $r->kepala_ruangan; ?></td>
+                                        <td id="isiTable">
                                             <div class="buttons">
-                                                <a href="<?= base_url('piala/edit/' . $pl['id_piala']) ?>" class="btn btn-primary btn-sm">
+                                                <a href="<?= base_url('/ruangan/edit' . '/' . $r->id_ruangan) ?>" class="btn btn-warning btn-sm">
                                                     <i class="fa-solid fa-pen-to-square"></i>
                                                 </a>
-                                                <a href="<?= base_url('piala/delete/' . $pl['id_piala']) ?>" class="btn btn-danger btn-sm">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </a>
+                                                <?php if (in_groups('super_admin')) : ?>
+                                                    <a href="<?= base_url('/ruangan/delete' . '/'. $r->id_ruangan) ?>" class="btn btn-danger btn-sm">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </a>
+                                                <?php endif; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -57,5 +55,4 @@
         </div>
     </div>
 </div>
-
 <?= $this->endSection(); ?>
