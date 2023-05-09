@@ -36,17 +36,26 @@
                 <table class="table table-striped" id="table1">
                     <thead>
                         <tr>
-                            <th>Ukuran</th>
+                            <th>Merek</th>
                             <th>Gambar</th>
+                            <th>Nomor Seri</th>
                             <th>Kondisi</th>
+                            <th>Nama Ruangan</th>
+                            <th>Nama Kelas</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td id="isiTable">Erlangga</td>
-                            <td id="isiTable"><img src="/assets/foto/ryzen.jpg" alt="" height="100" width="150"></td>
-                            <td id="isiTable">sedang diperbaiki</td>
-                        </tr>
+                        <?php foreach ($files_ac as $f) : ?>
+                            <tr>
+                                <td id="isiTable"><?= $f->brand_ac; ?></td>
+                                <td id="isiTable"><img class="pictures" src="/assets/dokumen/ac/<?= $f->gambar_ac; ?>" alt="" width="100px"></img>
+                                </td>
+                                <td id="isiTable"><?= $f->serial_number; ?></td>
+                                <td id="isiTable"><?= $f->kondisi_ac; ?></td>
+                                <td id="isiTable"><?= $f->nama_ruangan; ?></td>
+                                <td id="isiTable"><?= $f->nama_kelas; ?></td>
+                            </tr>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

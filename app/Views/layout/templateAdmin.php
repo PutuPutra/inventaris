@@ -142,7 +142,7 @@ use Myth\Auth\Entities\Group;
                             <ul class="sub-menu">
                                 <li class="<?= $sub1 ?>"><a href="<?= base_url('kelas') ?>">Kelas</a></li>
                                 <li class="<?= $sub2 ?>"><a href="<?= base_url('ruangan') ?>">Ruangan</a></li>
-                                <li class="<?= $sub3 ?>"><a href="<?= base_url('piala') ?>">Piala</a></li>
+                                <a class="<?= $sub3 ?>"><a href="<?= base_url('piala') ?>"></a></a>
                             </ul>
                         </li>
                     </ul>

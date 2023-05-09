@@ -120,7 +120,7 @@
                             <ul class="sub-menu">
                                 <li class="<?= $sub1 ?>"><a href="/kelas">Kelas</a></li>
                                 <li class="<?= $sub2 ?>"><a href="/ruangan">Ruangan</a></li>
-                                <li class="<?= $sub3 ?>"><a href="/piala">Piala</a></li>
+                                <a class="<?= $sub3 ?>"><a href="/piala"></a></a>
                             </ul>
                         </li>
                     </ul>

@@ -4,7 +4,7 @@
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <h1 class="display-3 mb-4 animated slideInDown">Meja Ruangan Kepala Sekolah</h1>
+        <h1 class="display-3 mb-4 animated slideInDown">Pendingin Ruangan Bimbingan Konseling</h1>
         <nav aria-label="breadcrumb animated slideInDown">
 
         </nav>
@@ -36,32 +36,27 @@
                 <table class="table table-striped" id="table1">
                     <thead>
                         <tr>
-                            <th>No</th>
-                            <th>Ukuran</th>
-                            <th>Nomor Seri</th>
+                            <th>Merek</th>
                             <th>Gambar</th>
+                            <th>Nomor Seri</th>
                             <th>Kondisi</th>
-                            <th>Jumlah Meja</th>
-                            <th>Ruangan</th>
-                            <th>Kelas</th>
+                            <th>Nama Ruangan</th>
+                            <th>Nama Kelas</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php $i = 1;
-                        foreach ($files_meja as $m) : ?>
+                        <?php foreach ($files_ac as $f) : ?>
                             <tr>
-                                <td id="isiTable"><?= $i; ?></td>
-                                <td id="isiTable"><?= $m->ukuran_meja; ?></td>
-                                <td id="isiTable"><?= $m->serial_number; ?></td>
-                                <td id="isiTable"><img class="pictures" src="/assets/dokumen/meja/<?= $m->gambar_meja; ?>" alt="" width="100px"></img></td>
-                                <td id="isiTable"><?= $m->kondisi_meja; ?></td>
-                                <td id="isiTable"><?= $m->jumlah_meja; ?></td>
-                                <td id="isiTable"><?= $m->nama_ruangan; ?></td>
-                                <td id="isiTable"><?= $m->nama_kelas; ?></td>
+                                <td id="isiTable"><?= $f->brand_ac; ?></td>
+                                <td id="isiTable"><img class="pictures" src="/assets/dokumen/ac/<?= $f->gambar_ac; ?>" alt="" width="100px"></img>
+                                </td>
+                                <td id="isiTable"><?= $f->serial_number; ?></td>
+                                <td id="isiTable"><?= $f->kondisi_ac; ?></td>
+                                <td id="isiTable"><?= $f->nama_ruangan; ?></td>
+                                <td id="isiTable"><?= $f->nama_kelas; ?></td>
                             </tr>
-                        <?php
-                            $i++;
-                        endforeach; ?>
+                        <?php endforeach; ?>
+
                     </tbody>
                 </table>
             </div>

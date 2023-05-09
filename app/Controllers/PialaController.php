@@ -28,7 +28,8 @@ class PialaController extends BaseController
             'submenu12' => null,
             'submenu13' => null,
             'sub1' => null,
-            'sub2' => 'active',
+            'sub2' => null,
+            'sub3' => 'active',
             'piala' => (new PialaModel())->findAll(),
         ];
 
@@ -72,6 +73,7 @@ class PialaController extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => 'active',
+            'sub3' => 'active',
         ];
 
         return view('admin/prasarana/piala/tambahPiala', $data);
@@ -114,6 +116,7 @@ class PialaController extends BaseController
             'submenu13' => null,
             'sub1' => null,
             'sub2' => 'active',
+            'sub3' => 'active',
             'data_piala' => $data_piala,
             'kelas' => (new ModelKelas())->findAll(),
         ];

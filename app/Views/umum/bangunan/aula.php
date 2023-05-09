@@ -45,7 +45,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/aula/kursi') ?>">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <!-- <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa-solid fa-trophy-star fa-2x"></i>
@@ -64,8 +64,8 @@
                             <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
                             <a class="btn px-3 mt-auto mx-auto" href="<?= base_url('/aula/lemari') ?>">Selengkapnya</a>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    </div> -->
+                    <!-- <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa-regular fa-fan-table fa-2x"></i>
@@ -75,7 +75,7 @@
                             <a class="btn px-3 mt-auto mx-auto"
                                 href="<?= base_url('/aula/kipas_angin') ?>">Selengkapnya</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

@@ -20,6 +20,7 @@
                                     <th>Merek</th>
                                     <th>Gambar</th>
                                     <th>Kondisi</th>
+                                    <th>Spesifikasi</th>
                                     <th>Tipe</th>
                                     <th>Aksi</th>
                                 </tr>
@@ -36,11 +37,11 @@
                                         <td id="isiTable"><img class="pictures" src="/assets/dokumen/komputer/<?= $f->gambar_komputer; ?>" alt="gambar komputer" width="100px"></img>
                                         </td>
                                         <td id="isiTable"><?= $f->kondisi_komputer; ?></td>
+                                        <td id="isiTable"><?= $f->spesifikasi_komputer; ?></td>
                                         <td id="isiTable"><?= $f->tipe; ?></td>
                                         <td id="isiTable">
                                             <div class=" buttons">
-                                                <a href="<?= base_url('/komputer/detail') . '/' . $f->id ?>" class="btn btn-primary">
-                                                    <i class="fa-solid fa-eye"></i>
+                                                
                                                 </a><a href="<?= base_url('/komputer/edit') . '/' . $f->id ?>" class="btn btn-warning">
                                                     <i class="fa-solid fa-pen-to-square"></i>
                                                 </a>

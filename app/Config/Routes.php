@@ -907,48 +907,49 @@ $routes->get('/ruangan/tu/ac', 'Umum::tuac');
 
 // sarana koker start
 $routes->get('/ruangan/koker/buku', 'Umum::kokerbuku');
-$routes->get('/ruangan/koker/meja', 'Umum::kokermeja');
-$routes->get('/ruangan/koker/kursi', 'Umum::kokerkursi');
+$routes->get('/ruangan/koker/meja', 'Umum::mejakoker');
+$routes->get('/ruangan/koker/kursi', 'Umum::kursiKoker');
 $routes->get('/ruangan/koker/foto', 'Umum::kokerfoto');
 $routes->get('/ruangan/koker/pena', 'Umum::kokerpena');
 $routes->get('/ruangan/koker/penggaris', 'Umum::kokerpenggaris');
-$routes->get('/ruangan/koker/ac', 'Umum::kokerac');
+$routes->get('/ruangan/koker/ac', 'Umum::ackoker');
 // sarana koker end
 
 // sarana bahasa start
-$routes->get('/ruangan/bahasa/buku', 'Umum::bahasabuku');
-$routes->get('/ruangan/bahasa/meja', 'Umum::bahasameja');
-$routes->get('/ruangan/bahasa/kursi', 'Umum::bahasakursi');
-$routes->get('/ruangan/bahasa/foto', 'Umum::bahasafoto');
-$routes->get('/ruangan/bahasa/pena', 'Umum::bahasapena');
-$routes->get('/ruangan/bahasa/penggaris', 'Umum::bahasapenggaris');
+$routes->get('/ruangan/lab/bahasa/buku', 'Umum::bahasabuku');
+$routes->get('/ruangan/lab/bahasa/ac', 'Umum::bahasaac');
+$routes->get('/ruangan/lab/bahasa/meja', 'Umum::bahasameja');
+$routes->get('/ruangan/lab/bahasa/kursi', 'Umum::bahasakursi');
+$routes->get('/ruangan/lab/bahasa/foto', 'Umum::bahasafoto');
+$routes->get('/ruangan/lab/bahasa/pena', 'Umum::bahasapena');
+$routes->get('/ruangan/lab/bahasa/penggaris', 'Umum::bahasapenggaris');
 // sarana bahasa end
 
 // sarana kimia start
-$routes->get('/ruangan/kimia/buku', 'Umum::kimiabuku');
-$routes->get('/ruangan/kimia/meja', 'Umum::kimiameja');
-$routes->get('/ruangan/kimia/kursi', 'Umum::kimiakursi');
-$routes->get('/ruangan/kimia/foto', 'Umum::kimiafoto');
-$routes->get('/ruangan/kimia/pena', 'Umum::kimiapena');
-$routes->get('/ruangan/kimia/penggaris', 'Umum::kimiapenggaris');
+$routes->get('/ruangan/lab/kimia/buku', 'Umum::kimiabuku');
+$routes->get('/ruangan/lab/kimia/meja', 'Umum::kimiameja');
+$routes->get('/ruangan/lab/kimia/kursi', 'Umum::kimiakursi');
+$routes->get('/ruangan/lab/kimia/foto', 'Umum::kimiafoto');
+$routes->get('/ruangan/lab/kimia/pena', 'Umum::kimiapena');
+$routes->get('/ruangan/lab/kimia/penggaris', 'Umum::kimiapenggaris');
 // sarana kimia end
 
 // sarana biologi start
-$routes->get('/ruangan/biologi/buku', 'Umum::biologibuku');
-$routes->get('/ruangan/biologi/meja', 'Umum::biologimeja');
-$routes->get('/ruangan/biologi/kursi', 'Umum::biologikursi');
-$routes->get('/ruangan/biologi/foto', 'Umum::biologifoto');
-$routes->get('/ruangan/biologi/pena', 'Umum::biologipena');
-$routes->get('/ruangan/biologi/penggaris', 'Umum::biologipenggaris');
+$routes->get('/ruangan/lab/biologi/buku', 'Umum::biologibuku');
+$routes->get('/ruangan/lab/biologi/meja', 'Umum::biologimeja');
+$routes->get('/ruangan/lab/biologi/kursi', 'Umum::biologikursi');
+$routes->get('/ruangan/lab/biologi/foto', 'Umum::biologifoto');
+$routes->get('/ruangan/lab/biologi/pena', 'Umum::biologipena');
+$routes->get('/ruangan/lab/biologi/penggaris', 'Umum::biologipenggaris');
 // sarana biologi end
 
 // sarana fisika start
-$routes->get('/ruangan/fisika/buku', 'Umum::fisikabuku');
-$routes->get('/ruangan/fisika/meja', 'Umum::fisikameja');
-$routes->get('/ruangan/fisika/kursi', 'Umum:fisikarkursi');
-$routes->get('/ruangan/fisika/foto', 'Umum::fisikafoto');
-$routes->get('/ruangan/fisika/pena', 'Umum::fisikapena');
-$routes->get('/ruangan/fisika/penggaris', 'Umum::fisikapenggaris');
+$routes->get('/ruangan/lab/fisika/buku', 'Umum::fisikabuku');
+$routes->get('/ruangan/lab/fisika/meja', 'Umum::fisikamejaa');
+$routes->get('/ruangan/lab/fisika/kursi', 'Umum::fisikakursiiiiiiiiiiii');
+$routes->get('/ruangan/lab/fisika/foto', 'Umum::fisikafoto');
+$routes->get('/ruangan/lab/fisika/pena', 'Umum::fisikapena');
+$routes->get('/ruangan/lab/fisika/penggaris', 'Umum::fisikapenggaris');
 // sarana fisika end
 
 // sarana dapur start
